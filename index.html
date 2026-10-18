@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#2F4BD8">
+<title>Study Desk</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  color-scheme:light;
+  --bg:#EEF2F9; --grid:#DCE4F2; --surface:#FFFFFF; --ink:#16204A; --muted:#55608A;
+  --line:#C9D3E8; --accent:#2F4BD8; --accent-ink:#FFFFFF; --due:#E59A00; --due-soft:#FFF1D2;
+  --ok:#1F7A4D; --ok-soft:#DDF3E7; --bad:#B8362E; --bad-soft:#FBE3E0; --nav:#FFFFFF;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#0D1430; --grid:#18214A; --surface:#141C3D; --ink:#E7ECF8; --muted:#9AA6CC;
+    --line:#2A3566; --accent:#7D93FF; --accent-ink:#0D1430; --due:#FFB938; --due-soft:#3A2C0C;
+    --ok:#5BD69A; --ok-soft:#123326; --bad:#FF8A80; --bad-soft:#3A1715; --nav:#141C3D;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#0D1430; --grid:#18214A; --surface:#141C3D; --ink:#E7ECF8; --muted:#9AA6CC;
+  --line:#2A3566; --accent:#7D93FF; --accent-ink:#0D1430; --due:#FFB938; --due-soft:#3A2C0C;
+  --ok:#5BD69A; --ok-soft:#123326; --bad:#FF8A80; --bad-soft:#3A1715; --nav:#141C3D;
+}
+*,*::before,*::after{box-sizing:inherit}
+body{
+  margin:0;
+  background-color:var(--bg);
+  background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:24px 24px;
+  color:var(--ink);
+  font:400 1rem/1.55 "Atkinson Hyperlegible",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+.wrap{max-width:680px;margin:0 auto;padding:1.25rem 1rem calc(6rem + env(safe-area-inset-bottom,0px))}
+h1,h2,h3{font-family:"Bricolage Grotesque","Atkinson Hyperlegible",system-ui,sans-serif;margin:0;line-height:1.15}
+h1{font-size:1.9rem;font-weight:700;letter-spacing:-.01em}
+h2{font-size:1.2rem;font-weight:700;margin:1.6rem 0 .6rem}
+h3{font-size:1.05rem}
+.sub{color:var(--muted);margin:.25rem 0 0}
+button,input,select{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.btn{border:0;border-radius:10px;padding:.65rem 1rem;background:var(--accent);color:var(--accent-ink);font-weight:700}
+.btn.ghost{background:transparent;color:var(--accent);border:1.5px solid var(--accent)}
+.btn.small{padding:.4rem .75rem;font-size:.92rem}
+.btn:disabled{opacity:.45;cursor:default}
+.linkbtn{background:none;border:0;color:var(--accent);font-weight:700;padding:.25rem 0}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:1rem}
+.stack{display:flex;flex-direction:column;gap:.6rem}
+.row{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap}
+.spread{display:flex;justify-content:space-between;align-items:center;gap:.75rem}
+.banner{background:var(--due-soft);border:1px solid var(--due);border-radius:10px;padding:.6rem .8rem;font-size:.92rem;margin-bottom:1rem}
+.pill{display:inline-block;font-size:.8rem;font-weight:700;border-radius:999px;padding:.1rem .55rem;margin-right:.35rem;white-space:nowrap}
+.pill.due{background:var(--due-soft);border:1px solid var(--due)}
+.pill.new{background:var(--bg);color:var(--muted);border:1px solid var(--line)}
+.pill.ok{background:var(--ok-soft);color:var(--ok)}
+.tag{font-size:.78rem;font-weight:700;border-radius:6px;padding:.05rem .45rem;background:var(--bg);border:1px solid var(--line);color:var(--muted);white-space:nowrap}
+/* segmented */
+.seg{display:inline-flex;border:1.5px solid var(--accent);border-radius:10px;overflow:hidden}
+.seg button{border:0;background:transparent;padding:.4rem .8rem;font-weight:700;color:var(--accent)}
+.seg button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
+.seg button:disabled{cursor:default}
+/* hours */
+.hours{display:flex;align-items:baseline;gap:.5rem;flex-wrap:wrap}
+.hours strong{font-family:"Bricolage Grotesque",sans-serif;font-size:2.4rem;line-height:1}
+.meter{height:10px;border-radius:5px;background:var(--line);overflow:hidden;margin:.6rem 0 .3rem;position:relative}
+.meter i{display:block;height:100%;background:var(--accent)}
+.meter.done i{background:var(--ok)}
+/* tasks */
+.task{display:flex;gap:.65rem;align-items:flex-start;padding:.55rem 0;border-bottom:1px solid var(--line)}
+.task:last-child{border-bottom:0}
+.task input[type=checkbox]{width:1.25rem;height:1.25rem;margin-top:.15rem;accent-color:var(--ok);flex:none}
+.task .txt{flex:1}
+.task.done .txt span{text-decoration:line-through;color:var(--muted)}
+.task .del{background:none;border:0;color:var(--muted);font-size:1.2rem;line-height:1;padding:.1rem .3rem}
+.addform{display:grid;grid-template-columns:auto 1fr auto;gap:.5rem;margin-top:.75rem}
+.addform select,.addform input,.field{border:1.5px solid var(--line);border-radius:10px;padding:.55rem .6rem;background:var(--surface);min-width:0}
+@media (max-width:420px){.addform{grid-template-columns:1fr auto}.addform select{grid-column:1 / -1}}
+/* day nav */
+.daynav{display:flex;align-items:center;gap:.5rem}
+.daynav button{border:1px solid var(--line);background:var(--surface);border-radius:8px;width:2.2rem;height:2.2rem;font-weight:700}
+/* timer */
+.clock{font-family:"Bricolage Grotesque",sans-serif;font-size:4.5rem;font-weight:700;text-align:center;line-height:1;margin:.5rem 0;font-variant-numeric:tabular-nums}
+.phase{text-align:center;font-weight:700;color:var(--muted)}
+.phase.focus{color:var(--accent)} .phase.break{color:var(--ok)}
+.ring{height:8px;border-radius:4px;background:var(--line);overflow:hidden;margin:1rem 0}
+.ring i{display:block;height:100%;background:var(--accent)}
+.ring.break i{background:var(--ok)}
+.session{display:flex;justify-content:space-between;gap:.5rem;padding:.45rem 0;border-bottom:1px solid var(--line);font-size:.95rem}
+.session:last-child{border-bottom:0}
+/* practice */
+.ch{display:grid;grid-template-columns:2.4rem 1fr;gap:.75rem;align-items:start}
+.chnum{font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:1.6rem;color:var(--accent);line-height:1}
+.status{color:var(--muted);font-size:.9rem;margin:.25rem 0 .6rem}
+.dots{display:inline-flex;gap:3px;vertical-align:middle;margin-left:.2rem}
+.dots i{width:9px;height:9px;border-radius:50%;border:1.5px solid var(--ok)}
+.dots i.on{background:var(--ok)}
+.duebtn{display:flex;justify-content:space-between;align-items:center;gap:.75rem;width:100%;text-align:left;border:1px solid var(--line);background:var(--due-soft);border-radius:10px;padding:.7rem .85rem}
+.duebtn span{color:var(--muted);font-size:.9rem;white-space:nowrap}
+/* quiz */
+.bar{height:6px;background:var(--line);border-radius:3px;overflow:hidden;margin:.5rem 0 1rem}
+.bar i{display:block;height:100%;background:var(--accent);transition:width .25s}
+.qtext{font-size:1.12rem;font-weight:700;margin:0 0 1rem}
+.opt{display:flex;gap:.65rem;align-items:flex-start;text-align:left;width:100%;border:1.5px solid var(--line);background:var(--surface);border-radius:10px;padding:.7rem .85rem}
+.opt .k{font-weight:700;color:var(--muted);min-width:1.2rem}
+.opt.right{border-color:var(--ok);background:var(--ok-soft)}
+.opt.wrong{border-color:var(--bad);background:var(--bad-soft)}
+.opt:disabled{cursor:default}
+.feedback{margin-top:1rem;border-radius:10px;padding:.85rem;border:1px solid var(--line);background:var(--bg)}
+.feedback b{display:block;margin-bottom:.25rem}
+.feedback.ok b{color:var(--ok)} .feedback.bad b{color:var(--bad)}
+.hint{margin-top:.75rem;color:var(--muted);font-style:italic}
+.score{font-family:"Bricolage Grotesque",sans-serif;font-size:3.2rem;font-weight:700;line-height:1}
+.score small{font-size:1.2rem;color:var(--muted);font-weight:500}
+.wq{border-left:4px solid var(--bad);padding:.5rem .75rem;background:var(--surface);border-radius:0 10px 10px 0;border-top:1px solid var(--line);border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.wq p{margin:.2rem 0}
+.wq .ans{color:var(--ok);font-weight:700}
+.wq .ex{color:var(--muted);font-size:.92rem}
+.card{min-height:16rem;display:flex;flex-direction:column;justify-content:center;text-align:center;cursor:pointer;user-select:none}
+.card .lbl{color:var(--muted);font-size:.85rem;margin-bottom:.5rem}
+.card .big{font-size:1.12rem;font-weight:700}
+.card .ans{color:var(--ok);font-size:1.25rem;font-weight:700;margin-bottom:.6rem}
+.card .ex{color:var(--muted)}
+/* week */
+.weekrow{display:grid;grid-template-columns:4.2rem 1fr 4.5rem;gap:.6rem;align-items:center;padding:.4rem 0;border-bottom:1px solid var(--line);font-size:.92rem}
+.weekrow:last-child{border-bottom:0}
+.weekrow .meter{margin:0}
+.weekrow .tgt{position:absolute;top:0;bottom:0;width:2px;background:var(--ink);opacity:.35}
+.small{font-size:.88rem;color:var(--muted)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:.5rem}
+.stat{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:.6rem;text-align:center}
+.stat strong{display:block;font-family:"Bricolage Grotesque",sans-serif;font-size:1.5rem}
+.stat span{font-size:.8rem;color:var(--muted)}
+table.prog{width:100%;border-collapse:collapse;font-size:.9rem}
+table.prog th,table.prog td{text-align:left;padding:.4rem .3rem;border-bottom:1px solid var(--line)}
+table.prog th{color:var(--muted);font-weight:700}
+.tablewrap{overflow-x:auto}
+/* nav */
+nav.tabs{position:fixed;left:0;right:0;bottom:0;background:var(--nav);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom,0px);z-index:10}
+nav.tabs .in{max-width:680px;margin:0 auto;display:grid;grid-auto-flow:column;grid-auto-columns:1fr}
+nav.tabs button{background:none;border:0;padding:.7rem .2rem .8rem;font-weight:700;color:var(--muted);font-size:.92rem}
+nav.tabs button[aria-current="page"]{color:var(--accent);box-shadow:inset 0 3px 0 var(--accent)}
+.login{min-height:80vh;display:flex;flex-direction:column;justify-content:center;gap:1rem}
+@media (prefers-reduced-motion: reduce){.bar i{transition:none}}
+</style>
+</head>
+<body>
+<div class="wrap" id="app" aria-live="polite"><p class="sub">Loading…</p></div>
+<nav class="tabs" id="tabs" hidden><div class="in" id="tabsIn"></div></nav>
+
+<script src="config.js"></script>
+<script src="content.js"></script>
+<script type="module">
+const CFG = window.APP_CONFIG, CONTENT = window.CONTENT;
+const FB_VER = "10.12.2";
+const DEMO = !CFG.firebase.apiKey || CFG.firebase.apiKey.startsWith("PASTE");
+const STUDENT = CFG.studentEmail.toLowerCase();
+const PARENTS = CFG.parentEmails.map(e=>e.toLowerCase());
+const SUBJECT_NAMES = Object.fromEntries(CONTENT.subjects.map(s=>[s.id,s.name]));
+const PLAN_SUBJECTS = [...CONTENT.subjects.map(s=>[s.id,s.name]), ["other","Other"]];
+
+/* ================= helpers ================= */
+const app = document.getElementById("app");
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const shuffle = a => { a=a.slice(); for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];} return a; };
+const pad = n => String(n).padStart(2,"0");
+const todayStr = (d=new Date()) => d.getFullYear()+"-"+pad(d.getMonth()+1)+"-"+pad(d.getDate());
+const parseD = s => { const [y,m,d]=s.split("-").map(Number); return new Date(y,m-1,d); };
+const addDays = (s,n) => { const d=parseD(s); d.setDate(d.getDate()+n); return todayStr(d); };
+const diffDays = (a,b) => Math.round((parseD(b)-parseD(a))/86400000);
+const fmtShort = s => parseD(s).toLocaleDateString(undefined,{day:"numeric",month:"short"});
+const fmtLong = s => parseD(s).toLocaleDateString(undefined,{weekday:"long",day:"numeric",month:"long"});
+const fmtDow = s => parseD(s).toLocaleDateString(undefined,{weekday:"short"});
+const fmtTime = iso => new Date(iso).toLocaleTimeString(undefined,{hour:"numeric",minute:"2-digit"});
+const hm = mins => { mins=Math.round(mins); const h=Math.floor(mins/60), m=mins%60; return h ? (m? h+" h "+m+" min" : h+" h") : m+" min"; };
+const uid = () => Math.random().toString(36).slice(2,10);
+const isWeekend = s => { const d=parseD(s).getDay(); return d===0||d===6; };
+
+/* ================= storage ================= */
+// Firestore layout: students/{email}/state/progress  and  students/{email}/days/{YYYY-MM-DD}
+function localStore(){
+  const K = "study-desk-v1:";
+  const get = k => { try{ const v=localStorage.getItem(K+k); return v?JSON.parse(v):null; }catch(e){ return null; } };
+  const set = (k,v) => { try{ localStorage.setItem(K+k, JSON.stringify(v)); }catch(e){} };
+  return {
+    async getProgress(){ return get("progress"); },
+    async saveProgress(p){ set("progress", p); },
+    async getDay(d){ return get("day:"+d); },
+    async saveDay(d,data){ set("day:"+d, data); }
+  };
+}
+async function firebaseStore(fs, db, email){
+  const base = "students/"+email;
+  return {
+    async getProgress(){ const s=await fs.getDoc(fs.doc(db, base+"/state/progress")); return s.exists()? s.data() : null; },
+    async saveProgress(p){ await fs.setDoc(fs.doc(db, base+"/state/progress"), p); },
+    async getDay(d){ const s=await fs.getDoc(fs.doc(db, base+"/days/"+d)); return s.exists()? s.data() : null; },
+    async saveDay(d,data){ await fs.setDoc(fs.doc(db, base+"/days/"+d), data); }
+  };
+}
+
+/* ================= app state ================= */
+let store = null, role = null, authApi = null, me = null, loginMsg = "";
+let progress = null;          // {items:{}, mistakes:{}, updatedAt}
+const days = {};              // cache: date -> {type, tasks, sessions}
+let saveErr = "";
+
+function blankProgress(){ return {items:{}, mistakes:{}, updatedAt:0}; }
+function blankDay(d){ return {type: isWeekend(d) ? "holiday" : "school", tasks:[], sessions:[], carried:false}; }
+async function loadDay(d, force){
+  if(days[d] && !force) return days[d];
+  let v = null;
+  try{ v = await store.getDay(d); }catch(e){ console.error(e); }
+  days[d] = Object.assign(blankDay(d), v || {});
+  return days[d];
+}
+async function saveDay(d){
+  if(role!=="student") return;
+  try{ await store.saveDay(d, days[d]); saveErr=""; }catch(e){ console.error(e); saveErr="Could not save. Check your internet connection."; showSaveErr(); }
+}
+let progTimer=null;
+function saveProgress(){
+  if(role!=="student") return;
+  progress.updatedAt = Date.now();
+  clearTimeout(progTimer);
+  progTimer = setTimeout(async ()=>{
+    try{ await store.saveProgress(JSON.parse(JSON.stringify(progress))); saveErr=""; }
+    catch(e){ console.error(e); saveErr="Could not save. Check your internet connection."; showSaveErr(); }
+  }, 400);
+}
+function showSaveErr(){ const el=document.getElementById("saveerr"); if(el){ el.textContent=saveErr; el.hidden=!saveErr; } }
+const minutesOf = day => (day.sessions||[]).reduce((a,s)=>a+(s.minutes||0),0);
+const targetOf = day => CFG.targets[day.type] || CFG.targets.school;
+
+/* ================= practice model ================= */
+function chapterList(){ const out=[]; CONTENT.subjects.forEach(s=>s.chapters.forEach(c=>out.push({sid:s.id, sname:s.name, ...c, key:s.id+"/"+c.n}))); return out; }
+function chapterByKey(key){ const [sid,n]=key.split("/"); const s=CONTENT.subjects.find(x=>x.id===sid); const c=s.chapters.find(x=>String(x.n)===n); return {sid, sname:s.name, ...c, key}; }
+function item(key){ return progress.items[key]; }
+function levelOf(key){ const it=item(key); return it? it.level : 0; }
+function isDue(key){ const it=item(key); return !!(it && it.next && diffDays(it.next, todayStr())>=0); }
+function qOf(key, level, i){ const c=chapterByKey(key); const r=c.levels[level][i]; return {key, level, i, id:key+"/"+level+"/"+i, text:r[0], opts:r[1], ans:r[2], ex:r[3], hint:r[4]||""}; }
+function questionsFor(key){ const c=chapterByKey(key); const lv=Math.min(levelOf(key), c.levels.length-1); return c.levels[lv].map((_,i)=>qOf(key,lv,i)); }
+
+/* ================= timer (survives reloads) ================= */
+const TKEY = "study-desk-timer";
+let timer = loadTimer();
+function loadTimer(){ try{ return JSON.parse(localStorage.getItem(TKEY)) || {phase:"idle"}; }catch(e){ return {phase:"idle"}; } }
+function saveTimer(){ try{ localStorage.setItem(TKEY, JSON.stringify(timer)); }catch(e){} }
+let audioCtx=null;
+function beep(){
+  try{
+    audioCtx = audioCtx || new (window.AudioContext||window.webkitAudioContext)();
+    [0,0.35,0.7].forEach(t=>{ const o=audioCtx.createOscillator(), g=audioCtx.createGain(); o.frequency.value=880; o.connect(g); g.connect(audioCtx.destination); g.gain.setValueAtTime(0.25,audioCtx.currentTime+t); g.gain.exponentialRampToValueAtTime(0.001,audioCtx.currentTime+t+0.3); o.start(audioCtx.currentTime+t); o.stop(audioCtx.currentTime+t+0.3); });
+  }catch(e){}
+  try{ navigator.vibrate && navigator.vibrate([300,150,300]); }catch(e){}
+}
+function remainingMs(){ if(timer.phase==="idle") return 0; if(timer.paused) return timer.remaining; return Math.max(0, timer.endAt - Date.now()); }
+async function logSession(startIso, endIso, minutes){
+  if(minutes < 1 || role!=="student") return;
+  const d = todayStr(new Date(startIso));
+  const day = await loadDay(d);
+  day.sessions.push({id:uid(), start:startIso, end:endIso, minutes:Math.round(minutes), subject:timer.subject||"other", task:timer.task||""});
+  await saveDay(d);
+}
+async function timerTick(){
+  if(timer.phase==="idle" || timer.paused) return;
+  const now = Date.now();
+  if(now < timer.endAt) return;
+  if(timer.phase==="focus"){
+    const end = timer.endAt;
+    await logSession(new Date(timer.startedAt).toISOString(), new Date(end).toISOString(), (end-timer.startedAt-(timer.pausedMs||0))/60000);
+    beep();
+    const breakEnd = end + CFG.breakMinutes*60000;
+    if(now < breakEnd) timer = {...timer, phase:"break", endAt:breakEnd, startedAt:end, paused:false, pausedMs:0};
+    else timer = {phase:"idle", subject:timer.subject, task:timer.task, note:"Break finished. Ready for the next session?"};
+  } else if(timer.phase==="break"){
+    beep();
+    timer = {phase:"idle", subject:timer.subject, task:timer.task, note:"Break over. Start the next session when ready."};
+  }
+  saveTimer();
+  if(view.tab==="timer" && !view.sub) render();
+  if(view.tab==="today" && !view.sub) render();
+}
+setInterval(()=>{ timerTick(); if(view && view.tab==="timer" && !view.sub) updateClock(); }, 1000);
+document.addEventListener("visibilitychange", ()=>{ if(!document.hidden) timerTick(); });
+
+/* ================= routing ================= */
+let view = {tab:"today", date:todayStr(), sub:null};
+function go(v){ view = {...view, ...v}; render(); window.scrollTo(0,0); }
+function setTabs(){
+  const nav=document.getElementById("tabs"), inn=document.getElementById("tabsIn");
+  const tabs = role==="student" ? [["today","Today"],["timer","Timer"],["practice","Practice"],["progress","Progress"]]
+                                : [["today","Day"],["progress","Week"],["practice","Practice"]];
+  inn.innerHTML = tabs.map(([k,l])=>`<button data-tab="${k}" ${view.tab===k?'aria-current="page"':""}>${l}</button>`).join("");
+  inn.querySelectorAll("button").forEach(b=>b.onclick=async()=>{ if(role==="parent"){ try{ const p=await store.getProgress(); if(p){ progress=p; progress.items=progress.items||{}; progress.mistakes=progress.mistakes||{}; } }catch(e){} } go({tab:b.dataset.tab, sub:null, date: b.dataset.tab==="today"? (view.date||todayStr()) : view.date}); });
+  nav.hidden = !!(view.sub && (view.sub.name==="quiz"||view.sub.name==="cards"));
+}
+function header(title, subtitle){
+  return `${DEMO?`<div class="banner">Demo mode: data is saved on this device only. Add your Firebase settings to config.js to go live.</div>`:""}
+  <div class="spread"><div><h1>${esc(title)}</h1>${subtitle?`<p class="sub">${esc(subtitle)}</p>`:""}</div>
+  ${(!DEMO && me)?`<button class="linkbtn" id="signout">Sign out</button>`:""}</div>
+  <p class="banner" id="saveerr" ${saveErr?"":"hidden"}>${esc(saveErr)}</p>`;
+}
+function bindHeader(){ const so=document.getElementById("signout"); if(so) so.onclick=()=>authApi.signOut(); }
+async function render(){
+  if(!role) return;
+  setTabs();
+  const s = view.sub;
+  if(s){
+    if(s.name==="quiz") return renderQuiz();
+    if(s.name==="result") return renderResult();
+    if(s.name==="cards") return renderCards();
+    if(s.name==="mistakes") return renderMistakes();
+  }
+  if(view.tab==="today") return renderToday();
+  if(view.tab==="timer") return renderTimer();
+  if(view.tab==="practice") return renderPractice();
+  if(view.tab==="progress") return renderProgress();
+}
+
+/* ================= TODAY ================= */
+async function renderToday(){
+  const d = view.date || todayStr();
+  const isToday = d===todayStr();
+  const editable = role==="student" && isToday;
+  const day = await loadDay(d, role==="parent");
+  if(view.tab!=="today" || view.sub) return;
+  const mins = minutesOf(day), [tmin,tmax] = targetOf(day);
+  const pct = Math.min(100, mins/(tmin*60)*100);
+  const done = day.tasks.filter(t=>t.done).length;
+  let carryHtml = "";
+  if(editable && !day.carried){
+    const y = await loadDay(addDays(d,-1));
+    const left = y.tasks.filter(t=>!t.done);
+    if(left.length) carryHtml = `<button class="btn ghost small" id="carry">Bring over ${left.length} unfinished task${left.length===1?"":"s"} from yesterday</button>`;
+  }
+  const dueCount = chapterList().filter(c=>isDue(c.key)).length;
+  const live = isToday && timer.phase!=="idle" ? `<p class="small">Timer running: ${timer.phase==="focus"?"focus session":"break"}${timer.paused?" (paused)":""}.</p>` : "";
+  const who = role==="parent" ? (CFG.studentName+"’s day") : (isToday ? "Today" : "Past day");
+  app.innerHTML = `
+    ${header(who, fmtLong(d))}
+    <div class="spread" style="margin-top:1rem">
+      <div class="daynav"><button id="prevDay" aria-label="Previous day">‹</button><button id="nextDay" aria-label="Next day" ${isToday?"disabled":""}>›</button>${isToday?"":`<button class="linkbtn" id="toToday" style="width:auto;border:0;background:none">Go to today</button>`}</div>
+      <div class="seg" role="group" aria-label="Type of day">
+        <button data-type="school" aria-pressed="${day.type==="school"}" ${editable?"":"disabled"}>School day</button>
+        <button data-type="holiday" aria-pressed="${day.type==="holiday"}" ${editable?"":"disabled"}>Holiday</button>
+      </div>
+    </div>
+    <section class="panel" style="margin-top:1rem">
+      <div class="hours"><strong>${hm(mins)}</strong><span class="sub">studied, target ${tmin}–${tmax} h</span></div>
+      <div class="meter ${mins>=tmin*60?"done":""}"><i style="width:${pct}%"></i></div>
+      <p class="small">${day.sessions.length} focus session${day.sessions.length===1?"":"s"}${mins>=tmin*60?", target reached":""}</p>
+      ${live}
+    </section>
+    <h2>Study plan <span class="small">(${done} of ${day.tasks.length} done)</span></h2>
+    <section class="panel">
+      ${day.tasks.length? day.tasks.map(t=>`
+        <div class="task ${t.done?"done":""}">
+          <input type="checkbox" data-tid="${t.id}" ${t.done?"checked":""} ${editable?"":"disabled"} aria-label="Mark done">
+          <div class="txt"><span>${esc(t.text)}</span> <span class="tag">${esc(SUBJECT_NAMES[t.subject]||"Other")}</span>${t.from?` <span class="small">from ${fmtShort(t.from)}</span>`:""}</div>
+          ${editable?`<button class="del" data-del="${t.id}" aria-label="Delete task">×</button>`:""}
+        </div>`).join("") : `<p class="small">${editable?"Add what you plan to study today.":"No plan written for this day."}</p>`}
+      ${editable?`<form class="addform" id="addform">
+        <select id="tsub" aria-label="Subject">${PLAN_SUBJECTS.map(([k,l])=>`<option value="${k}">${esc(l)}</option>`).join("")}</select>
+        <input id="ttext" placeholder="e.g. Ch 3 Kirchhoff’s rules + NCERT exercises" aria-label="Task" autocomplete="off">
+        <button class="btn small" type="submit">Add</button></form>`:""}
+      ${carryHtml?`<div style="margin-top:.75rem">${carryHtml}</div>`:""}
+    </section>
+    ${role==="student" && dueCount ? `<h2>Revision</h2><button class="duebtn" id="toPractice"><b>${dueCount} chapter${dueCount===1?"":"s"} due for revision</b><span>Open practice</span></button>`:""}
+    ${role==="parent" && day.sessions.length ? `<h2>Study sessions</h2><section class="panel">${sessionsHtml(day)}</section>`:""}`;
+  bindHeader();
+  document.getElementById("prevDay").onclick=()=>go({date:addDays(d,-1)});
+  document.getElementById("nextDay").onclick=()=>{ if(!isToday) go({date:addDays(d,1)}); };
+  const tt=document.getElementById("toToday"); if(tt) tt.onclick=()=>go({date:todayStr()});
+  const tp=document.getElementById("toPractice"); if(tp) tp.onclick=()=>go({tab:"practice"});
+  if(editable){
+    app.querySelectorAll("[data-type]").forEach(b=>b.onclick=async()=>{ day.type=b.dataset.type; await saveDay(d); render(); });
+    app.querySelectorAll("[data-tid]").forEach(c=>c.onchange=async()=>{ const t=day.tasks.find(x=>x.id===c.dataset.tid); t.done=c.checked; t.doneAt=c.checked?new Date().toISOString():null; await saveDay(d); render(); });
+    app.querySelectorAll("[data-del]").forEach(b=>b.onclick=async()=>{ if(!confirm("Delete this task?")) return; day.tasks=day.tasks.filter(x=>x.id!==b.dataset.del); await saveDay(d); render(); });
+    document.getElementById("addform").onsubmit=async e=>{ e.preventDefault(); const text=document.getElementById("ttext").value.trim(); if(!text) return;
+      day.tasks.push({id:uid(), text, subject:document.getElementById("tsub").value, done:false, createdAt:new Date().toISOString()}); await saveDay(d); await render(); document.getElementById("ttext").focus(); };
+    const cb=document.getElementById("carry"); if(cb) cb.onclick=async()=>{
+      const yd=addDays(d,-1), y=await loadDay(yd);
+      y.tasks.filter(t=>!t.done).forEach(t=>day.tasks.push({id:uid(), text:t.text, subject:t.subject, done:false, from:t.from||yd, createdAt:new Date().toISOString()}));
+      day.carried=true; await saveDay(d); render(); };
+  }
+}
+function sessionsHtml(day){
+  return day.sessions.slice().sort((a,b)=>a.start<b.start?-1:1).map(s=>`<div class="session"><span>${fmtTime(s.start)} to ${fmtTime(s.end)}${s.task?`, ${esc(s.task)}`:""}</span><span><span class="tag">${esc(SUBJECT_NAMES[s.subject]||"Other")}</span> ${s.minutes} min</span></div>`).join("");
+}
+
+/* ================= TIMER ================= */
+async function renderTimer(){
+  const d=todayStr(), day=await loadDay(d);
+  if(view.tab!=="timer" || view.sub) return;
+  const mins=minutesOf(day), [tmin]=targetOf(day);
+  const openTasks = day.tasks.filter(t=>!t.done);
+  const running = timer.phase!=="idle";
+  app.innerHTML = `
+    ${header("Study timer", CFG.focusMinutes+" minutes focus, "+CFG.breakMinutes+" minutes break")}
+    <section class="panel" style="margin-top:1rem">
+      <div class="phase ${timer.phase}" id="phase">${timer.phase==="focus"?"Focus":timer.phase==="break"?"Break":"Ready"}${timer.paused?" (paused)":""}</div>
+      <div class="clock" id="clock">${clockText()}</div>
+      <div class="ring ${timer.phase==="break"?"break":""}"><i id="ringbar" style="width:${ringPct()}%"></i></div>
+      ${timer.note && !running ? `<p class="sub" style="text-align:center">${esc(timer.note)}</p>`:""}
+      <div class="row" style="margin:.75rem 0">
+        <select class="field" id="subj" aria-label="Subject" ${timer.phase==="focus"?"disabled":""} style="flex:1">${PLAN_SUBJECTS.map(([k,l])=>`<option value="${k}" ${timer.subject===k?"selected":""}>${esc(l)}</option>`).join("")}</select>
+        <select class="field" id="task" aria-label="Task" ${timer.phase==="focus"?"disabled":""} style="flex:2"><option value="">No specific task</option>${openTasks.map(t=>`<option ${timer.task===t.text?"selected":""}>${esc(t.text)}</option>`).join("")}</select>
+      </div>
+      <div class="row" style="justify-content:center">
+        ${timer.phase==="idle"?`<button class="btn" id="start">Start ${CFG.focusMinutes}-minute session</button>`:""}
+        ${timer.phase==="focus"?`<button class="btn" id="pause">${timer.paused?"Resume":"Pause"}</button><button class="btn ghost" id="stop">Stop and save</button>`:""}
+        ${timer.phase==="break"?`<button class="btn" id="skip">Skip break, start next session</button><button class="btn ghost" id="end">End for now</button>`:""}
+      </div>
+    </section>
+    <h2>Today: ${hm(mins)} of ${tmin} h</h2>
+    <section class="panel">${day.sessions.length?sessionsHtml(day):`<p class="small">Sessions you complete appear here and count towards today’s hours.</p>`}</section>
+    <p class="small">Keep this page open during a session. If the phone locks or you switch apps, the timer catches up and saves the session when you come back.</p>`;
+  bindHeader();
+  const subj=document.getElementById("subj"), task=document.getElementById("task");
+  subj.onchange=()=>{ timer.subject=subj.value; saveTimer(); };
+  task.onchange=()=>{ timer.task=task.value; const t=openTasks.find(x=>x.text===task.value); if(t){ timer.subject=t.subject; subj.value=t.subject; } saveTimer(); };
+  const startFocus=()=>{ beepPrime(); const now=Date.now(); timer={phase:"focus", startedAt:now, endAt:now+CFG.focusMinutes*60000, paused:false, pausedMs:0, subject:subj.value, task:task.value}; saveTimer(); render(); };
+  const b=id=>document.getElementById(id);
+  if(b("start")) b("start").onclick=startFocus;
+  if(b("skip")) b("skip").onclick=startFocus;
+  if(b("end")) b("end").onclick=()=>{ timer={phase:"idle", subject:timer.subject}; saveTimer(); render(); };
+  if(b("pause")) b("pause").onclick=()=>{
+    if(timer.paused){ timer.endAt=Date.now()+timer.remaining; timer.pausedMs=(timer.pausedMs||0)+(Date.now()-timer.pausedAt); timer.paused=false; }
+    else { timer.remaining=timer.endAt-Date.now(); timer.pausedAt=Date.now(); timer.paused=true; }
+    saveTimer(); render(); };
+  if(b("stop")) b("stop").onclick=async()=>{
+    const now=Date.now(); const pausedExtra = timer.paused ? now-timer.pausedAt : 0;
+    const studied=(now-timer.startedAt-(timer.pausedMs||0)-pausedExtra)/60000;
+    if(!confirm(`Stop and save ${Math.max(0,Math.round(studied))} minutes?`)) return;
+    await logSession(new Date(timer.startedAt).toISOString(), new Date(now).toISOString(), studied);
+    timer={phase:"idle", subject:timer.subject, task:timer.task}; saveTimer(); render(); };
+}
+function beepPrime(){ try{ audioCtx = audioCtx || new (window.AudioContext||window.webkitAudioContext)(); audioCtx.resume(); }catch(e){} }
+function clockText(){ const ms = timer.phase==="idle" ? CFG.focusMinutes*60000 : remainingMs(); const s=Math.ceil(ms/1000); return pad(Math.floor(s/60))+":"+pad(s%60); }
+function ringPct(){ if(timer.phase==="idle") return 0; const total=(timer.phase==="focus"?CFG.focusMinutes:CFG.breakMinutes)*60000; return Math.min(100,(1-remainingMs()/total)*100); }
+function updateClock(){ const c=document.getElementById("clock"), r=document.getElementById("ringbar"); if(c) c.textContent=clockText(); if(r) r.style.width=ringPct()+"%"; if(timer.phase!=="idle") document.title=clockText()+" "+(timer.phase==="focus"?"Focus":"Break"); else document.title="Study Desk"; }
+
+/* ================= PRACTICE ================= */
+function renderPractice(){
+  const t=todayStr(), list=chapterList();
+  const due=list.filter(c=>isDue(c.key));
+  const mcount=Object.keys(progress.mistakes).length;
+  const student = role==="student";
+  const bySubject = CONTENT.subjects.map(s=>{
+    if(!s.chapters.length) return `<h2>${esc(s.name)}</h2><p class="small">Questions coming soon.</p>`;
+    return `<h2>${esc(s.name)}</h2><div class="stack">${s.chapters.map(c=>{
+      const key=s.id+"/"+c.n, it=item(key), lv=levelOf(key), levels=c.levels.length;
+      let pill, line;
+      if(!it){ pill=`<span class="pill new">Not started</span>`; line=`Level 1 of ${levels}`; }
+      else{
+        const last=it.attempts[it.attempts.length-1];
+        const dd=it.next?diffDays(t,it.next):null;
+        pill = isDue(key)?`<span class="pill due">Due</span>` : it.next===null ? `<span class="pill new">New level</span>` : `<span class="pill ok">Next in ${dd} day${dd===1?"":"s"}</span>`;
+        const dots = Array.from({length:CFG.masteryInARow},(_,k)=>`<i class="${k<(it.streak||0)?"on":""}"></i>`).join("");
+        line = it.allDone ? `All ${levels} level${levels===1?"":"s"} mastered. New questions needed.` :
+          `Level ${lv+1} of ${levels}, mastery <span class="dots" aria-label="${it.streak||0} of ${CFG.masteryInARow}">${dots}</span>${last?`, last ${last.score}/${last.total} on ${fmtShort(last.date)}`:""}`;
+      }
+      return `<div class="panel ch"><div class="chnum">${c.n}</div><div><h3>${esc(c.t)}</h3><p class="status">${pill}${line}</p>
+        ${student?`<div class="row"><button class="btn small" data-quiz="${key}">Quiz</button><button class="btn small ghost" data-cards="${key}">Flashcards</button></div>`:""}</div></div>`;
+    }).join("")}</div>`;
+  }).join("");
+  app.innerHTML = `
+    ${header(student?"Practice":CFG.studentName+"’s practice", "Mastered = "+CFG.masteryScore+"/10 or more on "+CFG.masteryInARow+" revisions in a row")}
+    ${due.length && student ? `<h2>Due today</h2><div class="stack">${due.map(c=>{ const late=diffDays(item(c.key).next,t); return `<button class="duebtn" data-quiz="${c.key}"><b>${esc(c.sname)} Ch ${c.n}: ${esc(c.t)}</b><span>${late>0?late+" day"+(late===1?"":"s")+" late":"due today"}</span></button>`; }).join("")}</div>`:""}
+    <h2>Mistakes to fix</h2>
+    <div class="panel spread"><div>${mcount?`<b>${mcount}</b> question${mcount===1?"":"s"} answered wrong. Answer once correctly to clear.`:"No mistakes saved."}</div>${mcount?`<button class="btn small" id="openM">${student?"Review":"View"}</button>`:""}</div>
+    ${bySubject}`;
+  bindHeader();
+  app.querySelectorAll("[data-quiz]").forEach(b=>b.onclick=()=>startQuiz(b.dataset.quiz));
+  app.querySelectorAll("[data-cards]").forEach(b=>b.onclick=()=>go({sub:{name:"cards", key:b.dataset.cards, i:0, flipped:false}}));
+  const om=document.getElementById("openM"); if(om) om.onclick=()=>go({sub:{name:"mistakes"}});
+}
+function startQuiz(key){
+  const it=item(key);
+  const scheduled = !it || it.next===null || isDue(key);
+  const qs=questionsFor(key).map(q=>({...q, order:shuffle([0,1,2,3])}));
+  go({sub:{name:"quiz", mode:"chapter", key, scheduled, qs, idx:0, picked:null, showHint:false, answers:[]}});
+}
+function startMistakeQuiz(){
+  const ids=shuffle(Object.keys(progress.mistakes)).filter(id=>{ const p=id.split("/"); try{ return !!chapterByKey(p[0]+"/"+p[1]).levels[+p[2]][+p[3]]; }catch(e){ return false; } });
+  if(!ids.length) return go({sub:null});
+  const qs=ids.map(id=>{ const p=id.split("/"); return {...qOf(p[0]+"/"+p[1], +p[2], +p[3]), order:shuffle([0,1,2,3])}; });
+  go({sub:{name:"quiz", mode:"mistakes", qs, idx:0, picked:null, showHint:false, answers:[]}});
+}
+function renderQuiz(){
+  const v=view.sub, q=v.qs[v.idx], total=v.qs.length, L=["A","B","C","D"];
+  const c = v.mode==="chapter" ? chapterByKey(v.key) : null;
+  const title = c ? `${c.sname} Ch ${c.n}: ${c.t}` : "Fixing mistakes";
+  const opts=q.order.map((oi,pos)=>{ let cls="opt"; if(v.picked!==null){ if(oi===q.ans) cls+=" right"; else if(oi===v.picked) cls+=" wrong"; }
+    return `<button class="${cls}" data-oi="${oi}" ${v.picked!==null?"disabled":""}><span class="k">${L[pos]}</span><span>${esc(q.opts[oi])}</span></button>`; }).join("");
+  let fb="";
+  if(v.picked!==null){ const ok=v.picked===q.ans;
+    fb=`<div class="feedback ${ok?"ok":"bad"}"><b>${ok?"Correct.":"Not quite. The answer is "+esc(q.opts[q.ans])+"."}</b>${esc(q.ex)}</div>
+      <div class="row" style="justify-content:flex-end;margin-top:1rem"><button class="btn" id="next">${v.idx+1<total?"Next question":"See result"}</button></div>`; }
+  const hint = q.hint && v.picked===null ? (v.showHint?`<p class="hint">Hint: ${esc(q.hint)}</p>`:`<button class="linkbtn" id="hintbtn">Show a hint</button>`) : "";
+  app.innerHTML = `
+    <div class="spread"><button class="linkbtn" id="quit">Back</button><span class="sub">${v.idx+1} of ${total}</span></div>
+    <h2 style="margin-top:.5rem">${esc(title)}</h2>
+    ${v.mode==="chapter"?`<p class="small">${v.scheduled?"Revision: this attempt sets your next revision date.":"Extra practice: not due yet, so this won’t change your schedule."} Level ${q.level+1}.</p>`:""}
+    <div class="bar"><i style="width:${v.idx/total*100}%"></i></div>
+    <div class="panel"><p class="qtext">${esc(q.text)}</p><div class="stack">${opts}</div>${hint}${fb}</div>`;
+  document.getElementById("quit").onclick=()=>{ if(!v.answers.length || confirm("Leave this quiz? This attempt won’t be saved.")) go({sub:v.mode==="mistakes"?{name:"mistakes"}:null}); };
+  app.querySelectorAll(".opt").forEach(b=>b.onclick=()=>{ v.picked=+b.dataset.oi; const ok=v.picked===q.ans; v.answers.push({q,ok});
+    if(ok) delete progress.mistakes[q.id]; else { const m=progress.mistakes[q.id]||{count:0}; m.count++; m.last=todayStr(); progress.mistakes[q.id]=m; }
+    saveProgress(); renderQuiz(); document.getElementById("next").focus(); });
+  const hb=document.getElementById("hintbtn"); if(hb) hb.onclick=()=>{ v.showHint=true; renderQuiz(); };
+  const nx=document.getElementById("next"); if(nx) nx.onclick=()=>{ if(v.idx+1<total){ v.idx++; v.picked=null; v.showHint=false; renderQuiz(); window.scrollTo(0,0); } else finishQuiz(); };
+}
+function finishQuiz(){
+  const v=view.sub, score=v.answers.filter(a=>a.ok).length, total=v.answers.length, t=todayStr();
+  let info=null;
+  if(v.mode==="chapter"){
+    const c=chapterByKey(v.key);
+    const it=progress.items[v.key] || {level:0, stage:-1, next:null, streak:0, attempts:[]};
+    const pct=score/total, I=CFG.intervals;
+    it.attempts.push({date:t, score, total, level:v.qs[0].level, scheduled:v.scheduled});
+    if(it.attempts.length>60) it.attempts=it.attempts.slice(-60);
+    info={kind:"practice"};
+    if(v.scheduled){
+      const first = it.stage<0;
+      if(first) it.stage = pct>=0.8?1:0;
+      else if(pct>=0.8) it.stage=Math.min(it.stage+1, I.length-1);
+      else if(pct<0.5) it.stage=0;
+      if(!first) it.streak = score >= CFG.masteryScore*total/10 ? (it.streak||0)+1 : 0;
+      it.next = addDays(t, I[it.stage]);
+      info={kind:"scheduled", next:it.next, days:I[it.stage], pct, streak:it.streak||0};
+      if((it.streak||0) >= CFG.masteryInARow && !it.allDone){
+        if(it.level+1 < c.levels.length){
+          it.level++; it.stage=-1; it.next=null; it.streak=0;
+          info={kind:"levelup", level:it.level+1};
+        } else {
+          it.allDone=true; it.streak=CFG.masteryInARow; it.stage=I.length-1; it.next=addDays(t, I[I.length-1]);
+          info={kind:"alldone", next:it.next};
+        }
+      }
+    }
+    progress.items[v.key]=it;
+  }
+  saveProgress();
+  go({sub:{name:"result", mode:v.mode, key:v.key, score, total, wrong:v.answers.filter(a=>!a.ok).map(a=>a.q), info}});
+}
+function renderResult(){
+  const v=view.sub, i=v.info;
+  let msg="";
+  if(v.mode==="chapter"){
+    if(i.kind==="levelup") msg=`<p><b>Level mastered.</b> Level ${i.level} is now unlocked with new questions. Start it whenever you’re ready.</p>`;
+    else if(i.kind==="alldone") msg=`<p><b>Every level in this chapter is mastered.</b> It will come back for a check on ${fmtShort(i.next)}. Ask for new questions to keep going.</p>`;
+    else if(i.kind==="scheduled") msg=`<p>${i.pct>=0.8?"Strong recall.":i.pct>=0.5?"Getting there.":"This chapter needs another look soon."} Next revision: <b>${fmtShort(i.next)}</b>. Mastery progress: ${i.streak} of ${CFG.masteryInARow}.</p>`;
+    else msg=`<p>Extra practice saved. Your revision schedule is unchanged.</p>`;
+  } else { const left=Object.keys(progress.mistakes).length; msg=`<p>${left?left+" mistake"+(left===1?"":"s")+" still to fix.":"All mistakes cleared."}</p>`; }
+  const c = v.key ? chapterByKey(v.key) : null;
+  app.innerHTML=`
+    <button class="linkbtn" id="home">Back to practice</button>
+    <div class="panel" style="margin-top:.75rem"><h2 style="margin-top:0">${c?esc(c.sname+" Ch "+c.n+": "+c.t):"Fixing mistakes"}</h2>
+      <p class="score">${v.score}<small> / ${v.total}</small></p>${msg}
+      <div class="row">${v.wrong.length?`<button class="btn" id="fix">Practise wrong ones now</button>`:""}<button class="btn ghost" id="done">Done</button></div></div>
+    ${v.wrong.length?`<h2>Review these</h2><div class="stack">${v.wrong.map(q=>`<div class="wq"><p><b>${esc(q.text)}</b></p><p class="ans">${esc(q.opts[q.ans])}</p><p class="ex">${esc(q.ex)}</p></div>`).join("")}</div>`:""}`;
+  document.getElementById("home").onclick=()=>go({sub:null});
+  document.getElementById("done").onclick=()=>go({sub:null});
+  const f=document.getElementById("fix"); if(f) f.onclick=startMistakeQuiz;
+}
+function renderCards(){
+  const v=view.sub, c=chapterByKey(v.key), qs=questionsFor(v.key), q=qs[v.i], total=qs.length;
+  app.innerHTML=`
+    <div class="spread"><button class="linkbtn" id="back">Back</button><span class="sub">${v.i+1} of ${total}</span></div>
+    <h2 style="margin-top:.5rem">${esc(c.sname)} Ch ${c.n}: ${esc(c.t)}</h2>
+    <div class="panel card" id="card" role="button" tabindex="0" aria-label="Flip card">${v.flipped
+      ?`<div class="lbl">Answer</div><div class="ans">${esc(q.opts[q.ans])}</div><div class="ex">${esc(q.ex)}</div>`
+      :`<div class="lbl">Question ${v.i+1}, level ${q.level+1}</div><div class="big">${esc(q.text)}</div>`}</div>
+    <p class="small" style="text-align:center">Tap the card to ${v.flipped?"see the question":"reveal the answer"}</p>
+    <div class="spread"><button class="btn ghost" id="prev" ${v.i===0?"disabled":""}>Previous</button><button class="btn" id="nxt">${v.i+1<total?"Next card":"Finish"}</button></div>`;
+  const flip=()=>{ v.flipped=!v.flipped; renderCards(); document.getElementById("card").focus(); };
+  const card=document.getElementById("card"); card.onclick=flip; card.onkeydown=e=>{ if(e.key==="Enter"||e.key===" "){ e.preventDefault(); flip(); } };
+  document.getElementById("back").onclick=()=>go({sub:null});
+  document.getElementById("prev").onclick=()=>{ if(v.i>0){ v.i--; v.flipped=false; renderCards(); } };
+  document.getElementById("nxt").onclick=()=>{ if(v.i+1<total){ v.i++; v.flipped=false; renderCards(); } else go({sub:null}); };
+}
+function renderMistakes(){
+  const ids=Object.keys(progress.mistakes).sort();
+  const rows=ids.map(id=>{ const p=id.split("/"); let q; try{ q=qOf(p[0]+"/"+p[1], +p[2], +p[3]); }catch(e){ return ""; }
+    const c=chapterByKey(q.key), m=progress.mistakes[id];
+    return `<div class="wq"><p class="small">${esc(c.sname)} Ch ${c.n}, level ${q.level+1}</p><p><b>${esc(q.text)}</b></p><p class="ans">${esc(q.opts[q.ans])}</p><p class="ex">${esc(q.ex)}</p><p class="ex">Wrong ${m.count} time${m.count===1?"":"s"}, last on ${fmtShort(m.last)}</p></div>`; }).join("");
+  app.innerHTML=`
+    <button class="linkbtn" id="back">Back</button>
+    <h1 style="margin-top:.5rem">Mistakes to fix</h1>
+    <p class="sub">A question leaves this list once it is answered correctly.</p>
+    ${role==="student"&&ids.length?`<div class="row" style="margin:1rem 0"><button class="btn" id="pr">Practise all ${ids.length}</button></div>`:""}
+    <div class="stack" style="margin-top:1rem">${rows||`<p>No mistakes saved.</p>`}</div>`;
+  document.getElementById("back").onclick=()=>go({sub:null});
+  const pr=document.getElementById("pr"); if(pr) pr.onclick=startMistakeQuiz;
+}
+
+/* ================= PROGRESS ================= */
+async function renderProgress(){
+  const t=todayStr();
+  const dates=Array.from({length:7},(_,k)=>addDays(t,k-6));
+  const ds=await Promise.all(dates.map(d=>loadDay(d, role==="parent")));
+  if(view.tab!=="progress" || view.sub) return;
+  const totalMin=ds.reduce((a,d)=>a+minutesOf(d),0);
+  const targetMin=ds.reduce((a,d)=>a+targetOf(d)[0]*60,0);
+  const tasksDone=ds.reduce((a,d)=>a+d.tasks.filter(x=>x.done).length,0), tasksAll=ds.reduce((a,d)=>a+d.tasks.length,0);
+  const metDays=ds.filter(d=>minutesOf(d)>=targetOf(d)[0]*60).length;
+  const maxH=Math.max(...ds.map(d=>Math.max(minutesOf(d)/60, targetOf(d)[1])),1);
+  const bySub={}; ds.forEach(d=>d.sessions.forEach(s=>{ bySub[s.subject]=(bySub[s.subject]||0)+s.minutes; }));
+  const list=chapterList().filter(c=>item(c.key));
+  app.innerHTML=`
+    ${header(role==="student"?"Progress":CFG.studentName+"’s week", "Last 7 days")}
+    <div class="stats" style="margin-top:1rem">
+      <div class="stat"><strong>${(totalMin/60).toFixed(1)} h</strong><span>studied of ${(targetMin/60).toFixed(0)} h target</span></div>
+      <div class="stat"><strong>${metDays}/7</strong><span>days target met</span></div>
+      <div class="stat"><strong>${tasksAll?Math.round(tasksDone/tasksAll*100):0}%</strong><span>plan completed (${tasksDone}/${tasksAll})</span></div>
+    </div>
+    <h2>Daily hours</h2>
+    <section class="panel">${ds.map((d,k)=>{ const h=minutesOf(d)/60, [tmin]=targetOf(d);
+      return `<div class="weekrow"><span>${k===6?"Today":fmtDow(dates[k])}<br><span class="small">${d.type==="holiday"?"Holiday":"School"}</span></span>
+        <div class="meter ${h>=tmin?"done":""}" style="height:14px"><i style="width:${h/maxH*100}%"></i><span class="tgt" style="left:${tmin/maxH*100}%" title="Target ${tmin} h"></span></div>
+        <span>${h.toFixed(1)} h<br><span class="small">${d.tasks.filter(x=>x.done).length}/${d.tasks.length} tasks</span></span></div>`; }).join("")}
+      <p class="small">The thin line on each bar marks that day’s minimum target.</p></section>
+    ${Object.keys(bySub).length?`<h2>Time by subject</h2><section class="panel">${Object.entries(bySub).sort((a,b)=>b[1]-a[1]).map(([s,m])=>`<div class="session"><span>${esc(SUBJECT_NAMES[s]||"Other")}</span><span>${hm(m)}</span></div>`).join("")}</section>`:""}
+    <h2>Chapters practised</h2>
+    <section class="panel">${list.length?`<div class="tablewrap"><table class="prog"><thead><tr><th>Chapter</th><th>Level</th><th>Mastery</th><th>Last</th><th>Next</th></tr></thead><tbody>${list.map(c=>{ const it=item(c.key), last=it.attempts[it.attempts.length-1];
+      return `<tr><td>${esc(c.sname.slice(0,4))} ${c.n}: ${esc(c.t)}</td><td>${it.allDone?"All":it.level+1}</td><td>${it.allDone?"Done":(it.streak||0)+"/"+CFG.masteryInARow}</td><td>${last?last.score+"/"+last.total:"–"}</td><td>${it.next?(isDue(c.key)?"Due":fmtShort(it.next)):"New level"}</td></tr>`; }).join("")}</tbody></table></div>`:`<p class="small">No quizzes taken yet.</p>`}
+      <p class="small" style="margin-top:.5rem">${Object.keys(progress.mistakes).length} mistakes waiting to be fixed.</p></section>`;
+  bindHeader();
+}
+
+/* ================= boot ================= */
+function showLogin(msg){
+  document.getElementById("tabs").hidden=true;
+  app.innerHTML=`<div class="login"><h1>Study Desk</h1><p class="sub">Daily plan, study timer and revision practice.</p>
+    ${msg?`<p class="banner">${esc(msg)}</p>`:""}
+    <div><button class="btn" id="gsign">Sign in with Google</button></div></div>`;
+  document.getElementById("gsign").onclick=()=>authApi.signIn();
+}
+async function startAs(r){
+  role=r;
+  try{ progress = (await store.getProgress()) || blankProgress(); }catch(e){ console.error(e); progress=blankProgress(); saveErr="Could not load saved data. Check your internet connection."; }
+  progress.items=progress.items||{}; progress.mistakes=progress.mistakes||{};
+  view={tab:"today", date:todayStr(), sub:null};
+  if(role==="student") await timerTick();
+  render();
+}
+async function boot(){
+  if(DEMO){ store=localStore(); me=null; return startAs("student"); }
+  try{
+    const fa=await import(`https://www.gstatic.com/firebasejs/${FB_VER}/firebase-app.js`);
+    const au=await import(`https://www.gstatic.com/firebasejs/${FB_VER}/firebase-auth.js`);
+    const fs=await import(`https://www.gstatic.com/firebasejs/${FB_VER}/firebase-firestore.js`);
+    const fapp=fa.initializeApp(CFG.firebase), auth=au.getAuth(fapp), db=fs.getFirestore(fapp);
+    authApi={
+      signIn: async()=>{ const p=new au.GoogleAuthProvider(); p.setCustomParameters({prompt:"select_account"});
+        try{ await au.signInWithPopup(auth,p); }catch(e){ if(e && (e.code==="auth/popup-blocked"||e.code==="auth/operation-not-supported-in-this-environment")) await au.signInWithRedirect(auth,p); else showLogin("Sign-in did not complete. Please try again."); } },
+      signOut: async()=>{ await au.signOut(auth); }
+    };
+    au.onAuthStateChanged(auth, async user=>{
+      role=null; for(const k in days) delete days[k];
+      if(!user){ me=null; const m=loginMsg; loginMsg=""; return showLogin(m); }
+      me=user; const email=(user.email||"").toLowerCase();
+      if(email===STUDENT){ store=await firebaseStore(fs, db, STUDENT); return startAs("student"); }
+      if(PARENTS.includes(email)){ store=await firebaseStore(fs, db, STUDENT); return startAs("parent"); }
+      loginMsg=`${email} is not set up for this app. Sign in with the student or parent Google account.`;
+      await au.signOut(auth);
+    });
+  }catch(e){ console.error(e); app.innerHTML=`<p class="banner">Could not load. Check your internet connection and the Firebase settings in config.js.</p>`; }
+}
+boot();
+</script>
+</body>
+</html>
