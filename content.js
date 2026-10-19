@@ -2369,6 +2369,8 @@ window.CONTENT = {
 window.MATERIALS = [
   { subject: "physics", kind: "notes",    title: "Revision notes, Ch 1–8",  file: "materials/Class12_Physics_Ch1-8_Revision_Notes.pdf" },
   { subject: "physics", kind: "notes",    title: "Revision notes, Ch 9–14", file: "materials/Class12_Physics_Ch9-14_Revision_Notes.pdf" },
+  { subject: "maths",   kind: "notes",    title: "Revision notes, Ch 7–13", file: "materials/Class12_Maths_Ch7-13_Revision_Notes.pdf" },
   { subject: "physics", kind: "formulas", title: "Formula sheet, Ch 1–8",   file: "materials/Class12_Physics_Ch1-8_Formula_Sheet.pdf" },
-  { subject: "physics", kind: "formulas", title: "Formula sheet, Ch 9–14",  file: "materials/Class12_Physics_Ch9-14_Formula_Sheet.pdf" }
+  { subject: "physics", kind: "formulas", title: "Formula sheet, Ch 9–14",  file: "materials/Class12_Physics_Ch9-14_Formula_Sheet.pdf" },
+  { subject: "maths",   kind: "formulas", title: "Formula sheet, Ch 7–13",  file: "materials/Class12_Maths_Ch7-13_Formula_Sheet.pdf" }
 ];
