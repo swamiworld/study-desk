@@ -2377,6 +2377,10 @@ window.MATERIALS = [
     chapters: [["Ch 1 Relations and Functions", 3], ["Ch 2 Inverse Trigonometric Functions", 6], ["Ch 3 Matrices", 9], ["Ch 4 Determinants", 13], ["Ch 5 Continuity and Differentiability", 18], ["Ch 6 Application of Derivatives", 22]] },
   { subject: "maths", kind: "notes", title: "Revision notes, Ch 7–13", file: "materials/Class12_Maths_Ch7-13_Revision_Notes.pdf",
     chapters: [["Ch 7 Integrals", 3], ["Ch 8 Application of Integrals", 16], ["Ch 9 Differential Equations", 19], ["Ch 10 Vector Algebra", 26], ["Ch 11 Three Dimensional Geometry", 32], ["Ch 12 Linear Programming", 36], ["Ch 13 Probability", 39]] },
+  { subject: "chemistry", kind: "notes", title: "Revision notes, Ch 1–5", file: "materials/Class12_Chemistry_Ch1-5_Revision_Notes.pdf",
+    chapters: [["Ch 1 Solutions", 3], ["Ch 2 Electrochemistry", 7], ["Ch 3 Chemical Kinetics", 11], ["Ch 4 The d- and f-Block Elements", 15], ["Ch 5 Coordination Compounds", 21]] },
+  { subject: "chemistry", kind: "notes", title: "Revision notes, Ch 6–10", file: "materials/Class12_Chemistry_Ch6-10_Revision_Notes.pdf",
+    chapters: [["Ch 6 Haloalkanes and Haloarenes", 3], ["Ch 7 Alcohols, Phenols and Ethers", 6], ["Ch 8 Aldehydes, Ketones and Carboxylic Acids", 9], ["Ch 9 Amines", 12], ["Ch 10 Biomolecules", 15]] },
   { subject: "physics", kind: "formulas", title: "Formula sheet, Ch 1–8", file: "materials/Class12_Physics_Ch1-8_Formula_Sheet.pdf",
     chapters: [["Ch 1 Electric Charges and Fields", 1], ["Ch 2 Electrostatic Potential and Capacitance", 2], ["Ch 3 Current Electricity", 3], ["Ch 4 Moving Charges and Magnetism", 3], ["Ch 5 Magnetism and Matter", 4], ["Ch 6 Electromagnetic Induction", 5], ["Ch 7 Alternating Current", 5], ["Ch 8 Electromagnetic Waves", 6]] },
   { subject: "physics", kind: "formulas", title: "Formula sheet, Ch 9–14", file: "materials/Class12_Physics_Ch9-14_Formula_Sheet.pdf",
@@ -2384,5 +2388,9 @@ window.MATERIALS = [
   { subject: "maths", kind: "formulas", title: "Formula sheet, Ch 1–6", file: "materials/Class12_Maths_Ch1-6_Formula_Sheet.pdf",
     chapters: [["Ch 1 Relations and Functions", 1], ["Ch 2 Inverse Trigonometric Functions", 2], ["Ch 3 Matrices", 2], ["Ch 4 Determinants", 3], ["Ch 5 Continuity and Differentiability", 4], ["Ch 6 Application of Derivatives", 5]] },
   { subject: "maths", kind: "formulas", title: "Formula sheet, Ch 7–13", file: "materials/Class12_Maths_Ch7-13_Formula_Sheet.pdf",
-    chapters: [["Ch 7 Integrals", 2], ["Ch 8 Application of Integrals", 5], ["Ch 9 Differential Equations", 6], ["Ch 10 Vector Algebra", 7], ["Ch 11 Three Dimensional Geometry", 8], ["Ch 12 Linear Programming", 10], ["Ch 13 Probability", 11]] }
+    chapters: [["Ch 7 Integrals", 2], ["Ch 8 Application of Integrals", 5], ["Ch 9 Differential Equations", 6], ["Ch 10 Vector Algebra", 7], ["Ch 11 Three Dimensional Geometry", 8], ["Ch 12 Linear Programming", 10], ["Ch 13 Probability", 11]] },
+  { subject: "chemistry", kind: "formulas", title: "Formula sheet, Ch 1–5", file: "materials/Class12_Chemistry_Ch1-5_Formula_Sheet.pdf",
+    chapters: [["Ch 1 Solutions", 1], ["Ch 2 Electrochemistry", 2], ["Ch 3 Chemical Kinetics", 3], ["Ch 4 The d- and f-Block Elements", 3], ["Ch 5 Coordination Compounds", 7]] },
+  { subject: "chemistry", kind: "formulas", title: "Reaction sheet, Ch 6–10", file: "materials/Class12_Chemistry_Ch6-10_Reaction_Sheet.pdf",
+    chapters: [["Ch 6 Haloalkanes and Haloarenes", 1], ["Ch 7 Alcohols, Phenols and Ethers", 2], ["Ch 8 Aldehydes, Ketones and Carboxylic Acids", 3], ["Ch 9 Amines", 4], ["Ch 10 Biomolecules", 5]] }
 ];
