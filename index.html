@@ -150,7 +150,7 @@ table.prog th{color:var(--muted);font-weight:700}
 .mat span{color:var(--muted);font-size:.9rem;white-space:nowrap}
 .pdfbar{position:sticky;top:0;z-index:5;background:var(--bg);padding:.4rem 0 .6rem;border-bottom:1px solid var(--line)}
 .pdfbar h2{margin:.25rem 0 .5rem;font-size:1.05rem}
-.pdfbar .field{padding:.35rem .5rem;max-width:11rem}
+.pdfbar .field{padding:.35rem .4rem;min-width:0}
 .pdfscroll{overflow-x:auto}
 .pdfpage{background:#fff;border:1px solid var(--line);border-radius:6px;margin:.6rem 0;overflow:hidden;scroll-margin-top:8rem}
 .pdfpage canvas{display:block;width:100%;height:auto}
@@ -630,7 +630,7 @@ function renderStudy(){
     ${header("Study", "Revision notes and formula sheets")}
     ${sections || `<p class="small" style="margin-top:1rem">No study material added yet.</p>`}`;
   bindHeader();
-  app.querySelectorAll("[data-mat]").forEach(b=>b.onclick=()=>{ const m=MATERIALS[+b.dataset.mat]; go({sub:{name:"pdf", file:m.file, title:m.title, zoom:1}}); });
+  app.querySelectorAll("[data-mat]").forEach(b=>b.onclick=()=>{ const m=MATERIALS[+b.dataset.mat]; go({sub:{name:"pdf", file:m.file, title:m.title, chapters:m.chapters||null, zoom:1}}); });
 }
 // PDFs are drawn with pdf.js (pinned version), because phone browsers cannot show PDFs inside a page reliably.
 const PDFJS_VER = "3.11.174";
@@ -650,14 +650,13 @@ async function renderPdf(){
   const v=view.sub;
   app.innerHTML = `
     <div class="pdfbar">
-      <div class="spread"><button class="linkbtn" id="back">Back</button><span class="small" id="pdfstate">Loading…</span></div>
+      <div class="spread"><button class="linkbtn" id="back">Back</button><span class="small" id="pdfstate">Loading…</span><a class="linkbtn" href="${esc(v.file)}" target="_blank" rel="noopener">Open original</a></div>
       <h2>${esc(v.title)}</h2>
-      <div class="row">
+      <div class="row" style="flex-wrap:nowrap">
+        <select class="field" id="outsel" aria-label="Chapters" hidden style="flex:1"></select>
         <select class="field" id="pgsel" aria-label="Go to page" hidden></select>
-        <select class="field" id="outsel" aria-label="Contents" hidden></select>
         <button class="btn small ghost" id="zout" aria-label="Zoom out">−</button>
         <button class="btn small ghost" id="zin" aria-label="Zoom in">+</button>
-        <a class="linkbtn" href="${esc(v.file)}" target="_blank" rel="noopener">Open original</a>
       </div>
     </div>
     <div class="pdfscroll"><div id="pages"></div></div>`;
@@ -700,7 +699,13 @@ async function renderPdf(){
   window.addEventListener("scroll",onScroll,{passive:true}); onScroll();
   document.getElementById("zin").onclick=()=>{ v.zoom=Math.min(3,v.zoom+0.5); refresh(); };
   document.getElementById("zout").onclick=()=>{ v.zoom=Math.max(1,v.zoom-0.5); refresh(); };
-  // contents menu, when the PDF has bookmarks
+  // chapter menu: the list given in content.js, or else the PDF's own bookmarks
+  const fillMenu=(label,items)=>{
+    const os=document.getElementById("outsel");
+    os.innerHTML=`<option value="">${label}</option>`+items.map(x=>`<option value="${x.i}">${x.depth?"– ":""}${esc(x.t)}</option>`).join(""); os.hidden=false;
+    os.onchange=()=>{ if(os.value!=="") goTo(+os.value); os.value=""; };
+  };
+  if(v.chapters && v.chapters.length){ fillMenu("Chapters", v.chapters.map(([t,pg])=>({t,i:pg-1,depth:0}))); return; }
   try{
     const ol=await doc.getOutline();
     if(ol && ol.length && view.sub===v){
@@ -710,11 +715,7 @@ async function renderPdf(){
         if(dest){ const idx=typeof dest[0]==="number" ? dest[0] : await doc.getPageIndex(dest[0]); items.push({t:it.title,i:idx,depth}); }
         if(it.items && it.items.length && depth<1) await walk(it.items,depth+1); } };
       await walk(ol,0);
-      if(items.length && view.sub===v){
-        const os=document.getElementById("outsel");
-        os.innerHTML=`<option value="">Contents</option>`+items.map(x=>`<option value="${x.i}">${x.depth?"– ":""}${esc(x.t)}</option>`).join(""); os.hidden=false;
-        os.onchange=()=>{ if(os.value!=="") goTo(+os.value); os.value=""; };
-      }
+      if(items.length && view.sub===v) fillMenu("Contents", items);
     }
   }catch(e){ console.error(e); }
 }

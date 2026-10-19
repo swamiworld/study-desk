@@ -2365,12 +2365,20 @@ window.CONTENT = {
  ]
 };
 
-/* Study material shown in the Study tab. kind: "notes" or "formulas". file: PDF path inside the repo. */
+/* Study material shown in the Study tab.
+   kind: "notes" or "formulas". file: PDF path inside the repo.
+   chapters: [title, first page] pairs for the chapter menu in the viewer (page numbers start at 1). */
 window.MATERIALS = [
-  { subject: "physics", kind: "notes",    title: "Revision notes, Ch 1–8",  file: "materials/Class12_Physics_Ch1-8_Revision_Notes.pdf" },
-  { subject: "physics", kind: "notes",    title: "Revision notes, Ch 9–14", file: "materials/Class12_Physics_Ch9-14_Revision_Notes.pdf" },
-  { subject: "maths",   kind: "notes",    title: "Revision notes, Ch 7–13", file: "materials/Class12_Maths_Ch7-13_Revision_Notes.pdf" },
-  { subject: "physics", kind: "formulas", title: "Formula sheet, Ch 1–8",   file: "materials/Class12_Physics_Ch1-8_Formula_Sheet.pdf" },
-  { subject: "physics", kind: "formulas", title: "Formula sheet, Ch 9–14",  file: "materials/Class12_Physics_Ch9-14_Formula_Sheet.pdf" },
-  { subject: "maths",   kind: "formulas", title: "Formula sheet, Ch 7–13",  file: "materials/Class12_Maths_Ch7-13_Formula_Sheet.pdf" }
+  { subject: "physics", kind: "notes", title: "Revision notes, Ch 1–8", file: "materials/Class12_Physics_Ch1-8_Revision_Notes.pdf",
+    chapters: [["Ch 1 Electric Charges and Fields", 4], ["Ch 2 Electrostatic Potential and Capacitance", 9], ["Ch 3 Current Electricity", 13], ["Ch 4 Moving Charges and Magnetism", 17], ["Ch 5 Magnetism and Matter", 22], ["Ch 6 Electromagnetic Induction", 25], ["Ch 7 Alternating Current", 29], ["Ch 8 Electromagnetic Waves", 33]] },
+  { subject: "physics", kind: "notes", title: "Revision notes, Ch 9–14", file: "materials/Class12_Physics_Ch9-14_Revision_Notes.pdf",
+    chapters: [["Ch 9 Ray Optics and Optical Instruments", 3], ["Ch 10 Wave Optics", 8], ["Ch 11 Dual Nature of Radiation and Matter", 12], ["Ch 12 Atoms", 16], ["Ch 13 Nuclei", 20], ["Ch 14 Semiconductor Electronics", 24]] },
+  { subject: "maths", kind: "notes", title: "Revision notes, Ch 7–13", file: "materials/Class12_Maths_Ch7-13_Revision_Notes.pdf",
+    chapters: [["Ch 7 Integrals", 3], ["Ch 8 Application of Integrals", 16], ["Ch 9 Differential Equations", 19], ["Ch 10 Vector Algebra", 26], ["Ch 11 Three Dimensional Geometry", 32], ["Ch 12 Linear Programming", 36], ["Ch 13 Probability", 39]] },
+  { subject: "physics", kind: "formulas", title: "Formula sheet, Ch 1–8", file: "materials/Class12_Physics_Ch1-8_Formula_Sheet.pdf",
+    chapters: [["Ch 1 Electric Charges and Fields", 1], ["Ch 2 Electrostatic Potential and Capacitance", 2], ["Ch 3 Current Electricity", 3], ["Ch 4 Moving Charges and Magnetism", 3], ["Ch 5 Magnetism and Matter", 4], ["Ch 6 Electromagnetic Induction", 5], ["Ch 7 Alternating Current", 5], ["Ch 8 Electromagnetic Waves", 6]] },
+  { subject: "physics", kind: "formulas", title: "Formula sheet, Ch 9–14", file: "materials/Class12_Physics_Ch9-14_Formula_Sheet.pdf",
+    chapters: [["Ch 9 Ray Optics and Optical Instruments", 1], ["Ch 10 Wave Optics", 2], ["Ch 11 Dual Nature of Radiation and Matter", 3], ["Ch 12 Atoms", 3], ["Ch 13 Nuclei", 4], ["Ch 14 Semiconductor Electronics", 4]] },
+  { subject: "maths", kind: "formulas", title: "Formula sheet, Ch 7–13", file: "materials/Class12_Maths_Ch7-13_Formula_Sheet.pdf",
+    chapters: [["Ch 7 Integrals", 2], ["Ch 8 Application of Integrals", 5], ["Ch 9 Differential Equations", 6], ["Ch 10 Vector Algebra", 7], ["Ch 11 Three Dimensional Geometry", 8], ["Ch 12 Linear Programming", 10], ["Ch 13 Probability", 11]] }
 ];
