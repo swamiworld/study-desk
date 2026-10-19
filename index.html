@@ -145,6 +145,15 @@ table.prog{width:100%;border-collapse:collapse;font-size:.9rem}
 table.prog th,table.prog td{text-align:left;padding:.4rem .3rem;border-bottom:1px solid var(--line)}
 table.prog th{color:var(--muted);font-weight:700}
 .tablewrap{overflow-x:auto}
+/* study */
+.mat{display:flex;justify-content:space-between;align-items:center;gap:.75rem;width:100%;text-align:left;border:1px solid var(--line);background:var(--surface);border-radius:10px;padding:.7rem .85rem}
+.mat span{color:var(--muted);font-size:.9rem;white-space:nowrap}
+.pdfbar{position:sticky;top:0;z-index:5;background:var(--bg);padding:.4rem 0 .6rem;border-bottom:1px solid var(--line)}
+.pdfbar h2{margin:.25rem 0 .5rem;font-size:1.05rem}
+.pdfbar .field{padding:.35rem .5rem;max-width:11rem}
+.pdfscroll{overflow-x:auto}
+.pdfpage{background:#fff;border:1px solid var(--line);border-radius:6px;margin:.6rem 0;overflow:hidden;scroll-margin-top:8rem}
+.pdfpage canvas{display:block;width:100%;height:auto}
 /* nav */
 nav.tabs{position:fixed;left:0;right:0;bottom:0;background:var(--nav);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom,0px);z-index:10}
 nav.tabs .in{max-width:680px;margin:0 auto;display:grid;grid-auto-flow:column;grid-auto-columns:1fr}
@@ -299,11 +308,11 @@ let view = {tab:"today", date:todayStr(), sub:null};
 function go(v){ view = {...view, ...v}; render(); window.scrollTo(0,0); }
 function setTabs(){
   const nav=document.getElementById("tabs"), inn=document.getElementById("tabsIn");
-  const tabs = role==="student" ? [["today","Today"],["timer","Timer"],["practice","Practice"],["progress","Progress"]]
-                                : [["today","Day"],["progress","Week"],["practice","Practice"]];
+  const tabs = role==="student" ? [["today","Today"],["timer","Timer"],["practice","Practice"],["study","Study"],["progress","Progress"]]
+                                : [["today","Day"],["progress","Week"],["practice","Practice"],["study","Study"]];
   inn.innerHTML = tabs.map(([k,l])=>`<button data-tab="${k}" ${view.tab===k?'aria-current="page"':""}>${l}</button>`).join("");
   inn.querySelectorAll("button").forEach(b=>b.onclick=async()=>{ if(role==="parent"){ try{ const p=await store.getProgress(); if(p){ progress=p; progress.items=progress.items||{}; progress.mistakes=progress.mistakes||{}; } }catch(e){} } go({tab:b.dataset.tab, sub:null, date: b.dataset.tab==="today"? (view.date||todayStr()) : view.date}); });
-  nav.hidden = !!(view.sub && (view.sub.name==="quiz"||view.sub.name==="cards"));
+  nav.hidden = !!(view.sub && (view.sub.name==="quiz"||view.sub.name==="cards"||view.sub.name==="pdf"));
 }
 function header(title, subtitle){
   return `${DEMO?`<div class="banner">Demo mode: data is saved on this device only. Add your Firebase settings to config.js to go live.</div>`:""}
@@ -321,10 +330,12 @@ async function render(){
     if(s.name==="result") return renderResult();
     if(s.name==="cards") return renderCards();
     if(s.name==="mistakes") return renderMistakes();
+    if(s.name==="pdf") return renderPdf();
   }
   if(view.tab==="today") return renderToday();
   if(view.tab==="timer") return renderTimer();
   if(view.tab==="practice") return renderPractice();
+  if(view.tab==="study") return renderStudy();
   if(view.tab==="progress") return renderProgress();
 }
 
@@ -604,6 +615,108 @@ function renderMistakes(){
     <div class="stack" style="margin-top:1rem">${rows||`<p>No mistakes saved.</p>`}</div>`;
   document.getElementById("back").onclick=()=>go({sub:null});
   const pr=document.getElementById("pr"); if(pr) pr.onclick=startMistakeQuiz;
+}
+
+/* ================= STUDY ================= */
+const MATERIALS = window.MATERIALS || [];
+const MAT_KINDS = [["notes","Revision notes"],["formulas","Formula sheets"]];
+function renderStudy(){
+  const sections = MAT_KINDS.map(([k,label])=>{
+    const items = MATERIALS.filter(m=>m.kind===k);
+    if(!items.length) return "";
+    return `<h2>${esc(label)}</h2><div class="stack">${items.map(m=>`<button class="mat" data-mat="${MATERIALS.indexOf(m)}"><b>${esc(m.title)}</b><span>${esc(SUBJECT_NAMES[m.subject]||"")}, PDF</span></button>`).join("")}</div>`;
+  }).join("");
+  app.innerHTML = `
+    ${header("Study", "Revision notes and formula sheets")}
+    ${sections || `<p class="small" style="margin-top:1rem">No study material added yet.</p>`}`;
+  bindHeader();
+  app.querySelectorAll("[data-mat]").forEach(b=>b.onclick=()=>{ const m=MATERIALS[+b.dataset.mat]; go({sub:{name:"pdf", file:m.file, title:m.title, zoom:1}}); });
+}
+// PDFs are drawn with pdf.js (pinned version), because phone browsers cannot show PDFs inside a page reliably.
+const PDFJS_VER = "3.11.174";
+let pdfJsLoading = null;
+function loadPdfJs(){
+  if(window.pdfjsLib) return Promise.resolve(window.pdfjsLib);
+  if(!pdfJsLoading) pdfJsLoading = new Promise((res,rej)=>{
+    const sc=document.createElement("script");
+    sc.src=`https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${PDFJS_VER}/pdf.min.js`;
+    sc.onload=()=>{ window.pdfjsLib.GlobalWorkerOptions.workerSrc=`https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${PDFJS_VER}/pdf.worker.min.js`; res(window.pdfjsLib); };
+    sc.onerror=()=>{ pdfJsLoading=null; rej(new Error("pdf.js did not load")); };
+    document.head.appendChild(sc);
+  });
+  return pdfJsLoading;
+}
+async function renderPdf(){
+  const v=view.sub;
+  app.innerHTML = `
+    <div class="pdfbar">
+      <div class="spread"><button class="linkbtn" id="back">Back</button><span class="small" id="pdfstate">Loading…</span></div>
+      <h2>${esc(v.title)}</h2>
+      <div class="row">
+        <select class="field" id="pgsel" aria-label="Go to page" hidden></select>
+        <select class="field" id="outsel" aria-label="Contents" hidden></select>
+        <button class="btn small ghost" id="zout" aria-label="Zoom out">−</button>
+        <button class="btn small ghost" id="zin" aria-label="Zoom in">+</button>
+        <a class="linkbtn" href="${esc(v.file)}" target="_blank" rel="noopener">Open original</a>
+      </div>
+    </div>
+    <div class="pdfscroll"><div id="pages"></div></div>`;
+  document.getElementById("back").onclick=()=>go({sub:null});
+  const state=document.getElementById("pdfstate"), pages=document.getElementById("pages");
+  let doc;
+  try{ const lib=await loadPdfJs(); doc=await lib.getDocument(v.file).promise; }
+  catch(e){ console.error(e); if(view.sub===v) state.textContent="Could not open. Try Open original."; return; }
+  if(view.sub!==v) return;
+  const N=doc.numPages, first=await doc.getPage(1), vp0=first.getViewport({scale:1});
+  const holders=[], rendered=new Set();
+  for(let i=1;i<=N;i++){ const d=document.createElement("div"); d.className="pdfpage"; d.dataset.p=i; d.style.aspectRatio=vp0.width+" / "+vp0.height; pages.appendChild(d); holders.push(d); }
+  const renderPage=async d=>{
+    const n=+d.dataset.p; if(rendered.has(n)) return; rendered.add(n);
+    try{
+      const pg=await doc.getPage(n), base=pg.getViewport({scale:1}), dpr=Math.min(window.devicePixelRatio||1,2.5);
+      const vp=pg.getViewport({scale:pages.clientWidth/base.width*dpr});
+      const cv=document.createElement("canvas"); cv.width=Math.floor(vp.width); cv.height=Math.floor(vp.height);
+      await pg.render({canvasContext:cv.getContext("2d"), viewport:vp}).promise;
+      if(view.sub!==v || !rendered.has(n)) return;
+      d.style.aspectRatio=""; d.replaceChildren(cv);
+    }catch(e){ console.error(e); rendered.delete(n); }
+  };
+  const io=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting) renderPage(e.target); }),{rootMargin:"800px 0px"});
+  const refresh=()=>{ io.disconnect(); rendered.clear(); pages.style.width=(v.zoom*100)+"%";
+    holders.forEach(d=>{ d.replaceChildren(); d.style.aspectRatio=vp0.width+" / "+vp0.height; io.observe(d); }); };
+  refresh();
+  // page menu and page counter
+  const pgsel=document.getElementById("pgsel");
+  pgsel.innerHTML=Array.from({length:N},(_,k)=>`<option value="${k}">Page ${k+1}</option>`).join(""); pgsel.hidden=false;
+  const goTo=i=>holders[Math.max(0,Math.min(N-1,i))].scrollIntoView({block:"start"});
+  pgsel.onchange=()=>goTo(+pgsel.value);
+  let ticking=false;
+  const onScroll=()=>{
+    if(view.sub!==v){ window.removeEventListener("scroll",onScroll); return; }
+    if(ticking) return; ticking=true;
+    requestAnimationFrame(()=>{ ticking=false; let cur=0; for(let i=0;i<N;i++){ cur=i; if(holders[i].getBoundingClientRect().bottom>140) break; }
+      state.textContent="Page "+(cur+1)+" of "+N; pgsel.value=cur; });
+  };
+  window.addEventListener("scroll",onScroll,{passive:true}); onScroll();
+  document.getElementById("zin").onclick=()=>{ v.zoom=Math.min(3,v.zoom+0.5); refresh(); };
+  document.getElementById("zout").onclick=()=>{ v.zoom=Math.max(1,v.zoom-0.5); refresh(); };
+  // contents menu, when the PDF has bookmarks
+  try{
+    const ol=await doc.getOutline();
+    if(ol && ol.length && view.sub===v){
+      const items=[];
+      const walk=async(list,depth)=>{ for(const it of list){
+        let dest=it.dest; if(typeof dest==="string") dest=await doc.getDestination(dest);
+        if(dest){ const idx=typeof dest[0]==="number" ? dest[0] : await doc.getPageIndex(dest[0]); items.push({t:it.title,i:idx,depth}); }
+        if(it.items && it.items.length && depth<1) await walk(it.items,depth+1); } };
+      await walk(ol,0);
+      if(items.length && view.sub===v){
+        const os=document.getElementById("outsel");
+        os.innerHTML=`<option value="">Contents</option>`+items.map(x=>`<option value="${x.i}">${x.depth?"– ":""}${esc(x.t)}</option>`).join(""); os.hidden=false;
+        os.onchange=()=>{ if(os.value!=="") goTo(+os.value); os.value=""; };
+      }
+    }
+  }catch(e){ console.error(e); }
 }
 
 /* ================= PROGRESS ================= */

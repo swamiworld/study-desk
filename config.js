@@ -16,7 +16,7 @@ window.APP_CONFIG = {
   parentEmails: ["swamiworld@gmail.com"],
 
   // Daily study targets in hours: [minimum, maximum]
-  targets: { school: [5, 6], holiday: [8, 10] },
+  targets: { school: [7, 8], holiday: [10, 12] },
 
   // Study timer, in minutes
   focusMinutes: 50,
