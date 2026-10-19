@@ -89,13 +89,9 @@ button{cursor:pointer}
 /* day nav */
 .daynav{display:flex;align-items:center;gap:.5rem}
 .daynav button{border:1px solid var(--line);background:var(--surface);border-radius:8px;width:2.2rem;height:2.2rem;font-weight:700}
-/* timer */
-.clock{font-family:"Bricolage Grotesque",sans-serif;font-size:4.5rem;font-weight:700;text-align:center;line-height:1;margin:.5rem 0;font-variant-numeric:tabular-nums}
-.phase{text-align:center;font-weight:700;color:var(--muted)}
-.phase.focus{color:var(--accent)} .phase.break{color:var(--ok)}
-.ring{height:8px;border-radius:4px;background:var(--line);overflow:hidden;margin:1rem 0}
-.ring i{display:block;height:100%;background:var(--accent)}
-.ring.break i{background:var(--ok)}
+/* let's go */
+.goline{font-family:"Bricolage Grotesque",sans-serif;font-size:1.9rem;font-weight:700;text-align:center;line-height:1.2;margin:.4rem 0}
+.goline.ok{color:var(--ok);font-size:1.15rem}
 .session{display:flex;justify-content:space-between;gap:.5rem;padding:.45rem 0;border-bottom:1px solid var(--line);font-size:.95rem}
 .session:last-child{border-bottom:0}
 /* practice */
@@ -260,55 +256,65 @@ function isDue(key){ const it=item(key); return !!(it && it.next && diffDays(it.
 function qOf(key, level, i){ const c=chapterByKey(key); const r=c.levels[level][i]; return {key, level, i, id:key+"/"+level+"/"+i, text:r[0], opts:r[1], ans:r[2], ex:r[3], hint:r[4]||""}; }
 function questionsFor(key){ const c=chapterByKey(key); const lv=Math.min(levelOf(key), c.levels.length-1); return c.levels[lv].map((_,i)=>qOf(key,lv,i)); }
 
-/* ================= timer (survives reloads) ================= */
+/* ================= focus sessions (survive reloads) ================= */
+// No countdown. She presses Start and Stop; the start time is kept in localStorage so a reload or a locked phone loses nothing.
 const TKEY = "study-desk-timer";
-let timer = loadTimer();
-function loadTimer(){ try{ return JSON.parse(localStorage.getItem(TKEY)) || {phase:"idle"}; }catch(e){ return {phase:"idle"}; } }
-function saveTimer(){ try{ localStorage.setItem(TKEY, JSON.stringify(timer)); }catch(e){} }
+let run = loadRun();
+function loadRun(){
+  try{
+    const s = JSON.parse(localStorage.getItem(TKEY)) || {};
+    // older versions kept a countdown with break and pause fields; only a running focus session carries over
+    if(s.phase==="focus" && s.startedAt) return {phase:"focus", startedAt:s.startedAt, subject:s.subject, task:s.task, chimed:!!s.chimed};
+    return {phase:"idle", subject:s.subject, task:s.task};
+  }catch(e){ return {phase:"idle"}; }
+}
+function saveRun(){ try{ localStorage.setItem(TKEY, JSON.stringify(run)); }catch(e){} }
+let asking = null;            // set when Stop is pressed after a very long run: {elapsed, stopAt}
 let audioCtx=null;
-function beep(){
+function beepPrime(){ try{ audioCtx = audioCtx || new (window.AudioContext||window.webkitAudioContext)(); audioCtx.resume(); }catch(e){} }
+function chime(){
   try{
     audioCtx = audioCtx || new (window.AudioContext||window.webkitAudioContext)();
-    [0,0.35,0.7].forEach(t=>{ const o=audioCtx.createOscillator(), g=audioCtx.createGain(); o.frequency.value=880; o.connect(g); g.connect(audioCtx.destination); g.gain.setValueAtTime(0.25,audioCtx.currentTime+t); g.gain.exponentialRampToValueAtTime(0.001,audioCtx.currentTime+t+0.3); o.start(audioCtx.currentTime+t); o.stop(audioCtx.currentTime+t+0.3); });
+    [0,0.3].forEach((t,k)=>{ const o=audioCtx.createOscillator(), g=audioCtx.createGain(); o.frequency.value=k?1046:784; o.connect(g); g.connect(audioCtx.destination); g.gain.setValueAtTime(0.15,audioCtx.currentTime+t); g.gain.exponentialRampToValueAtTime(0.001,audioCtx.currentTime+t+0.5); o.start(audioCtx.currentTime+t); o.stop(audioCtx.currentTime+t+0.5); });
   }catch(e){}
-  try{ navigator.vibrate && navigator.vibrate([300,150,300]); }catch(e){}
+  try{ navigator.vibrate && navigator.vibrate(200); }catch(e){}
 }
-function remainingMs(){ if(timer.phase==="idle") return 0; if(timer.paused) return timer.remaining; return Math.max(0, timer.endAt - Date.now()); }
+const targetEnd = () => run.startedAt + CFG.focusMinutes*60000;
 async function logSession(startIso, endIso, minutes){
   if(minutes < 1 || role!=="student") return;
   const d = todayStr(new Date(startIso));
   const day = await loadDay(d);
-  day.sessions.push({id:uid(), start:startIso, end:endIso, minutes:Math.round(minutes), subject:timer.subject||"other", task:timer.task||""});
+  day.sessions.push({id:uid(), start:startIso, end:endIso, minutes:Math.round(minutes), subject:run.subject||"other", task:run.task||""});
   await saveDay(d);
 }
-async function timerTick(){
-  if(timer.phase==="idle" || timer.paused) return;
-  const now = Date.now();
-  if(now < timer.endAt) return;
-  if(timer.phase==="focus"){
-    const end = timer.endAt;
-    await logSession(new Date(timer.startedAt).toISOString(), new Date(end).toISOString(), (end-timer.startedAt-(timer.pausedMs||0))/60000);
-    beep();
-    const breakEnd = end + CFG.breakMinutes*60000;
-    if(now < breakEnd) timer = {...timer, phase:"break", endAt:breakEnd, startedAt:end, paused:false, pausedMs:0};
-    else timer = {phase:"idle", subject:timer.subject, task:timer.task, note:"Break finished. Ready for the next session?"};
-  } else if(timer.phase==="break"){
-    beep();
-    timer = {phase:"idle", subject:timer.subject, task:timer.task, note:"Break over. Start the next session when ready."};
-  }
-  saveTimer();
-  if(view.tab==="timer" && !view.sub) render();
+function refreshFocusViews(){
+  if(asking) return;
+  if(view.tab==="go" && !view.sub) render();
   if(view.tab==="today" && !view.sub) render();
 }
-setInterval(()=>{ timerTick(); if(view && view.tab==="timer" && !view.sub) updateClock(); }, 1000);
-document.addEventListener("visibilitychange", ()=>{ if(!document.hidden) timerTick(); });
+function runTick(){
+  if(run.phase!=="focus") return;
+  const now = Date.now();
+  // a session left running since an earlier day, and never stopped, is not counted
+  if(todayStr(new Date(run.startedAt))!==todayStr() && now-run.startedAt > 6*3600000){
+    run = {phase:"idle", subject:run.subject, task:run.task, note:"Your session from "+fmtShort(todayStr(new Date(run.startedAt)))+" was not stopped, so it was not saved."};
+    saveRun(); refreshFocusViews(); return;
+  }
+  if(!run.chimed && now>=targetEnd()){
+    run.chimed = true; saveRun();
+    if(now-targetEnd() < 120000) chime();      // only chime if she is here now, not when she comes back much later
+    refreshFocusViews();
+  }
+}
+setInterval(runTick, 15000);
+document.addEventListener("visibilitychange", ()=>{ if(!document.hidden) runTick(); });
 
 /* ================= routing ================= */
 let view = {tab:"today", date:todayStr(), sub:null};
 function go(v){ view = {...view, ...v}; render(); window.scrollTo(0,0); }
 function setTabs(){
   const nav=document.getElementById("tabs"), inn=document.getElementById("tabsIn");
-  const tabs = role==="student" ? [["today","Today"],["timer","Timer"],["practice","Practice"],["study","Study"],["progress","Progress"]]
+  const tabs = role==="student" ? [["today","Today"],["go","Let’s go"],["practice","Practice"],["study","Study"],["progress","Progress"]]
                                 : [["today","Day"],["progress","Week"],["practice","Practice"],["study","Study"]];
   inn.innerHTML = tabs.map(([k,l])=>`<button data-tab="${k}" ${view.tab===k?'aria-current="page"':""}>${l}</button>`).join("");
   inn.querySelectorAll("button").forEach(b=>b.onclick=async()=>{ if(role==="parent"){ try{ const p=await store.getProgress(); if(p){ progress=p; progress.items=progress.items||{}; progress.mistakes=progress.mistakes||{}; } }catch(e){} } go({tab:b.dataset.tab, sub:null, date: b.dataset.tab==="today"? (view.date||todayStr()) : view.date}); });
@@ -333,7 +339,7 @@ async function render(){
     if(s.name==="pdf") return renderPdf();
   }
   if(view.tab==="today") return renderToday();
-  if(view.tab==="timer") return renderTimer();
+  if(view.tab==="go") return renderGo();
   if(view.tab==="practice") return renderPractice();
   if(view.tab==="study") return renderStudy();
   if(view.tab==="progress") return renderProgress();
@@ -356,7 +362,7 @@ async function renderToday(){
     if(left.length) carryHtml = `<button class="btn ghost small" id="carry">Bring over ${left.length} unfinished task${left.length===1?"":"s"} from yesterday</button>`;
   }
   const dueCount = chapterList().filter(c=>isDue(c.key)).length;
-  const live = isToday && timer.phase!=="idle" ? `<p class="small">Timer running: ${timer.phase==="focus"?"focus session":"break"}${timer.paused?" (paused)":""}.</p>` : "";
+  const live = isToday && run.phase==="focus" ? `<p class="small">Studying now, since ${fmtTime(new Date(run.startedAt).toISOString())}.</p>` : "";
   const who = role==="parent" ? (CFG.studentName+"’s day") : (isToday ? "Today" : "Past day");
   app.innerHTML = `
     ${header(who, fmtLong(d))}
@@ -410,57 +416,67 @@ function sessionsHtml(day){
   return day.sessions.slice().sort((a,b)=>a.start<b.start?-1:1).map(s=>`<div class="session"><span>${fmtTime(s.start)} to ${fmtTime(s.end)}${s.task?`, ${esc(s.task)}`:""}</span><span><span class="tag">${esc(SUBJECT_NAMES[s.subject]||"Other")}</span> ${s.minutes} min</span></div>`).join("");
 }
 
-/* ================= TIMER ================= */
-async function renderTimer(){
+/* ================= LET'S GO ================= */
+async function renderGo(){
   const d=todayStr(), day=await loadDay(d);
-  if(view.tab!=="timer" || view.sub) return;
+  if(view.tab!=="go" || view.sub) return;
   const mins=minutesOf(day), [tmin]=targetOf(day);
   const openTasks = day.tasks.filter(t=>!t.done);
-  const running = timer.phase!=="idle";
+  const running = run.phase==="focus";
+  const iso = ms => new Date(ms).toISOString();
+  let main;
+  if(asking){
+    main = `<p class="goline">Welcome back!</p>
+      <p style="text-align:center">You started at ${fmtTime(iso(run.startedAt))} and pressed Stop at ${fmtTime(iso(asking.stopAt))}. How many minutes did you actually study?</p>
+      <form class="row" id="askform" style="justify-content:center">
+        <input class="field" id="askmins" type="number" min="1" max="${asking.elapsed}" inputmode="numeric" required aria-label="Minutes studied" style="width:7rem">
+        <button class="btn" type="submit">Save</button>
+      </form>
+      <div class="row" style="justify-content:center"><button class="linkbtn" id="dontsave">Don’t save this session</button><button class="linkbtn" id="keep">Keep going</button></div>`;
+  } else if(running){
+    const end=targetEnd(), past=Date.now()>=end;
+    main = `<p class="goline">Focusing</p>
+      <p class="sub" style="text-align:center">Started ${fmtTime(iso(run.startedAt))}. Focus until ${fmtTime(iso(end))}.</p>
+      ${past?`<p class="goline ok">Nice work, ${CFG.focusMinutes} minutes done. Stop when you’re ready.</p>`:""}
+      <div class="row" style="justify-content:center;margin-top:1rem"><button class="btn" id="stop">Stop</button></div>`;
+  } else {
+    main = `<p class="goline">Ready when you are</p>
+      ${run.note?`<p class="sub" style="text-align:center">${esc(run.note)}</p>`:""}
+      <div class="row" style="justify-content:center;margin-top:1rem"><button class="btn" id="start">Start</button></div>`;
+  }
+  const lock = (running||asking) ? "disabled" : "";
   app.innerHTML = `
-    ${header("Study timer", CFG.focusMinutes+" minutes focus, "+CFG.breakMinutes+" minutes break")}
+    ${header("Let’s go", "Press Start when you sit down to study and Stop when you finish.")}
     <section class="panel" style="margin-top:1rem">
-      <div class="phase ${timer.phase}" id="phase">${timer.phase==="focus"?"Focus":timer.phase==="break"?"Break":"Ready"}${timer.paused?" (paused)":""}</div>
-      <div class="clock" id="clock">${clockText()}</div>
-      <div class="ring ${timer.phase==="break"?"break":""}"><i id="ringbar" style="width:${ringPct()}%"></i></div>
-      ${timer.note && !running ? `<p class="sub" style="text-align:center">${esc(timer.note)}</p>`:""}
-      <div class="row" style="margin:.75rem 0">
-        <select class="field" id="subj" aria-label="Subject" ${timer.phase==="focus"?"disabled":""} style="flex:1">${PLAN_SUBJECTS.map(([k,l])=>`<option value="${k}" ${timer.subject===k?"selected":""}>${esc(l)}</option>`).join("")}</select>
-        <select class="field" id="task" aria-label="Task" ${timer.phase==="focus"?"disabled":""} style="flex:2"><option value="">No specific task</option>${openTasks.map(t=>`<option ${timer.task===t.text?"selected":""}>${esc(t.text)}</option>`).join("")}</select>
-      </div>
-      <div class="row" style="justify-content:center">
-        ${timer.phase==="idle"?`<button class="btn" id="start">Start ${CFG.focusMinutes}-minute session</button>`:""}
-        ${timer.phase==="focus"?`<button class="btn" id="pause">${timer.paused?"Resume":"Pause"}</button><button class="btn ghost" id="stop">Stop and save</button>`:""}
-        ${timer.phase==="break"?`<button class="btn" id="skip">Skip break, start next session</button><button class="btn ghost" id="end">End for now</button>`:""}
+      ${main}
+      <div class="row" style="margin:.75rem 0 0">
+        <select class="field" id="subj" aria-label="Subject" ${lock} style="flex:1">${PLAN_SUBJECTS.map(([k,l])=>`<option value="${k}" ${run.subject===k?"selected":""}>${esc(l)}</option>`).join("")}</select>
+        <select class="field" id="task" aria-label="Task" ${lock} style="flex:2"><option value="">No specific task</option>${openTasks.map(t=>`<option ${run.task===t.text?"selected":""}>${esc(t.text)}</option>`).join("")}</select>
       </div>
     </section>
     <h2>Today: ${hm(mins)} of ${tmin} h</h2>
-    <section class="panel">${day.sessions.length?sessionsHtml(day):`<p class="small">Sessions you complete appear here and count towards today’s hours.</p>`}</section>
-    <p class="small">Keep this page open during a session. If the phone locks or you switch apps, the timer catches up and saves the session when you come back.</p>`;
+    <section class="panel">${day.sessions.length?sessionsHtml(day):`<p class="small">Sessions you finish appear here and count towards today’s hours.</p>`}</section>
+    <p class="small">You can close the app while you study. When you come back, press Stop to save your time.</p>`;
   bindHeader();
   const subj=document.getElementById("subj"), task=document.getElementById("task");
-  subj.onchange=()=>{ timer.subject=subj.value; saveTimer(); };
-  task.onchange=()=>{ timer.task=task.value; const t=openTasks.find(x=>x.text===task.value); if(t){ timer.subject=t.subject; subj.value=t.subject; } saveTimer(); };
-  const startFocus=()=>{ beepPrime(); const now=Date.now(); timer={phase:"focus", startedAt:now, endAt:now+CFG.focusMinutes*60000, paused:false, pausedMs:0, subject:subj.value, task:task.value}; saveTimer(); render(); };
+  subj.onchange=()=>{ run.subject=subj.value; saveRun(); };
+  task.onchange=()=>{ run.task=task.value; const t=openTasks.find(x=>x.text===task.value); if(t){ run.subject=t.subject; subj.value=t.subject; } saveRun(); };
   const b=id=>document.getElementById(id);
-  if(b("start")) b("start").onclick=startFocus;
-  if(b("skip")) b("skip").onclick=startFocus;
-  if(b("end")) b("end").onclick=()=>{ timer={phase:"idle", subject:timer.subject}; saveTimer(); render(); };
-  if(b("pause")) b("pause").onclick=()=>{
-    if(timer.paused){ timer.endAt=Date.now()+timer.remaining; timer.pausedMs=(timer.pausedMs||0)+(Date.now()-timer.pausedAt); timer.paused=false; }
-    else { timer.remaining=timer.endAt-Date.now(); timer.pausedAt=Date.now(); timer.paused=true; }
-    saveTimer(); render(); };
+  if(b("start")) b("start").onclick=()=>{ beepPrime(); run={phase:"focus", startedAt:Date.now(), chimed:false, subject:subj.value, task:task.value}; saveRun(); render(); };
   if(b("stop")) b("stop").onclick=async()=>{
-    const now=Date.now(); const pausedExtra = timer.paused ? now-timer.pausedAt : 0;
-    const studied=(now-timer.startedAt-(timer.pausedMs||0)-pausedExtra)/60000;
-    if(!confirm(`Stop and save ${Math.max(0,Math.round(studied))} minutes?`)) return;
-    await logSession(new Date(timer.startedAt).toISOString(), new Date(now).toISOString(), studied);
-    timer={phase:"idle", subject:timer.subject, task:timer.task}; saveTimer(); render(); };
+    const now=Date.now(), elapsed=Math.round((now-run.startedAt)/60000);
+    if(elapsed > (CFG.longSessionMinutes||120)){ asking={elapsed, stopAt:now}; render(); return; }
+    let note;
+    if(elapsed>=1){ await logSession(iso(run.startedAt), iso(now), elapsed); note="Saved "+hm(elapsed)+". Well done! Take a short break."; }
+    else note="That was under a minute, so it was not saved.";
+    run={phase:"idle", subject:run.subject, task:run.task, note}; saveRun(); render(); };
+  if(b("askform")) b("askform").onsubmit=async e=>{ e.preventDefault();
+    const m=parseInt(b("askmins").value,10); if(!(m>=1 && m<=asking.elapsed)) return;
+    await logSession(iso(run.startedAt), iso(asking.stopAt), m);
+    asking=null; run={phase:"idle", subject:run.subject, task:run.task, note:"Saved "+hm(m)+". Well done! Take a short break."}; saveRun(); render(); };
+  if(b("dontsave")) b("dontsave").onclick=()=>{ asking=null; run={phase:"idle", subject:run.subject, task:run.task, note:"That session was not saved."}; saveRun(); render(); };
+  if(b("keep")) b("keep").onclick=()=>{ asking=null; render(); };
 }
-function beepPrime(){ try{ audioCtx = audioCtx || new (window.AudioContext||window.webkitAudioContext)(); audioCtx.resume(); }catch(e){} }
-function clockText(){ const ms = timer.phase==="idle" ? CFG.focusMinutes*60000 : remainingMs(); const s=Math.ceil(ms/1000); return pad(Math.floor(s/60))+":"+pad(s%60); }
-function ringPct(){ if(timer.phase==="idle") return 0; const total=(timer.phase==="focus"?CFG.focusMinutes:CFG.breakMinutes)*60000; return Math.min(100,(1-remainingMs()/total)*100); }
-function updateClock(){ const c=document.getElementById("clock"), r=document.getElementById("ringbar"); if(c) c.textContent=clockText(); if(r) r.style.width=ringPct()+"%"; if(timer.phase!=="idle") document.title=clockText()+" "+(timer.phase==="focus"?"Focus":"Break"); else document.title="Study Desk"; }
 
 /* ================= PRACTICE ================= */
 function renderPractice(){
@@ -757,7 +773,7 @@ async function renderProgress(){
 /* ================= boot ================= */
 function showLogin(msg){
   document.getElementById("tabs").hidden=true;
-  app.innerHTML=`<div class="login"><h1>Study Desk</h1><p class="sub">Daily plan, study timer and revision practice.</p>
+  app.innerHTML=`<div class="login"><h1>Study Desk</h1><p class="sub">Daily plan, study sessions and revision practice.</p>
     ${msg?`<p class="banner">${esc(msg)}</p>`:""}
     <div><button class="btn" id="gsign">Sign in with Google</button></div></div>`;
   document.getElementById("gsign").onclick=()=>authApi.signIn();
@@ -767,7 +783,7 @@ async function startAs(r){
   try{ progress = (await store.getProgress()) || blankProgress(); }catch(e){ console.error(e); progress=blankProgress(); saveErr="Could not load saved data. Check your internet connection."; }
   progress.items=progress.items||{}; progress.mistakes=progress.mistakes||{};
   view={tab:"today", date:todayStr(), sub:null};
-  if(role==="student") await timerTick();
+  if(role==="student") runTick();
   render();
 }
 async function boot(){

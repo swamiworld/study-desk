@@ -18,9 +18,10 @@ window.APP_CONFIG = {
   // Daily study targets in hours: [minimum, maximum]
   targets: { school: [7, 8], holiday: [10, 12] },
 
-  // Study timer, in minutes
+  // Focus sessions, in minutes. focusMinutes is the target shown after Start (no countdown).
+  // After longSessionMinutes, Stop asks how long she actually studied.
   focusMinutes: 50,
-  breakMinutes: 10,
+  longSessionMinutes: 120,
 
   // Spaced revision gaps in days, and the mastery rule
   intervals: [1, 3, 7, 21, 45],

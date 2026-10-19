@@ -15,7 +15,7 @@ Until `config.js` has real Firebase settings, the app runs in demo mode and save
 - `studentEmail`: your daughter’s Google account, lowercase
 - `studentName`: shown in the parent view
 - `parentEmails`: your Google account (add more if needed)
-- Targets, timer lengths and the mastery rule can also be changed here.
+- Targets, the focus length and the mastery rule can also be changed here.
 
 Use the same emails in `firestore.rules`.
 
@@ -29,7 +29,7 @@ Open the link on her phone and use the browser’s "Add to Home screen" option s
 
 ## How it works
 - **Today**: she writes the day’s plan and ticks items off. Unfinished tasks from yesterday can be brought over with one tap. Weekends default to holidays; any day can be switched.
-- **Timer**: 50 minutes focus, 10 minutes break. Completed sessions are saved automatically and count towards the day’s hours. Stopping early saves the minutes studied.
+- **Let’s go**: she presses Start when she sits down to study and Stop when she finishes. After Start it shows “focus until” a time 50 minutes ahead, with a soft chime then, but there is no countdown. Stop saves the minutes studied. If she stops after more than 2 hours, it asks how long she actually studied. A session that was never stopped is not counted.
 - **Practice**: quizzes and flashcards per chapter, with spaced revision (1, 3, 7, 21, 45 days). Extra practice when a chapter isn’t due does not change the schedule.
 - **Mastery**: 9/10 or more on 3 revisions in a row masters a level. The next level unlocks if `content.js` has one; otherwise the chapter shows "New questions needed".
 - **Study**: revision notes and formula sheets (PDFs) open inside the app, with a page menu, a contents menu when the PDF has bookmarks, and zoom. Both student and parent see this tab.
