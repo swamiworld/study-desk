@@ -191,6 +191,8 @@ const fmtDow = s => parseD(s).toLocaleDateString(undefined,{weekday:"short"});
 const fmtTime = iso => new Date(iso).toLocaleTimeString(undefined,{hour:"numeric",minute:"2-digit"});
 const hm = mins => { mins=Math.round(mins); const h=Math.floor(mins/60), m=mins%60; return h ? (m? h+" h "+m+" min" : h+" h") : m+" min"; };
 const uid = () => Math.random().toString(36).slice(2,10);
+const APP_VERSION = "2026-10-20";
+const versionLine = () => `<p class="small" style="text-align:center;margin-top:2rem">Study Desk, version ${APP_VERSION}</p>`;
 const isWeekend = s => { const d=parseD(s).getDay(); return d===0||d===6; };
 
 /* ================= storage ================= */
@@ -313,7 +315,15 @@ function runTick(){
   }
 }
 setInterval(runTick, 15000);
-document.addEventListener("visibilitychange", ()=>{ if(!document.hidden) runTick(); });
+document.addEventListener("visibilitychange", async ()=>{
+  if(document.hidden) return;
+  runTick();
+  if(!role || !store || asking) return;
+  // another device may have added entries while this one was in the background: drop the cache and reload
+  for(const k in days) delete days[k];
+  if(role==="parent"){ try{ const p=await store.getProgress(); if(p){ progress=p; progress.items=progress.items||{}; progress.mistakes=progress.mistakes||{}; } }catch(e){} }
+  if(!view.sub && ["today","go","progress","study"].includes(view.tab)) render();
+});
 
 /* ================= routing ================= */
 let view = {tab:"today", date:todayStr(), sub:null};
@@ -413,7 +423,8 @@ async function renderToday(){
         <label class="fld">Note (optional)<input class="field" id="asNote" maxlength="80" autocomplete="off"></label>
         <p class="banner" id="asErr" hidden style="margin:0"></p>
         <div class="row"><button class="btn" type="submit">Save entry</button><button class="btn ghost" type="button" id="asCancel">Cancel</button></div>
-      </form>`:""}`;
+      </form>`:""}
+    ${versionLine()}`;
   bindHeader();
   document.getElementById("prevDay").onclick=()=>go({date:addDays(d,-1)});
   document.getElementById("nextDay").onclick=()=>{ if(!isToday) go({date:addDays(d,1)}); };
@@ -687,7 +698,8 @@ function renderStudy(){
   }).join("");
   app.innerHTML = `
     ${header("Study", "Revision notes and formula sheets")}
-    ${sections || `<p class="small" style="margin-top:1rem">No study material added yet.</p>`}`;
+    ${sections || `<p class="small" style="margin-top:1rem">No study material added yet.</p>`}
+    ${versionLine()}`;
   bindHeader();
   app.querySelectorAll("[data-mat]").forEach(b=>b.onclick=()=>{ const m=MATERIALS[+b.dataset.mat]; go({sub:{name:"pdf", file:m.file, title:m.title, chapters:m.chapters||null, zoom:1}}); });
 }
