@@ -33,6 +33,7 @@ Open the link on her phone and use the browser’s "Add to Home screen" option s
 - **Practice**: quizzes and flashcards per chapter, with spaced revision (1, 3, 7, 21, 45 days). Extra practice when a chapter isn’t due does not change the schedule.
 - **Mastery**: 9/10 or more on 3 revisions in a row masters a level. The next level unlocks if `content.js` has one; otherwise the chapter shows "New questions needed".
 - **Study**: revision notes and formula sheets (PDFs) open inside the app, with a page menu, a contents menu when the PDF has bookmarks, and zoom. Both student and parent see this tab.
+- **Manual sessions (parent)**: if she forgets to press Start or Stop, the parent can open the Day screen, pick the date, tap **Add a session** and enter the start time and minutes. The entry shows as “Added by parent” for both of you, and he can remove only his own entries. This needs the current `firestore.rules` to be published (Firebase console → Firestore → Rules).
 - **Parent view**: sign in with a parent email to see her day (any date), weekly hours, plan completion, practice and mistakes. The parent view is read-only.
 
 ## Adding study material
