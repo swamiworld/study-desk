@@ -33,6 +33,7 @@ html{scroll-padding-top:env(safe-area-inset-top,0px)}
   --ok:#5BD69A; --ok-soft:#123326; --bad:#FF8A80; --bad-soft:#3A1715; --nav:#141C3D;
 }
 *,*::before,*::after{box-sizing:inherit}
+[hidden]{display:none!important}
 body{
   margin:0;
   background-color:var(--bg);
@@ -148,6 +149,7 @@ table.prog th{color:var(--muted);font-weight:700}
 .pdfbar h2{margin:.25rem 0 .5rem;font-size:1.05rem}
 .pdfbar .field{padding:.35rem .4rem;min-width:0}
 .pdfscroll{overflow-x:auto}
+.fld{display:flex;flex-direction:column;gap:.25rem;font-size:.9rem;color:var(--muted)}
 .pdfpage{background:#fff;border:1px solid var(--line);border-radius:6px;margin:.6rem 0;overflow:hidden;scroll-margin-top:8rem}
 .pdfpage canvas{display:block;width:100%;height:auto}
 /* nav */
@@ -201,7 +203,9 @@ function localStore(){
     async getProgress(){ return get("progress"); },
     async saveProgress(p){ set("progress", p); },
     async getDay(d){ return get("day:"+d); },
-    async saveDay(d,data){ set("day:"+d, data); }
+    async saveDay(d,data){ set("day:"+d, {...(get("day:"+d)||{}), ...data}); },
+    async addSession(d,s){ const x=get("day:"+d)||{}; x.sessions=[...(x.sessions||[]), s]; set("day:"+d, x); },
+    async removeSession(d,s){ const x=get("day:"+d)||{}; x.sessions=(x.sessions||[]).filter(e=>e.id!==s.id); set("day:"+d, x); }
   };
 }
 async function firebaseStore(fs, db, email){
@@ -210,7 +214,9 @@ async function firebaseStore(fs, db, email){
     async getProgress(){ const s=await fs.getDoc(fs.doc(db, base+"/state/progress")); return s.exists()? s.data() : null; },
     async saveProgress(p){ await fs.setDoc(fs.doc(db, base+"/state/progress"), p); },
     async getDay(d){ const s=await fs.getDoc(fs.doc(db, base+"/days/"+d)); return s.exists()? s.data() : null; },
-    async saveDay(d,data){ await fs.setDoc(fs.doc(db, base+"/days/"+d), data); }
+    async saveDay(d,data){ await fs.setDoc(fs.doc(db, base+"/days/"+d), data, {merge:true}); },
+    async addSession(d,s){ await fs.setDoc(fs.doc(db, base+"/days/"+d), {sessions: fs.arrayUnion(s)}, {merge:true}); },
+    async removeSession(d,s){ await fs.updateDoc(fs.doc(db, base+"/days/"+d), {sessions: fs.arrayRemove(s)}); }
   };
 }
 
@@ -231,7 +237,7 @@ async function loadDay(d, force){
 }
 async function saveDay(d){
   if(role!=="student") return;
-  try{ await store.saveDay(d, days[d]); saveErr=""; }catch(e){ console.error(e); saveErr="Could not save. Check your internet connection."; showSaveErr(); }
+  try{ const {sessions, ...rest} = days[d]; await store.saveDay(d, rest); saveErr=""; }catch(e){ console.error(e); saveErr="Could not save. Check your internet connection."; showSaveErr(); }
 }
 let progTimer=null;
 function saveProgress(){
@@ -284,8 +290,8 @@ async function logSession(startIso, endIso, minutes){
   if(minutes < 1 || role!=="student") return;
   const d = todayStr(new Date(startIso));
   const day = await loadDay(d);
-  day.sessions.push({id:uid(), start:startIso, end:endIso, minutes:Math.round(minutes), subject:run.subject||"other", task:run.task||""});
-  await saveDay(d);
+  const entry = {id:uid(), start:startIso, end:endIso, minutes:Math.round(minutes), subject:run.subject||"other", task:run.task||""};
+  try{ await store.addSession(d, entry); day.sessions.push(entry); saveErr=""; }catch(e){ console.error(e); saveErr="Could not save. Check your internet connection."; showSaveErr(); }
 }
 function refreshFocusViews(){
   if(asking) return;
@@ -366,12 +372,15 @@ async function renderToday(){
   const who = role==="parent" ? (CFG.studentName+"’s day") : (isToday ? "Today" : "Past day");
   app.innerHTML = `
     ${header(who, fmtLong(d))}
-    <div class="spread" style="margin-top:1rem">
-      <div class="daynav"><button id="prevDay" aria-label="Previous day">‹</button><button id="nextDay" aria-label="Next day" ${isToday?"disabled":""}>›</button>${isToday?"":`<button class="linkbtn" id="toToday" style="width:auto;border:0;background:none">Go to today</button>`}</div>
-      <div class="seg" role="group" aria-label="Type of day">
-        <button data-type="school" aria-pressed="${day.type==="school"}" ${editable?"":"disabled"}>School day</button>
-        <button data-type="holiday" aria-pressed="${day.type==="holiday"}" ${editable?"":"disabled"}>Holiday</button>
-      </div>
+    <div class="daynav" style="margin-top:1rem">
+      <button id="prevDay" aria-label="Previous day">‹</button>
+      <input class="field" type="date" id="pickDay" value="${d}" max="${todayStr()}" aria-label="Pick a date" style="flex:1">
+      <button id="nextDay" aria-label="Next day" ${isToday?"disabled":""}>›</button>
+      ${isToday?"":`<button class="linkbtn" id="toToday" style="width:auto;border:0;background:none">Today</button>`}
+    </div>
+    <div class="seg" role="group" aria-label="Type of day" style="margin-top:.75rem">
+      <button data-type="school" aria-pressed="${day.type==="school"}" ${editable?"":"disabled"}>School day</button>
+      <button data-type="holiday" aria-pressed="${day.type==="holiday"}" ${editable?"":"disabled"}>Holiday</button>
     </div>
     <section class="panel" style="margin-top:1rem">
       <div class="hours"><strong>${hm(mins)}</strong><span class="sub">studied, target ${tmin}–${tmax} h</span></div>
@@ -394,12 +403,46 @@ async function renderToday(){
       ${carryHtml?`<div style="margin-top:.75rem">${carryHtml}</div>`:""}
     </section>
     ${role==="student" && dueCount ? `<h2>Revision</h2><button class="duebtn" id="toPractice"><b>${dueCount} chapter${dueCount===1?"":"s"} due for revision</b><span>Open practice</span></button>`:""}
-    ${role==="parent" && day.sessions.length ? `<h2>Study sessions</h2><section class="panel">${sessionsHtml(day)}</section>`:""}`;
+    ${day.sessions.length || role==="parent" ? `<h2>Study sessions</h2><section class="panel">${day.sessions.length?sessionsHtml(day):`<p class="small">No sessions on this day.</p>`}</section>`:""}
+    ${role==="parent" ? `<div style="margin-top:.75rem"><button class="btn ghost small" id="addSess">Add a session</button></div>
+      <form class="panel stack" id="addForm" hidden style="margin-top:.75rem">
+        <p class="small" style="margin:0">If she forgot to press Start or Stop, you can add the time she studied on ${esc(fmtShort(d))}. It will show as “Added by parent”.</p>
+        <label class="fld">Started at<input class="field" type="time" id="asStart" value="17:00" required></label>
+        <label class="fld">Minutes studied<input class="field" type="number" id="asMins" min="1" max="720" inputmode="numeric" required></label>
+        <label class="fld">Subject<select class="field" id="asSubj">${PLAN_SUBJECTS.map(([k,l])=>`<option value="${k}">${esc(l)}</option>`).join("")}</select></label>
+        <label class="fld">Note (optional)<input class="field" id="asNote" maxlength="80" autocomplete="off"></label>
+        <p class="banner" id="asErr" hidden style="margin:0"></p>
+        <div class="row"><button class="btn" type="submit">Save entry</button><button class="btn ghost" type="button" id="asCancel">Cancel</button></div>
+      </form>`:""}`;
   bindHeader();
   document.getElementById("prevDay").onclick=()=>go({date:addDays(d,-1)});
   document.getElementById("nextDay").onclick=()=>{ if(!isToday) go({date:addDays(d,1)}); };
+  document.getElementById("pickDay").onchange=e=>{ const v=e.target.value; if(/^\d{4}-\d{2}-\d{2}$/.test(v) && v<=todayStr()) go({date:v}); else e.target.value=d; };
   const tt=document.getElementById("toToday"); if(tt) tt.onclick=()=>go({date:todayStr()});
   const tp=document.getElementById("toPractice"); if(tp) tp.onclick=()=>go({tab:"practice"});
+  if(role==="parent"){
+    const form=document.getElementById("addForm"), errEl=document.getElementById("asErr");
+    document.getElementById("addSess").onclick=()=>{ form.hidden=!form.hidden; if(!form.hidden) document.getElementById("asMins").focus(); };
+    document.getElementById("asCancel").onclick=()=>{ form.hidden=true; errEl.hidden=true; };
+    form.onsubmit=async e=>{
+      e.preventDefault();
+      const [hh,mm]=document.getElementById("asStart").value.split(":").map(Number), mins=parseInt(document.getElementById("asMins").value,10);
+      const st=parseD(d); st.setHours(hh,mm,0,0);
+      const endMs=st.getTime()+mins*60000;
+      const fail=m=>{ errEl.textContent=m; errEl.hidden=false; };
+      if(!(mins>=1 && mins<=720)) return fail("Enter the minutes studied, between 1 and 720.");
+      if(endMs > Date.now()+60000) return fail("That session would end in the future. Check the start time and minutes.");
+      const entry={id:uid(), start:st.toISOString(), end:new Date(endMs).toISOString(), minutes:mins, subject:document.getElementById("asSubj").value, task:document.getElementById("asNote").value.trim(), by:"parent", addedAt:new Date().toISOString()};
+      try{ await store.addSession(d, entry); days[d].sessions.push(entry); render(); }
+      catch(err){ console.error(err); fail("Could not save. Check your internet connection and try again."); }
+    };
+    app.querySelectorAll("[data-rmsess]").forEach(b=>b.onclick=async()=>{
+      const entry=days[d].sessions.find(x=>x.id===b.dataset.rmsess); if(!entry || entry.by!=="parent") return;
+      if(!confirm("Remove this entry you added?")) return;
+      try{ await store.removeSession(d, entry); days[d].sessions=days[d].sessions.filter(x=>x.id!==entry.id); render(); }
+      catch(err){ console.error(err); alert("Could not remove it. Check your internet connection and try again."); }
+    });
+  }
   if(editable){
     app.querySelectorAll("[data-type]").forEach(b=>b.onclick=async()=>{ day.type=b.dataset.type; await saveDay(d); render(); });
     app.querySelectorAll("[data-tid]").forEach(c=>c.onchange=async()=>{ const t=day.tasks.find(x=>x.id===c.dataset.tid); t.done=c.checked; t.doneAt=c.checked?new Date().toISOString():null; await saveDay(d); render(); });
@@ -413,7 +456,7 @@ async function renderToday(){
   }
 }
 function sessionsHtml(day){
-  return day.sessions.slice().sort((a,b)=>a.start<b.start?-1:1).map(s=>`<div class="session"><span>${fmtTime(s.start)} to ${fmtTime(s.end)}${s.task?`, ${esc(s.task)}`:""}</span><span><span class="tag">${esc(SUBJECT_NAMES[s.subject]||"Other")}</span> ${s.minutes} min</span></div>`).join("");
+  return day.sessions.slice().sort((a,b)=>a.start<b.start?-1:1).map(s=>`<div class="session"><span>${fmtTime(s.start)} to ${fmtTime(s.end)}${s.task?`, ${esc(s.task)}`:""}</span><span><span class="tag">${esc(SUBJECT_NAMES[s.subject]||"Other")}</span>${s.by==="parent"?` <span class="tag">Added by parent</span>`:""} ${s.minutes} min${role==="parent" && s.by==="parent"?` <button class="linkbtn" data-rmsess="${esc(s.id)}" aria-label="Remove this entry">Remove</button>`:""}</span></div>`).join("");
 }
 
 /* ================= LET'S GO ================= */
