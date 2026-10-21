@@ -171,7 +171,9 @@ nav.tabs button[aria-current="page"]{color:var(--accent);box-shadow:inset 0 3px 
 const CFG = window.APP_CONFIG, CONTENT = window.CONTENT;
 const FB_VER = "10.12.2";
 const DEMO = !CFG.firebase.apiKey || CFG.firebase.apiKey.startsWith("PASTE");
-const STUDENT = CFG.studentEmail.toLowerCase();
+// config.js lists the students; an older config with a single studentEmail still works
+const STUDENTS = (CFG.students && CFG.students.length ? CFG.students : [{email:CFG.studentEmail, name:CFG.studentName||"Student"}])
+  .map(x=>({email:String(x.email).toLowerCase(), name:x.name||"Student"}));
 const PARENTS = CFG.parentEmails.map(e=>e.toLowerCase());
 const SUBJECT_NAMES = Object.fromEntries(CONTENT.subjects.map(s=>[s.id,s.name]));
 const PLAN_SUBJECTS = [...CONTENT.subjects.map(s=>[s.id,s.name]), ["other","Other"]];
@@ -197,8 +199,8 @@ const isWeekend = s => { const d=parseD(s).getDay(); return d===0||d===6; };
 
 /* ================= storage ================= */
 // Firestore layout: students/{email}/state/progress  and  students/{email}/days/{YYYY-MM-DD}
-function localStore(){
-  const K = "study-desk-v1:";
+function localStore(email){
+  const K = "study-desk-v1:" + (email && email!==STUDENTS[0].email ? email+":" : "");
   const get = k => { try{ const v=localStorage.getItem(K+k); return v?JSON.parse(v):null; }catch(e){ return null; } };
   const set = (k,v) => { try{ localStorage.setItem(K+k, JSON.stringify(v)); }catch(e){} };
   return {
@@ -224,10 +226,23 @@ async function firebaseStore(fs, db, email){
 
 /* ================= app state ================= */
 let store = null, role = null, authApi = null, me = null, loginMsg = "";
+let currentStudent = null;    // whose data is on screen: her own email, or the one the parent picked
+let makeStore = null;         // email -> store for that student
 let progress = null;          // {items:{}, mistakes:{}, updatedAt}
 const days = {};              // cache: date -> {type, tasks, sessions}
 let saveErr = "";
 
+const studentName = () => (STUDENTS.find(x=>x.email===currentStudent)||STUDENTS[0]).name;
+async function switchStudent(email){
+  if(role!=="parent" || email===currentStudent || !STUDENTS.some(x=>x.email===email)) return;
+  currentStudent = email;
+  try{ localStorage.setItem("study-desk-parent-student", email); }catch(e){}
+  store = await makeStore(email);
+  for(const k in days) delete days[k];
+  try{ progress = (await store.getProgress()) || blankProgress(); }catch(e){ console.error(e); progress = blankProgress(); }
+  progress.items = progress.items||{}; progress.mistakes = progress.mistakes||{};
+  render();
+}
 function blankProgress(){ return {items:{}, mistakes:{}, updatedAt:0}; }
 function blankDay(d){ return {type: isWeekend(d) ? "holiday" : "school", tasks:[], sessions:[], carried:false}; }
 async function loadDay(d, force){
@@ -340,9 +355,13 @@ function header(title, subtitle){
   return `${DEMO?`<div class="banner">Demo mode: data is saved on this device only. Add your Firebase settings to config.js to go live.</div>`:""}
   <div class="spread"><div><h1>${esc(title)}</h1>${subtitle?`<p class="sub">${esc(subtitle)}</p>`:""}</div>
   ${(!DEMO && me)?`<button class="linkbtn" id="signout">Sign out</button>`:""}</div>
+  ${role==="parent" && STUDENTS.length>1 ? `<div class="seg" role="group" aria-label="Student" style="margin-top:.6rem">${STUDENTS.map(x=>`<button data-stu="${esc(x.email)}" aria-pressed="${x.email===currentStudent}">${esc(x.name)}</button>`).join("")}</div>`:""}
   <p class="banner" id="saveerr" ${saveErr?"":"hidden"}>${esc(saveErr)}</p>`;
 }
-function bindHeader(){ const so=document.getElementById("signout"); if(so) so.onclick=()=>authApi.signOut(); }
+function bindHeader(){
+  const so=document.getElementById("signout"); if(so) so.onclick=()=>authApi.signOut();
+  app.querySelectorAll("[data-stu]").forEach(b=>b.onclick=()=>switchStudent(b.dataset.stu));
+}
 async function render(){
   if(!role) return;
   setTabs();
@@ -379,7 +398,7 @@ async function renderToday(){
   }
   const dueCount = chapterList().filter(c=>isDue(c.key)).length;
   const live = isToday && run.phase==="focus" ? `<p class="small">Studying now, since ${fmtTime(new Date(run.startedAt).toISOString())}.</p>` : "";
-  const who = role==="parent" ? (CFG.studentName+"’s day") : (isToday ? "Today" : "Past day");
+  const who = role==="parent" ? (studentName()+"’s day") : (isToday ? "Today" : "Past day");
   app.innerHTML = `
     ${header(who, fmtLong(d))}
     <div class="daynav" style="margin-top:1rem">
@@ -557,7 +576,7 @@ function renderPractice(){
     }).join("")}</div>`;
   }).join("");
   app.innerHTML = `
-    ${header(student?"Practice":CFG.studentName+"’s practice", "Mastered = "+CFG.masteryScore+"/10 or more on "+CFG.masteryInARow+" revisions in a row")}
+    ${header(student?"Practice":studentName()+"’s practice", "Mastered = "+CFG.masteryScore+"/10 or more on "+CFG.masteryInARow+" revisions in a row")}
     ${due.length && student ? `<h2>Due today</h2><div class="stack">${due.map(c=>{ const late=diffDays(item(c.key).next,t); return `<button class="duebtn" data-quiz="${c.key}"><b>${esc(c.sname)} Ch ${c.n}: ${esc(c.t)}</b><span>${late>0?late+" day"+(late===1?"":"s")+" late":"due today"}</span></button>`; }).join("")}</div>`:""}
     <h2>Mistakes to fix</h2>
     <div class="panel spread"><div>${mcount?`<b>${mcount}</b> question${mcount===1?"":"s"} answered wrong. Answer once correctly to clear.`:"No mistakes saved."}</div>${mcount?`<button class="btn small" id="openM">${student?"Review":"View"}</button>`:""}</div>
@@ -805,7 +824,7 @@ async function renderProgress(){
   const bySub={}; ds.forEach(d=>d.sessions.forEach(s=>{ bySub[s.subject]=(bySub[s.subject]||0)+s.minutes; }));
   const list=chapterList().filter(c=>item(c.key));
   app.innerHTML=`
-    ${header(role==="student"?"Progress":CFG.studentName+"’s week", "Last 7 days")}
+    ${header(role==="student"?"Progress":studentName()+"’s week", "Last 7 days")}
     <div class="stats" style="margin-top:1rem">
       <div class="stat"><strong>${(totalMin/60).toFixed(1)} h</strong><span>studied of ${(targetMin/60).toFixed(0)} h target</span></div>
       <div class="stat"><strong>${metDays}/7</strong><span>days target met</span></div>
@@ -842,7 +861,7 @@ async function startAs(r){
   render();
 }
 async function boot(){
-  if(DEMO){ store=localStore(); me=null; return startAs("student"); }
+  if(DEMO){ makeStore = async e=>localStore(e); currentStudent=STUDENTS[0].email; store=await makeStore(currentStudent); me=null; return startAs("student"); }
   try{
     const fa=await import(`https://www.gstatic.com/firebasejs/${FB_VER}/firebase-app.js`);
     const au=await import(`https://www.gstatic.com/firebasejs/${FB_VER}/firebase-auth.js`);
@@ -853,13 +872,18 @@ async function boot(){
         try{ await au.signInWithPopup(auth,p); }catch(e){ if(e && (e.code==="auth/popup-blocked"||e.code==="auth/operation-not-supported-in-this-environment")) await au.signInWithRedirect(auth,p); else showLogin("Sign-in did not complete. Please try again."); } },
       signOut: async()=>{ await au.signOut(auth); }
     };
+    makeStore = e=>firebaseStore(fs, db, e);
     au.onAuthStateChanged(auth, async user=>{
-      role=null; for(const k in days) delete days[k];
+      role=null; currentStudent=null; for(const k in days) delete days[k];
       if(!user){ me=null; const m=loginMsg; loginMsg=""; return showLogin(m); }
       me=user; const email=(user.email||"").toLowerCase();
-      if(email===STUDENT){ store=await firebaseStore(fs, db, STUDENT); return startAs("student"); }
-      if(PARENTS.includes(email)){ store=await firebaseStore(fs, db, STUDENT); return startAs("parent"); }
-      loginMsg=`${email} is not set up for this app. Sign in with the student or parent Google account.`;
+      if(STUDENTS.some(x=>x.email===email)){ currentStudent=email; store=await makeStore(email); return startAs("student"); }
+      if(PARENTS.includes(email)){
+        let last=null; try{ last=localStorage.getItem("study-desk-parent-student"); }catch(e){}
+        currentStudent = STUDENTS.some(x=>x.email===last) ? last : STUDENTS[0].email;
+        store=await makeStore(currentStudent); return startAs("parent");
+      }
+      loginMsg=`${email} is not set up for this app. Sign in with a student or parent Google account.`;
       await au.signOut(auth);
     });
   }catch(e){ console.error(e); app.innerHTML=`<p class="banner">Could not load. Check your internet connection and the Firebase settings in config.js.</p>`; }

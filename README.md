@@ -12,12 +12,11 @@ Until `config.js` has real Firebase settings, the app runs in demo mode and save
 5. Firestore → **Rules** tab → paste the contents of `firestore.rules`, replace the two email addresses, and Publish.
 
 ## 2. Fill in config.js
-- `studentEmail`: your daughter’s Google account, lowercase
-- `studentName`: shown in the parent view
+- `students`: one line per child, with the child’s Google account (lowercase) and the name shown in the parent view. Each child has separate data and sees only their own. With more than one child, the parent gets a name switcher at the top of each screen, and the app remembers the last one picked on that phone.
 - `parentEmails`: your Google account (add more if needed)
 - Targets, the focus length and the mastery rule can also be changed here.
 
-Use the same emails in `firestore.rules`.
+Use the same emails in `firestore.rules` (the `studentEmails()` and `parentEmails()` lists at the top).
 
 ## 3. Host on GitHub Pages
 1. Create a GitHub repository, for example `study-desk`, and upload `index.html`, `config.js`, `content.js` and the `materials/` folder.

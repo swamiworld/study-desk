@@ -11,12 +11,15 @@ window.APP_CONFIG = {
   },
 
   // Google accounts, in lowercase
-  studentEmail: "dharshiniworld@gmail.com",
-  studentName: "Student",
+  students: [
+    { email: "dharshiniworld@gmail.com", name: "Dharshini" },
+    { email: "swami.softeon@gmail.com", name: "Swami" },
+    { email: "dhakshinaworld@gmail.com", name: "Dhakshina" }
+  ],
   parentEmails: ["swamiworld@gmail.com"],
 
   // Daily study targets in hours: [minimum, maximum]
-  targets: { school: [7, 8], holiday: [10, 12] },
+  targets: { school: [5, 7], holiday: [8, 10] },
 
   // Focus sessions, in minutes. focusMinutes is the target shown after Start (no countdown).
   // After longSessionMinutes, Stop asks how long she actually studied.
