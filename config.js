@@ -14,7 +14,18 @@ window.APP_CONFIG = {
   students: [
     { email: "dharshiniworld@gmail.com", name: "Dharshini" },
     { email: "swami.softeon@gmail.com", name: "Swami" },
-    { email: "dhakshinaworld@gmail.com", name: "Dhakshina" }
+    // Dhakshina plans her own subjects, with no quizzes (practice:false). A student with no `subjects` list gets Physics, Chemistry and Maths.
+    { email: "dhakshinaworld@gmail.com", name: "Dhakshina", practice: false,
+      subjects: ["maths", "sst", "pc", "bio", "sanskrit", "english"] }
+  ],
+
+  // Subjects with no question bank: used for planning, the Let’s go screen and hours by subject
+  extraSubjects: [
+    { id: "pc", name: "PC" },
+    { id: "sst", name: "SST" },
+    { id: "bio", name: "Biology" },
+    { id: "sanskrit", name: "Sanskrit" },
+    { id: "english", name: "English" }
   ],
   parentEmails: ["swamiworld@gmail.com"],
 
