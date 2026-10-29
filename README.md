@@ -12,6 +12,7 @@ Until `config.js` has real Firebase settings, the app runs in demo mode and save
 5. Firestore → **Rules** tab → paste the contents of `firestore.rules`, replace the two email addresses, and Publish.
 
 ## 2. Fill in config.js
+- `extraSubjects`: subjects with no quizzes (for example SST or Sanskrit). A child with a `subjects` list in `students` plans only with those; add `practice: false` to hide that child’s Practice tab.
 - `students`: one line per child, with the child’s Google account (lowercase) and the name shown in the parent view. Each child has separate data and sees only their own. With more than one child, the parent gets a name switcher at the top of each screen, and the app remembers the last one picked on that phone.
 - `parentEmails`: your Google account (add more if needed)
 - Targets, the focus length and the mastery rule can also be changed here.
@@ -28,7 +29,9 @@ Open the link on her phone and use the browser’s "Add to Home screen" option s
 
 ## How it works
 - **Today**: she writes the day’s plan and ticks items off. Unfinished tasks from yesterday can be brought over with one tap. Weekends default to holidays; any day can be switched.
-- **Let’s go**: she presses Start when she sits down to study and Stop when she finishes. After Start it shows “focus until” a time 50 minutes ahead, with a soft chime then, but there is no countdown. Stop saves the minutes studied. If she stops after more than 2 hours, it asks how long she actually studied. A session that was never stopped is not counted.
+- **Planning ahead**: she can open tomorrow with the › arrow or the date picker, write tomorrow’s plan and mark it school day or holiday. The parent can see it. Ticking tasks is for today only.
+- **Stickers**: every focus session of 15 minutes or more that she ends with Stop earns a sticker and a celebration that gets bigger the more she has studied that day. Stickers show next to those sessions for both of you, and the last 30 days can be opened from “My stickers” (her) or “Stickers” (parent’s Day screen).
+- **Let’s go**: she presses Start when she sits down to study and Stop when she finishes. After Start it shows “focus until” a time 50 minutes ahead, with a soft chime then, but there is no countdown. Stop saves the minutes studied. The running session is saved online, so it shows as running on every device she uses. If she stops after more than 2 hours, it asks how long she actually studied. A session that was never stopped is not counted.
 - **Practice**: quizzes and flashcards per chapter, with spaced revision (1, 3, 7, 21, 45 days). Extra practice when a chapter isn’t due does not change the schedule.
 - **Mastery**: 9/10 or more on 3 revisions in a row masters a level. The next level unlocks if `content.js` has one; otherwise the chapter shows "New questions needed".
 - **Study**: revision notes and formula sheets (PDFs) open inside the app, with a page menu, a contents menu when the PDF has bookmarks, and zoom. Both student and parent see this tab.
