@@ -298,6 +298,9 @@ async function loadDay(d, force){
   let v = null;
   try{ v = await store.getDay(d); }catch(e){ console.error(e); }
   days[d] = Object.assign(blankDay(d), v || {});
+  // one run can be saved twice (double tap, or Stop on two devices at once): keep one row per start time
+  const seen = new Set();
+  days[d].sessions = (days[d].sessions||[]).filter(s=>{ if(seen.has(s.start)) return false; seen.add(s.start); return true; });
   return days[d];
 }
 async function saveDay(d){
@@ -367,7 +370,8 @@ async function endRun(note){
   cacheRun();
   await endRemote();
 }
-let asking = null;            // set when Stop is pressed after a very long run: {elapsed, stopAt}
+let stopping = false;         // true while a Stop is being saved, so a double tap cannot log the run twice
+let asking = null;           // set when Stop is pressed after a very long run: {elapsed, stopAt}
 let audioCtx=null;
 function beepPrime(){ try{ audioCtx = audioCtx || new (window.AudioContext||window.webkitAudioContext)(); audioCtx.resume(); }catch(e){} }
 function chime(){
@@ -382,6 +386,7 @@ async function logSession(startIso, endIso, minutes){
   if(minutes < 1 || role!=="student") return;
   const d = todayStr(new Date(startIso));
   const day = await loadDay(d);
+  if(day.sessions.some(s=>s.start===startIso)) return null;     // this run is already saved
   const entry = {id:uid(), start:startIso, end:endIso, minutes:Math.round(minutes), subject:run.subject||"other", task:run.task||""};
   try{ await store.addSession(d, entry); day.sessions.push(entry); saveErr=""; return entry; }catch(e){ console.error(e); saveErr="Could not save. Check your internet connection."; showSaveErr(); return null; }
 }
@@ -681,6 +686,9 @@ async function renderGo(){
     try{ await store.putRun(runDoc()); run.synced=true; }catch(e){ console.error(e); }
     cacheRun(); render(); };
   if(b("stop")) b("stop").onclick=async()=>{
+    if(stopping) return; stopping=true;
+    try{ await doStop(); } finally{ stopping=false; } };
+  async function doStop(){
     await syncRun(true);
     if(run.phase!=="focus"){ render(); return; }           // already stopped on another device
     const now=Date.now(), elapsed=Math.round((now-run.startedAt)/60000);
@@ -689,11 +697,15 @@ async function renderGo(){
     let entry = null;
     if(elapsed>=1){ entry = await logSession(iso(run.startedAt), iso(now), elapsed); note="Saved "+hm(elapsed)+". Well done! Take a short break."; }
     else note="That was under a minute, so it was not saved.";
-    await endRun(note); render(); celebrate(entry); };
+    await endRun(note); render(); celebrate(entry);
+  }
   if(b("askform")) b("askform").onsubmit=async e=>{ e.preventDefault();
-    const m=parseInt(b("askmins").value,10); if(!(m>=1 && m<=asking.elapsed)) return;
-    const entry = await logSession(iso(run.startedAt), iso(run.startedAt+m*60000), m);   // end = start + her answer, so the row never spans hours she did not study
-    asking=null; await endRun("Saved "+hm(m)+". Well done! Take a short break."); render(); celebrate(entry); };
+    if(stopping) return; stopping=true;
+    try{
+      const m=parseInt(b("askmins").value,10); if(!(m>=1 && m<=asking.elapsed)) return;
+      const entry = await logSession(iso(run.startedAt), iso(run.startedAt+m*60000), m);   // end = start + her answer, so the row never spans hours she did not study
+      asking=null; await endRun("Saved "+hm(m)+". Well done! Take a short break."); render(); celebrate(entry);
+    } finally{ stopping=false; } };
   if(b("dontsave")) b("dontsave").onclick=async()=>{ asking=null; await endRun("That session was not saved."); render(); };
   if(b("keep")) b("keep").onclick=()=>{ asking=null; render(); };
 }
