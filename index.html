@@ -241,16 +241,22 @@ const isWeekend = s => { const d=parseD(s).getDay(); return d===0||d===6; };
 
 /* ================= storage ================= */
 // Firestore layout: students/{email}/state/progress  and  students/{email}/days/{YYYY-MM-DD}
+// Firestore rejects an array inside an array. Demo mode checks too, so a bad data shape shows up in local testing.
+function noNestedArrays(v, path){
+  path = path || "data";
+  if(Array.isArray(v)) v.forEach((x,i)=>{ if(Array.isArray(x)) throw new Error("Nested arrays are not supported ("+path+"["+i+"])"); noNestedArrays(x, path+"["+i+"]"); });
+  else if(v && typeof v==="object") for(const k in v) noNestedArrays(v[k], path+"."+k);
+}
 function localStore(email){
   const K = "study-desk-v1:" + (email && email!==STUDENTS[0].email ? email+":" : "");
   const get = k => { try{ const v=localStorage.getItem(K+k); return v?JSON.parse(v):null; }catch(e){ return null; } };
   const set = (k,v) => { try{ localStorage.setItem(K+k, JSON.stringify(v)); }catch(e){} };
   return {
     async getProgress(){ return get("progress"); },
-    async saveProgress(p){ set("progress", p); },
+    async saveProgress(p){ noNestedArrays(p); set("progress", p); },
     async getDay(d){ return get("day:"+d); },
-    async saveDay(d,data){ set("day:"+d, {...(get("day:"+d)||{}), ...data}); },
-    async addSession(d,s){ const x=get("day:"+d)||{}; x.sessions=[...(x.sessions||[]), s]; set("day:"+d, x); },
+    async saveDay(d,data){ noNestedArrays(data); set("day:"+d, {...(get("day:"+d)||{}), ...data}); },
+    async addSession(d,s){ noNestedArrays(s); const x=get("day:"+d)||{}; x.sessions=[...(x.sessions||[]), s]; set("day:"+d, x); },
     async removeSession(d,s){ const x=get("day:"+d)||{}; x.sessions=(x.sessions||[]).filter(e=>e.id!==s.id); set("day:"+d, x); },
     // demo mode: this device is the only device, so the cached run is the run
     async getRun(){ try{ const x=JSON.parse(localStorage.getItem(TKEY)); return x && x.phase==="focus" ? x : null; }catch(e){ return null; } },
@@ -731,8 +737,8 @@ function renderPractice(){
         line = it.allDone ? `All ${levels} level${levels===1?"":"s"} mastered. New questions needed.` :
           `Level ${lv+1} of ${levels}, mastery <span class="dots" aria-label="${it.streak||0} of ${CFG.masteryInARow}">${dots}</span>${last?`, last ${last.score}/${last.total} on ${fmtShort(last.date)}`:""}`;
       }
-      const rd = student ? (progress.rounds||{})[key] : null, inRound = !!(rd && rd.level===lv && rd.p<rd.parts.length);
-      const roundPill = inRound ? ` <span class="pill due">Part ${rd.p+1} of ${rd.parts.length} next</span>` : "";
+      const rd = student ? (progress.rounds||{})[key] : null, inRound = !!(rd && Array.isArray(rd.sizes) && rd.level===lv && rd.p<rd.sizes.length);
+      const roundPill = inRound ? ` <span class="pill due">Part ${rd.p+1} of ${rd.sizes.length} next</span>` : "";
       return `<div class="panel ch"><div class="chnum">${c.n}</div><div><h3>${esc(c.t)}</h3><p class="status">${pill}${line}${roundPill}</p>
         ${student?`<div class="row"><button class="btn small" data-quiz="${key}">${inRound?"Continue":"Quiz"}</button><button class="btn small ghost" data-cards="${key}">Flashcards</button></div>`:""}</div></div>`;
     }).join("")}</div>`;
@@ -750,25 +756,29 @@ function renderPractice(){
 }
 // A level of more than splitOver questions is done in parts of about quizPartSize, in chapter order.
 // Her place is kept in progress.rounds[key]; the schedule and mastery are worked out on the total once the last part is done.
-const rounds = () => (progress.rounds || (progress.rounds = {}));
+const rounds = () => {
+  const R = progress.rounds || (progress.rounds = {});
+  for(const k in R) if(!R[k] || !Array.isArray(R[k].sizes)) delete R[k];     // drop any round saved in an older shape
+  return R;
+};
+// Returns the sizes of the parts, for example [15, 15, 14, 14, 14]. The parts are consecutive chunks of the level, in chapter order.
 function splitParts(n){
   const size = CFG.quizPartSize || 15, over = CFG.splitOver || 20;
-  if(n <= over) return [Array.from({length:n}, (_,i)=>i)];
-  const k = Math.ceil(n/size), base = Math.floor(n/k), extra = n % k, parts = [];
-  let at = 0;
-  for(let j=0;j<k;j++){ const len = base + (j<extra ? 1 : 0); parts.push(Array.from({length:len}, (_,i)=>at+i)); at += len; }
-  return parts;
+  if(n <= over) return [n];
+  const k = Math.ceil(n/size), base = Math.floor(n/k), extra = n % k;
+  return Array.from({length:k}, (_,j)=>base + (j<extra ? 1 : 0));
 }
 function startQuiz(key){
   const it = item(key), all = questionsFor(key), lv = all[0].level, R = rounds();
   let r = R[key];
-  if(!(r && r.level===lv && r.total===all.length && r.p<r.parts.length)){      // no round in progress, or the questions changed
-    const parts = splitParts(all.length);
-    r = {level:lv, total:all.length, scheduled: !it || it.next===null || isDue(key), parts, p:0, scores:[], wrong:[]};
-    if(parts.length>1){ R[key] = r; saveProgress(); } else delete R[key];
+  if(!(r && r.level===lv && r.total===all.length && r.p<r.sizes.length)){      // no round in progress, or the questions changed
+    const sizes = splitParts(all.length);
+    r = {level:lv, total:all.length, scheduled: !it || it.next===null || isDue(key), sizes, p:0, scores:[], wrong:[]};
+    if(sizes.length>1){ R[key] = r; saveProgress(); } else delete R[key];
   }
-  const qs = r.parts[r.p].map(i=>({...all[i], order:shuffle([0,1,2,3])}));
-  go({sub:{name:"quiz", mode:"chapter", key, scheduled:r.scheduled, qs, idx:0, picked:null, showHint:false, answers:[], part: r.parts.length>1 ? {p:r.p, of:r.parts.length} : null}});
+  const from = r.sizes.slice(0, r.p).reduce((x,y)=>x+y, 0);
+  const qs = all.slice(from, from + r.sizes[r.p]).map(q=>({...q, order:shuffle([0,1,2,3])}));
+  go({sub:{name:"quiz", mode:"chapter", key, scheduled:r.scheduled, qs, idx:0, picked:null, showHint:false, answers:[], part: r.sizes.length>1 ? {p:r.p, of:r.sizes.length} : null}});
 }
 function startMistakeQuiz(){
   const ids=shuffle(Object.keys(progress.mistakes)).filter(id=>{ const p=id.split("/"); try{ return !!chapterByKey(p[0]+"/"+p[1]).levels[+p[2]][+p[3]]; }catch(e){ return false; } });
@@ -808,9 +818,9 @@ function finishQuiz(){
     const r = rounds()[v.key];
     if(r){
       r.scores.push(score); r.wrong.push(...wrongQs.map(q=>q.i)); r.p++;
-      if(r.p < r.parts.length){
+      if(r.p < r.sizes.length){
         saveProgress();
-        return go({sub:{name:"partdone", key:v.key, score, total, p:r.p, of:r.parts.length}});
+        return go({sub:{name:"partdone", key:v.key, score, total, p:r.p, of:r.sizes.length}});
       }
       score = r.scores.reduce((a,b)=>a+b,0); total = r.total; scheduled = r.scheduled; level = r.level;
       wrongQs = r.wrong.map(i=>qOf(v.key, r.level, i));
