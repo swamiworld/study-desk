@@ -7146,7 +7146,11617 @@ window.CONTENT = {
   {
    "id": "chemistry",
    "name": "Chemistry",
-   "chapters": []
+   "chapters": [
+    {
+     "n": 1,
+     "t": "Solutions",
+     "levels": [
+      [
+       [
+        "Which of the following is an example of a solid solution in which the solute is a gas?",
+        [
+         "Camphor in nitrogen gas",
+         "Solution of hydrogen in palladium",
+         "Copper dissolved in gold",
+         "Glucose dissolved in water"
+        ],
+        1,
+        "Hydrogen (gas) dissolved in palladium (solid) is a gas-in-solid solution."
+       ],
+       [
+        "Chloroform mixed with nitrogen gas is classified as",
+        [
+         "a gaseous solution with a liquid solute",
+         "a liquid solution with a gaseous solute",
+         "a solid solution with a liquid solute",
+         "a gaseous solution with a solid solute"
+        ],
+        0,
+        "The solvent (nitrogen) is a gas, so the solution is gaseous; chloroform is the liquid solute."
+       ],
+       [
+        "In a binary solution, the solvent is",
+        [
+         "the component with the higher molar mass",
+         "the component with the lower boiling point",
+         "always the liquid component",
+         "the component present in the largest quantity, which fixes the physical state of the solution"
+        ],
+        3,
+        "The solvent is the component in the largest amount and decides the physical state of the solution."
+       ],
+       [
+        "A solution described as “10% glucose in water by mass” contains",
+        [
+         "10 g glucose in 100 g water",
+         "10 g glucose in 100 mL water",
+         "10 g glucose in 90 g water",
+         "10 mL glucose in 100 mL solution"
+        ],
+        2,
+        "Mass % is mass of solute per 100 g of solution: 10 g glucose + 90 g water = 100 g."
+       ],
+       [
+        "22 g of benzene is dissolved in 122 g of carbon tetrachloride. The mass percentage of benzene is",
+        [
+         "22.0%",
+         "15.28%",
+         "18.03%",
+         "84.72%"
+        ],
+        1,
+        "Total mass = 22 + 122 = 144 g, so mass % = 22/144 × 100 = 15.28 (NCERT Intext 1.1 style).",
+        "Divide by the mass of the solution, not of the solvent."
+       ],
+       [
+        "A 35% (v/v) aqueous solution of ethylene glycol is used as antifreeze. How much ethylene glycol is present in 200 mL of the solution?",
+        [
+         "70 mL",
+         "35 mL",
+         "130 mL",
+         "7 mL"
+        ],
+        0,
+        "35 mL per 100 mL of solution, so 200 mL contains 70 mL."
+       ],
+       [
+        "Normal saline is 0.9% (w/V) NaCl. The mass of NaCl in 500 mL of it is",
+        [
+         "0.9 g",
+         "9.0 g",
+         "450 g",
+         "4.5 g"
+        ],
+        3,
+        "w/V % is grams of solute per 100 mL of solution: 0.9 × 5 = 4.5 g."
+       ],
+       [
+        "A 2 kg sample of water contains 4 mg of a pollutant. Its concentration in ppm (by mass) is",
+        [
+         "0.002 ppm",
+         "4 ppm",
+         "2 ppm",
+         "8 ppm"
+        ],
+        2,
+        "ppm = 4 × 10⁻³ g / 2000 g × 10⁶ = 2."
+       ],
+       [
+        "The mole fraction of ethanol in a solution of 46 g C₂H₅OH and 54 g water is",
+        [
+         "0.46",
+         "0.25",
+         "0.75",
+         "0.5"
+        ],
+        1,
+        "n(ethanol) = 1 mol, n(water) = 3 mol, so x = 1/(1 + 3) = 0.25."
+       ],
+       [
+        "The molarity of a solution containing 4 g of NaOH in 500 mL of solution is",
+        [
+         "0.2 M",
+         "0.1 M",
+         "0.05 M",
+         "2.0 M"
+        ],
+        0,
+        "n = 4/40 = 0.1 mol, volume = 0.5 L, so M = 0.2 mol L⁻¹."
+       ],
+       [
+        "The molality of a solution of 18 g of glucose (C₆H₁₂O₆) in 500 g of water is",
+        [
+         "0.1 m",
+         "0.036 m",
+         "0.4 m",
+         "0.2 m"
+        ],
+        3,
+        "n = 18/180 = 0.1 mol; mass of water = 0.5 kg; molality = 0.2 mol kg⁻¹."
+       ],
+       [
+        "Which of the following concentration units changes with temperature?",
+        [
+         "Molality",
+         "Mole fraction",
+         "Molarity",
+         "Mass percentage"
+        ],
+        2,
+        "Molarity uses the volume of solution, which depends on temperature; the others use masses or moles."
+       ],
+       [
+        "A solution that is in dynamic equilibrium with undissolved solute at a given temperature and pressure is called",
+        [
+         "an unsaturated solution",
+         "a saturated solution",
+         "a dilute solution",
+         "an ideal solution"
+        ],
+        1,
+        "In a saturated solution the rate of dissolution equals the rate of crystallisation; its concentration is the solubility."
+       ],
+       [
+        "Which of the following dissolves readily in benzene?",
+        [
+         "Naphthalene",
+         "Sodium chloride",
+         "Sugar",
+         "Both sodium chloride and sugar"
+        ],
+        0,
+        "Like dissolves like: non-polar naphthalene dissolves in non-polar benzene."
+       ],
+       [
+        "If the dissolution of a solid in a liquid is exothermic (ΔsolH < 0), heating a nearly saturated solution will",
+        [
+         "increase the solubility",
+         "leave the solubility unchanged",
+         "make the solute insoluble in any solvent",
+         "decrease the solubility"
+        ],
+        3,
+        "By Le Chatelier’s principle, heating shifts an exothermic equilibrium backwards, so less solute stays dissolved."
+       ],
+       [
+        "Pressure has no significant effect on the solubility of a solid in a liquid because",
+        [
+         "dissolution of solids is always exothermic",
+         "the solid is in equilibrium with its own vapour",
+         "solids and liquids are highly incompressible",
+         "solutes are always polar"
+        ],
+        2,
+        "Solids and liquids are practically incompressible, so pressure does not shift the equilibrium."
+       ],
+       [
+        "Which statement of Henry’s law is correct?",
+        [
+         "Solubility of a gas is inversely proportional to its partial pressure",
+         "At constant temperature, the partial pressure of a gas over a solution is proportional to its mole fraction in the solution",
+         "Solubility of a gas is independent of pressure",
+         "Partial pressure of a gas is proportional to the square of its mole fraction in the solution"
+        ],
+        1,
+        "Henry’s law: p = KH x at constant temperature."
+       ],
+       [
+        "The Henry’s law constant of a gas in water is 50 kbar at 298 K. Its mole fraction in solution when its partial pressure is 0.25 bar is",
+        [
+         "5 × 10⁻⁶",
+         "5 × 10⁻³",
+         "1.25 × 10⁴",
+         "2 × 10⁵"
+        ],
+        0,
+        "x = p/KH = 0.25 bar / 50000 bar = 5 × 10⁻⁶.",
+        "1 kbar = 1000 bar."
+       ],
+       [
+        "At the same temperature and pressure, a gas with a higher KH value has",
+        [
+         "higher solubility",
+         "the same solubility as other gases",
+         "no dependence on solubility",
+         "lower solubility"
+        ],
+        3,
+        "Since p = KH x, a larger KH means a smaller mole fraction dissolved."
+       ],
+       [
+        "Scuba divers can get “bends” on rising quickly to the surface because",
+        [
+         "oxygen becomes more soluble in blood at lower pressure",
+         "carbon dioxide dissolves more at the surface",
+         "nitrogen dissolved in blood at high pressure comes out as bubbles when the pressure falls",
+         "helium accumulates in the blood"
+        ],
+        2,
+        "Lower pressure reduces gas solubility, so dissolved nitrogen forms bubbles that block capillaries."
+       ],
+       [
+        "The KH values of N₂ and O₂ in water increase with temperature. This shows that",
+        [
+         "gases are more soluble in warm water",
+         "the solubility of gases in liquids decreases as temperature rises",
+         "KH does not depend on the nature of the gas",
+         "solubility of a gas is independent of temperature"
+        ],
+        1,
+        "Higher KH at the same pressure means lower solubility; dissolution of a gas is exothermic."
+       ],
+       [
+        "The pressure exerted by the vapour in equilibrium with its liquid at a given temperature is called its",
+        [
+         "vapour pressure",
+         "osmotic pressure",
+         "Henry’s pressure",
+         "critical pressure"
+        ],
+        0,
+        "This is the definition of vapour pressure."
+       ],
+       [
+        "Raoult’s law for a solution of two volatile liquids states that",
+        [
+         "the total vapour pressure does not depend on composition",
+         "the partial vapour pressure of a component is inversely proportional to its mole fraction",
+         "the vapour pressure of the solution is the average of the pure vapour pressures",
+         "the partial vapour pressure of each component is proportional to its mole fraction in the solution"
+        ],
+        3,
+        "p₁ = x₁p₁⁰ and p₂ = x₂p₂⁰, and ptotal = p₁ + p₂."
+       ],
+       [
+        "Pure liquids A and B have vapour pressures of 200 and 100 mm Hg. For an ideal solution with xA = 0.4, the total vapour pressure is",
+        [
+         "150 mm Hg",
+         "80 mm Hg",
+         "140 mm Hg",
+         "300 mm Hg"
+        ],
+        2,
+        "ptotal = 0.4 × 200 + 0.6 × 100 = 80 + 60 = 140 mm Hg."
+       ],
+       [
+        "At equilibrium, the vapour above an ideal liquid mixture is richer in",
+        [
+         "the less volatile component",
+         "the more volatile component",
+         "the component with the higher molar mass",
+         "the component present in smaller amount in the liquid"
+        ],
+        1,
+        "The more volatile component has a higher partial pressure, so its mole fraction in the vapour is higher."
+       ],
+       [
+        "Raoult’s law becomes a special case of Henry’s law when KH becomes equal to",
+        [
+         "the vapour pressure of the pure component, p⁰",
+         "1",
+         "the mole fraction of the component",
+         "the total pressure"
+        ],
+        0,
+        "Both laws state p ∝ x; for Raoult’s law the constant is p⁰ instead of KH."
+       ],
+       [
+        "The vapour pressure of a solution of a non-volatile solute is lower than that of the pure solvent because",
+        [
+         "the solute makes the solvent less polar",
+         "the vapour contains mostly solute molecules",
+         "the solute increases the temperature of the solvent",
+         "solute particles occupy part of the surface, so fewer solvent molecules escape"
+        ],
+        3,
+        "Solute molecules cover a fraction of the surface, so the escape rate of solvent molecules falls."
+       ],
+       [
+        "For an ideal solution formed from two liquids,",
+        [
+         "ΔmixH > 0 and ΔmixV = 0",
+         "ΔmixH = 0 and ΔmixV > 0",
+         "ΔmixH = 0 and ΔmixV = 0",
+         "ΔmixH < 0 and ΔmixV < 0"
+        ],
+        2,
+        "An ideal solution has no heat change and no volume change on mixing."
+       ],
+       [
+        "Which pair of liquids forms a nearly ideal solution?",
+        [
+         "Ethanol and acetone",
+         "Benzene and toluene",
+         "Phenol and aniline",
+         "Chloroform and acetone"
+        ],
+        1,
+        "Benzene and toluene have similar A–A, B–B and A–B interactions."
+       ],
+       [
+        "In a solution showing positive deviation from Raoult’s law, the A–B interactions are",
+        [
+         "weaker than A–A and B–B",
+         "stronger than A–A and B–B",
+         "equal to A–A and B–B",
+         "absent"
+        ],
+        0,
+        "Weaker A–B attraction makes molecules escape more easily, raising the vapour pressure."
+       ],
+       [
+        "Which mixture shows negative deviation from Raoult’s law?",
+        [
+         "Ethanol and acetone",
+         "Carbon disulphide and acetone",
+         "n-Hexane and n-heptane",
+         "Chloroform and acetone"
+        ],
+        3,
+        "Chloroform forms a hydrogen bond with acetone, lowering the escaping tendency."
+       ],
+       [
+        "Azeotropes are binary liquid mixtures that",
+        [
+         "can be separated by simple fractional distillation",
+         "obey Raoult’s law at all compositions",
+         "boil at a constant temperature with the same composition in liquid and vapour phases",
+         "are always ideal solutions"
+        ],
+        2,
+        "At the azeotrope composition liquid and vapour are identical, so distillation cannot separate them further."
+       ],
+       [
+        "Nitric acid and water form a maximum boiling azeotrope (about 68% HNO₃ by mass, b.p. 393.5 K) because they show",
+        [
+         "large positive deviation from Raoult’s law",
+         "large negative deviation from Raoult’s law",
+         "ideal behaviour",
+         "no intermolecular interactions"
+        ],
+        1,
+        "Large negative deviation gives a maximum boiling azeotrope; large positive deviation gives a minimum boiling one."
+       ],
+       [
+        "Colligative properties depend on",
+        [
+         "the number of solute particles and not on their nature",
+         "the chemical nature of the solute only",
+         "the molar mass of the solvent only",
+         "the colour of the solution"
+        ],
+        0,
+        "Colligative properties depend only on the relative number of solute particles."
+       ],
+       [
+        "The relative lowering of vapour pressure of a solvent by a non-volatile solute is equal to",
+        [
+         "the mole fraction of the solvent",
+         "the molality of the solute",
+         "the molarity of the solute",
+         "the mole fraction of the solute"
+        ],
+        3,
+        "(p⁰ − p)/p⁰ = x₂, the mole fraction of the solute."
+       ],
+       [
+        "The vapour pressure of a pure solvent is 80 mm Hg. A non-volatile solute of mole fraction 0.1 is dissolved in it. The vapour pressure of the solution is",
+        [
+         "8 mm Hg",
+         "80 mm Hg",
+         "72 mm Hg",
+         "88 mm Hg"
+        ],
+        2,
+        "p = x₁p⁰ = 0.9 × 80 = 72 mm Hg."
+       ],
+       [
+        "The elevation of boiling point of a dilute solution is directly proportional to",
+        [
+         "the molarity of the solute",
+         "the molality of the solute",
+         "the mass of the solvent",
+         "the vapour pressure of the pure solvent"
+        ],
+        1,
+        "ΔTb = Kb m, and Kb has units K kg mol⁻¹."
+       ],
+       [
+        "6 g of urea (molar mass 60 g mol⁻¹) is dissolved in 500 g of water (Kb = 0.52 K kg mol⁻¹). The elevation of boiling point is",
+        [
+         "0.104 K",
+         "0.052 K",
+         "0.208 K",
+         "0.52 K"
+        ],
+        0,
+        "m = 0.1/0.5 = 0.2 mol kg⁻¹; ΔTb = 0.52 × 0.2 = 0.104 K."
+       ],
+       [
+        "The freezing point of a solution of a non-volatile solute compared with that of the pure solvent is",
+        [
+         "higher",
+         "the same",
+         "higher only for aqueous solutions",
+         "lower"
+        ],
+        3,
+        "Lower vapour pressure makes the solution meet the vapour pressure of the solid solvent at a lower temperature."
+       ],
+       [
+        "9 g of glucose (180 g mol⁻¹) is dissolved in 500 g of water (Kf = 1.86 K kg mol⁻¹). The depression of freezing point is",
+        [
+         "0.093 K",
+         "1.86 K",
+         "0.186 K",
+         "0.372 K"
+        ],
+        2,
+        "m = 0.05/0.5 = 0.1 mol kg⁻¹; ΔTf = 1.86 × 0.1 = 0.186 K."
+       ],
+       [
+        "In osmosis through a semipermeable membrane, the solvent flows from",
+        [
+         "the concentrated solution to the dilute solution",
+         "the dilute solution (or pure solvent) to the concentrated solution",
+         "both sides equally",
+         "the side at lower pressure to the side at higher pressure only"
+        ],
+        1,
+        "Solvent molecules move from lower to higher solute concentration."
+       ],
+       [
+        "The osmotic pressure of a 0.1 M solution of a non-electrolyte at 300 K is (R = 0.0821 L atm K⁻¹ mol⁻¹)",
+        [
+         "2.46 atm",
+         "24.6 atm",
+         "0.246 atm",
+         "0.82 atm"
+        ],
+        0,
+        "π = CRT = 0.1 × 0.0821 × 300 = 2.46 atm."
+       ],
+       [
+        "Red blood cells are placed in a solution containing less than 0.9% (w/V) NaCl. The cells will",
+        [
+         "shrink as water flows out",
+         "remain unchanged",
+         "dissolve completely at once",
+         "swell as water flows in"
+        ],
+        3,
+        "Such a solution is hypotonic, so water enters the cells by osmosis."
+       ],
+       [
+        "Osmotic pressure is preferred for determining molar masses of proteins and polymers because",
+        [
+         "it works only at very high temperatures",
+         "it needs a concentrated solution",
+         "its value is large even for very dilute solutions and it is measured near room temperature",
+         "it uses molality instead of molarity"
+        ],
+        2,
+        "The pressure is measurable for very dilute solutions at room temperature, which suits unstable, poorly soluble macromolecules."
+       ],
+       [
+        "Reverse osmosis occurs when",
+        [
+         "a pressure less than the osmotic pressure is applied to the solution",
+         "a pressure larger than the osmotic pressure is applied to the solution side",
+         "no pressure is applied",
+         "the solution is cooled below its freezing point"
+        ],
+        1,
+        "Excess pressure pushes pure solvent out of the solution; this is used to desalinate sea water."
+       ],
+       [
+        "The van’t Hoff factor i is defined as",
+        [
+         "observed colligative property / calculated colligative property",
+         "calculated colligative property / observed colligative property",
+         "normal molar mass × abnormal molar mass",
+         "moles of solute / moles of solvent"
+        ],
+        0,
+        "i = observed/calculated colligative property = normal/abnormal molar mass."
+       ],
+       [
+        "Ethanoic acid dimerises in benzene. The van’t Hoff factor for it is close to",
+        [
+         "2",
+         "1",
+         "3",
+         "0.5"
+        ],
+        3,
+        "Two molecules form one particle, so the number of particles is halved, i ≈ 0.5."
+       ],
+       [
+        "When a solute dissociates in solution, the molar mass determined from a colligative property is",
+        [
+         "higher than the true value",
+         "equal to the true value",
+         "lower than the true value",
+         "zero"
+        ],
+        2,
+        "More particles raise the colligative effect, so the apparent molar mass is lower."
+       ]
+      ],
+      [
+       [
+        "Which option correctly gives the solute–solvent states in (i) camphor in nitrogen, (ii) hydrogen in palladium, (iii) ethanol in water?",
+        [
+         "(i) gas in gas, (ii) gas in solid, (iii) liquid in liquid",
+         "(i) solid in gas, (ii) gas in solid, (iii) liquid in liquid",
+         "(i) solid in gas, (ii) liquid in solid, (iii) liquid in liquid",
+         "(i) solid in gas, (ii) gas in solid, (iii) gas in liquid"
+        ],
+        1,
+        "Camphor is a solid solute in a gas, hydrogen a gas in a solid, and ethanol–water is liquid in liquid."
+       ],
+       [
+        "A 20% (mass/mass) aqueous solution of KI (molar mass 166 g mol⁻¹) has density 1.202 g mL⁻¹. Its molality is",
+        [
+         "1.51 m",
+         "1.20 m",
+         "1.45 m",
+         "0.12 m"
+        ],
+        0,
+        "In 100 g solution: 20/166 = 0.1205 mol KI in 0.080 kg water, so m = 1.506 (NCERT Intext 1.5).",
+        "Solvent mass = 100 − 20 = 80 g."
+       ],
+       [
+        "200 mL of 0.5 M NaCl is mixed with 300 mL of 1.0 M NaCl (volumes additive). The molarity of the mixture is",
+        [
+         "0.75 M",
+         "0.4 M",
+         "1.5 M",
+         "0.8 M"
+        ],
+        3,
+        "Moles = 0.100 + 0.300 = 0.400 mol in 0.5 L, so 0.8 M."
+       ],
+       [
+        "Concentrated nitric acid is 68% HNO₃ by mass and has density 1.504 g mL⁻¹. Its molarity is about (H 1, N 14, O 16)",
+        [
+         "10.8 M",
+         "1.08 M",
+         "16.2 M",
+         "24.3 M"
+        ],
+        2,
+        "100 g contains 68/63 = 1.079 mol and has volume 100/1.504 = 66.5 mL, so M = 1.079/0.0665 = 16.2.",
+        "Use 100 g of solution as the basis."
+       ],
+       [
+        "Drinking water contains 1.5 ppm fluoride by mass. The mass of fluoride in 2 L of this water (density 1 g mL⁻¹) is",
+        [
+         "1.5 mg",
+         "3 mg",
+         "0.75 mg",
+         "3 g"
+        ],
+        1,
+        "2 L = 2000 g; 1.5 × 10⁻⁶ × 2000 g = 3 × 10⁻³ g = 3 mg."
+       ],
+       [
+        "A student dissolves 4 g of NaOH (40 g mol⁻¹) in water to make 500 mL of solution and reports: “Molality = 0.1 mol ÷ 0.5 kg = 0.2 m.” What is wrong with this?",
+        [
+         "0.5 is the volume of the solution in litres, not the mass of solvent in kg, so 0.2 is actually the molarity",
+         "Nothing; 0.2 m is correct",
+         "The moles of NaOH should be 4 × 40 = 160",
+         "Molality must use the mass of solute in the denominator"
+        ],
+        0,
+        "Molality needs kg of solvent; dividing by litres of solution gives molarity."
+       ],
+       [
+        "A student calculates the mole fraction of glucose in a solution of 18 g glucose (180 g mol⁻¹) in 90 g water as 18/(18 + 90) = 0.167. What is the error?",
+        [
+         "There is no error",
+         "The correct value is 18/90 = 0.2",
+         "Mole fraction of glucose must be larger than that of water",
+         "Masses were used instead of moles; the correct value is 0.1/(0.1 + 5) ≈ 0.0196"
+        ],
+        3,
+        "n(glucose) = 0.1 mol and n(water) = 5 mol, so x = 0.1/5.1 = 0.0196."
+       ],
+       [
+        "A saturated solution is in contact with excess undissolved solid at constant temperature. Which statement is correct?",
+        [
+         "No solute particles enter or leave the solution",
+         "Adding more solid raises the concentration of the solution",
+         "The rate of dissolution equals the rate of crystallisation, and the concentration equals the solubility",
+         "Crystallisation has stopped completely"
+        ],
+        2,
+        "A saturated solution is a dynamic equilibrium, so its concentration stays fixed at the solubility."
+       ],
+       [
+        "Dissolution of a solid X in water is endothermic. A saturated solution of X at 350 K is cooled to 300 K and the external pressure is also raised from 1 bar to 100 bar. Which outcome is expected?",
+        [
+         "More X dissolves; pressure increases the solubility",
+         "Crystals separate; pressure has negligible effect on the solubility",
+         "Crystals separate; pressure increases the solubility",
+         "No change at all"
+        ],
+        1,
+        "For endothermic dissolution solubility falls on cooling; solids and liquids are incompressible, so pressure has no significant effect."
+       ],
+       [
+        "Henry’s law constant for CO₂ in water is 1.67 × 10⁸ Pa at 298 K. The mass of CO₂ dissolved in 500 mL of soda water (about 27.8 mol of water) packed under 2.5 atm CO₂ at 298 K is about (1 atm = 1.013 × 10⁵ Pa)",
+        [
+         "1.85 g",
+         "0.0421 g",
+         "3.7 g",
+         "18.5 g"
+        ],
+        0,
+        "x = 2.53 × 10⁵/1.67 × 10⁸ = 1.52 × 10⁻³; n = x × 27.8 = 0.0421 mol, which is 1.85 g (NCERT Intext 1.7 style).",
+        "Neglect n(CO₂) in the denominator of x."
+       ],
+       [
+        "Assertion (A): Aquatic species are more comfortable in cold water than in warm water.\nReason (R): The solubility of gases in liquids decreases with rise in temperature.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        0,
+        "Cold water holds more dissolved oxygen because gas solubility falls as temperature rises."
+       ],
+       [
+        "Assertion (A): Soft drink bottles are sealed under high pressure of CO₂.\nReason (R): The solubility of a gas in a liquid increases with increase in pressure.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        0,
+        "Henry’s law: gas solubility rises with pressure, so a high CO₂ pressure keeps more CO₂ dissolved in the drink. R explains A."
+       ],
+       [
+        "A diver who breathes compressed air at depth for a long time rises rapidly and feels severe joint pain. Later the tank is filled with 11.7% helium, 56.2% nitrogen and 32.1% oxygen. Which explanation is correct?",
+        [
+         "Dissolved oxygen becomes insoluble at the surface; helium dissolves more than nitrogen",
+         "At depth more nitrogen dissolves in blood; on rapid ascent it forms bubbles that block capillaries; helium is much less soluble, so the mixture lowers this risk",
+         "Nitrogen becomes more soluble on ascent; helium removes it chemically",
+         "Pain arises from lack of carbon dioxide at depth; helium supplies it"
+        ],
+        1,
+        "Henry’s law: higher pressure dissolves more N₂, which bubbles out on decompression; He has a very high KH, so it dissolves little."
+       ],
+       [
+        "Which statement about the vapour pressure of binary liquid solutions is correct?",
+        [
+         "For a non-volatile solid solute the vapour pressure comes only from the solvent, whereas for two volatile liquids ptotal is the sum of their partial pressures",
+         "In both cases the vapour pressure comes only from the solute",
+         "For two volatile liquids ptotal is the product of the partial pressures",
+         "A non-volatile solute raises the vapour pressure of the solvent"
+        ],
+        0,
+        "A non-volatile solute does not enter the vapour, and Dalton’s law gives ptotal = p₁ + p₂ for two volatile components."
+       ],
+       [
+        "Liquids A and B (pure vapour pressures 450 and 700 mm Hg at 350 K) form an ideal solution with total vapour pressure 600 mm Hg. The mole fraction of A in the vapour phase is",
+        [
+         "0.40",
+         "0.60",
+         "0.70",
+         "0.30"
+        ],
+        3,
+        "450 + 250xB = 600 gives xB = 0.6, xA = 0.4; yA = 0.4 × 450/600 = 0.30 (NCERT Intext 1.8 style)."
+       ],
+       [
+        "An equimolar liquid mixture of A and B is in equilibrium with vapour in which the mole fraction of A is 0.25. If the solution is ideal, p⁰A : p⁰B is",
+        [
+         "3 : 1",
+         "1 : 4",
+         "1 : 3",
+         "1 : 1"
+        ],
+        2,
+        "yA/yB = xAp⁰A/(xBp⁰B) = 0.25/0.75, and xA = xB, so p⁰A/p⁰B = 1/3."
+       ],
+       [
+        "Which statement about the p versus x plots of Henry’s law and Raoult’s law is correct?",
+        [
+         "KH is always equal to p⁰ for every gas",
+         "A dissolved gas follows p = KH x; the line coincides with Raoult’s law line only if KH equals p⁰ of that substance",
+         "Henry’s law is a special case of Raoult’s law",
+         "KH is the same for all gases at one temperature"
+        ],
+        1,
+        "Both are straight lines through the origin; they differ only in slope (KH versus p⁰)."
+       ],
+       [
+        "Assertion (A): Raoult’s law can be regarded as a special case of Henry’s law.\nReason (R): In Raoult’s law the proportionality constant between partial pressure and mole fraction is p⁰, which replaces KH in Henry’s law.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        0,
+        "Both say p ∝ x; Raoult’s law is Henry’s law with KH = p⁰."
+       ],
+       [
+        "0.1 mol of non-volatile solute A and 0.2 mol of non-volatile solute B are dissolved in 4.7 mol of a solvent whose pure vapour pressure is 100 mm Hg. The vapour pressure of the solution is",
+        [
+         "99 mm Hg",
+         "97 mm Hg",
+         "6 mm Hg",
+         "94 mm Hg"
+        ],
+        3,
+        "Lowering depends on the sum of solute mole fractions: 0.3/5.0 = 0.06, so p = 100 × 0.94 = 94 mm Hg."
+       ],
+       [
+        "Mixing 50 mL of liquid A with 50 mL of liquid B gives exactly 100 mL of solution with no heat change, and Raoult’s law holds at all compositions. This indicates that",
+        [
+         "A–B attractions are much stronger than A–A and B–B",
+         "A–B attractions are much weaker than A–A and B–B",
+         "A–A, B–B and A–B attractions are nearly equal",
+         "there are no intermolecular forces in the liquids"
+        ],
+        2,
+        "ΔmixH = 0, ΔmixV = 0 and Raoult’s law behaviour arise when all interactions are similar."
+       ],
+       [
+        "Assertion (A): n-Hexane and n-heptane form a nearly ideal solution.\nReason (R): For an ideal solution the enthalpy of mixing is positive and the volume of mixing is zero.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        2,
+        "A is true; R is false because ΔmixH = 0 for an ideal solution."
+       ],
+       [
+        "A student says: “Chloroform and acetone form hydrogen bonds with each other, so the A–B attractions are stronger, the vapour pressure rises and the solution shows positive deviation.” What is wrong?",
+        [
+         "Stronger A–B attractions lower the escaping tendency and the vapour pressure, giving negative deviation",
+         "Nothing is wrong",
+         "Hydrogen bonding cannot occur between these liquids",
+         "Hydrogen bonding between the two liquids would make the solution ideal"
+        ],
+        0,
+        "Stronger A–B interactions lower the vapour pressure: negative deviation."
+       ],
+       [
+        "Which row correctly matches the mixture with its deviation and azeotrope?",
+        [
+         "Ethanol–water: negative deviation, maximum boiling azeotrope; nitric acid–water: positive deviation, minimum boiling azeotrope",
+         "Ethanol–water: positive deviation, maximum boiling azeotrope; nitric acid–water: negative deviation, minimum boiling azeotrope",
+         "Both show positive deviation and minimum boiling azeotropes",
+         "Ethanol–water: positive deviation, minimum boiling azeotrope; nitric acid–water: negative deviation, maximum boiling azeotrope"
+        ],
+        3,
+        "Large positive deviation gives a minimum boiling azeotrope (ethanol–water, about 95% ethanol by volume); large negative deviation gives a maximum boiling one."
+       ],
+       [
+        "Two liquids X and Y give a vapour pressure higher than predicted by Raoult’s law at every composition. At one composition the mixture boils at constant temperature, below the boiling points of both X and Y, with identical liquid and vapour compositions. Which conclusion is correct?",
+        [
+         "Negative deviation, X–Y attractions stronger; maximum boiling azeotrope",
+         "Ideal solution; the components separate easily by distillation",
+         "Positive deviation, X–Y attractions weaker than X–X and Y–Y; minimum boiling azeotrope, so complete separation by fractional distillation is impossible",
+         "Positive deviation, X–Y attractions stronger; maximum boiling azeotrope"
+        ],
+        2,
+        "Higher vapour pressure means weaker X–Y interactions and a minimum boiling azeotrope."
+       ],
+       [
+        "Which pair of 0.1 m aqueous solutions should show nearly the same boiling point elevation?",
+        [
+         "Glucose and NaCl",
+         "Glucose and urea",
+         "Urea and K₂SO₄",
+         "NaCl and MgSO₄ at very high concentration"
+        ],
+        1,
+        "Both are non-electrolytes, so they give the same number of particles per kg of water."
+       ],
+       [
+        "50 g of urea (60 g mol⁻¹) is dissolved in 850 g of water. The vapour pressure of pure water at 298 K is 23.8 mm Hg. The vapour pressure of the solution is about",
+        [
+         "23.39 mm Hg",
+         "23.80 mm Hg",
+         "22.48 mm Hg",
+         "0.41 mm Hg"
+        ],
+        0,
+        "n(urea) = 0.833 mol; n(water) = 47.2 mol; x₂ = 0.0173; p = 23.8 × (1 − 0.0173) = 23.39 mm Hg (NCERT Intext 1.9 style).",
+        "Use mole fractions, not mass fractions."
+       ],
+       [
+        "At a certain temperature the vapour pressure of a solvent (molar mass 78 g mol⁻¹) is 0.800 bar. When 1.0 g of a non-volatile non-electrolyte is added to 39 g of it, the vapour pressure becomes 0.792 bar. Using the dilute-solution form of Raoult’s law, the molar mass of the solute is",
+        [
+         "100 g mol⁻¹",
+         "400 g mol⁻¹",
+         "2.56 g mol⁻¹",
+         "200 g mol⁻¹"
+        ],
+        3,
+        "(0.800 − 0.792)/0.800 = 0.01 = (1 × 78)/(M₂ × 39), so M₂ = 200 g mol⁻¹.",
+        "(p⁰ − p)/p⁰ = (w₂M₁)/(M₂w₁)."
+       ],
+       [
+        "A student claims: “1 mol of urea and 1 mol of NaCl, each dissolved in 1 kg of water, lower the vapour pressure equally because both are 1 mol.” What is the error?",
+        [
+         "There is no error",
+         "Urea lowers the vapour pressure more because it is a molecule",
+         "NaCl dissociates into about two particles per formula unit, so it lowers the vapour pressure roughly twice as much",
+         "NaCl does not affect the vapour pressure"
+        ],
+        2,
+        "Colligative effects depend on the number of particles, not moles of formula units."
+       ],
+       [
+        "The boiling point of water at 750 mm Hg is 99.63 °C. The mass of sucrose (342 g mol⁻¹) to be added to 500 g of water so that it boils at 100 °C is (Kb = 0.52 K kg mol⁻¹)",
+        [
+         "243.4 g",
+         "121.7 g",
+         "60.8 g",
+         "0.356 g"
+        ],
+        1,
+        "ΔTb = 0.37 K; m = 0.37/0.52 = 0.712; n = 0.356 mol; mass = 0.356 × 342 = 121.7 g (NCERT Intext 1.10 style).",
+        "Remember to multiply m by 0.5 kg."
+       ],
+       [
+        "A student says: “A non-volatile solute lowers the vapour pressure, so the solution reaches atmospheric pressure at a lower temperature and boils below the pure solvent.” What is wrong?",
+        [
+         "A lowered vapour pressure means a higher temperature is needed to reach atmospheric pressure, so the boiling point is elevated",
+         "Nothing; the boiling point is lowered",
+         "Solutes have no effect on boiling points",
+         "Boiling occurs when vapour pressure is zero"
+        ],
+        0,
+        "A liquid boils when its vapour pressure equals the atmospheric pressure; the solution needs more heating."
+       ],
+       [
+        "How much ethylene glycol (62 g mol⁻¹) must be added to 2 kg of water to lower its freezing point by 3.72 K? (Kf = 1.86 K kg mol⁻¹)",
+        [
+         "124 g",
+         "62 g",
+         "496 g",
+         "248 g"
+        ],
+        3,
+        "m = 3.72/1.86 = 2 mol kg⁻¹; n = 4 mol; mass = 4 × 62 = 248 g."
+       ],
+       [
+        "The mass of ascorbic acid (C₆H₈O₆, 176 g mol⁻¹) to be dissolved in 75 g of acetic acid to lower its freezing point by 1.5 K (Kf = 3.9 K kg mol⁻¹) is about",
+        [
+         "67.7 g",
+         "2.54 g",
+         "5.08 g",
+         "0.0288 g"
+        ],
+        2,
+        "m = 1.5/3.9 = 0.385; n = 0.385 × 0.075 = 0.0288 mol; mass = 5.08 g (NCERT Intext 1.11).",
+        "Convert 75 g to kg first."
+       ],
+       [
+        "Using Kf = R M₁ Tf²/(1000 ΔfusH), the molal depression constant of water (M₁ = 18 g mol⁻¹, Tf = 273.15 K, ΔfusH = 6.01 kJ mol⁻¹, R = 8.314 J K⁻¹ mol⁻¹) is about",
+        [
+         "0.52 K kg mol⁻¹",
+         "1.86 K kg mol⁻¹",
+         "3.72 K kg mol⁻¹",
+         "18.6 K kg mol⁻¹"
+        ],
+        1,
+        "Kf = 8.314 × 18 × (273.15)²/(1000 × 6010) = 1.86; convert ΔfusH to J mol⁻¹."
+       ],
+       [
+        "The osmotic pressure in pascals of a solution of 1.0 g of a polymer (molar mass 185000 g mol⁻¹) in 450 mL of water at 37 °C is about (R = 8.314 J K⁻¹ mol⁻¹)",
+        [
+         "31 Pa",
+         "3.1 × 10⁴ Pa",
+         "0.31 Pa",
+         "310 Pa"
+        ],
+        0,
+        "C = (1/185000)/0.450 = 1.2 × 10⁻⁵ mol L⁻¹ = 1.2 × 10⁻² mol m⁻³; π = CRT = 1.2 × 10⁻² × 8.314 × 310 ≈ 31 Pa (NCERT Intext 1.12).",
+        "Express concentration in mol m⁻³ for SI units."
+       ],
+       [
+        "2.0 g of a protein is dissolved in water to make 100 mL of solution. The osmotic pressure at 300 K is 0.0246 atm. The molar mass of the protein is about (R = 0.0821 L atm K⁻¹ mol⁻¹)",
+        [
+         "2.0 × 10³ g mol⁻¹",
+         "2.0 × 10⁵ g mol⁻¹",
+         "2.0 × 10² g mol⁻¹",
+         "2.0 × 10⁴ g mol⁻¹"
+        ],
+        3,
+        "M = wRT/(πV) = 2.0 × 0.0821 × 300/(0.0246 × 0.100) ≈ 2.0 × 10⁴ g mol⁻¹."
+       ],
+       [
+        "A glucose solution isotonic with 0.9% (w/V) NaCl (58.5 g mol⁻¹, assume complete dissociation) has a concentration of about (glucose 180 g mol⁻¹)",
+        [
+         "2.77 g per 100 mL",
+         "0.9 g per 100 mL",
+         "5.54 g per 100 mL",
+         "11.1 g per 100 mL"
+        ],
+        2,
+        "NaCl gives 2 × 0.9/58.5 = 0.0308 mol of particles per 100 mL; glucose = 0.0308 × 180 = 5.54 g."
+       ],
+       [
+        "Assertion (A): In osmosis, the solvent flows from the more concentrated solution to the more dilute solution through a semipermeable membrane.\nReason (R): Osmotic pressure is a colligative property.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        3,
+        "A is false: solvent flows from dilute to concentrated; R is true."
+       ],
+       [
+        "A student says: “Red blood cells in 0.5% (w/V) NaCl solution will shrink because water flows out.” What is wrong?",
+        [
+         "0.5% is less than 0.9%, so the solution is hypotonic and water flows into the cells, making them swell",
+         "Nothing is wrong",
+         "Cells shrink only in distilled water",
+         "Water cannot cross the cell membrane"
+        ],
+        0,
+        "A solution below 0.9% NaCl is hypotonic; water enters the cells."
+       ],
+       [
+        "Assertion (A): In reverse osmosis the pressure applied on the solution side is less than the osmotic pressure.\nReason (R): In reverse osmosis pure solvent flows out of the solution through the semipermeable membrane.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        3,
+        "A is false because the applied pressure must be larger than the osmotic pressure; R is true."
+       ],
+       [
+        "Sea water has an osmotic pressure of about 25 bar (assumed). A plant applies 15 bar to the sea water side of a membrane that passes only water, then raises the pressure to 40 bar. Which statement is correct?",
+        [
+         "At 15 bar pure water is already obtained; at 40 bar flow stops",
+         "No flow occurs at either pressure",
+         "At 15 bar water flows from pure water into sea water; at 40 bar pure water is squeezed out of the sea water",
+         "Water flows out of the sea water at 15 bar and into it at 40 bar"
+        ],
+        2,
+        "Below the osmotic pressure osmosis continues; above it the flow reverses (reverse osmosis)."
+       ],
+       [
+        "1.536 K is the depression in freezing point when 3.0 g of ethanoic acid (60 g mol⁻¹) is dissolved in 100 g of benzene (Kf = 5.12 K kg mol⁻¹). If the acid dimerises, its percentage association is",
+        [
+         "40%",
+         "80%",
+         "60%",
+         "20%"
+        ],
+        1,
+        "Observed M = 5.12 × 3 × 1000/(1.536 × 100) = 100; i = 60/100 = 0.6; i = 1 − x/2 gives x = 0.8.",
+        "For dimerisation i = 1 − x/2."
+       ],
+       [
+        "A 0.1 mol kg⁻¹ solution of a weak monobasic acid HA in water freezes with ΔTf = 0.2232 K (Kf = 1.86 K kg mol⁻¹). Taking molarity ≈ molality, Ka of the acid is about",
+        [
+         "5.0 × 10⁻³",
+         "4.0 × 10⁻³",
+         "2.0 × 10⁻²",
+         "1.0 × 10⁻¹"
+        ],
+        0,
+        "i = 0.2232/0.186 = 1.2, so α = 0.2; Ka = Cα²/(1 − α) = 0.1 × 0.04/0.8 = 5.0 × 10⁻³."
+       ],
+       [
+        "0.1 mol of an ionic compound dissolved in 1 kg of water freezes at −0.558 °C (Kf = 1.86 K kg mol⁻¹; assume complete dissociation and ideal behaviour). The compound is",
+        [
+         "NaCl",
+         "AlCl₃",
+         "Glucose",
+         "CaCl₂"
+        ],
+        3,
+        "ΔTf = 0.558 K = i × 0.186 gives i = 3, which fits CaCl₂ (Ca²⁺ + 2Cl⁻)."
+       ],
+       [
+        "Assertion (A): The van’t Hoff factor of ethanoic acid dissolved in benzene is close to 0.5.\nReason (R): Ethanoic acid is a weak acid that ionises only slightly in water.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        1,
+        "A is true because of dimerisation in benzene; R is true but does not explain A."
+       ],
+       [
+        "A student says: “NaCl dissociates in water, so the molar mass found from the freezing point depression of a dilute solution will be higher than 58.5 g mol⁻¹.” What is wrong?",
+        [
+         "Nothing is wrong",
+         "Dissociation gives more particles and a larger ΔTf, so the experimental molar mass is lower than 58.5 g mol⁻¹",
+         "Dissociation does not change ΔTf",
+         "The molar mass becomes exactly twice 58.5"
+        ],
+        1,
+        "Abnormal molar mass = normal/i, and i is about 2 for NaCl."
+       ],
+       [
+        "Assuming complete dissociation, which 0.1 m aqueous solution has the lowest freezing point?",
+        [
+         "Al₂(SO₄)₃",
+         "Glucose",
+         "NaCl",
+         "K₂SO₄"
+        ],
+        0,
+        "Al₂(SO₄)₃ gives 5 ions (i = 5), the most particles, so the largest ΔTf."
+       ]
+      ]
+     ]
+    },
+    {
+     "n": 2,
+     "t": "Electrochemistry",
+     "levels": [
+      [
+       [
+        "In a Daniell cell (cell potential 1.1 V), an external opposing potential greater than 1.1 V is applied. What happens?",
+        [
+         "The reaction continues in the same direction, only more slowly",
+         "The reaction reverses: zinc is deposited and copper dissolves, so the cell works as an electrolytic cell",
+         "No reaction occurs because the external potential exceeds the cell potential",
+         "Zinc dissolves and copper is deposited, as before, but with a larger current"
+        ],
+        1,
+        "Beyond 1.1 V the external source drives the non-spontaneous reverse reaction, Cu → Cu²⁺ and Zn²⁺ → Zn."
+       ],
+       [
+        "When the opposing external potential applied to a Daniell cell is exactly 1.1 V, which statement is true?",
+        [
+         "Zinc dissolves at the maximum possible rate",
+         "Copper dissolves and zinc is deposited",
+         "Current flows from the copper to the zinc electrode through the wire",
+         "No current flows and no net chemical reaction takes place"
+        ],
+        3,
+        "At Eext = 1.1 V the two potentials balance, so the cell is at a standstill."
+       ],
+       [
+        "Which statement about a galvanic cell is correct?",
+        [
+         "It converts the Gibbs energy of a spontaneous redox reaction into electrical work; oxidation occurs at the anode, which is negative",
+         "It uses electrical energy to drive a non-spontaneous reaction; oxidation occurs at the cathode",
+         "It converts the Gibbs energy of a spontaneous redox reaction into electrical work; oxidation occurs at the cathode, which is positive",
+         "It uses electrical energy to drive a non-spontaneous reaction; reduction occurs at the anode"
+        ],
+        0,
+        "In a galvanic cell the anode (negative) is the site of oxidation and the cathode (positive) the site of reduction."
+       ],
+       [
+        "Using E°(Ag⁺/Ag) = 0.80 V and E°(Cu²⁺/Cu) = 0.34 V, the E°cell of Cu(s)|Cu²⁺(aq)||Ag⁺(aq)|Ag(s) is",
+        [
+         "1.14 V",
+         "−0.46 V",
+         "0.46 V",
+         "0.23 V"
+        ],
+        2,
+        "E°cell = E°(right) − E°(left) = 0.80 − 0.34 = 0.46 V."
+       ],
+       [
+        "For the reaction Zn(s) + Cu²⁺(aq) → Zn²⁺(aq) + Cu(s), which is the correct cell representation under the accepted convention?",
+        [
+         "Cu(s)|Cu²⁺(aq)||Zn²⁺(aq)|Zn(s)",
+         "Zn²⁺(aq)|Zn(s)||Cu(s)|Cu²⁺(aq)",
+         "Zn(s)|Zn²⁺(aq)||Cu²⁺(aq)|Cu(s)",
+         "Zn(s)|Cu²⁺(aq)||Zn²⁺(aq)|Cu(s)"
+        ],
+        2,
+        "The anode (oxidation) is written on the left and the cathode (reduction) on the right, with || for the salt bridge."
+       ],
+       [
+        "The standard hydrogen electrode (SHE) is represented as Pt(s)|H₂(g)|H⁺(aq). It consists of",
+        [
+         "platinised platinum with H₂ gas at 1 bar bubbled through 1 M H⁺ solution; its potential is taken as zero",
+         "a zinc rod dipping in 1 M H⁺ with H₂ at 1 atm; its potential is taken as 0.76 V",
+         "platinised platinum with H₂ gas at 1 bar bubbled through 1 M H⁺; its potential is measured as 1.00 V",
+         "a copper rod in 1 M H⁺ with H₂ at 10 bar; its potential is taken as zero"
+        ],
+        0,
+        "SHE is assigned zero potential at all temperatures: H₂ at 1 bar, [H⁺] = 1 M, on platinum black."
+       ],
+       [
+        "The standard electrode potential of Zn²⁺/Zn is −0.76 V. This indicates that",
+        [
+         "Zn²⁺ ions are reduced more easily than H⁺ ions",
+         "hydrogen gas can reduce Zn²⁺ to zinc",
+         "zinc does not react with acids",
+         "H⁺ ions can oxidise zinc, that is, zinc can reduce H⁺ ions under standard conditions"
+        ],
+        3,
+        "A negative E° means the couple is a stronger reducing agent than H⁺/H₂, so Zn dissolves in acid."
+       ],
+       [
+        "Copper does not dissolve in hydrochloric acid because",
+        [
+         "E°(Cu²⁺/Cu) is negative, so H⁺ cannot oxidise copper",
+         "E°(Cu²⁺/Cu) is positive, so H⁺ cannot oxidise copper",
+         "copper is above hydrogen in the electrode potential table, so it reduces H⁺",
+         "Cl⁻ ions form a protective layer on copper"
+        ],
+        1,
+        "E°(Cu²⁺/Cu) = +0.34 V > 0, so Cu²⁺ is reduced more easily than H⁺ and the reverse change does not occur."
+       ],
+       [
+        "From the table of standard electrode potentials, the strongest oxidising agent and the strongest reducing agent (aqueous) are respectively",
+        [
+         "F₂ and Li",
+         "Li⁺ and F⁻",
+         "F⁻ and Li⁺",
+         "Li and F₂"
+        ],
+        0,
+        "F₂/F⁻ has the highest E° (2.87 V), so F₂ is the strongest oxidiser; Li⁺/Li has the lowest (−3.05 V), so Li is the strongest reducer."
+       ],
+       [
+        "The Nernst equation for the electrode reaction Mⁿ⁺(aq) + ne⁻ → M(s) at temperature T is",
+        [
+         "E = E° + (RT/nF) ln (1/[Mⁿ⁺])",
+         "E = E° − (nF/RT) ln (1/[Mⁿ⁺])",
+         "E = E° − (RT/nF) ln (1/[Mⁿ⁺])",
+         "E = E° − (RT/F) ln (1/[Mⁿ⁺])"
+        ],
+        2,
+        "With [M(s)] taken as unity, E = E° − (RT/nF) ln [M]/[Mⁿ⁺] reduces to this form."
+       ],
+       [
+        "Zn|Zn²⁺(0.01 M)||Cu²⁺(1 M)|Cu has E°cell = 1.10 V at 298 K. Its emf is closest to",
+        [
+         "1.04 V",
+         "1.16 V",
+         "1.10 V",
+         "1.22 V"
+        ],
+        1,
+        "E = 1.10 − (0.059/2) log (0.01/1) = 1.10 + 0.059 = 1.159 V.",
+        "Q = [Zn²⁺]/[Cu²⁺]."
+       ],
+       [
+        "In the Daniell cell, the emf of the cell increases when",
+        [
+         "the concentration of Zn²⁺ ions is increased",
+         "the concentration of both ions is increased equally",
+         "the concentration of Cu²⁺ ions is decreased",
+         "the concentration of Cu²⁺ ions is increased or that of Zn²⁺ ions is decreased"
+        ],
+        3,
+        "E = E° − (0.059/2) log([Zn²⁺]/[Cu²⁺]), so a smaller Q gives a larger E."
+       ],
+       [
+        "When a Daniell cell has run until equilibrium is reached, then",
+        [
+         "the voltmeter reads E°cell and Q = 1",
+         "the voltmeter reads zero, E(cell) = 0 and Q = Kc",
+         "E(cell) = 0 but Q = E°cell",
+         "the concentrations of Zn²⁺ and Cu²⁺ become equal"
+        ],
+        1,
+        "At equilibrium there is no driving force, so E = 0 and the Nernst equation gives E° = (0.059/n) log Kc."
+       ],
+       [
+        "A cell reaction involves 2 electrons and has E°cell = 0.059 V at 298 K. Its equilibrium constant Kc is",
+        [
+         "10",
+         "2",
+         "0.059",
+         "100"
+        ],
+        3,
+        "E° = (0.059/n) log Kc gives log Kc = (0.059 × 2)/0.059 = 2, so Kc = 100."
+       ],
+       [
+        "For a cell with n = 2 and E°cell = 0.50 V, the standard Gibbs energy of the reaction is (F = 96500 C mol⁻¹)",
+        [
+         "−96.5 kJ mol⁻¹",
+         "−48.25 kJ mol⁻¹",
+         "+96.5 kJ mol⁻¹",
+         "−193 kJ mol⁻¹"
+        ],
+        0,
+        "ΔrG° = −nFE° = −2 × 96500 × 0.50 = −96500 J mol⁻¹."
+       ],
+       [
+        "Which of the following is correct?",
+        [
+         "Both E(cell) and ΔrG are intensive properties",
+         "Both E(cell) and ΔrG are extensive properties",
+         "E(cell) is an intensive property but ΔrG depends on the number of electrons n in the written equation",
+         "E(cell) is extensive but ΔrG is intensive"
+        ],
+        2,
+        "Doubling the equation doubles ΔrG = −nFE but E(cell) stays the same."
+       ],
+       [
+        "A solution has conductivity 0.012 S cm⁻¹. In SI units this is",
+        [
+         "0.12 S m⁻¹",
+         "1.2 × 10⁻⁴ S m⁻¹",
+         "1.2 S m⁻¹",
+         "12 S m⁻¹"
+        ],
+        2,
+        "1 S cm⁻¹ = 100 S m⁻¹, so 0.012 S cm⁻¹ = 1.2 S m⁻¹."
+       ],
+       [
+        "On increasing the temperature,",
+        [
+         "the conductance of a metal decreases but that of an electrolytic solution increases",
+         "the conductance of both a metal and an electrolytic solution increases",
+         "the conductance of a metal increases but that of an electrolytic solution decreases",
+         "the conductance of both decreases"
+        ],
+        0,
+        "Metallic (electronic) conduction falls with temperature; ionic conduction rises with temperature."
+       ],
+       [
+        "Which classification of materials is correct?",
+        [
+         "Graphite is an insulator, silicon is a conductor and glass is a semiconductor",
+         "Graphite is a semiconductor, silicon is an insulator and glass is a conductor",
+         "Graphite, silicon and glass are all insulators",
+         "Graphite conducts electronically, silicon is a semiconductor and glass is an insulator"
+        ],
+        3,
+        "Graphite is electronically conducting, silicon has conductivity between conductors and insulators, and glass has a very low conductivity."
+       ],
+       [
+        "Alternating current rather than direct current is used for measuring the resistance of an electrolytic solution because",
+        [
+         "alternating current gives a larger resistance",
+         "direct current would electrolyse the solution and change its composition",
+         "direct current cannot flow through any solution",
+         "alternating current makes the cell constant zero"
+        ],
+        1,
+        "Passing DC changes the composition of the solution; AC at audio frequency avoids this."
+       ],
+       [
+        "A conductivity cell filled with 0.1 M KCl (κ = 1.29 S m⁻¹) has a resistance of 100 Ω. The cell constant is",
+        [
+         "129 m⁻¹",
+         "1.29 m⁻¹",
+         "0.0129 m⁻¹",
+         "77.5 m⁻¹"
+        ],
+        0,
+        "G* = κ × R = 1.29 S m⁻¹ × 100 Ω = 129 m⁻¹."
+       ],
+       [
+        "A 0.1 mol L⁻¹ solution has conductivity 0.0129 S cm⁻¹. Its molar conductivity is",
+        [
+         "0.129 S cm² mol⁻¹",
+         "12.9 S cm² mol⁻¹",
+         "129 S cm² mol⁻¹",
+         "1290 S cm² mol⁻¹"
+        ],
+        2,
+        "Λm = κ × 1000 / c = 0.0129 × 1000 / 0.1 = 129 S cm² mol⁻¹."
+       ],
+       [
+        "On diluting an electrolyte solution,",
+        [
+         "conductivity increases but molar conductivity decreases",
+         "conductivity decreases but molar conductivity increases",
+         "both increase",
+         "both decrease"
+        ],
+        1,
+        "Fewer ions per unit volume lowers κ, but the volume containing one mole increases more, so Λm = κV rises."
+       ],
+       [
+        "For a strong electrolyte, a plot of molar conductivity Λm against c½ is",
+        [
+         "a straight line with intercept zero and slope A",
+         "a steep curve that rises sharply near zero concentration",
+         "a horizontal line at Λ°m",
+         "a straight line with intercept Λ°m and slope −A"
+        ],
+        3,
+        "Λm = Λ°m − A c½ for strong electrolytes."
+       ],
+       [
+        "Kohlrausch law of independent migration of ions states that",
+        [
+         "the molar conductivity at any concentration is the sum of the conductivities of its ions at that concentration",
+         "the limiting molar conductivity of an electrolyte is the sum of the individual contributions of its cation and anion",
+         "the limiting molar conductivity of every electrolyte is the same",
+         "conductivity of an electrolyte is independent of its concentration"
+        ],
+        1,
+        "Λ°m = ν₊λ°₊ + ν₋λ°₋ at infinite dilution."
+       ],
+       [
+        "Given λ°(Ca²⁺) = 119.0 and λ°(Cl⁻) = 76.3 S cm² mol⁻¹, Λ°m of CaCl₂ is",
+        [
+         "195.3 S cm² mol⁻¹",
+         "314.4 S cm² mol⁻¹",
+         "42.7 S cm² mol⁻¹",
+         "271.6 S cm² mol⁻¹"
+        ],
+        3,
+        "Λ°m = 119.0 + 2 × 76.3 = 271.6 (NCERT Example 2.7)."
+       ],
+       [
+        "The Λ°m of a weak electrolyte such as acetic acid is obtained",
+        [
+         "from Kohlrausch law, because extrapolation of Λm to zero concentration is not possible",
+         "by extrapolating the straight Λm versus c½ plot to c = 0",
+         "by measuring Λm of a very concentrated solution",
+         "from the conductivity of pure water"
+        ],
+        0,
+        "Λm of a weak electrolyte rises steeply near zero concentration, so extrapolation fails."
+       ],
+       [
+        "The molar conductivity of a weak acid at a given concentration is 39.05 S cm² mol⁻¹ and Λ°m = 390.5 S cm² mol⁻¹. Its degree of dissociation is",
+        [
+         "0.01",
+         "10",
+         "0.1",
+         "1.0"
+        ],
+        2,
+        "α = Λm/Λ°m = 39.05/390.5 = 0.1."
+       ],
+       [
+        "In the electrolytic refining of copper using CuSO₄ solution,",
+        [
+         "pure copper is the anode and impure copper is the cathode",
+         "impure copper is the cathode, which dissolves",
+         "impure copper is the anode, which dissolves, and pure copper is deposited at the cathode",
+         "copper is deposited at the anode and dissolves at the cathode"
+        ],
+        2,
+        "Cu → Cu²⁺ + 2e⁻ at the anode and Cu²⁺ + 2e⁻ → Cu at the cathode."
+       ],
+       [
+        "Which pair correctly states how a metal is produced?",
+        [
+         "Sodium by electrolysis of fused NaCl, and aluminium by electrolysis of Al₂O₃ in the presence of cryolite",
+         "Sodium by electrolysis of aqueous NaCl, and aluminium by electrolysis of aqueous Al₂O₃",
+         "Sodium by electrolysis of Al₂O₃ with cryolite, and aluminium by electrolysis of fused NaCl",
+         "Both by electrolysis of aqueous solutions of their chlorides"
+        ],
+        0,
+        "Na and Al are produced by electrolytic reduction in melts because no suitable chemical reducing agent is available."
+       ],
+       [
+        "Faraday’s second law of electrolysis states that",
+        [
+         "the amount of substance liberated is inversely proportional to the quantity of electricity",
+         "the same mass of every substance is liberated by the same quantity of electricity",
+         "the amount of reaction is independent of the quantity of electricity",
+         "the amounts of different substances liberated by the same quantity of electricity are proportional to their chemical equivalent weights"
+        ],
+        3,
+        "Equivalent weight = atomic mass / number of electrons needed to reduce the cation."
+       ],
+       [
+        "Using F = 96500 C mol⁻¹ and Cu = 63.5, the mass of copper deposited by 1930 C from a Cu²⁺ solution is",
+        [
+         "1.27 g",
+         "0.635 g",
+         "0.3175 g",
+         "63.5 g"
+        ],
+        1,
+        "1930/96500 = 0.02 mol e⁻, so 0.01 mol Cu = 0.635 g."
+       ],
+       [
+        "On electrolysis of molten NaCl with inert electrodes, the products are",
+        [
+         "sodium metal at the cathode and chlorine gas at the anode",
+         "hydrogen at the cathode and chlorine at the anode",
+         "sodium at the anode and chlorine at the cathode",
+         "hydrogen at the cathode and oxygen at the anode"
+        ],
+        0,
+        "Only Na⁺ and Cl⁻ are present; Na⁺ is reduced and Cl⁻ is oxidised."
+       ],
+       [
+        "During electrolysis of aqueous NaCl with inert electrodes, the products are",
+        [
+         "Na at the cathode and Cl₂ at the anode",
+         "H₂ at the cathode and O₂ at the anode",
+         "H₂ at the cathode, Cl₂ at the anode and NaOH left in solution",
+         "Na at the cathode and O₂ at the anode"
+        ],
+        2,
+        "H⁺ (0.00 V) is reduced in preference to Na⁺ (−2.71 V); Cl⁻ is oxidised in preference to water because of the overpotential of oxygen."
+       ],
+       [
+        "At the anode during electrolysis of sulphuric acid with inert electrodes,",
+        [
+         "S₂O₈²⁻ is always formed",
+         "O₂ is formed from water in dilute H₂SO₄, while S₂O₈²⁻ is formed at higher concentrations",
+         "O₂ is formed at all concentrations",
+         "H₂ is formed in dilute H₂SO₄ and O₂ in concentrated H₂SO₄"
+        ],
+        1,
+        "Reaction 2H₂O → O₂ + 4H⁺ + 4e⁻ is preferred in dilute acid; 2SO₄²⁻ → S₂O₈²⁻ + 2e⁻ in concentrated acid."
+       ],
+       [
+        "A cell that can be recharged by passing current through it in the opposite direction is called a",
+        [
+         "primary cell",
+         "fuel cell",
+         "dry cell",
+         "secondary cell"
+        ],
+        3,
+        "In a primary battery the reaction occurs only once; a secondary cell can be charged and discharged many times."
+       ],
+       [
+        "In the Leclanché dry cell,",
+        [
+         "a graphite container is the anode and a zinc rod is the cathode; the potential is about 1.5 V",
+         "the zinc container is the anode and a graphite rod surrounded by MnO₂ is the cathode; the potential is about 1.5 V",
+         "the zinc container is the cathode and graphite is the anode; the potential is about 1.35 V",
+         "the zinc container is the anode and Pb is the cathode; the potential is about 2 V"
+        ],
+        1,
+        "At the anode Zn → Zn²⁺ + 2e⁻; MnO₂ is reduced to MnO(OH) (Mn from +4 to +3) at the cathode."
+       ],
+       [
+        "The mercury cell gives a constant potential of about 1.35 V during its life because",
+        [
+         "it is a secondary cell",
+         "it contains a large volume of electrolyte",
+         "mercury has a very high E°",
+         "its overall reaction, Zn(Hg) + HgO → ZnO + Hg, involves no ion whose concentration changes"
+        ],
+        3,
+        "The overall reaction does not involve any ion in solution, so the electrolyte composition stays constant."
+       ],
+       [
+        "The overall discharge reaction of the lead storage battery is",
+        [
+         "Pb + PbO₂ + 2H₂SO₄ → 2PbSO₄ + 2H₂O",
+         "Pb + PbO₂ + 2H₂O → 2PbSO₄ + 2H₂SO₄",
+         "2PbSO₄ + 2H₂O → Pb + PbO₂ + 2H₂SO₄",
+         "Pb + 2H₂SO₄ → PbSO₄ + 2H₂"
+        ],
+        0,
+        "Pb is oxidised at the anode and PbO₂ reduced at the cathode, both forming PbSO₄ (a 38% H₂SO₄ solution is the electrolyte)."
+       ],
+       [
+        "Compared with the lead storage cell, the nickel-cadmium cell",
+        [
+         "has a shorter life and is cheaper",
+         "is a primary cell",
+         "has a longer life but is more expensive to manufacture",
+         "has a longer life and is cheaper"
+        ],
+        2,
+        "Ni-Cd is a secondary cell: Cd + 2Ni(OH)₃ → CdO + 2Ni(OH)₂ + H₂O on discharge."
+       ],
+       [
+        "In the H₂–O₂ fuel cell with concentrated NaOH electrolyte, the anode reaction is",
+        [
+         "O₂(g) + 2H₂O(l) + 4e⁻ → 4OH⁻(aq)",
+         "2H₂O(l) → O₂ + 4H⁺ + 4e⁻",
+         "2H₂(g) + 4OH⁻(aq) → 4H₂O(l) + 4e⁻",
+         "H₂(g) + 2e⁻ → 2H⁻"
+        ],
+        2,
+        "H₂ is oxidised at the anode; O₂ is reduced at the cathode. The overall reaction is 2H₂ + O₂ → 2H₂O."
+       ],
+       [
+        "During the rusting of iron, a spot on the surface acts as the anode where",
+        [
+         "Fe is oxidised to Fe²⁺, and electrons move to another spot where O₂ is reduced in the presence of H⁺",
+         "Fe²⁺ is reduced to Fe, and electrons move to another spot where O₂ is oxidised",
+         "Fe is oxidised to Fe³⁺ directly, and H₂ is evolved at the cathode",
+         "O₂ is oxidised and Fe stays unchanged"
+        ],
+        0,
+        "Anode: Fe → Fe²⁺ + 2e⁻; cathode: O₂ + 4H⁺ + 4e⁻ → 2H₂O; Fe²⁺ is later oxidised to hydrated Fe₂O₃."
+       ],
+       [
+        "Which method protects iron from corrosion electrochemically?",
+        [
+         "Painting it with a conducting copper paint",
+         "Connecting it to a piece of silver",
+         "Dipping it in dilute acid",
+         "Connecting it to a sacrificial electrode of Mg or Zn"
+        ],
+        3,
+        "Mg and Zn are more easily oxidised than iron, so they corrode in its place."
+       ]
+      ],
+      [
+       [
+        "A Daniell cell (E°cell = 1.1 V, standard concentrations) is connected to an external source of 1.5 V opposing it. Which statement is correct?",
+        [
+         "Zn dissolves at the zinc electrode and Cu is deposited, with electrons flowing from Zn to Cu",
+         "Zn²⁺ is reduced at the zinc electrode, copper dissolves, electrons flow from the Cu to the Zn electrode and current flows from Zn to Cu in the wire",
+         "No change happens because the cell voltage is lower than 1.5 V",
+         "Zn²⁺ is reduced at the copper electrode and electrons flow from Zn to Cu"
+        ],
+        1,
+        "When Eext > 1.1 V the reaction is reversed: zinc becomes the cathode (−ve) and copper the anode (+ve), so the cell acts as an electrolytic cell."
+       ],
+       [
+        "A student writes: “In the Daniell cell, zinc is the anode, so current flows from zinc to copper through the external wire.” The error is that",
+        [
+         "zinc is actually the cathode, so current flows from Cu to Zn",
+         "current flows only through the salt bridge, never through the wire",
+         "electrons flow from Cu to Zn in the wire",
+         "electrons flow from Zn to Cu, so the conventional current flows from Cu to Zn in the external wire"
+        ],
+        3,
+        "Electrons move from the negative anode to the positive cathode; the direction of current is opposite to that of electron flow."
+       ],
+       [
+        "For the cell reaction Zn(s) + 2Ag⁺(aq) → Zn²⁺(aq) + 2Ag(s), given E°(Zn²⁺/Zn) = −0.76 V and E°(Ag⁺/Ag) = 0.80 V, the correct cell notation and E°cell are",
+        [
+         "Zn(s)|Zn²⁺(aq)||Ag⁺(aq)|Ag(s); 1.56 V",
+         "Zn(s)|Zn²⁺(aq)||Ag⁺(aq)|Ag(s); 0.04 V",
+         "Ag(s)|Ag⁺(aq)||Zn²⁺(aq)|Zn(s); 1.56 V",
+         "Zn(s)|Zn²⁺(aq)||Ag⁺(aq)|Ag(s); 2.36 V"
+        ],
+        0,
+        "E°cell = 0.80 − (−0.76) = 1.56 V; E° is an intensive quantity so it is not doubled for 2Ag⁺."
+       ],
+       [
+        "Assertion (A): Copper does not dissolve in dilute hydrochloric acid but dissolves in nitric acid.\nReason (R): E°(Cu²⁺/Cu) is positive, so H⁺ cannot oxidise Cu, whereas NO₃⁻ (with H⁺) is a stronger oxidising agent and does oxidise it.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        0,
+        "Cu is oxidised by nitrate ion (E° = 0.97 V), not by H⁺ (0.00 V)."
+       ],
+       [
+        "Which of the following can oxidise Fe²⁺ to Fe³⁺ under standard conditions? (E°: Fe³⁺/Fe²⁺ = 0.77 V, Cl₂/Cl⁻ = 1.36 V, I₂/I⁻ = 0.54 V, Cu²⁺/Cu = 0.34 V, Zn²⁺/Zn = −0.76 V)",
+        [
+         "I₂",
+         "Cu²⁺",
+         "Cl₂",
+         "Zn²⁺"
+        ],
+        2,
+        "The oxidiser must have a higher E° than Fe³⁺/Fe²⁺ (0.77 V); only Cl₂ qualifies."
+       ],
+       [
+        "The metals Ag, Cu, Zn and Al are arranged in increasing order of reducing power as",
+        [
+         "Ag < Cu < Zn < Al",
+         "Al < Zn < Cu < Ag",
+         "Cu < Ag < Al < Zn",
+         "Zn < Al < Ag < Cu"
+        ],
+        0,
+        "E° values: Ag⁺/Ag 0.80, Cu²⁺/Cu 0.34, Zn²⁺/Zn −0.76, Al³⁺/Al −1.66; lower E° means stronger reducing agent."
+       ],
+       [
+        "A 1 M CuSO₄ solution can be stored safely in a vessel made of",
+        [
+         "zinc",
+         "iron",
+         "aluminium",
+         "silver"
+        ],
+        3,
+        "Zn (−0.76 V), Fe (−0.44 V) and Al (−1.66 V) are stronger reducing agents than Cu and would displace it; Ag (0.80 V) cannot."
+       ],
+       [
+        "A student connects a zinc half-cell alone across a voltmeter and states that it reads −0.76 V, which is therefore the measured electrode potential of zinc. The error is that",
+        [
+         "the voltmeter should read +0.76 V because zinc is the anode",
+         "the potential of a single half-cell cannot be measured; −0.76 V is the emf relative to the standard hydrogen electrode, whose potential is assigned as zero",
+         "−0.76 V is the potential relative to the copper electrode",
+         "zinc half-cell has no potential without a salt bridge"
+        ],
+        1,
+        "Only differences between two half-cells can be measured; SHE is the reference with E° = 0."
+       ],
+       [
+        "Calculate the emf of the cell Ni(s)|Ni²⁺(0.160 M)||Ag⁺(0.002 M)|Ag(s) at 298 K, given E°cell = 1.05 V.",
+        [
+         "0.91 V",
+         "1.19 V",
+         "0.96 V",
+         "1.05 V"
+        ],
+        0,
+        "E = 1.05 − (0.059/2) log [0.160/(0.002)²] = 1.05 − 0.0295 × 4.602 = 0.914 V.",
+        "Q = [Ni²⁺]/[Ag⁺]²."
+       ],
+       [
+        "The potential of the hydrogen electrode, H⁺(aq)|H₂(1 bar)|Pt, in a solution of pH 10 at 298 K is",
+        [
+         "+0.59 V",
+         "−0.059 V",
+         "−0.59 V",
+         "−1.18 V"
+        ],
+        2,
+        "E = 0 − 0.059 log (1/[H⁺]) = −0.059 × pH = −0.59 V."
+       ],
+       [
+        "The electrode potential of Cu²⁺(0.01 M)|Cu at 298 K, given E°(Cu²⁺/Cu) = 0.34 V, is",
+        [
+         "0.40 V",
+         "0.28 V",
+         "0.34 V",
+         "0.22 V"
+        ],
+        1,
+        "E = 0.34 − (0.059/2) log (1/0.01) = 0.34 − 0.059 = 0.281 V."
+       ],
+       [
+        "A student calculates the emf of Zn|Zn²⁺(0.01 M)||Cu²⁺(0.1 M)|Cu (E°cell = 1.10 V) as E = 1.10 − (0.059/2) log (0.1/0.01) = 1.07 V. The correct value and the error are",
+        [
+         "1.07 V; the calculation is correct",
+         "1.13 V; the student should have used n = 1",
+         "1.13 V; the student should have used ln instead of log",
+         "1.13 V; Q should be [Zn²⁺]/[Cu²⁺] = 0.1, not its inverse"
+        ],
+        3,
+        "E = 1.10 − 0.0295 log (0.01/0.1) = 1.10 + 0.0295 = 1.13 V, since Q = [product ion]/[reactant ion]."
+       ],
+       [
+        "Assertion (A): The emf of the cell is doubled when its balanced reaction is written with all coefficients multiplied by 2.\nReason (R): ΔrG° depends on the number of electrons n in the balanced equation.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        3,
+        "E°cell is an intensive property and does not change; ΔrG° = −nFE° doubles. So A is false and R is true."
+       ],
+       [
+        "Assertion (A): The voltage of a working Daniell cell gradually decreases with time.\nReason (R): As the cell works, [Zn²⁺] increases and [Cu²⁺] decreases, so Q increases in E = E° − (0.059/2) log Q.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        0,
+        "Q = [Zn²⁺]/[Cu²⁺] rises until Q = Kc, when E = 0."
+       ],
+       [
+        "The emf of Zn|Zn²⁺(0.1 M)||Cu²⁺(0.001 M)|Cu at 298 K (E°cell = 1.10 V) is",
+        [
+         "1.04 V",
+         "1.16 V",
+         "1.10 V",
+         "0.98 V"
+        ],
+        0,
+        "E = 1.10 − (0.059/2) log (0.1/0.001) = 1.10 − 0.0295 × 2 = 1.041 V."
+       ],
+       [
+        "The equilibrium constant of Ni(s) + 2Ag⁺(aq) → Ni²⁺(aq) + 2Ag(s), for which E°cell = 1.05 V at 298 K, is about (use 0.059 V; 10⁰·⁵⁹³ = 3.92)",
+        [
+         "3.9 × 10¹⁷",
+         "1.0 × 10²",
+         "3.9 × 10³⁵",
+         "3.9 × 10⁻³⁶"
+        ],
+        2,
+        "log Kc = (2 × 1.05)/0.059 = 35.59, so Kc = 3.9 × 10³⁵."
+       ],
+       [
+        "The cell 2Fe³⁺(aq) + 2I⁻(aq) → 2Fe²⁺(aq) + I₂(s) has E°cell = 0.236 V at 298 K. The values of ΔrG° and log Kc are respectively (F = 96500 C mol⁻¹)",
+        [
+         "−22.8 kJ mol⁻¹ and 8.0",
+         "−45.5 kJ mol⁻¹ and 4.0",
+         "−45.5 kJ mol⁻¹ and 8.0",
+         "+45.5 kJ mol⁻¹ and 8.0"
+        ],
+        2,
+        "ΔrG° = −2 × 96500 × 0.236 = −45548 J; log Kc = 2 × 0.236/0.059 = 8.0."
+       ],
+       [
+        "For Cu(s) + 2Ag⁺(aq) → Cu²⁺(aq) + 2Ag(s), E°cell = 0.46 V. For the reaction written as 2Cu(s) + 4Ag⁺(aq) → 2Cu²⁺(aq) + 4Ag(s), ΔrG° is (F = 96500 C mol⁻¹)",
+        [
+         "−177.6 kJ mol⁻¹",
+         "−88.8 kJ mol⁻¹",
+         "−355.1 kJ mol⁻¹",
+         "+177.6 kJ mol⁻¹"
+        ],
+        0,
+        "n = 4, so ΔrG° = −4 × 96500 × 0.46 = −177560 J mol⁻¹; E° is unchanged."
+       ],
+       [
+        "A student says: “Writing the cell reaction as 2Zn + 2Cu²⁺ → 2Zn²⁺ + 2Cu doubles both E°cell and ΔrG°.” The correct statement is that",
+        [
+         "both remain unchanged",
+         "E°cell doubles while ΔrG° is unchanged",
+         "E°cell halves and ΔrG° doubles",
+         "E°cell is unchanged while ΔrG° doubles"
+        ],
+        3,
+        "E°cell is intensive; ΔrG° = −nFE° is extensive and n becomes 4 instead of 2."
+       ],
+       [
+        "A student heats a copper wire and a 0.1 M KCl solution and claims that the conductance of both increases. The correct statement is that",
+        [
+         "the conductance of copper increases, while that of KCl decreases",
+         "the conductance of copper decreases, while that of the KCl solution increases",
+         "the conductance of both decreases",
+         "the conductance of both increases, but by different amounts"
+        ],
+        1,
+        "Electronic conductance falls with temperature; ionic conductance rises (also by lower viscosity and less solvation)."
+       ],
+       [
+        "In a Wheatstone bridge for a conductivity cell, balance is obtained with R₁ = 300 Ω, R₃ = 100 Ω and R₄ = 40 Ω (R₂ = R₁R₄/R₃ is the cell). If the cell constant is 1.5 cm⁻¹, the conductivity of the solution is",
+        [
+         "1.25 × 10⁻² S cm⁻¹",
+         "1.8 × 10² S cm⁻¹",
+         "8.0 × 10⁻² S cm⁻¹",
+         "1.25 × 10⁻³ S cm⁻¹"
+        ],
+        0,
+        "R₂ = 300 × 40/100 = 120 Ω; κ = G*/R = 1.5/120 = 0.0125 S cm⁻¹."
+       ],
+       [
+        "The cell constant of a cell is found using 0.1 M KCl (κ = 1.29 S m⁻¹, R = 150 Ω). With 0.05 M NaCl in the same cell the resistance is 310 Ω. The molar conductivity of the NaCl solution is",
+        [
+         "62.4 S cm² mol⁻¹",
+         "249.6 S cm² mol⁻¹",
+         "124.8 S cm² mol⁻¹",
+         "12.48 S cm² mol⁻¹"
+        ],
+        2,
+        "G* = 1.29 × 150 = 193.5 m⁻¹; κ = 193.5/310 = 0.624 S m⁻¹; Λm = κ/c = 0.624/50 = 124.8 × 10⁻⁴ S m² mol⁻¹.",
+        "c = 0.05 mol L⁻¹ = 50 mol m⁻³."
+       ],
+       [
+        "A student measures the resistance of an electrolyte using a battery (DC) and bare platinum foil. The readings keep drifting. The most likely reason is that",
+        [
+         "DC makes the solution heat up, whereas AC cools it",
+         "DC electrolyses the solution and changes its composition near the electrodes; AC with a conductivity cell avoids this",
+         "the solution is a metallic conductor and needs a high-frequency source",
+         "platinum is oxidised to Pt²⁺ and goes into the solution at each step"
+        ],
+        1,
+        "A solution cannot be connected like a metallic wire, and DC changes its composition, so AC and a conductivity cell are used."
+       ],
+       [
+        "A cylindrical column of electrolyte 40 cm long and 2 cm in diameter (take π = 3.14) has a resistance of 1000 Ω and contains 0.10 mol L⁻¹ solute. Its molar conductivity is about",
+        [
+         "12.7 S cm² mol⁻¹",
+         "1.27 S cm² mol⁻¹",
+         "400 S cm² mol⁻¹",
+         "127 S cm² mol⁻¹"
+        ],
+        3,
+        "A = 3.14 cm²; κ = l/(RA) = 40/(1000 × 3.14) = 0.01274 S cm⁻¹; Λm = 0.01274 × 1000/0.10 = 127 S cm² mol⁻¹."
+       ],
+       [
+        "A 0.2 mol L⁻¹ solution has κ = 2.5 × 10⁻² S cm⁻¹. Its molar conductivity in S m² mol⁻¹ is",
+        [
+         "1.25 × 10⁻⁴",
+         "1.25 × 10⁻²",
+         "125",
+         "1.25 × 10⁻⁶"
+        ],
+        1,
+        "Λm = 0.025 × 1000/0.2 = 125 S cm² mol⁻¹ = 125 × 10⁻⁴ S m² mol⁻¹ = 1.25 × 10⁻² S m² mol⁻¹."
+       ],
+       [
+        "For KCl, Λm = Λ°m − A c½ with Λ°m = 150.0 and A = 87.46 (S cm² mol⁻¹ and (mol L⁻¹)½ units). The Λm of a 0.0004 mol L⁻¹ solution is about",
+        [
+         "150.0 S cm² mol⁻¹",
+         "115.0 S cm² mol⁻¹",
+         "62.5 S cm² mol⁻¹",
+         "148.3 S cm² mol⁻¹"
+        ],
+        3,
+        "c½ = 0.02, so Λm = 150.0 − 87.46 × 0.02 = 148.25 S cm² mol⁻¹."
+       ],
+       [
+        "Given λ°(Al³⁺) = 189 and λ°(SO₄²⁻) = 160 S cm² mol⁻¹, the Λ°m of Al₂(SO₄)₃ is",
+        [
+         "858 S cm² mol⁻¹",
+         "349 S cm² mol⁻¹",
+         "538 S cm² mol⁻¹",
+         "669 S cm² mol⁻¹"
+        ],
+        0,
+        "Λ°m = 2 × 189 + 3 × 160 = 858 S cm² mol⁻¹."
+       ],
+       [
+        "A student calculates Λ°m of CaCl₂ as λ°(Ca²⁺) + λ°(Cl⁻) = 119.0 + 76.3 = 195.3 S cm² mol⁻¹. The error is that",
+        [
+         "Ca²⁺ gives two ions, so Λ°m = 2(119.0) + 76.3",
+         "the conductivities should be multiplied, not added",
+         "CaCl₂ gives two Cl⁻ ions, so Λ°m = 119.0 + 2(76.3) = 271.6 S cm² mol⁻¹",
+         "the value must be divided by 3"
+        ],
+        2,
+        "Λ°m = ν₊λ°₊ + ν₋λ°₋ includes the stoichiometric numbers of ions."
+       ],
+       [
+        "A student claims that acetic acid has a higher Λm in 0.1 M than in 0.001 M solution because the 0.1 M solution has more ions per unit volume. The correct explanation is that",
+        [
+         "Λm is higher at 0.001 M because κ increases on dilution",
+         "Λm is the same at both concentrations because acetic acid is a weak electrolyte",
+         "Λm is higher at 0.001 M since the degree of dissociation, and the total volume containing 1 mol, both increase on dilution",
+         "the student is right because Λm increases with concentration"
+        ],
+        2,
+        "κ falls on dilution, but the fall is more than compensated by the increase in volume and in α."
+       ],
+       [
+        "The conductivity of 0.001028 mol L⁻¹ acetic acid is 4.95 × 10⁻⁵ S cm⁻¹ and Λ°m = 390.5 S cm² mol⁻¹. Its dissociation constant is about",
+        [
+         "1.78 × 10⁻⁵ mol L⁻¹",
+         "1.78 × 10⁻³ mol L⁻¹",
+         "1.23 × 10⁻⁴ mol L⁻¹",
+         "1.56 × 10⁻⁵ mol L⁻¹"
+        ],
+        0,
+        "Λm = 48.15; α = 0.1233; Ka = cα²/(1 − α) = 0.001028 × (0.1233)²/0.8767 = 1.78 × 10⁻⁵ (NCERT Example 2.9)."
+       ],
+       [
+        "The molar conductivity of 0.025 mol L⁻¹ methanoic acid is 46.1 S cm² mol⁻¹; λ°(H⁺) = 349.6 and λ°(HCOO⁻) = 54.6 S cm² mol⁻¹. Its dissociation constant Ka is about",
+        [
+         "3.67 × 10⁻⁵ mol L⁻¹",
+         "2.9 × 10⁻³ mol L⁻¹",
+         "9.3 × 10⁻⁴ mol L⁻¹",
+         "3.67 × 10⁻⁴ mol L⁻¹"
+        ],
+        3,
+        "Λ°m = 404.2; α = 46.1/404.2 = 0.114; Ka = cα²/(1 − α) = 0.025 × 0.013/0.886 = 3.67 × 10⁻⁴."
+       ],
+       [
+        "A weak monobasic acid HA of concentration 0.05 mol L⁻¹ has κ = 1.95 × 10⁻⁴ S cm⁻¹ and Λ°m = 390 S cm² mol⁻¹. Its Ka is about",
+        [
+         "5.0 × 10⁻⁴ mol L⁻¹",
+         "5.1 × 10⁻⁶ mol L⁻¹",
+         "2.5 × 10⁻⁵ mol L⁻¹",
+         "1.0 × 10⁻⁴ mol L⁻¹"
+        ],
+        1,
+        "Λm = 1.95 × 10⁻⁴ × 1000/0.05 = 3.9; α = 0.01; Ka = cα²/(1 − α) = 0.05 × 10⁻⁴/0.99 = 5.05 × 10⁻⁶."
+       ],
+       [
+        "Assertion (A): The conductivity of an electrolyte solution decreases on dilution.\nReason (R): The molar conductivity of an electrolyte increases on dilution.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        1,
+        "A is true because fewer ions are present per unit volume; R is also true but concerns Λm and is not the reason for A."
+       ],
+       [
+        "Assertion (A): The Λ°m of a weak electrolyte cannot be found by extrapolating Λm to zero concentration.\nReason (R): Λm of a weak electrolyte increases very steeply on dilution near zero concentration.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        0,
+        "Because of the steep rise, extrapolation is unreliable and Kohlrausch law is used instead."
+       ],
+       [
+        "Given Λ°m for NH₄Cl = 150, NaOH = 248 and NaCl = 126 S cm² mol⁻¹, the Λ°m of NH₄OH is",
+        [
+         "524 S cm² mol⁻¹",
+         "272 S cm² mol⁻¹",
+         "28 S cm² mol⁻¹",
+         "400 S cm² mol⁻¹"
+        ],
+        1,
+        "Λ°m(NH₄OH) = Λ°m(NH₄Cl) + Λ°m(NaOH) − Λ°m(NaCl) = 150 + 248 − 126 = 272."
+       ],
+       [
+        "A current of 5 A is passed for 965 s through CuSO₄ solution with inert electrodes. The mass of copper deposited at the cathode is (F = 96500 C mol⁻¹; Cu = 63.5)",
+        [
+         "3.18 g",
+         "0.79 g",
+         "6.35 g",
+         "1.59 g"
+        ],
+        3,
+        "Q = 4825 C = 0.05 F; Cu²⁺ + 2e⁻ → Cu so 0.025 mol Cu = 1.59 g."
+       ],
+       [
+        "For how long must a current of 10 A be passed through molten Al₂O₃ in cryolite to deposit 2.7 g of aluminium? (Al = 27; F = 96500 C mol⁻¹)",
+        [
+         "965 s",
+         "2895 s",
+         "8685 s",
+         "5790 s"
+        ],
+        1,
+        "2.7 g = 0.1 mol Al needs 0.3 F = 28950 C; t = 28950/10 = 2895 s."
+       ],
+       [
+        "The same quantity of electricity that deposits 0.635 g of copper from CuSO₄ solution is passed through molten AlCl₃. The mass of aluminium deposited is (Cu = 63.5, Al = 27)",
+        [
+         "0.27 g",
+         "0.54 g",
+         "0.09 g",
+         "0.18 g"
+        ],
+        3,
+        "0.635 g Cu = 0.01 mol, needing 0.02 mol e⁻; Al³⁺ + 3e⁻ → Al gives 0.02/3 mol = 0.18 g."
+       ],
+       [
+        "The number of electrons that flow through a metal wire carrying 0.5 A for 2 hours is (N_A = 6.022 × 10²³ mol⁻¹, F = 96500 C mol⁻¹)",
+        [
+         "2.25 × 10²²",
+         "2.25 × 10¹⁹",
+         "6.25 × 10¹⁸",
+         "1.25 × 10²²"
+        ],
+        0,
+        "Q = 0.5 × 7200 = 3600 C = 0.0373 mol e⁻, so 0.0373 × 6.022 × 10²³ = 2.25 × 10²² electrons."
+       ],
+       [
+        "The quantity of electricity needed to reduce 0.5 mol of Cr₂O₇²⁻ to Cr³⁺ in acid is (F = 96500 C mol⁻¹)",
+        [
+         "5.79 × 10⁵ C",
+         "9.65 × 10⁴ C",
+         "2.895 × 10⁵ C",
+         "1.93 × 10⁵ C"
+        ],
+        2,
+        "Cr₂O₇²⁻ + 14H⁺ + 6e⁻ → 2Cr³⁺ + 7H₂O needs 6F per mole, so 0.5 × 6 × 96500 = 2.895 × 10⁵ C."
+       ],
+       [
+        "A student states: “On electrolysing aqueous NaCl with inert electrodes, sodium is deposited at the cathode because Na⁺ is the only cation.” The error is that",
+        [
+         "Na⁺ is reduced but immediately reacts with Cl₂",
+         "sodium is deposited at the anode, not the cathode",
+         "water (H⁺) is reduced at the cathode in preference to Na⁺, because E°(H⁺/H₂) = 0.00 V is higher than E°(Na⁺/Na) = −2.71 V",
+         "Cl⁻ is reduced at the cathode"
+        ],
+        2,
+        "The reduction with the higher E° is preferred, so H₂ and OH⁻ form at the cathode."
+       ],
+       [
+        "Aqueous NaCl with a few drops of phenolphthalein is electrolysed with platinum electrodes. Which observation and anode product are correct?",
+        [
+         "The region near the cathode turns pink, and Cl₂ is liberated at the anode",
+         "The region near the anode turns pink, and O₂ is liberated at the cathode",
+         "The region near the cathode turns pink, and O₂ is liberated at the anode",
+         "No colour change occurs, and Na deposits at the cathode"
+        ],
+        0,
+        "The cathode reaction H₂O + e⁻ → ½H₂ + OH⁻ makes the solution alkaline; at the anode Cl⁻ → ½Cl₂ + e⁻ is preferred owing to the overpotential of O₂."
+       ],
+       [
+        "Assertion (A): On electrolysis of aqueous NaCl with inert electrodes, chlorine rather than oxygen is liberated at the anode.\nReason (R): Oxygen evolution from water has a high overpotential, so oxidation of Cl⁻ occurs in preference.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        0,
+        "On thermodynamic grounds water (1.23 V) should be oxidised first, but the overpotential of oxygen favours Cl⁻ oxidation."
+       ],
+       [
+        "Assertion (A): Sodium metal is obtained at the cathode when aqueous NaCl is electrolysed.\nReason (R): H⁺ ions have a higher standard electrode potential than Na⁺ ions and are therefore reduced in preference.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        3,
+        "A is false: H₂ is evolved, not Na. R is true: E°(H⁺/H₂) = 0.00 V > E°(Na⁺/Na) = −2.71 V."
+       ],
+       [
+        "In the electrolysis of H₂SO₄ solution with inert electrodes, which statement about the anode is correct?",
+        [
+         "In dilute H₂SO₄ water is oxidised to O₂, whereas in concentrated H₂SO₄ SO₄²⁻ is oxidised to S₂O₈²⁻",
+         "In dilute H₂SO₄ SO₄²⁻ is oxidised to S₂O₈²⁻, and in concentrated H₂SO₄ water gives O₂",
+         "H₂ gas is evolved at the anode at all concentrations",
+         "SO₄²⁻ is reduced to SO₂ at the anode"
+        ],
+        0,
+        "Reaction 2H₂O → O₂ + 4H⁺ + 4e⁻ (1.23 V) is preferred in dilute acid; 2SO₄²⁻ → S₂O₈²⁻ + 2e⁻ (1.96 V) in concentrated acid."
+       ],
+       [
+        "Which statement about the Leclanché dry cell is correct?",
+        [
+         "The zinc container is reduced and manganese changes from +4 to +2",
+         "Ammonia formed at the cathode escapes, and manganese changes from +3 to +4",
+         "Ammonia formed at the cathode combines with Zn²⁺ to give [Zn(NH₃)₄]²⁺, and manganese changes from +4 to +3",
+         "The graphite rod is the anode and is slowly oxidised"
+        ],
+        2,
+        "Cathode: MnO₂ + NH₄⁺ + e⁻ → MnO(OH) + NH₃; the zinc container is the anode."
+       ],
+       [
+        "Assertion (A): In a dry cell, the zinc container acts as the anode.\nReason (R): Zinc is reduced at the anode of a dry cell.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        2,
+        "A is true; R is false because oxidation, Zn → Zn²⁺ + 2e⁻, occurs at the anode."
+       ],
+       [
+        "Assertion (A): The mercury cell gives a constant potential during its life.\nReason (R): The overall cell reaction, Zn(Hg) + HgO → ZnO + Hg, involves no ion in solution whose concentration changes.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        0,
+        "Since the electrolyte composition does not change, the cell potential stays nearly constant at 1.35 V."
+       ],
+       [
+        "A lead storage battery is discharged by a current of 9.65 A for 1000 s. The mass of H₂SO₄ consumed is (F = 96500 C mol⁻¹; H₂SO₄ = 98)",
+        [
+         "4.9 g",
+         "9.8 g",
+         "19.6 g",
+         "98 g"
+        ],
+        1,
+        "Q = 9650 C = 0.1 F; Pb + PbO₂ + 2H₂SO₄ → 2PbSO₄ + 2H₂O consumes 2 mol H₂SO₄ per 2 mol e⁻, so 0.1 mol = 9.8 g.",
+        "2 mol H₂SO₄ are used per 2 mol of electrons."
+       ],
+       [
+        "When a lead storage battery is charged, which change is correct?",
+        [
+         "Pb and PbO₂ are both converted to PbSO₄ and H₂SO₄ is consumed",
+         "PbSO₄ at both plates is converted to Pb only",
+         "PbO₂ is converted to Pb at the cathode and H₂ is evolved",
+         "PbSO₄ on the lead plate is converted to Pb, PbSO₄ on the PbO₂ plate to PbO₂, and H₂SO₄ is regenerated"
+        ],
+        3,
+        "Charging reverses the discharge reaction: 2PbSO₄ + 2H₂O → Pb + PbO₂ + 2H₂SO₄."
+       ],
+       [
+        "In the discharge of a nickel-cadmium cell, Cd(s) + 2Ni(OH)₃(s) → CdO(s) + 2Ni(OH)₂(s) + H₂O(l), which statement is correct?",
+        [
+         "Cd is oxidised from 0 to +2 and nickel is reduced from +3 to +2",
+         "Cd is reduced from +2 to 0 and nickel is oxidised from +2 to +3",
+         "Cd is oxidised from 0 to +1 and nickel is reduced from +3 to +1",
+         "Both Cd and nickel are reduced"
+        ],
+        0,
+        "Cd loses 2e⁻ and each Ni gains one e⁻, so Cd is the anode material."
+       ],
+       [
+        "In an H₂–O₂ fuel cell in alkaline medium, what mass of O₂ is consumed at the cathode to deliver 19300 C? (F = 96500 C mol⁻¹; O = 16)",
+        [
+         "3.2 g",
+         "0.8 g",
+         "1.6 g",
+         "6.4 g"
+        ],
+        2,
+        "19300 C = 0.2 F; O₂ + 2H₂O + 4e⁻ → 4OH⁻ uses 1 mol O₂ per 4 mol e⁻, so 0.05 mol = 1.6 g."
+       ],
+       [
+        "Which statement about the H₂–O₂ fuel cell is NOT correct?",
+        [
+         "The cell runs continuously as long as the reactants are supplied",
+         "Its efficiency, about 70%, is higher than that of thermal plants (about 40%)",
+         "Hydrogen is reduced at the cathode to give H⁺ ions, which combine with oxygen",
+         "Catalysts such as platinum or palladium are incorporated into the porous electrodes"
+        ],
+        2,
+        "H₂ is oxidised at the anode (2H₂ + 4OH⁻ → 4H₂O + 4e⁻); O₂ is reduced at the cathode; the overall product is water."
+       ],
+       [
+        "Using E°(Fe²⁺/Fe) = −0.44 V and E°(O₂, H⁺/H₂O) = 1.23 V, the E°cell for the corrosion of iron, 2Fe + O₂ + 4H⁺ → 2Fe²⁺ + 2H₂O, is",
+        [
+         "1.67 V",
+         "0.79 V",
+         "−1.67 V",
+         "3.34 V"
+        ],
+        0,
+        "E°cell = 1.23 − (−0.44) = 1.67 V; the positive value shows corrosion is spontaneous."
+       ],
+       [
+        "An iron object is coated with zinc in one case and with tin in another, and both coatings are scratched, exposing iron in moist air. (E°: Zn²⁺/Zn = −0.76, Fe²⁺/Fe = −0.44, Sn²⁺/Sn = −0.14 V.) Which is correct?",
+        [
+         "Iron is protected in both cases because the coating metal covers it",
+         "Iron corrodes in the zinc-coated case but is protected in the tin-coated case",
+         "Iron corrodes in both cases",
+         "Iron is still protected in the zinc-coated case because zinc corrodes in its place, but in the tin-coated case iron corrodes"
+        ],
+        3,
+        "Zn is a stronger reducing agent than Fe and acts as the sacrificial anode; Sn is weaker than Fe, so iron becomes the anode and rusts."
+       ],
+       [
+        "Which metal, joined to an underground iron pipe, would protect it from corrosion as a sacrificial electrode? (E°: Cu²⁺/Cu = 0.34, Sn²⁺/Sn = −0.14, Fe²⁺/Fe = −0.44, Mg²⁺/Mg = −2.36 V)",
+        [
+         "Cu",
+         "Mg",
+         "Sn",
+         "Ag"
+        ],
+        1,
+        "The sacrificial metal must be more easily oxidised than Fe, that is, have a lower E°; only Mg qualifies."
+       ],
+       [
+        "A student says: “Rusting occurs when iron is reduced at one spot, and the electrons released there oxidise oxygen at another spot.” The correct description is that",
+        [
+         "iron is oxidised at the anodic spot, and the electrons reduce O₂ (in presence of H⁺) at another spot; Fe²⁺ is then oxidised further to hydrated Fe₂O₃",
+         "iron is oxidised at the cathodic spot and H₂ is evolved at the anodic spot",
+         "iron is reduced at the anodic spot and oxygen oxidised at the cathodic spot, as the student says",
+         "iron is oxidised only if the metal is completely dry"
+        ],
+        0,
+        "Anode: Fe → Fe²⁺ + 2e⁻; cathode: O₂ + 4H⁺ + 4e⁻ → 2H₂O; rust is Fe₂O₃·xH₂O."
+       ],
+       [
+        "Which classification of batteries is correct?",
+        [
+         "Leclanché dry cell and lead storage battery are primary; mercury cell and nickel-cadmium cell are secondary",
+         "All four are primary batteries because they use redox reactions",
+         "Leclanché dry cell and mercury cell are primary; lead storage battery and nickel-cadmium cell are secondary",
+         "Mercury cell and lead storage battery are primary; Leclanché cell and nickel-cadmium cell are secondary"
+        ],
+        2,
+        "In a primary battery the reaction occurs only once; secondary batteries (lead storage, Ni-Cd) can be recharged by passing current in the opposite direction."
+       ]
+      ]
+     ]
+    },
+    {
+     "n": 3,
+     "t": "Chemical Kinetics",
+     "levels": [
+      [
+       [
+        "The rate of a chemical reaction is best defined as",
+        [
+         "the total amount of product formed when the reaction is complete",
+         "the time taken for the reaction to reach equilibrium",
+         "the change in concentration of a reactant or a product per unit time",
+         "the energy released per mole of reactant consumed"
+        ],
+        2,
+        "Rate is the decrease in concentration of a reactant or the increase in concentration of a product in unit time."
+       ],
+       [
+        "For R → P, the concentration of R falls from 0.03 M to 0.02 M in 25 minutes. The average rate in mol L⁻¹ s⁻¹ is",
+        [
+         "6.67 × 10⁻⁶",
+         "4 × 10⁻⁴",
+         "6.67 × 10⁻⁴",
+         "2.4 × 10⁻²"
+        ],
+        0,
+        "Average rate = 0.01 mol L⁻¹ ÷ (25 × 60 s) = 6.67 × 10⁻⁶ mol L⁻¹ s⁻¹ (4 × 10⁻⁴ per minute)."
+       ],
+       [
+        "The instantaneous rate of a reaction at time t is obtained graphically as",
+        [
+         "the area under the concentration–time curve up to time t",
+         "the slope of the straight line joining the first and last points of the curve",
+         "the intercept of the concentration–time curve on the concentration axis",
+         "the slope of the tangent drawn to the concentration–time curve at time t"
+        ],
+        3,
+        "Instantaneous rate is the average rate as Δt → 0, i.e. the slope of the tangent at that instant."
+       ],
+       [
+        "For 2HI(g) → H₂(g) + I₂(g), the rate of disappearance of HI is 4 × 10⁻³ mol L⁻¹ s⁻¹. The rate of formation of H₂ is",
+        [
+         "4 × 10⁻³ mol L⁻¹ s⁻¹",
+         "2 × 10⁻³ mol L⁻¹ s⁻¹",
+         "8 × 10⁻³ mol L⁻¹ s⁻¹",
+         "1 × 10⁻³ mol L⁻¹ s⁻¹"
+        ],
+        1,
+        "Rate = −½ d[HI]/dt = d[H₂]/dt, so H₂ forms at half the rate at which HI disappears."
+       ],
+       [
+        "For a gaseous reaction in which concentrations are expressed as partial pressures, the unit of rate is",
+        [
+         "mol L⁻¹ s⁻¹",
+         "atm⁻¹ s⁻¹",
+         "atm s⁻¹",
+         "mol atm s⁻¹"
+        ],
+        2,
+        "Rate has units of (concentration) time⁻¹, so with pressure in atm it becomes atm s⁻¹."
+       ],
+       [
+        "Which of the following is NOT listed in the unit as a factor that influences the rate of a reaction?",
+        [
+         "The colour of the reaction vessel",
+         "Concentration of reactants",
+         "Temperature",
+         "Presence of a catalyst"
+        ],
+        0,
+        "Concentration (or pressure for gases), temperature and catalyst affect rate; the colour of the vessel does not."
+       ],
+       [
+        "The representation of the rate of a reaction in terms of the concentrations of the reactants is called",
+        [
+         "rate law (rate equation or rate expression)",
+         "law of mass action only for equilibrium",
+         "integrated activation law",
+         "Arrhenius factor"
+        ],
+        0,
+        "The expression relating rate to reactant concentrations is the rate law, also called the rate equation or rate expression."
+       ],
+       [
+        "For 2NO + O₂ → 2NO₂, doubling [NO] at constant [O₂] raises the initial rate four times, and doubling [O₂] at constant [NO] doubles it. The rate law is",
+        [
+         "Rate = k [NO] [O₂]",
+         "Rate = k [NO] [O₂]²",
+         "Rate = k [NO]⁴ [O₂]",
+         "Rate = k [NO]² [O₂]"
+        ],
+        3,
+        "Rate ∝ [NO]² (4 = 2²) and ∝ [O₂]¹ (2 = 2¹)."
+       ],
+       [
+        "For CH₃COOC₂H₅ + H₂O → CH₃COOH + C₂H₅OH, the experimental rate law is Rate = k [CH₃COOC₂H₅]¹ [H₂O]⁰. This shows that",
+        [
+         "the rate law can always be written from the stoichiometric coefficients",
+         "the rate law cannot be predicted from the balanced equation and must be found by experiment",
+         "water is not a reactant in this reaction",
+         "the reaction is of zero order overall"
+        ],
+        1,
+        "The exponents (1 and 0) differ from the coefficients (1 and 1), so the rate law has to be determined experimentally."
+       ],
+       [
+        "For a reaction with Rate = k [A]³ᐟ² [B]⁻¹, the overall order is",
+        [
+         "½",
+         "3/2",
+         "5/2",
+         "−1"
+        ],
+        0,
+        "Order is the sum of the powers: 3/2 + (−1) = ½."
+       ],
+       [
+        "A reaction has a rate constant k = 2.3 × 10⁻⁵ L mol⁻¹ s⁻¹. The order of the reaction is",
+        [
+         "first",
+         "zero",
+         "second",
+         "third"
+        ],
+        2,
+        "The unit L mol⁻¹ s⁻¹ is that of a second order rate constant. (NCERT Example 3.4)"
+       ],
+       [
+        "Reactions that take place in a single step are called",
+        [
+         "complex reactions",
+         "consecutive reactions",
+         "side reactions",
+         "elementary reactions"
+        ],
+        3,
+        "A one-step reaction is elementary; a sequence of elementary steps (a mechanism) makes a complex reaction."
+       ],
+       [
+        "For a second order reaction, the concentration of the reactant is made three times. The rate becomes",
+        [
+         "9 times",
+         "3 times",
+         "6 times",
+         "27 times"
+        ],
+        0,
+        "Rate ∝ [X]², so rate becomes 3² = 9 times."
+       ],
+       [
+        "The reaction 2HI → H₂ + I₂ (as an elementary step) is an example of a",
+        [
+         "unimolecular reaction",
+         "bimolecular reaction",
+         "termolecular reaction",
+         "zero molecular reaction"
+        ],
+        1,
+        "Two reacting molecules collide simultaneously, so molecularity is 2."
+       ],
+       [
+        "Which statement about order and molecularity is correct?",
+        [
+         "Molecularity can be zero or a fraction, but order cannot",
+         "Both can be zero or fractional",
+         "Order can be zero or a fraction, but molecularity cannot",
+         "Both are always whole numbers equal to the sum of stoichiometric coefficients"
+        ],
+        2,
+        "Order is experimental and may be 0 or fractional; molecularity is a whole number (1, 2 or 3) of colliding species."
+       ],
+       [
+        "In a multi-step reaction the step that controls the overall rate is the",
+        [
+         "fastest step",
+         "last step",
+         "step with the highest molecularity",
+         "slowest step, called the rate determining step"
+        ],
+        3,
+        "The overall rate is governed by the slowest step, like the slowest runner in a relay race."
+       ],
+       [
+        "Integrated rate equations are used mainly because",
+        [
+         "they relate directly measured concentrations at different times to k, avoiding the difficulty of finding slopes of tangents",
+         "they give the instantaneous rate without any measurement",
+         "they apply only to reactions with a catalyst",
+         "they remove the need to know the initial concentration"
+        ],
+        0,
+        "Concentration–time data are measured directly, so integrated equations make finding k and order easier than tangents."
+       ],
+       [
+        "For a zero order reaction R → P, a plot of [R] against time is",
+        [
+         "a straight line with slope k/2.303",
+         "a straight line with slope −k and intercept [R]₀",
+         "an exponential decay curve",
+         "a horizontal line at [R]₀"
+        ],
+        1,
+        "From [R] = −kt + [R]₀, the plot of [R] versus t is a straight line with slope −k."
+       ],
+       [
+        "The decomposition of gaseous NH₃ on a hot platinum surface is zero order at high pressure because",
+        [
+         "ammonia is present in large excess in water",
+         "platinum is consumed during the reaction",
+         "the metal surface gets saturated with gas molecules, so the rate no longer depends on concentration",
+         "the reaction has molecularity zero"
+        ],
+        2,
+        "A saturated catalyst surface fixes the amount of NH₃ on it, so Rate = k [NH₃]⁰ = k."
+       ],
+       [
+        "For a first order reaction, a straight line is obtained when we plot",
+        [
+         "ln [R] against t, with slope −k",
+         "[R] against t, with slope −k",
+         "1/[R] against t, with slope k",
+         "[R] against 1/t, with slope k"
+        ],
+        0,
+        "ln [R] = −kt + ln [R]₀ is a straight line with slope −k."
+       ],
+       [
+        "A first order reaction has k = 1.15 × 10⁻³ s⁻¹. The time for 5 g of reactant to reduce to 3 g is about (log 5 = 0.6990, log 3 = 0.4771)",
+        [
+         "193 s",
+         "444 s",
+         "603 s",
+         "1000 s"
+        ],
+        1,
+        "t = (2.303/k) log (5/3) = (2.303/1.15 × 10⁻³) × 0.2219 ≈ 444 s. (NCERT Intext 3.5)"
+       ],
+       [
+        "For the first order gas phase reaction A(g) → B(g) + C(g), the initial pressure is 0.4 atm and the total pressure at time t is 0.6 atm. The partial pressure of A at time t is",
+        [
+         "0.2 atm",
+         "0.6 atm",
+         "0.1 atm",
+         "0.5 atm"
+        ],
+        0,
+        "pA = 2pᵢ − pₜ = 0.8 − 0.6 = 0.2 atm."
+       ],
+       [
+        "A first order reaction has k = 0.0231 min⁻¹. Its half-life is (use t½ = 0.693/k)",
+        [
+         "43.3 min",
+         "0.016 min",
+         "30 min",
+         "99.7 min"
+        ],
+        2,
+        "t½ = 0.693/0.0231 = 30 min."
+       ],
+       [
+        "For a zero order reaction, if the initial concentration of the reactant is doubled, the half-life",
+        [
+         "remains the same",
+         "becomes half",
+         "becomes four times",
+         "becomes double"
+        ],
+        3,
+        "For zero order, t½ = [R]₀/2k is directly proportional to [R]₀."
+       ],
+       [
+        "The hydrolysis of ethyl acetate in a large excess of water behaves as a first order reaction because",
+        [
+         "the concentration of water remains almost constant during the reaction",
+         "ethyl acetate is a catalyst",
+         "water is not a reactant",
+         "the reaction is unimolecular"
+        ],
+        0,
+        "Water is in such large excess that its concentration barely changes, so the rate depends only on the ester: a pseudo first order reaction."
+       ],
+       [
+        "For most chemical reactions, when the temperature is raised by 10°, the rate constant",
+        [
+         "becomes nearly ten times",
+         "becomes nearly double",
+         "decreases to nearly half",
+         "remains unchanged"
+        ],
+        1,
+        "A 10° rise nearly doubles the rate constant."
+       ],
+       [
+        "In the Arrhenius equation k = A e^(−Ea/RT), the factor e^(−Ea/RT) represents",
+        [
+         "the total number of collisions per second",
+         "the fraction of collisions with proper orientation",
+         "the fraction of molecules with kinetic energy equal to or greater than Ea",
+         "the fraction of molecules with energy less than Ea"
+        ],
+        2,
+        "e^(−Ea/RT) gives the fraction of molecules having energy at least equal to the activation energy."
+       ],
+       [
+        "A plot of ln k against 1/T is a straight line with",
+        [
+         "slope −Ea/R and intercept ln A",
+         "slope Ea/R and intercept A",
+         "slope −R/Ea and intercept ln A",
+         "slope −Ea and intercept ln R"
+        ],
+        0,
+        "ln k = −Ea/R × (1/T) + ln A."
+       ],
+       [
+        "On raising the temperature, the Maxwell–Boltzmann distribution curve of molecular kinetic energies",
+        [
+         "shifts its peak to lower energy and becomes narrower",
+         "keeps the same peak and gets a larger total area",
+         "becomes a straight line",
+         "shifts its peak to higher energy and broadens, keeping the total area constant"
+        ],
+        3,
+        "The peak moves right and spreads out; the area stays equal to one, so more molecules have energy ≥ Ea."
+       ],
+       [
+        "Activation energy is best described as",
+        [
+         "the energy needed to form the activated complex from the reactants",
+         "the energy released when products form",
+         "the enthalpy change of the overall reaction",
+         "the average kinetic energy of the reactant molecules"
+        ],
+        0,
+        "Ea is the energy difference between the activated complex and the reactants."
+       ],
+       [
+        "A catalyst increases the rate of a reaction by",
+        [
+         "increasing the temperature of the reaction",
+         "changing the Gibbs energy ΔG of the reaction",
+         "providing an alternative path with lower activation energy",
+         "increasing the equilibrium constant"
+        ],
+        2,
+        "A catalyst lowers Ea through an intermediate complex; ΔG and K are unchanged."
+       ],
+       [
+        "A substance that decreases the rate of a reaction is called a(n)",
+        [
+         "catalyst",
+         "inhibitor",
+         "promoter",
+         "intermediate"
+        ],
+        1,
+        "The word catalyst is not used for a substance that reduces the rate; it is called an inhibitor."
+       ],
+       [
+        "According to collision theory, a collision is effective only if the colliding molecules have",
+        [
+         "equal masses and equal speeds",
+         "proper orientation but any energy",
+         "kinetic energy less than the activation energy",
+         "at least the threshold energy and proper orientation"
+        ],
+        3,
+        "Sufficient energy and proper orientation are both needed for bond breaking and new bond formation."
+       ],
+       [
+        "In collision theory the rate is written as Rate = P Z_AB e^(−Ea/RT). The factor P is called the",
+        [
+         "steric (probability) factor",
+         "frequency factor",
+         "activation factor",
+         "stoichiometric factor"
+        ],
+        0,
+        "P accounts for the fraction of collisions with proper orientation."
+       ]
+      ],
+      [
+       [
+        "For 2A → products, the concentration of A falls from 0.5 mol L⁻¹ to 0.4 mol L⁻¹ in 10 minutes. The rate of the reaction in mol L⁻¹ s⁻¹ is",
+        [
+         "1.67 × 10⁻⁴",
+         "8.33 × 10⁻⁵",
+         "5 × 10⁻³",
+         "1.0 × 10⁻²"
+        ],
+        1,
+        "Rate of reaction = −½ Δ[A]/Δt = ½ × 0.1/600 s = 8.33 × 10⁻⁵ mol L⁻¹ s⁻¹.",
+        "Divide by the coefficient 2 and convert minutes to seconds."
+       ],
+       [
+        "For 2N₂O₅ → 4NO₂ + O₂, the rate of the reaction (as defined using stoichiometric coefficients) is 3 × 10⁻⁴ mol L⁻¹ s⁻¹. The rate of formation of NO₂ is",
+        [
+         "1.2 × 10⁻³ mol L⁻¹ s⁻¹",
+         "7.5 × 10⁻⁵ mol L⁻¹ s⁻¹",
+         "3 × 10⁻⁴ mol L⁻¹ s⁻¹",
+         "6 × 10⁻⁴ mol L⁻¹ s⁻¹"
+        ],
+        0,
+        "Rate = ¼ d[NO₂]/dt, so d[NO₂]/dt = 4 × 3 × 10⁻⁴ = 1.2 × 10⁻³ mol L⁻¹ s⁻¹."
+       ],
+       [
+        "Find the error. A student says: “The average rate of a reaction between t = 0 and t = 200 s tells me exactly how fast the reaction is going at t = 100 s.” What is wrong?",
+        [
+         "The average rate must be calculated using the product concentration only",
+         "Rates cannot be measured in seconds",
+         "The rate at t = 100 s is always zero",
+         "The average rate is the same value for the whole interval; the rate at one instant is the slope of the tangent at that time"
+        ],
+        3,
+        "Average rate is Δ[R]/Δt over an interval; the rate at one moment is the instantaneous rate (slope of the tangent, Δt → 0)."
+       ],
+       [
+        "In a flask, a gaseous reaction 2NO + O₂ → 2NO₂ has rate law Rate = k [NO]² [O₂]. If the volume of the reaction vessel is halved at constant temperature, the rate becomes",
+        [
+         "4 times",
+         "8 times",
+         "2 times",
+         "16 times"
+        ],
+        1,
+        "Halving the volume doubles every concentration, so rate becomes 2² × 2 = 8 times."
+       ],
+       [
+        "Which statement about the rate constant k of a reaction is correct?",
+        [
+         "It decreases steadily as the reactant is consumed",
+         "It can be calculated from the balanced equation without any experiment",
+         "At a given temperature it is characteristic of the reaction and does not depend on the reactant concentrations",
+         "It has the same value at all temperatures"
+        ],
+        2,
+        "k is the proportionality constant in the rate law; it changes with temperature (and catalyst) but not with concentration."
+       ],
+       [
+        "The initial rates for A + B → products are: [A] = 0.1, [B] = 0.1 M gives 2 × 10⁻³ M s⁻¹; [A] = 0.2, [B] = 0.1 M gives 8 × 10⁻³ M s⁻¹; [A] = 0.1, [B] = 0.2 M gives 4 × 10⁻³ M s⁻¹. The rate constant k is",
+        [
+         "0.2 L² mol⁻² s⁻¹",
+         "20 L² mol⁻² s⁻¹",
+         "2 × 10⁻³ L² mol⁻² s⁻¹",
+         "2 L² mol⁻² s⁻¹"
+        ],
+        3,
+        "Rate = k [A]² [B] (4× for 2× A, 2× for 2× B); k = 2 × 10⁻³/(0.1² × 0.1) = 2 L² mol⁻² s⁻¹."
+       ],
+       [
+        "Find the error. For CHCl₃ + Cl₂ → CCl₄ + HCl a student writes Rate = k [CHCl₃][Cl₂] from the balanced equation, but the experimental rate is Rate = k [CHCl₃][Cl₂]¹ᐟ². What is the error in the student’s method?",
+        [
+         "Rate laws must be found by experiment, not copied from the coefficients; the true overall order is 3/2",
+         "The student should have used the products in the rate law",
+         "The true overall order is 2 because ½ must be rounded up",
+         "Chlorine is a catalyst, so it must not appear in the rate law"
+        ],
+        0,
+        "Exponents need not equal coefficients; here the order is 1 + ½ = 3/2."
+       ],
+       [
+        "A reaction has rate constant 5.2 × 10⁻³ L² mol⁻² s⁻¹. The order of the reaction, and the unit of its rate, are",
+        [
+         "second order; mol L⁻¹ s⁻¹",
+         "third order; mol⁻² L² s⁻¹",
+         "third order; mol L⁻¹ s⁻¹",
+         "first order; s⁻¹"
+        ],
+        2,
+        "Unit of k = (mol L⁻¹)¹⁻ⁿ s⁻¹; n = 3 gives L² mol⁻² s⁻¹. Rate always has units mol L⁻¹ s⁻¹; mol⁻² L² s⁻¹ is the unit of k."
+       ],
+       [
+        "Find the error. A student says: “KClO₃ + 6FeSO₄ + 3H₂SO₄ → KCl + 3Fe₂(SO₄)₃ + 3H₂O involves 10 reactant molecules, so it is a tenth order reaction.” What is wrong?",
+        [
+         "The reaction is actually zero order because water is a product",
+         "Order is found by experiment (this reaction is actually second order) and it occurs in several steps",
+         "It is a tenth order reaction, but not bimolecular",
+         "Order and molecularity are always equal to the number of molecules in the equation"
+        ],
+        1,
+        "A reaction with so many molecules must occur in several steps; its experimental order is two."
+       ],
+       [
+        "Hydrogen peroxide decomposes in alkaline iodide: Step 1 (slow): H₂O₂ + I⁻ → H₂O + IO⁻; Step 2 (fast): H₂O₂ + IO⁻ → H₂O + I⁻ + O₂. Which statement is correct?",
+        [
+         "Rate = k [H₂O₂][I⁻]; IO⁻ is an intermediate and I⁻ is a catalyst",
+         "Rate = k [H₂O₂]²; IO⁻ is a catalyst and I⁻ is an intermediate",
+         "Rate = k [H₂O₂][IO⁻]; IO⁻ is an intermediate and I⁻ is a catalyst",
+         "Rate = k [H₂O₂]²[I⁻]; both IO⁻ and I⁻ are intermediates"
+        ],
+        0,
+        "The slow step is rate determining and bimolecular, so Rate = k [H₂O₂][I⁻]. IO⁻ is formed and used up (intermediate); I⁻ is regenerated (catalyst)."
+       ],
+       [
+        "A reaction is carried out and its rate is measured only through slopes of tangents. Why is an integrated rate equation preferred for finding the order?",
+        [
+         "It gives the molecularity directly",
+         "It makes the reaction go faster",
+         "It does not need any concentration data",
+         "It uses directly measured concentrations at different times, so a straight-line test (such as ln [R] vs t) identifies the order"
+        ],
+        3,
+        "Differential rates need tangents, which are hard to draw accurately; linear plots of integrated equations are easier to test."
+       ],
+       [
+        "A zero order reaction has [R]₀ = 0.8 mol L⁻¹ and k = 2 × 10⁻² mol L⁻¹ s⁻¹. The time for 75% of the reactant to be consumed is",
+        [
+         "20 s",
+         "30 s",
+         "40 s",
+         "15 s"
+        ],
+        1,
+        "t = ([R]₀ − [R])/k = 0.6/0.02 = 30 s."
+       ],
+       [
+        "A zero order reaction is 50% complete in 20 minutes. The time it takes to go to completion is",
+        [
+         "40 min",
+         "20 min",
+         "60 min",
+         "infinite"
+        ],
+        0,
+        "t½ = [R]₀/2k, so complete time [R]₀/k = 2 × t½ = 40 min."
+       ],
+       [
+        "A first order reaction is 40% complete in 10 minutes. Its rate constant is (log 6 = 0.7781)",
+        [
+         "0.0223 min⁻¹",
+         "0.0511 min⁻¹",
+         "0.1177 min⁻¹",
+         "0.0693 min⁻¹"
+        ],
+        1,
+        "k = (2.303/10) log (100/60) = 0.2303 × 0.2219 = 0.0511 min⁻¹."
+       ],
+       [
+        "For A(g) → B(g) + C(g), pᵢ = 0.5 atm and the total pressure after 100 s is 0.6 atm. The first order rate constant is (log 1.25 = 0.0970)",
+        [
+         "2.23 × 10⁻³ s⁻¹",
+         "1.61 × 10⁻² s⁻¹",
+         "9.7 × 10⁻⁴ s⁻¹",
+         "4.46 × 10⁻³ s⁻¹"
+        ],
+        0,
+        "pA = 2 × 0.5 − 0.6 = 0.4 atm; k = (2.303/100) log (0.5/0.4) = 2.23 × 10⁻³ s⁻¹."
+       ],
+       [
+        "A first order reaction has k = 1.15 × 10⁻³ s⁻¹. Starting with 5 g of reactant, the mass left after 2000 s is about (take log⁻¹ 1 = 10)",
+        [
+         "1.0 g",
+         "0.5 g",
+         "2.5 g",
+         "0.25 g"
+        ],
+        1,
+        "log ([R]₀/[R]) = kt/2.303 = 1.15 × 10⁻³ × 2000/2.303 = 1, so [R] = 5/10 = 0.5 g."
+       ],
+       [
+        "Find the error. A student plots [R] against t for a reaction and gets a curve, so she says: “It cannot be first order because a first order plot should be a straight line of slope −k.” What should she do?",
+        [
+         "Plot 1/t against [R]",
+         "Conclude the reaction is zero order, since zero order plots are curved",
+         "Plot ln [R] against t; for first order this gives a straight line of slope −k",
+         "Plot t against t²"
+        ],
+        2,
+        "A plot of [R] vs t is straight only for zero order; for first order the straight line is ln [R] vs t."
+       ],
+       [
+        "Find the error. A student calculates k for a first order reaction as k = (2.303/t) log ([R]/[R]₀) and gets a negative value. The correct form is",
+        [
+         "k = (2.303/t) log ([R]₀/[R])",
+         "k = (t/2.303) log ([R]₀/[R])",
+         "k = 2.303 t log ([R]₀/[R])",
+         "k = (0.693/t) log ([R]₀ − [R])"
+        ],
+        0,
+        "The ratio must be initial over final concentration, [R]₀/[R], so that k is positive."
+       ],
+       [
+        "For a first order reaction, the ratio of the time needed for 99% completion to the half-life is closest to (log 2 = 0.3010)",
+        [
+         "10",
+         "3.32",
+         "6.64",
+         "99"
+        ],
+        2,
+        "t₉₉ = 2.303 log 100/k = 4.606/k; t½ = 0.693/k; ratio = 6.64."
+       ],
+       [
+        "Find the error. A first order reaction has t½ = 20 min. A student says the reaction will be over in 40 min. What is wrong?",
+        [
+         "After 40 min (two half-lives) 25% of the reactant still remains",
+         "After 40 min 50% remains",
+         "After 40 min 12.5% remains",
+         "Half-life of a first order reaction doubles every 20 min"
+        ],
+        0,
+        "Each half-life halves the remaining amount: 100% → 50% → 25%."
+       ],
+       [
+        "Case. In a study of a reaction, doubling [A] doubled the initial rate and tripling [B] had no effect on it. The half-life was found to be 10 min. How long will it take for [A] to fall from 0.8 M to 0.2 M?",
+        [
+         "30 min",
+         "40 min",
+         "10 min",
+         "20 min"
+        ],
+        3,
+        "Rate = k [A], first order with a constant half-life; 0.8 → 0.4 → 0.2 takes two half-lives = 20 min."
+       ],
+       [
+        "Find the error. A student says: “Hydrolysis of 0.01 mol of ethyl acetate in 10 mol of water is second order, so its rate must depend on the change in water concentration.” Which is the correct statement?",
+        [
+         "Water is a catalyst and so it is not consumed",
+         "Only 0.01 mol of water is consumed out of 10 mol, so [H₂O] is practically constant and the reaction appears first order",
+         "About half of the water is consumed, so the order falls to zero",
+         "Water does not take part in the reaction"
+        ],
+        1,
+        "Water changes from 10 mol to 9.99 mol, so the reaction behaves as pseudo first order."
+       ],
+       [
+        "Assertion (A): The inversion of cane sugar, C₁₂H₂₂O₁₁ + H₂O → glucose + fructose, in dilute acid follows Rate = k [C₁₂H₂₂O₁₁] although two molecules appear on the reactant side.\nReason (R): Water is present in large excess and its concentration remains almost constant during the reaction.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        0,
+        "Water is in large excess, so the reaction is pseudo first order."
+       ],
+       [
+        "The rate of a reaction doubles when the temperature is raised from 300 K to 310 K. The activation energy is about (log 2 = 0.3010, R = 8.314 J K⁻¹ mol⁻¹)",
+        [
+         "53.6 kJ mol⁻¹",
+         "5.36 kJ mol⁻¹",
+         "107 kJ mol⁻¹",
+         "26.8 kJ mol⁻¹"
+        ],
+        0,
+        "Ea = 2.303 R log 2 × T₁T₂/(T₂−T₁) = 19.15 × 0.301 × 9300 = 53.6 kJ mol⁻¹."
+       ],
+       [
+        "A reaction has Ea = 50 kJ mol⁻¹. The factor by which its rate constant increases on heating from 300 K to 310 K is (R = 8.314 J K⁻¹ mol⁻¹, antilog 0.2808 = 1.91)",
+        [
+         "3.82",
+         "0.52",
+         "6.5",
+         "1.91"
+        ],
+        3,
+        "log (k₂/k₁) = (50000/19.15) × (10/93000) = 0.2808, so k₂/k₁ = 1.91."
+       ],
+       [
+        "The fraction of reactant molecules with energy equal to or greater than Ea at 300 K, for Ea = 50 kJ mol⁻¹, is about (R = 8.314 J K⁻¹ mol⁻¹)",
+        [
+         "2.0 × 10⁹",
+         "4.0 × 10⁻¹⁸",
+         "2.0 × 10⁻⁹",
+         "0.05"
+        ],
+        2,
+        "Fraction = e^(−Ea/RT) = e^(−50000/(8.314 × 300)) = e^(−20.05) ≈ 2 × 10⁻⁹."
+       ],
+       [
+        "A plot of log k against 1/T for a reaction is a straight line of slope −2.0 × 10³ K. The activation energy is (R = 8.314 J K⁻¹ mol⁻¹)",
+        [
+         "16.6 kJ mol⁻¹",
+         "38.3 kJ mol⁻¹",
+         "76.6 kJ mol⁻¹",
+         "0.0383 kJ mol⁻¹"
+        ],
+        1,
+        "Slope = −Ea/(2.303R), so Ea = 2000 × 2.303 × 8.314 = 38.3 kJ mol⁻¹."
+       ],
+       [
+        "Find the error. A student plots ln k against T and says the slope is −Ea/R. What is the correct statement?",
+        [
+         "The slope −Ea/R is obtained for ln k against 1/T, not against T",
+         "The slope of ln k against T is +Ea/R",
+         "The plot should be of k against 1/T",
+         "The slope of ln k against 1/T is −Ea·R"
+        ],
+        0,
+        "ln k = −(Ea/R)(1/T) + ln A is linear in 1/T."
+       ],
+       [
+        "Assertion (A): The rate constant of a reaction increases when the temperature is raised.\nReason (R): At higher temperature the activation energy of the reaction increases.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        2,
+        "A is true because more molecules have energy ≥ Ea; R is false since Ea is characteristic of the reaction path and does not increase with T."
+       ],
+       [
+        "At 300 K, a catalyst lowers the activation energy of a reaction from 75 to 50 kJ mol⁻¹, and the Arrhenius factor A is unchanged. The rate constant increases by a factor of about (R = 8.314 J K⁻¹ mol⁻¹)",
+        [
+         "2.26 × 10⁴",
+         "25",
+         "1.0 × 10²",
+         "4.5 × 10²"
+        ],
+        0,
+        "k′/k = e^(ΔEa/RT) = e^(25000/(8.314 × 300)) = e^10.02 ≈ 2.26 × 10⁴."
+       ],
+       [
+        "Assertion (A): A catalyst can make a non-spontaneous reaction proceed.\nReason (R): A catalyst lowers the activation energy by providing an alternative pathway.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        3,
+        "A is false because a catalyst does not change ΔG; it cannot make a non-spontaneous reaction go. R is true."
+       ],
+       [
+        "Find the error. A student says: “A catalyst speeds up the forward reaction only, so it increases the equilibrium constant and gives more product.” What is the correct statement?",
+        [
+         "A catalyst speeds up forward and backward reactions equally, so K is unchanged and equilibrium is reached sooner",
+         "A catalyst speeds only the backward reaction",
+         "A catalyst increases ΔG so that equilibrium shifts",
+         "A catalyst is consumed, so K decreases"
+        ],
+        0,
+        "The equilibrium constant and ΔG are not changed by a catalyst."
+       ],
+       [
+        "Case. Two bimolecular elementary reactions X and Y occur at the same temperature with the same activation energy and the same collision frequency. The steric factor P is 0.1 for X and 0.001 for Y. Compare their rates.",
+        [
+         "X is 10 times faster than Y",
+         "X is 100 times faster than Y",
+         "Both have the same rate",
+         "Y is 100 times faster than X"
+        ],
+        1,
+        "Rate = P Z_AB e^(−Ea/RT); only P differs, so rate ratio = 0.1/0.001 = 100."
+       ],
+       [
+        "Assertion (A): Not every collision between reactant molecules leads to the formation of products.\nReason (R): Every collision between molecules having energy at least equal to Ea leads to products.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        2,
+        "A is true; R is false because molecules must also collide with proper orientation (steric factor P)."
+       ],
+       [
+        "Assertion (A): The unit of the rate constant of a first order reaction is s⁻¹.\nReason (R): The half-life of a first order reaction is independent of the initial concentration.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        1,
+        "Both are true, but the unit follows from rate/concentration, not from the constant half-life."
+       ]
+      ]
+     ]
+    },
+    {
+     "n": 4,
+     "t": "The d- and f-Block Elements",
+     "levels": [
+      [
+       [
+        "Which groups of the periodic table make up the d-block?",
+        [
+         "Groups 1 and 2",
+         "Groups 3 to 12",
+         "Groups 13 to 18",
+         "Groups 3 to 10 only"
+        ],
+        1,
+        "The d orbitals of the penultimate shell are progressively filled in groups 3–12."
+       ],
+       [
+        "Which option lists the four rows of transition metals in the d-block?",
+        [
+         "3d and 4d only",
+         "3d, 4d and 5d only",
+         "3d, 4d, 5d, 6d and 7d",
+         "3d, 4d, 5d and 6d"
+        ],
+        3,
+        "The 3d, 4d, 5d and 6d series are the four rows of transition metals."
+       ],
+       [
+        "The general outer electronic configuration of the d-block elements is",
+        [
+         "(n–1)d¹⁻¹⁰ ns¹⁻²",
+         "nd¹⁻¹⁰ (n+1)s¹⁻²",
+         "(n–1)d¹⁻¹⁰ ns² np¹⁻⁶",
+         "(n–2)f¹⁻¹⁴ (n–1)d¹⁻¹⁰ ns²"
+        ],
+        0,
+        "The inner (n–1)d orbitals receive one to ten electrons while ns has one or two (Pd is the exception, 4d¹⁰5s⁰)."
+       ],
+       [
+        "Chromium has the outer configuration 3d⁵4s¹ and not 3d⁴4s² because",
+        [
+         "4s is always lower in energy than 3d",
+         "a completely filled 4s orbital repels 3d electrons",
+         "a half-filled d set is extra stable and the 3d–4s energy gap is small",
+         "chromium prefers an even number of electrons"
+        ],
+        2,
+        "Half-filled 3d⁵ is more stable and the small 3d–4s gap lets an electron shift."
+       ],
+       [
+        "On what ground is scandium (Z = 21) a transition element but zinc (Z = 30) is not?",
+        [
+         "Sc has two 4s electrons while Zn has one",
+         "Sc is a metal while Zn is a non-metal",
+         "Sc has an incomplete 3d subshell (3d¹) while Zn has 3d¹⁰ in its atom and ions",
+         "Sc forms coloured ions while Zn does not form any ions"
+        ],
+        2,
+        "IUPAC defines a transition metal as having an incomplete d subshell in the atom or its ions (NCERT Example 4.1)."
+       ],
+       [
+        "Silver (4d¹⁰5s¹) has completely filled d orbitals in the ground state, yet it is treated as a transition element because",
+        [
+         "its +2 ion, Ag²⁺, has an incomplete 4d⁹ configuration",
+         "its 5s orbital is only half filled in Ag⁺",
+         "it is used for coins like copper and gold",
+         "it shows the oxidation states +1 and +3 only"
+        ],
+        0,
+        "A metal with an incomplete d subshell in any of its common ions counts as a transition metal (NCERT Intext 4.1)."
+       ],
+       [
+        "Which transition element has the unusual outer configuration 4d¹⁰5s⁰ in the ground state?",
+        [
+         "Pt",
+         "Ag",
+         "Cd",
+         "Pd"
+        ],
+        3,
+        "Palladium is the one exception to (n–1)d¹⁻¹⁰ns¹⁻² with no s electron."
+       ],
+       [
+        "Melting points in a transition series rise to a maximum near d⁵ and then fall. This is because",
+        [
+         "the atomic radius is largest in the middle of the series",
+         "the number of unpaired d electrons taking part in metallic bonding is greatest near the middle",
+         "the ns electrons are lost completely in the middle",
+         "the nuclear charge decreases after d⁵"
+        ],
+        1,
+        "More unpaired (n–1)d electrons in addition to ns electrons give stronger interatomic bonding."
+       ],
+       [
+        "Why does zinc have the lowest enthalpy of atomisation (126 kJ mol⁻¹) in the 3d series?",
+        [
+         "Its 3d¹⁰ subshell has no unpaired electrons, so metallic bonding is weak",
+         "It has the largest atomic radius in the series",
+         "It has one electron in the 4s orbital",
+         "It loses its 3d electrons very easily"
+        ],
+        0,
+        "Only 4s electrons take part, with no unpaired d electrons for strong interatomic interaction (NCERT Intext 4.2)."
+       ],
+       [
+        "Which of the following is NOT a typical property of transition metals (excluding Zn, Cd and Hg)?",
+        [
+         "High tensile strength",
+         "High melting and boiling points",
+         "Low hardness and high volatility",
+         "Good thermal and electrical conductivity"
+        ],
+        2,
+        "These metals are very hard with low volatility and high melting points."
+       ],
+       [
+        "Metals of the second and third transition series have higher enthalpies of atomisation than those of the first series. A consequence is",
+        [
+         "lower melting points for the heavier metals",
+         "more frequent metal–metal bonding in compounds of the heavier transition metals",
+         "absence of metal–metal bonds in their compounds",
+         "easier atomisation of the heavier metals"
+        ],
+        1,
+        "Stronger interatomic bonding in 4d and 5d metals favours metal–metal bonding."
+       ],
+       [
+        "Along the 3d series the atomic radii decrease only slightly. The reason is",
+        [
+         "the nuclear charge stays constant across the series",
+         "the added electrons enter the outermost shell",
+         "the 4s electrons are removed from every atom",
+         "d electrons shield the nuclear charge poorly, but the new electron goes into an inner subshell"
+        ],
+        3,
+        "Each added d electron shields poorly, so the effective nuclear charge rises a little."
+       ],
+       [
+        "Zr (160 pm) and Hf (159 pm) have almost identical radii because of",
+        [
+         "actinoid contraction",
+         "lanthanoid contraction",
+         "the inert pair effect",
+         "poor shielding by s electrons"
+        ],
+        1,
+        "The 4f electrons filled before the 5d series shield poorly and shrink the 5d elements."
+       ],
+       [
+        "The density of the elements increases markedly from Ti to Cu because",
+        [
+         "metallic radius increases while atomic mass decreases",
+         "both atomic radius and atomic mass decrease",
+         "the elements change from hcp to bcc structure",
+         "metallic radius decreases while atomic mass increases"
+        ],
+        3,
+        "A smaller volume and larger mass per atom both increase density."
+       ],
+       [
+        "Compared with a period of non-transition elements, the rise in ionisation enthalpy along the 3d series is",
+        [
+         "small, because 3d electrons shield the 4s electrons from the increasing nuclear charge",
+         "large, because 4s electrons are not shielded at all",
+         "small, because the atomic radius increases sharply",
+         "large, because d electrons do not shield at all"
+        ],
+        0,
+        "Added d electrons shield the 4s electrons somewhat, so ionisation enthalpies rise only slightly."
+       ],
+       [
+        "The second ionisation enthalpy of manganese is lower than that of chromium because the ion formed, Mn²⁺, has the configuration",
+        [
+         "d⁴ (3d⁴)",
+         "d⁶ (3d⁶)",
+         "d⁵ (3d⁵), with extra exchange-energy stability",
+         "d¹⁰ (3d¹⁰)"
+        ],
+        2,
+        "Mn⁺ is 3d⁵4s¹, so removing the 4s electron gives the stable half-filled 3d⁵, whereas Cr⁺ is already 3d⁵ and resists further ionisation."
+       ],
+       [
+        "The second ionisation enthalpy is unusually high for Cr and Cu because",
+        [
+         "their M⁺ ions have d⁴ and d⁹ configurations",
+         "they have no 4s electrons to lose",
+         "their M⁺ ions have the stable d⁵ and d¹⁰ configurations respectively",
+         "they have the largest atomic radii in the series"
+        ],
+        2,
+        "Removing an electron from d⁵ (Cr⁺) or d¹⁰ (Cu⁺) is difficult."
+       ],
+       [
+        "It is difficult to obtain oxidation states higher than +2 for Cu, Ni and Zn because",
+        [
+         "their third ionisation enthalpies are very high",
+         "their first ionisation enthalpies are very low",
+         "they have no 4s electrons",
+         "their second ionisation enthalpies are negative"
+        ],
+        0,
+        "The third ionisation enthalpies of these elements are very high."
+       ],
+       [
+        "Which first-row transition element shows all oxidation states from +2 to +7?",
+        [
+         "Cr",
+         "Fe",
+         "V",
+         "Mn"
+        ],
+        3,
+        "Manganese, near the middle of the series, shows +2 to +7."
+       ],
+       [
+        "The oxidation states of a transition element in its compounds (for example V: +2, +3, +4, +5) differ from each other by",
+        [
+         "two units",
+         "unity (one unit)",
+         "three units",
+         "four units"
+        ],
+        1,
+        "Incomplete d filling allows steps of one, unlike the steps of two in non-transition elements."
+       ],
+       [
+        "Name the first-row transition element that does NOT exhibit variable oxidation states.",
+        [
+         "Scandium",
+         "Titanium",
+         "Manganese",
+         "Iron"
+        ],
+        0,
+        "Sc shows only +3, giving the noble-gas core (NCERT Example 4.3)."
+       ],
+       [
+        "In group 6, which statement about the +6 state is correct?",
+        [
+         "Cr(VI) is more stable than Mo(VI) and W(VI)",
+         "All three are equally stable",
+         "Mo(VI) and W(VI) are more stable than Cr(VI)",
+         "None of them forms a +6 state"
+        ],
+        2,
+        "Unlike the p-block, the higher oxidation states become more stable down the d-block groups."
+       ],
+       [
+        "What is the oxidation state of nickel in Ni(CO)₄?",
+        [
+         "+2",
+         "0",
+         "+4",
+         "–4"
+        ],
+        1,
+        "CO is a π-acceptor ligand, which stabilises metals in zero oxidation state."
+       ],
+       [
+        "Which first-row element has the largest number of oxidation states and why?",
+        [
+         "Zn, because it has completely filled orbitals",
+         "Sc, because it has the fewest electrons",
+         "Cu, because its d subshell is filled",
+         "Mn, because it has the maximum number of unpaired d electrons available for bonding"
+        ],
+        3,
+        "The middle elements, with the most unpaired electrons, show the widest range (NCERT Intext 4.3)."
+       ],
+       [
+        "Copper cannot liberate hydrogen from dilute acids because",
+        [
+         "copper is more reactive than hydrogen",
+         "E°(Cu²⁺/Cu) is positive (+0.34 V), owing to its high atomisation enthalpy and insufficient hydration enthalpy",
+         "copper has a very negative E°",
+         "copper forms an insoluble oxide layer in all acids"
+        ],
+        1,
+        "The energy to convert Cu(s) to Cu²⁺(aq) is not balanced by hydration (NCERT Intext 4.4)."
+       ],
+       [
+        "The E°(M²⁺/M) of nickel is more negative than expected from the trend mainly because of",
+        [
+         "its very high ionisation enthalpy",
+         "its low enthalpy of atomisation",
+         "a completely filled d subshell in Ni²⁺",
+         "its highest negative enthalpy of hydration"
+        ],
+        3,
+        "Ni²⁺ is strongly hydrated, which favours the formation of the ion."
+       ],
+       [
+        "The comparatively high E°(Mn³⁺/Mn²⁺) value shows that",
+        [
+         "Mn²⁺ (d⁵) is particularly stable",
+         "Mn³⁺ is particularly stable",
+         "Mn²⁺ has a noble-gas configuration",
+         "Mn²⁺ is a strong reducing agent"
+        ],
+        0,
+        "Mn³⁺ readily gains an electron to reach the stable d⁵ Mn²⁺."
+       ],
+       [
+        "Why are all copper(II) halides known except the iodide?",
+        [
+         "CuI₂ is too stable to form",
+         "iodine is too small to bond with copper",
+         "Cu²⁺ oxidises I⁻ to I₂",
+         "Cu²⁺ is reduced to Cu by I⁻ forming CuI₂ gas"
+        ],
+        2,
+        "2Cu²⁺ + 4I⁻ → Cu₂I₂ + I₂."
+       ],
+       [
+        "The highest Mn fluoride is MnF₄ whereas the highest oxide is Mn₂O₇ because",
+        [
+         "oxygen is larger than fluorine",
+         "fluorine is less electronegative than oxygen",
+         "oxygen can form multiple bonds with the metal",
+         "oxygen has a lower bond enthalpy than fluorine"
+        ],
+        2,
+        "Multiple bonding makes oxygen better than fluorine at stabilising high oxidation states."
+       ],
+       [
+        "Cu⁺ is unstable in aqueous solution because",
+        [
+         "it disproportionates (2Cu⁺ → Cu²⁺ + Cu), as the hydration enthalpy of Cu²⁺ is much more negative",
+         "it is oxidised by water to Cu³⁺",
+         "Cu⁺ is reduced to Cu₂O by water",
+         "it has a half-filled d subshell"
+        ],
+        0,
+        "The large hydration enthalpy of Cu²⁺ more than compensates for its second ionisation enthalpy (NCERT Intext 4.9)."
+       ],
+       [
+        "The oxidising power increases in the order VO₂⁺ < Cr₂O₇²⁻ < MnO₄⁻ because",
+        [
+         "the metal radius increases from V to Mn",
+         "the number of d electrons increases from V to Mn",
+         "the metals become less electronegative",
+         "the lower species formed becomes progressively more stable"
+        ],
+        3,
+        "This follows the increasing stability of the species to which they are reduced (NCERT Example 4.5)."
+       ],
+       [
+        "Which is the stronger reducing agent, Cr²⁺ or Fe²⁺, and why?",
+        [
+         "Fe²⁺, because it changes from d⁶ to d⁵",
+         "Cr²⁺, because it changes from d⁴ to the stable d³ configuration",
+         "Cr²⁺, because Cr³⁺ is a strong oxidant",
+         "Fe²⁺, because Fe has a higher atomic number"
+        ],
+        1,
+        "Cr²⁺ → Cr³⁺ gives half-filled t₂g, and E°(Cr³⁺/Cr²⁺) is far more negative than E°(Fe³⁺/Fe²⁺) (NCERT Intext 4.7)."
+       ],
+       [
+        "Which pair of M³⁺ ions are the strongest oxidising agents in aqueous solution among the first-row metals?",
+        [
+         "Mn³⁺ and Co³⁺",
+         "Ti³⁺ and V³⁺",
+         "Cr³⁺ and Fe³⁺",
+         "Sc³⁺ and Ti³⁺"
+        ],
+        0,
+        "They have the most positive E°(M³⁺/M²⁺) values."
+       ],
+       [
+        "Titanium and vanadium resist dilute non-oxidising acids at room temperature even though their E°(M²⁺/M) values are negative. This is because",
+        [
+         "their E° values are actually positive",
+         "they form soluble sulphates immediately",
+         "the reaction rate is extremely slow (kinetic factor)",
+         "hydrogen ions cannot oxidise any metal"
+        ],
+        2,
+        "Thermodynamic ability does not guarantee a fast reaction."
+       ],
+       [
+        "Paramagnetism in transition metal ions arises from",
+        [
+         "completely filled d orbitals",
+         "the presence of unpaired electrons",
+         "paired electrons in the 4s orbital",
+         "the nuclear spin of the metal"
+        ],
+        1,
+        "Each unpaired electron has a spin magnetic moment and is attracted into the field."
+       ],
+       [
+        "The spin-only magnetic moment of M²⁺(aq) with Z = 27 is closest to",
+        [
+         "1.73 BM",
+         "2.84 BM",
+         "4.90 BM",
+         "3.87 BM"
+        ],
+        3,
+        "Co²⁺ is d⁷ with 3 unpaired electrons: √(3×5) = 3.87 BM (NCERT Intext 4.8)."
+       ],
+       [
+        "A species with a single unpaired electron has a spin-only magnetic moment of",
+        [
+         "0 BM",
+         "1.73 BM",
+         "2.84 BM",
+         "3.87 BM"
+        ],
+        1,
+        "μ = √(1×3) = 1.73 BM."
+       ],
+       [
+        "Sc³⁺ and Zn²⁺ salts are colourless because",
+        [
+         "they absorb all visible light",
+         "they have unpaired electrons",
+         "their ligands are colourless",
+         "no d–d transition is possible (d⁰ and d¹⁰ configurations)"
+        ],
+        3,
+        "Colour arises from d–d excitation, which needs a partly filled d subshell."
+       ],
+       [
+        "Transition metals form a large number of complexes because of",
+        [
+         "small ionic size, high ionic charge and availability of d orbitals for bonding",
+         "large ionic size and low charge",
+         "absence of d orbitals",
+         "completely filled s orbitals"
+        ],
+        0,
+        "These three factors favour binding of ligands."
+       ],
+       [
+        "Which of the following correctly matches a catalyst with its process?",
+        [
+         "V₂O₅ – Haber process; Fe – Contact process; Ni – cracking",
+         "V₂O₅ – hydrogenation; Fe – Contact process; Ni – Haber process",
+         "V₂O₅ – Contact process; finely divided Fe – Haber process; Ni – catalytic hydrogenation",
+         "Ni – Contact process; V₂O₅ – Haber process; Fe – hydrogenation"
+        ],
+        2,
+        "These are the examples given for transition metal catalysis."
+       ],
+       [
+        "The catalytic activity of transition metals is mainly ascribed to",
+        [
+         "their low melting points",
+         "their completely filled d orbitals",
+         "their ability to adopt multiple oxidation states and form complexes",
+         "their diamagnetism"
+        ],
+        2,
+        "Variable oxidation states let them form and release intermediates."
+       ],
+       [
+        "Which statement about interstitial compounds is NOT correct?",
+        [
+         "They lose the metallic conductivity of the parent metal",
+         "They have melting points higher than the pure metals",
+         "They are very hard",
+         "They are chemically inert"
+        ],
+        0,
+        "Interstitial compounds retain metallic conductivity."
+       ],
+       [
+        "Brass is an alloy of",
+        [
+         "copper and tin",
+         "iron and carbon",
+         "copper and nickel",
+         "copper and zinc"
+        ],
+        3,
+        "Brass is Cu–Zn and bronze is Cu–Sn."
+       ],
+       [
+        "Mn₂O₇ dissolves in water to give",
+        [
+         "Mn(OH)₂, a base",
+         "HMnO₄, an acid",
+         "MnO₂ and O₂ only",
+         "H₂MnO₃"
+        ],
+        1,
+        "In higher oxides the acidic character predominates."
+       ],
+       [
+        "V₂O₅ is described as",
+        [
+         "amphoteric though mainly acidic",
+         "strongly basic",
+         "neutral",
+         "purely acidic with no basic character"
+        ],
+        0,
+        "It reacts with alkalies and with acids."
+       ],
+       [
+        "Sodium dichromate is obtained industrially from chromite ore by",
+        [
+         "roasting FeCr₂O₄ in a limited supply of air",
+         "reducing FeCr₂O₄ with carbon and acidifying",
+         "fusing FeCr₂O₄ with Na₂CO₃ in free access of air, then acidifying the sodium chromate",
+         "electrolysing FeCr₂O₄ in alkali"
+        ],
+        2,
+        "4FeCr₂O₄ + 8Na₂CO₃ + 7O₂ → 8Na₂CrO₄ + 2Fe₂O₃ + 8CO₂; acidification gives Na₂Cr₂O₇."
+       ],
+       [
+        "On acidifying a yellow chromate solution, the colour changes to",
+        [
+         "green, due to Cr³⁺",
+         "orange, due to dichromate",
+         "violet, due to Cr²⁺",
+         "colourless"
+        ],
+        1,
+        "2CrO₄²⁻ + 2H⁺ ⇌ Cr₂O₇²⁻ + H₂O; the oxidation state of Cr stays +6."
+       ],
+       [
+        "In acidic solution, each Cr₂O₇²⁻ ion accepts how many electrons, and to form what?",
+        [
+         "3 electrons, forming 2Cr⁵⁺",
+         "6 electrons, forming 2Cr²⁺",
+         "2 electrons, forming CrO₄²⁻",
+         "6 electrons, forming 2Cr³⁺"
+        ],
+        3,
+        "Cr₂O₇²⁻ + 14H⁺ + 6e⁻ → 2Cr³⁺ + 7H₂O."
+       ],
+       [
+        "Potassium dichromate is useful in volumetric analysis because it",
+        [
+         "is a reducing agent",
+         "can be used as a primary standard",
+         "is insoluble in water",
+         "is colourless"
+        ],
+        1,
+        "It is also a strong oxidising agent used in the leather industry."
+       ],
+       [
+        "Potassium permanganate is prepared by fusing MnO₂ with KOH in presence of an oxidising agent like KNO₃. The dark green intermediate is",
+        [
+         "KMnO₄",
+         "Mn₂O₇",
+         "MnO",
+         "K₂MnO₄"
+        ],
+        3,
+        "2MnO₂ + 4KOH + O₂ → 2K₂MnO₄ + 2H₂O."
+       ],
+       [
+        "Permanganate ion (MnO₄⁻) is",
+        [
+         "tetrahedral and diamagnetic",
+         "tetrahedral and paramagnetic",
+         "square planar and diamagnetic",
+         "octahedral and paramagnetic"
+        ],
+        0,
+        "Mn is +7 (d⁰), so there is no unpaired electron."
+       ],
+       [
+        "In acidic solution KMnO₄ is reduced to",
+        [
+         "MnO₂",
+         "MnO₄²⁻",
+         "Mn²⁺",
+         "Mn³⁺"
+        ],
+        2,
+        "MnO₄⁻ + 8H⁺ + 5e⁻ → Mn²⁺ + 4H₂O."
+       ],
+       [
+        "Permanganate titrations are not done in presence of hydrochloric acid because",
+        [
+         "HCl reduces Mn²⁺ to Mn",
+         "HCl turns KMnO₄ yellow",
+         "HCl is oxidised to chlorine",
+         "HCl precipitates MnO₂ as MnCl₂"
+        ],
+        2,
+        "Chlorine liberated makes the titration unsatisfactory."
+       ],
+       [
+        "When heated at 513 K, KMnO₄ decomposes to give",
+        [
+         "K₂MnO₄, MnO₂ and O₂",
+         "K₂O, Mn₂O₃ and O₂",
+         "KMnO₂ and O₂",
+         "MnO₂, K₂O and H₂"
+        ],
+        0,
+        "2KMnO₄ → K₂MnO₄ + MnO₂ + O₂."
+       ],
+       [
+        "In all lanthanoids, the tripositive ion (the most stable state) has the configuration",
+        [
+         "4fⁿ6s² with n = 1 to 14",
+         "5dⁿ with n = 1 to 14",
+         "4fⁿ5d¹ with n = 1 to 14",
+         "4fⁿ with n = 1 to 14"
+        ],
+        3,
+        "Ln³⁺ ions have no 6s or 5d electrons left."
+       ],
+       [
+        "The lanthanoid contraction is due to",
+        [
+         "increasing shielding by 5d electrons",
+         "poor shielding of one 4f electron by another as nuclear charge increases",
+         "decrease in nuclear charge",
+         "increase in the number of shells"
+        ],
+        1,
+        "The imperfect shielding within the 4f sub-shell pulls the electrons closer."
+       ],
+       [
+        "The +4 state of cerium is favoured because",
+        [
+         "Ce⁴⁺ has the noble-gas configuration, but it is a strong oxidant",
+         "Ce⁴⁺ has a half-filled f subshell",
+         "Ce⁴⁺ is a good reductant",
+         "Ce³⁺ is unstable to disproportionation"
+        ],
+        0,
+        "Ce(IV) reverts to the common +3 state (E° = +1.74 V)."
+       ],
+       [
+        "Eu²⁺ and Yb²⁺ act as",
+        [
+         "oxidising agents, changing to +4",
+         "catalysts without changing oxidation state",
+         "reducing agents, changing to the common +3 state",
+         "neither oxidising nor reducing"
+        ],
+        2,
+        "Eu²⁺ (f⁷) and Yb²⁺ (f¹⁴) readily lose an electron to give Ln³⁺."
+       ],
+       [
+        "Mischmetall is an alloy consisting of",
+        [
+         "95% iron and 5% lanthanoid",
+         "about 95% lanthanoid metal and about 5% iron",
+         "copper and tin",
+         "aluminium and magnesium only"
+        ],
+        1,
+        "It is used in Mg-based alloys for bullets, shells and lighter flints."
+       ],
+       [
+        "Which pair of lanthanoid ions are colourless?",
+        [
+         "Ce³⁺ and Gd³⁺",
+         "Pr³⁺ and Nd³⁺",
+         "Eu³⁺ and Tb³⁺",
+         "La³⁺ and Lu³⁺"
+        ],
+        3,
+        "They are f⁰ and f¹⁴, so no f–f transition is possible."
+       ],
+       [
+        "Which statement about lanthanoid chemistry is correct?",
+        [
+         "Early members behave like aluminium and later ones like calcium",
+         "Early members are reactive like calcium, later ones behave more like aluminium",
+         "All lanthanoids are as unreactive as noble metals",
+         "Their hydroxides are acidic"
+        ],
+        1,
+        "Ln(OH)₃ are basic like alkaline earth hydroxides; E° values are about –2.2 to –2.4 V."
+       ],
+       [
+        "The 5f electrons can take part in bonding to a greater extent than 4f electrons because",
+        [
+         "5f orbitals are more tightly held by the nucleus",
+         "5f orbitals are empty",
+         "actinoids have no 7s electrons",
+         "5f orbitals are less buried than 4f orbitals"
+        ],
+        3,
+        "The 5f orbitals extend further out, so their electrons are available for bonding."
+       ],
+       [
+        "Actinoid contraction is greater from element to element than lanthanoid contraction because",
+        [
+         "5f electrons shield each other even more poorly",
+         "5f electrons shield better than 4f",
+         "the nuclear charge does not change",
+         "7s electrons are lost first"
+        ],
+        0,
+        "Poor shielding by 5f electrons gives a larger contraction."
+       ],
+       [
+        "The maximum oxidation state increases along Th, Pa, U, Np. The correct set is",
+        [
+         "+3 (Th), +4 (Pa), +5 (U), +6 (Np)",
+         "+4 (Th), +6 (Pa), +5 (U), +7 (Np)",
+         "+4 (Th), +5 (Pa), +6 (U), +7 (Np)",
+         "+5 (Th), +5 (Pa), +6 (U), +6 (Np)"
+        ],
+        2,
+        "The wide range arises because 5f, 6d and 7s levels have comparable energies."
+       ],
+       [
+        "Which statement is TRUE for actinoids?",
+        [
+         "They are unaffected by hydrochloric acid",
+         "Alkalies readily dissolve them",
+         "They are highly reactive metals, especially when finely divided",
+         "They are all stable and non-radioactive"
+        ],
+        2,
+        "HCl attacks all of them; alkalies have no action; nitric acid acts only slightly because of protective oxide layers."
+       ],
+       [
+        "Which transition metal compound is used as a catalyst in the manufacture of sulphuric acid?",
+        [
+         "V₂O₅",
+         "TiCl₄",
+         "PdCl₂",
+         "AgBr"
+        ],
+        0,
+        "V₂O₅ catalyses the oxidation of SO₂ to SO₃."
+       ],
+       [
+        "In the Wacker process, ethyne is oxidised to ethanal using",
+        [
+         "V₂O₅ as catalyst",
+         "TiCl₄ with Al(CH₃)₃",
+         "finely divided iron",
+         "PdCl₂ as catalyst"
+        ],
+        3,
+        "PdCl₂ catalyses the Wacker oxidation; TiCl₄ with Al(CH₃)₃ is the Ziegler catalyst for polyethylene."
+       ]
+      ],
+      [
+       [
+        "Assertion (A): Zn, Cd and Hg are not regarded as transition elements.\nReason (R): They have a completely filled d¹⁰ configuration in the ground state and in their common oxidation states.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        0,
+        "Their d subshell is full in atom and in common ions, so they fail the IUPAC definition."
+       ],
+       [
+        "A student writes the configuration of chromium as [Ar] 3d⁴4s². What is wrong?",
+        [
+         "Nothing; 3d⁴4s² is correct since 4s fills before 3d",
+         "The correct one is [Ar] 3d⁵4s¹, because a half-filled d set is extra stable and the 3d–4s gap is small",
+         "The correct one is [Ar] 3d⁶4s⁰, because 4s is always emptied first",
+         "The correct one is [Ar] 3d⁴4s², but with an extra electron in 4p"
+        ],
+        1,
+        "Cr takes one electron from 4s to make 3d⁵; Cu similarly has 3d¹⁰4s¹."
+       ],
+       [
+        "Which statement about Cu and its ions is correct?",
+        [
+         "Cu is 3d⁹4s²; Cu⁺ is 3d⁸ and Cu²⁺ is 3d⁷",
+         "Cu is 3d¹⁰4s¹; Cu⁺ is 3d⁹ and Cu²⁺ is 3d⁸",
+         "Cu is 3d¹⁰4s¹; both Cu⁺ and Cu²⁺ have a 3d¹⁰ shell",
+         "Cu is 3d¹⁰4s¹; Cu⁺ (3d¹⁰) has no unpaired electron and Cu²⁺ (3d⁹) has one"
+        ],
+        3,
+        "4s electrons are lost before 3d, so Cu⁺ is d¹⁰ and Cu²⁺ is d⁹."
+       ],
+       [
+        "Assertion (A): Melting points of 3d metals rise to a maximum near the middle of the series and then fall.\nReason (R): Greater participation of unpaired (n–1)d electrons along with ns electrons strengthens metallic bonding.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        0,
+        "Maximum unpaired d electrons near d⁵ give the strongest bonding (Mn and Tc are anomalous)."
+       ],
+       [
+        "A student says: The 4d and 5d metals have lower enthalpies of atomisation than the 3d metals because their atoms are bigger. What is the correct statement?",
+        [
+         "Their enthalpies of atomisation are higher, favouring frequent metal–metal bonding",
+         "Correct; larger atoms form weaker bonds, so metal–metal bonding is less common",
+         "Wrong; they are identical, since all use only ns electrons",
+         "Wrong; they are lower for 4d but higher for 5d only"
+        ],
+        0,
+        "Stronger interatomic bonding in the heavier series gives higher enthalpies of atomisation."
+       ],
+       [
+        "Assertion (A): Zr and Hf are very difficult to separate.\nReason (R): Lanthanoid contraction makes their radii almost identical (160 pm and 159 pm).",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        0,
+        "Their similar size gives very similar properties and occurrence together."
+       ],
+       [
+        "Assertion (A): The atomic radii of the 5d series are much larger than those of the corresponding 4d series.\nReason (R): The 4f orbitals are filled before the 5d series and shield poorly.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        3,
+        "A is false: the 5d radii are virtually the same as 4d because lanthanoid contraction offsets the expected increase."
+       ],
+       [
+        "A student says: Fe²⁺ → Fe³⁺ needs more energy than Mn²⁺ → Mn³⁺ because Fe has a larger nuclear charge. What is correct?",
+        [
+         "The student is correct, because nuclear charge alone decides ionisation enthalpy",
+         "The third ionisation enthalpy of Fe is higher because Fe³⁺ is d⁴",
+         "The third ionisation enthalpy of Mn is higher, because Mn²⁺ (d⁵) loses stable exchange energy while Fe²⁺ (d⁶) becomes d⁵",
+         "Both are equal since both lose one electron"
+        ],
+        2,
+        "Fe²⁺ → Fe³⁺ gives stable d⁵, so IE₃ of Fe is lower than that of Mn."
+       ],
+       [
+        "The second ionisation enthalpy of Cu (1958 kJ mol⁻¹) is far higher than that of Zn (1734 kJ mol⁻¹). The best reason is",
+        [
+         "Zn has a larger atomic radius than Cu, so both lose 4s electrons",
+         "Cu has more protons than Zn",
+         "Cu⁺ is d¹⁰ so an electron must come from the stable d¹⁰ shell, while Zn⁺ (4s¹) loses its 4s electron to leave d¹⁰",
+         "Zn²⁺ has a half-filled d subshell"
+        ],
+        2,
+        "Removing an electron from Cu⁺ (3d¹⁰) breaks a stable d¹⁰ shell, while Zn⁺ forms d¹⁰ on ionisation."
+       ],
+       [
+        "The sum of the oxidation numbers of the metal in VO₂⁺, CrO₄²⁻ and MnO₄⁻ is",
+        [
+         "+18",
+         "+15",
+         "+17",
+         "+21"
+        ],
+        0,
+        "V is +5, Cr is +6 and Mn is +7: 5 + 6 + 7 = 18."
+       ],
+       [
+        "Assertion (A): Mo(VI) and W(VI) are more stable than Cr(VI).\nReason (R): In the d-block, higher oxidation states become more stable on moving down a group.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        0,
+        "Hence acidified dichromate is a strong oxidant while MoO₃ and WO₃ are not."
+       ],
+       [
+        "Assertion (A): Transition elements usually show oxidation states that differ by one unit.\nReason (R): This arises from the inert pair effect.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        2,
+        "The cause is the incomplete filling of d orbitals, not the inert pair effect, which favours lower states in the heavier p-block."
+       ],
+       [
+        "A student claims that Sc shows a stable +2 state because it has two 4s electrons. What is correct?",
+        [
+         "Sc²⁺ is the most stable state of Sc",
+         "Sc forms +2, +3 and +4 equally",
+         "Sc³⁺ is unstable because it is d¹",
+         "Sc(II) is virtually unknown; Sc forms only Sc³⁺, which has the noble-gas configuration"
+        ],
+        3,
+        "Sc loses the 4s² and 3d¹ electrons to reach the noble-gas configuration."
+       ],
+       [
+        "A metal dissolves in dilute nitric acid and hot concentrated sulphuric acid but not in dilute HCl. It is most likely",
+        [
+         "Fe, because E°(Fe²⁺/Fe) is positive",
+         "Cu, because E°(Cu²⁺/Cu) = +0.34 V",
+         "Zn, because it has a completely filled 3d shell",
+         "Mn, because Mn²⁺ is d⁵"
+        ],
+        1,
+        "Only oxidising acids attack Cu, which cannot liberate H₂ from acids."
+       ],
+       [
+        "Cr²⁺ is reducing and Mn³⁺ is oxidising although both are d⁴. A student says both must be oxidising because d⁴ is unstable. What is correct?",
+        [
+         "Cr²⁺ → Cr³⁺ gives a half-filled t₂g (d³) and Mn³⁺ → Mn²⁺ gives d⁵, so one reduces and the other oxidises",
+         "The student is right; both are oxidising agents",
+         "Both are reducing agents since they have four unpaired electrons",
+         "Cr²⁺ is an oxidant because Cr has a lower atomic number"
+        ],
+        0,
+        "Each d⁴ ion moves to a more stable configuration, in opposite redox directions (NCERT Example 4.4)."
+       ],
+       [
+        "For Fe + 2H⁺ → Fe²⁺ + H₂, E°(Fe²⁺/Fe) = –0.44 V. The ΔG° of this reaction is (F = 96500 C mol⁻¹)",
+        [
+         "–42.5 kJ mol⁻¹",
+         "+84.9 kJ mol⁻¹",
+         "–84.9 kJ mol⁻¹",
+         "–169.8 kJ mol⁻¹"
+        ],
+        2,
+        "E°cell = 0 – (–0.44) = 0.44 V and ΔG° = –2 × 96500 × 0.44 = –84.9 kJ mol⁻¹.",
+        "ΔG° = –nFE°cell"
+       ],
+       [
+        "Given E°(Mn³⁺/Mn²⁺) = +1.57 V and E°(Fe³⁺/Fe²⁺) = +0.77 V, the ΔG° for Mn³⁺ + Fe²⁺ → Mn²⁺ + Fe³⁺ is (F = 96500 C mol⁻¹)",
+        [
+         "–154.4 kJ mol⁻¹",
+         "–77.2 kJ mol⁻¹",
+         "+77.2 kJ mol⁻¹",
+         "–225.8 kJ mol⁻¹"
+        ],
+        1,
+        "E°cell = 1.57 – 0.77 = 0.80 V with n = 1, so ΔG° = –96500 × 0.80 = –77.2 kJ.",
+        "Subtract the anode value from the cathode value; n = 1"
+       ],
+       [
+        "From E°(Cr³⁺/Cr²⁺) = –0.41 V, E°(Mn³⁺/Mn²⁺) = +1.57 V and E°(Fe³⁺/Fe²⁺) = +0.77 V, which statement is correct?",
+        [
+         "Mn²⁺ is the strongest reducing agent of the three",
+         "Cr³⁺ is the strongest oxidising agent of the three",
+         "Fe³⁺ is a stronger oxidant than Mn³⁺",
+         "Cr²⁺ is the strongest reducing agent of the three, and Mn³⁺ is the strongest oxidising agent"
+        ],
+        3,
+        "The more positive the E°, the stronger the oxidant M³⁺; the very negative Cr value makes Cr²⁺ a strong reductant."
+       ],
+       [
+        "What is formed on adding excess KI to aqueous CuSO₄?",
+        [
+         "CuI₂ only",
+         "Cu₂I₂ and I₂",
+         "Cu and I₂",
+         "CuI₂ and KI₃"
+        ],
+        1,
+        "Cu²⁺ oxidises I⁻: 2Cu²⁺ + 4I⁻ → Cu₂I₂ + I₂."
+       ],
+       [
+        "When Cu₂SO₄ is dissolved in water, the products are",
+        [
+         "Cu³⁺ and Cu",
+         "Cu²⁺ and H₂",
+         "only Cu⁺(aq), which is stable",
+         "Cu²⁺(aq) and metallic Cu"
+        ],
+        3,
+        "2Cu⁺ → Cu²⁺ + Cu, since Cu²⁺ has a much more negative hydration enthalpy."
+       ],
+       [
+        "Assertion (A): The highest fluoride of manganese is MnF₄ whereas its highest oxide is Mn₂O₇.\nReason (R): Oxygen can form multiple bonds with the metal and so stabilises higher oxidation states better than fluorine.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        0,
+        "Oxygen’s ability to form multiple bonds explains its superiority."
+       ],
+       [
+        "The disproportionation of manganate in acidic solution is 3MnO₄²⁻ + 4H⁺ → 2MnO₄⁻ + MnO₂ + 2H₂O. How many moles of MnO₄⁻ form from 0.6 mol of MnO₄²⁻?",
+        [
+         "0.4 mol",
+         "0.6 mol",
+         "0.2 mol",
+         "0.9 mol"
+        ],
+        0,
+        "3 mol of manganate gives 2 mol of permanganate, so 0.6 × 2/3 = 0.4 mol."
+       ],
+       [
+        "Assertion (A): Copper liberates hydrogen from dilute hydrochloric acid.\nReason (R): E°(Cu²⁺/Cu) has a positive value of +0.34 V.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        3,
+        "A is false: because E° is positive, Cu cannot liberate H₂ from acids."
+       ],
+       [
+        "Assertion (A): Cr²⁺ liberates hydrogen from dilute acid.\nReason (R): E°(Cr³⁺/Cr²⁺) is negative, so Cr²⁺ is a strong reducing agent.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        0,
+        "2Cr²⁺ + 2H⁺ → 2Cr³⁺ + H₂ is feasible."
+       ],
+       [
+        "Arrange Cr³⁺, Mn³⁺ and Fe³⁺ in increasing order of spin-only magnetic moment.",
+        [
+         "Fe³⁺ < Mn³⁺ < Cr³⁺",
+         "Mn³⁺ < Cr³⁺ < Fe³⁺",
+         "Cr³⁺ < Mn³⁺ < Fe³⁺",
+         "Cr³⁺ < Fe³⁺ < Mn³⁺"
+        ],
+        2,
+        "Cr³⁺ is d³ (3.87 BM), Mn³⁺ is d⁴ (4.90 BM) and Fe³⁺ is d⁵ (5.92 BM)."
+       ],
+       [
+        "The ratio of the spin-only magnetic moments of Fe²⁺(aq) to Cu²⁺(aq) is",
+        [
+         "4.00",
+         "1.41",
+         "2.83",
+         "8.00"
+        ],
+        2,
+        "Fe²⁺ has 4 unpaired electrons (μ = √24 = 4.90 BM) and Cu²⁺ has 1 (μ = 1.73 BM); the ratio is 2.83."
+       ],
+       [
+        "A transition metal ion has a spin-only magnetic moment of 4.90 BM. The number of unpaired electrons is",
+        [
+         "4",
+         "3",
+         "5",
+         "6"
+        ],
+        0,
+        "√(n(n+2)) = 4.90 gives n(n+2) = 24, so n = 4."
+       ],
+       [
+        "A student says Cu⁺ has a magnetic moment of 1.73 BM because copper has one unpaired electron. What is correct?",
+        [
+         "The student is right; Cu⁺ has one unpaired 4s electron",
+         "Cu⁺ is d⁹, so μ = 1.73 BM",
+         "Cu⁺ is d⁸, so μ = 2.83 BM",
+         "Cu⁺ is d¹⁰ with no unpaired electron, so it is diamagnetic (μ = 0)"
+        ],
+        3,
+        "Cu⁺ is 3d¹⁰ and so diamagnetic."
+       ],
+       [
+        "Assertion (A): Zn²⁺ salts are white (colourless).\nReason (R): Zn²⁺ has unpaired d electrons that undergo d–d transitions in the visible region.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        2,
+        "Zn²⁺ is d¹⁰ with no vacancy for d–d excitation, so R is false."
+       ],
+       [
+        "A solution appears blue. This means it absorbs light which is",
+        [
+         "blue itself",
+         "orange, whose complementary colour is blue",
+         "violet only",
+         "all wavelengths equally"
+        ],
+        1,
+        "The colour observed is the complementary colour of the light absorbed."
+       ],
+       [
+        "The central metals in [Fe(CN)₆]⁴⁻ and [PtCl₄]²⁻ have the same oxidation state. It is",
+        [
+         "+2",
+         "+3",
+         "+4",
+         "0"
+        ],
+        0,
+        "Fe: x + 6(–1) = –4 gives +2; Pt: x + 4(–1) = –2 gives +2."
+       ],
+       [
+        "A student says that Fe³⁺ is consumed in the Fe³⁺-catalysed reaction 2I⁻ + S₂O₈²⁻ → I₂ + 2SO₄²⁻. What is correct?",
+        [
+         "Fe³⁺ is consumed, and Fe²⁺ is the final product",
+         "Fe³⁺ is reduced to metallic iron",
+         "Fe³⁺ is regenerated, since Fe²⁺ is re-oxidised by S₂O₈²⁻",
+         "Fe³⁺ forms an insoluble complex with I⁻"
+        ],
+        2,
+        "2Fe³⁺ + 2I⁻ → 2Fe²⁺ + I₂, then 2Fe²⁺ + S₂O₈²⁻ → 2Fe³⁺ + 2SO₄²⁻."
+       ],
+       [
+        "A student says that interstitial compounds like TiC are ionic, of fixed composition and non-conducting. What is correct?",
+        [
+         "They are fixed-composition ionic solids",
+         "They are non-stoichiometric, neither typically ionic nor covalent, and retain metallic conductivity",
+         "They are covalent network solids",
+         "Their melting points are lower than those of the metal"
+        ],
+        1,
+        "Small atoms (H, C, N) are trapped in the metal lattice; they are hard and inert."
+       ],
+       [
+        "A student writes that bronze is an alloy of copper and zinc. What is correct?",
+        [
+         "Bronze is Cu–Ni; brass is Cu–Sn",
+         "Bronze is Fe–C; brass is Cu–Zn",
+         "The student is right; both are Cu–Zn alloys",
+         "Bronze is Cu–Sn; brass is Cu–Zn"
+        ],
+        3,
+        "Brass (Cu–Zn) and bronze (Cu–Sn) are alloys of transition and non-transition metals."
+       ],
+       [
+        "Alloys form readily among transition metals because",
+        [
+         "they all have identical electronic configurations",
+         "their metallic radii lie within about 15 percent of each other",
+         "they are all liquids at room temperature",
+         "their metallic radii are very different"
+        ],
+        1,
+        "Atoms of similar size replace each other randomly in the lattice, forming hard solid solutions."
+       ],
+       [
+        "A student writes that V₂O₅ dissolves in alkali to give VO₂⁺ and in acid to give VO₄³⁻. What is correct?",
+        [
+         "The student is right",
+         "It gives VO₄³⁻ in both",
+         "It does not react with either",
+         "In alkali it gives VO₄³⁻ and in acid it gives VO₂⁺"
+        ],
+        3,
+        "V₂O₅ is amphoteric: with alkali it gives vanadate and with acid VO₂⁺ salts."
+       ],
+       [
+        "Arrange CrO, Cr₂O₃ and CrO₃ in increasing order of acidic character.",
+        [
+         "CrO < Cr₂O₃ < CrO₃",
+         "CrO₃ < Cr₂O₃ < CrO",
+         "Cr₂O₃ < CrO < CrO₃",
+         "CrO < CrO₃ < Cr₂O₃"
+        ],
+        0,
+        "CrO is basic, Cr₂O₃ is amphoteric and CrO₃ is acidic."
+       ],
+       [
+        "How many moles of Na₂CrO₄ form from 4 mol of FeCr₂O₄, and how many moles of O₂ are used per mole of FeCr₂O₄?",
+        [
+         "4 mol of Na₂CrO₄; 7/4 mol of O₂",
+         "8 mol of Na₂CrO₄; 7 mol of O₂",
+         "8 mol of Na₂CrO₄; 7/4 mol of O₂",
+         "4 mol of Na₂CrO₄; 7/8 mol of O₂"
+        ],
+        2,
+        "4FeCr₂O₄ + 8Na₂CO₃ + 7O₂ → 8Na₂CrO₄ + 2Fe₂O₃ + 8CO₂."
+       ],
+       [
+        "FeCr₂O₄ is fused with Na₂CO₃ in air to give A; A is acidified to give B; B is treated with KCl to give C. What is C?",
+        [
+         "K₂CrO₄",
+         "Cr₂O₃",
+         "K₂Cr₂O₇",
+         "CrO₃"
+        ],
+        2,
+        "A is Na₂CrO₄, B is Na₂Cr₂O₇, and KCl then gives the less soluble K₂Cr₂O₇."
+       ],
+       [
+        "A student writes that on acidifying yellow chromate to orange dichromate, Cr is reduced from +6 to +3. What is correct?",
+        [
+         "The oxidation state of Cr stays +6 and no redox occurs",
+         "Cr is oxidised from +3 to +6",
+         "Cr is reduced from +6 to +4",
+         "Cr changes from +6 to +7"
+        ],
+        0,
+        "2CrO₄²⁻ + 2H⁺ ⇌ Cr₂O₇²⁻ + H₂O is only an acid–base interconversion."
+       ],
+       [
+        "A student says that dichromate has two octahedra sharing an edge. What is correct?",
+        [
+         "It has two tetrahedra sharing a face",
+         "It has two octahedra sharing a corner",
+         "It has one tetrahedron with a Cr=Cr bond",
+         "It has two tetrahedra sharing one corner, with a Cr–O–Cr angle of 126°"
+        ],
+        3,
+        "Dichromate is two CrO₄ tetrahedra joined through a bridging oxygen."
+       ],
+       [
+        "20 mL of acidified FeSO₄ solution requires 15 mL of 0.02 M K₂Cr₂O₇. The molarity of Fe²⁺ is",
+        [
+         "0.015 M",
+         "0.09 M",
+         "0.045 M",
+         "0.18 M"
+        ],
+        1,
+        "Cr₂O₇²⁻ + 14H⁺ + 6Fe²⁺ → 2Cr³⁺ + 6Fe³⁺ + 7H₂O: 0.3 mmol × 6 = 1.8 mmol in 20 mL.",
+        "6 mol of Fe²⁺ per mol of dichromate"
+       ],
+       [
+        "How many grams of sulphur are precipitated when excess H₂S reacts with 0.05 mol of acidified K₂Cr₂O₇? (S = 32)",
+        [
+         "4.8 g",
+         "1.6 g",
+         "9.6 g",
+         "14.4 g"
+        ],
+        0,
+        "3H₂S → 3S + 6e⁻ against 6e⁻ per dichromate: 0.05 × 3 = 0.15 mol S = 4.8 g."
+       ],
+       [
+        "Acidified potassium dichromate is added to a solution of an unknown salt and the orange colour turns green. Which species could the unknown salt contain?",
+        [
+         "Fe³⁺",
+         "Zn²⁺",
+         "Fe²⁺ (or I⁻, Sn²⁺ or sulphide)",
+         "Na⁺"
+        ],
+        2,
+        "A reducing agent converts Cr₂O₇²⁻ (orange) to Cr³⁺ (green)."
+       ],
+       [
+        "MnO₂ is fused with KOH and KNO₃ to give A (dark green); A on acidifying gives B (purple) and a brown solid C. Identify B and C.",
+        [
+         "B = K₂MnO₄ and C = MnO",
+         "B = KMnO₄ and C = MnO₂",
+         "B = Mn₂O₇ and C = MnO₂",
+         "B = MnSO₄ and C = Mn₂O₃"
+        ],
+        1,
+        "3MnO₄²⁻ + 4H⁺ → 2MnO₄⁻ + MnO₂ + 2H₂O (disproportionation)."
+       ],
+       [
+        "Assertion (A): Green K₂MnO₄ turns purple on acidifying.\nReason (R): Manganate(VI) disproportionates to manganate(VII) and manganese(IV).",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        0,
+        "3MnO₄²⁻ + 4H⁺ → 2MnO₄⁻ + MnO₂ + 2H₂O."
+       ],
+       [
+        "Assertion (A): Potassium manganate is paramagnetic whereas potassium permanganate is diamagnetic.\nReason (R): Manganate has one unpaired electron while permanganate has none.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        0,
+        "Mn(VI) is d¹ in manganate and Mn(VII) is d⁰ in permanganate."
+       ],
+       [
+        "In the lab, Mn²⁺ is oxidised to permanganate: 2Mn²⁺ + 5S₂O₈²⁻ + 8H₂O → 2MnO₄⁻ + 10SO₄²⁻ + 16H⁺. How many moles of S₂O₈²⁻ are needed for 0.4 mol of Mn²⁺?",
+        [
+         "0.4 mol",
+         "0.8 mol",
+         "2.0 mol",
+         "1.0 mol"
+        ],
+        3,
+        "5 mol of S₂O₈²⁻ per 2 mol of Mn²⁺: 0.4 × 5/2 = 1.0 mol."
+       ],
+       [
+        "How many grams of O₂ are formed on heating 31.6 g of KMnO₄ (molar mass 158 g mol⁻¹)?",
+        [
+         "6.4 g",
+         "3.2 g",
+         "1.6 g",
+         "12.8 g"
+        ],
+        1,
+        "2KMnO₄ → K₂MnO₄ + MnO₂ + O₂: 0.2 mol KMnO₄ gives 0.1 mol O₂ = 3.2 g."
+       ],
+       [
+        "25 mL of 0.02 M KMnO₄ oxidises all the Fe²⁺ in 50 mL of acidified solution. The molarity of Fe²⁺ is",
+        [
+         "0.01 M",
+         "0.025 M",
+         "0.10 M",
+         "0.05 M"
+        ],
+        3,
+        "MnO₄⁻ + 8H⁺ + 5Fe²⁺ → Mn²⁺ + 5Fe³⁺ + 4H₂O: 0.5 mmol × 5 = 2.5 mmol in 50 mL."
+       ],
+       [
+        "20 mL of 0.1 M oxalic acid (hot, acidified) needs what volume of 0.02 M KMnO₄?",
+        [
+         "40 mL",
+         "100 mL",
+         "250 mL",
+         "10 mL"
+        ],
+        0,
+        "2MnO₄⁻ : 5C₂O₄²⁻; 2 mmol oxalate needs 0.8 mmol KMnO₄, which is 0.8 / 0.02 = 40 mL."
+       ],
+       [
+        "The ratio of the equivalent mass of KMnO₄ in acidic medium to that in neutral medium is",
+        [
+         "5 : 3",
+         "1 : 1",
+         "3 : 5",
+         "5 : 7"
+        ],
+        2,
+        "Mn changes +7 → +2 (5e⁻) in acid and +7 → +4 (3e⁻) in neutral, so M/5 : M/3 = 3 : 5."
+       ],
+       [
+        "A student titrates Fe²⁺ with KMnO₄ in HCl. What is wrong with this?",
+        [
+         "Nothing is wrong",
+         "HCl reduces Fe²⁺ further to Fe",
+         "HCl is oxidised to Cl₂, so dilute H₂SO₄ must be used",
+         "HCl makes KMnO₄ reduce to MnO₄²⁻ only"
+        ],
+        2,
+        "Permanganate titrations are unsatisfactory in presence of hydrochloric acid."
+       ],
+       [
+        "KI is oxidised by KMnO₄, and the product depends on the medium. Which pair is correct?",
+        [
+         "Acidic: I₂; neutral or faintly alkaline: IO₃⁻",
+         "Acidic: IO₃⁻; neutral: I₂",
+         "Acidic: I₂; neutral: I₂ also",
+         "Acidic: IO₃⁻; neutral: IO₃⁻ also"
+        ],
+        0,
+        "In acid, 10I⁻ + 2MnO₄⁻ + 16H⁺ → 2Mn²⁺ + 8H₂O + 5I₂; in neutral, 2MnO₄⁻ + H₂O + I⁻ → 2MnO₂ + 2OH⁻ + IO₃⁻."
+       ],
+       [
+        "The spin-only magnetic moment of Gd³⁺ (4f⁷) is",
+        [
+         "5.92 BM",
+         "6.93 BM",
+         "8.94 BM",
+         "7.94 BM"
+        ],
+        3,
+        "Seven unpaired electrons: √(7×9) = √63 = 7.94 BM."
+       ],
+       [
+        "A student says lanthanoid contraction is larger than the d-series contraction because 4f electrons shield better than d electrons. What is correct?",
+        [
+         "The student is right",
+         "4f electrons shield each other less effectively than d electrons do, so the contraction is larger",
+         "4f electrons do not shield at all",
+         "d electrons shield perfectly"
+        ],
+        1,
+        "Poorer shielding by 4f electrons causes a regular decrease in size."
+       ],
+       [
+        "Assertion (A): Lanthanoid ionic radii (M³⁺) decrease regularly from La³⁺ to Lu³⁺.\nReason (R): Poor shielding of 4f electrons by one another with increasing nuclear charge.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        0,
+        "Hence the regular fall in size."
+       ],
+       [
+        "Which pair of elements occur together in nature and are hard to separate because of the lanthanoid contraction?",
+        [
+         "Zr and Hf",
+         "Ti and Zr",
+         "Cr and Mo",
+         "Fe and Co"
+        ],
+        0,
+        "Almost identical radii (160 and 159 pm) give very similar properties."
+       ],
+       [
+        "A student says Pr, Nd, Tb and Dy exhibit +4 in aqueous solution. What is correct?",
+        [
+         "They exhibit +4 widely in solution",
+         "They do not show +4 at all",
+         "They show +4 only in oxides MO₂",
+         "They show +4 only in chlorides"
+        ],
+        2,
+        "Ce(IV) is the lanthanoid with a well-known +4 state in solution."
+       ],
+       [
+        "Assertion (A): Ce⁴⁺ is a good analytical reagent although E°(Ce⁴⁺/Ce³⁺) = +1.74 V can oxidise water.\nReason (R): The oxidation of water by Ce⁴⁺ is very slow.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        0,
+        "Because the reaction is slow, Ce(IV) solutions are useful oxidising reagents."
+       ],
+       [
+        "Which of the following lanthanoid ions is a strong oxidising agent?",
+        [
+         "Eu²⁺",
+         "Ce⁴⁺",
+         "Yb²⁺",
+         "La³⁺"
+        ],
+        1,
+        "Ce⁴⁺ reverts to +3; Eu²⁺ and Yb²⁺ are reductants."
+       ],
+       [
+        "Assertion (A): La³⁺ and Lu³⁺ are colourless, whereas most other Ln³⁺ ions are coloured.\nReason (R): La³⁺ (f⁰) and Lu³⁺ (f¹⁴) have no f electron that can undergo f–f excitation.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        0,
+        "Colour arises from excitation within the f level."
+       ],
+       [
+        "Which set of lanthanoid species is diamagnetic?",
+        [
+         "La³⁺, Ce³⁺, Gd³⁺ and Lu³⁺",
+         "Ce⁴⁺, Eu³⁺, Yb²⁺ and Lu³⁺",
+         "Pr³⁺, Nd³⁺, Yb³⁺ and Lu³⁺",
+         "La³⁺, Ce⁴⁺, Yb²⁺ and Lu³⁺"
+        ],
+        3,
+        "Only f⁰ and f¹⁴ ions have no unpaired electrons."
+       ],
+       [
+        "The third ionisation enthalpy is abnormally low for La, Gd and Lu because",
+        [
+         "they have no 6s electrons",
+         "removal of the third electron gives f⁰, f⁷ and f¹⁴ configurations respectively",
+         "they have the largest radii",
+         "they are the most reactive lanthanoids"
+        ],
+        1,
+        "Exchange enthalpy gives extra stability to empty, half-filled and filled f subshells."
+       ],
+       [
+        "A lanthanoid metal is heated with (i) nitrogen and (ii) carbon at 2773 K. The products are",
+        [
+         "Ln₃N₂ and Ln₂C",
+         "LnN₂ and LnCO₃",
+         "Ln₂N₃ and LnC₃",
+         "LnN and LnC₂"
+        ],
+        3,
+        "Ln + N → LnN and Ln + 2C → LnC₂."
+       ],
+       [
+        "A student says Cm is [Rn] 5f⁸7s². What is correct?",
+        [
+         "Cm is [Rn] 5f⁷6d¹7s², which retains the stable half-filled 5f⁷",
+         "Cm is [Rn] 5f⁶7s²",
+         "Cm is [Rn] 5f⁷7s²",
+         "Cm is [Rn] 5f⁸7s², so the student is right"
+        ],
+        0,
+        "Like Gd, Cm places an electron in 6d to keep f⁷."
+       ],
+       [
+        "How many unpaired electrons does Cm³⁺ (5f⁷) have?",
+        [
+         "6",
+         "8",
+         "7",
+         "3"
+        ],
+        2,
+        "A half-filled f subshell has seven unpaired electrons."
+       ],
+       [
+        "Assertion (A): Actinoid contraction is greater from element to element than lanthanoid contraction.\nReason (R): 5f electrons shield each other more poorly than 4f electrons do.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        0,
+        "Poorer shielding gives a larger contraction."
+       ],
+       [
+        "Assertion (A): Actinoids show a greater range of oxidation states than lanthanoids.\nReason (R): The 5f, 6d and 7s levels are of comparable energies.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        0,
+        "More electrons can take part in bonding."
+       ],
+       [
+        "A student says that actinoids, unlike lanthanoids, have more +4 compounds than +3 compounds. What is correct?",
+        [
+         "Actinoids have more +4 compounds than +3",
+         "Actinoids show only the +3 state",
+         "Actinoids have more compounds in +3 than in +4, like lanthanoids",
+         "Actinoids show no +3 compounds"
+        ],
+        2,
+        "The text notes more +3 compounds than +4, though +3 and +4 ions tend to hydrolyse."
+       ],
+       [
+        "Which statement compares actinoids and lanthanoids correctly?",
+        [
+         "Actinoids show more structural variety and more complex magnetic behaviour, while lanthanoids have higher magnetic susceptibility values",
+         "Actinoids are more uniform in structure than lanthanoids",
+         "Actinoids are non-radioactive",
+         "Lanthanoids show a greater range of oxidation states"
+        ],
+        0,
+        "Irregular metallic radii cause structural variety in actinoids."
+       ],
+       [
+        "Why are the outer electrons of early actinoids more available for bonding than those of early lanthanoids?",
+        [
+         "4f orbitals are less buried than 5f orbitals",
+         "actinoids have empty 7s orbitals",
+         "actinoids are more electronegative",
+         "5f orbitals penetrate less into the core, so the 5f electrons are more effectively shielded and less firmly held"
+        ],
+        3,
+        "The outer electrons are less firmly held and so are available for bonding."
+       ],
+       [
+        "Match: (i) V₂O₅ (ii) PdCl₂ (iii) TiCl₄ + Al(CH₃)₃ (iv) Ni with (a) polythene manufacture (b) SO₂ oxidation (c) ethyne → ethanal (d) hydrogenation of fats.",
+        [
+         "(i)–(a), (ii)–(b), (iii)–(c), (iv)–(d)",
+         "(i)–(b), (ii)–(c), (iii)–(a), (iv)–(d)",
+         "(i)–(d), (ii)–(c), (iii)–(b), (iv)–(a)",
+         "(i)–(b), (ii)–(a), (iii)–(c), (iv)–(d)"
+        ],
+        1,
+        "V₂O₅: Contact process; PdCl₂: Wacker; TiCl₄ + Al(CH₃)₃: Ziegler catalyst; Ni: hydrogenation."
+       ],
+       [
+        "The ‘silver’ coins in the UK and the photographic industry rely respectively on",
+        [
+         "a Cu/Ni alloy and light-sensitive AgBr",
+         "pure silver and AgCl",
+         "Cu/Zn brass and AgNO₃",
+         "Cu/Sn bronze and Ag₂O"
+        ],
+        0,
+        "A Cu/Ni alloy is used for the ‘silver’ coins and AgBr for photographic films."
+       ]
+      ]
+     ]
+    },
+    {
+     "n": 5,
+     "t": "Coordination Compounds",
+     "levels": [
+      [
+       [
+        "According to Werner’s theory, which statement about the two types of valence of a metal is correct?",
+        [
+         "Primary valences are ionisable and satisfied by negative ions; secondary valences are non-ionisable",
+         "Primary valences are non-ionisable; secondary valences are ionisable",
+         "Both primary and secondary valences are ionisable",
+         "Primary valence is equal to the coordination number and is fixed for a metal"
+        ],
+        0,
+        "Primary (ionisable) valences are satisfied by anions, while secondary (non-ionisable) valences equal the coordination number."
+       ],
+       [
+        "1 mol of purple CoCl₃·5NH₃ gives 2 mol AgCl with excess AgNO₃ in the cold. Which formula fits this?",
+        [
+         "[Co(NH₃)₅]Cl₃",
+         "[CoCl₂(NH₃)₄]Cl·NH₃",
+         "[CoCl(NH₃)₅]Cl₂",
+         "[Co(NH₃)₅Cl₂]Cl"
+        ],
+        2,
+        "Only two chlorides are free (ionisable); one Cl⁻ and five NH₃ make up six secondary valences."
+       ],
+       [
+        "Green and violet forms of CoCl₃·4NH₃ have the same empirical formula but different properties. Such compounds are called",
+        [
+         "allotropes",
+         "isomers",
+         "double salts",
+         "isobars"
+        ],
+        1,
+        "Same formula with different arrangement and properties means isomers."
+       ],
+       [
+        "Which of the following dissociates completely into simple ions when dissolved in water?",
+        [
+         "K₄[Fe(CN)₆]",
+         "[Ni(CO)₄]",
+         "[Co(NH₃)₆]Cl₃, giving Co³⁺, NH₃ and Cl⁻",
+         "Mohr’s salt, FeSO₄·(NH₄)₂SO₄·6H₂O"
+        ],
+        3,
+        "Mohr’s salt is a double salt and gives Fe²⁺, NH₄⁺ and SO₄²⁻ ions; complex ions such as [Fe(CN)₆]⁴⁻ stay intact."
+       ],
+       [
+        "Werner proposed that the groups bound by secondary linkages have characteristic spatial arrangements. In modern language these arrangements are called",
+        [
+         "counter ions",
+         "primary valences",
+         "coordination polyhedra",
+         "ionisation spheres"
+        ],
+        2,
+        "The spatial arrangement of ligands around the metal is the coordination polyhedron."
+       ],
+       [
+        "A coordination entity consists of",
+        [
+         "only the counter ions of a complex salt",
+         "a central metal atom or ion bonded to a fixed number of ions or molecules",
+         "two or more simple salts crystallised together",
+         "a metal ion dissolved in water without any bonding"
+        ],
+        1,
+        "[Co(NH₃)₆]³⁺ and [Ni(CO)₄] are coordination entities."
+       ],
+       [
+        "In [NiCl₂(H₂O)₄], the central metal ion and its nature are",
+        [
+         "Ni²⁺, a Lewis acid",
+         "Ni⁰, a Lewis base",
+         "Ni²⁺, a Lewis base",
+         "Ni⁴⁺, a Lewis acid"
+        ],
+        0,
+        "Neutral complex with two Cl⁻ and four H₂O gives Ni²⁺; the metal accepts electron pairs, so it is a Lewis acid."
+       ],
+       [
+        "EDTA⁴⁻ is an important hexadentate ligand. It binds the metal through",
+        [
+         "six nitrogen atoms",
+         "four nitrogen and two oxygen atoms",
+         "two nitrogen and four oxygen atoms",
+         "six oxygen atoms"
+        ],
+        2,
+        "Two N donors and four carboxylate O donors give denticity six."
+       ],
+       [
+        "Which pair consists of ambidentate ligands?",
+        [
+         "en and C₂O₄²⁻",
+         "Cl⁻ and NH₃",
+         "H₂O and CO",
+         "NO₂⁻ and SCN⁻"
+        ],
+        3,
+        "NO₂⁻ binds through N or O; SCN⁻ binds through S or N."
+       ],
+       [
+        "Ethane-1,2-diamine (en), H₂NCH₂CH₂NH₂, is a",
+        [
+         "unidentate ligand",
+         "didentate ligand that forms chelate rings",
+         "hexadentate ligand",
+         "ambidentate ligand"
+        ],
+        1,
+        "It has two N donor atoms, so it is didentate; chelate complexes tend to be more stable."
+       ],
+       [
+        "The coordination number of Fe in [Fe(C₂O₄)₃]³⁻ is",
+        [
+         "6",
+         "3",
+         "9",
+         "12"
+        ],
+        0,
+        "Oxalate is didentate, so three oxalate ions give six donor atoms."
+       ],
+       [
+        "In K₄[Fe(CN)₆], the coordination sphere and the counter ion are respectively",
+        [
+         "Fe²⁺ and CN⁻",
+         "K⁺ and [Fe(CN)₆]⁴⁻",
+         "[Fe(CN)₆]⁴⁻ and K⁺",
+         "Fe(CN)₆ and K₄"
+        ],
+        2,
+        "The species in square brackets is the coordination sphere; the ionisable group outside is the counter ion."
+       ],
+       [
+        "The shapes of [Ni(CO)₄], [PtCl₄]²⁻ and [Co(NH₃)₆]³⁺ are respectively",
+        [
+         "square planar, tetrahedral, octahedral",
+         "tetrahedral, octahedral, square planar",
+         "octahedral, square planar, tetrahedral",
+         "tetrahedral, square planar, octahedral"
+        ],
+        3,
+        "These are the textbook examples of the three common coordination polyhedra."
+       ],
+       [
+        "The oxidation number of copper in [Cu(CN)₄]³⁻ is",
+        [
+         "+2",
+         "+1",
+         "+3",
+         "−1"
+        ],
+        1,
+        "x + 4(−1) = −3 gives x = +1, written Cu(I)."
+       ],
+       [
+        "Which pair is correctly classified?",
+        [
+         "[Co(NH₃)₆]³⁺ is homoleptic; [Co(NH₃)₄Cl₂]⁺ is heteroleptic",
+         "[Co(NH₃)₆]³⁺ is heteroleptic; [Co(NH₃)₄Cl₂]⁺ is homoleptic",
+         "Both are homoleptic",
+         "Both are heteroleptic"
+        ],
+        0,
+        "A homoleptic complex has only one kind of donor group."
+       ],
+       [
+        "Which is the correct formula of tetraamminediaquacobalt(III) chloride?",
+        [
+         "[Co(NH₃)₄(H₂O)₂]Cl₂",
+         "[Co(NH₃)₄(H₂O)₂]Cl₃",
+         "[Co(H₂O)₂(NH₃)₄]Cl",
+         "Co[(NH₃)₄(H₂O)₂]Cl₃"
+        ],
+        1,
+        "Charge on the complex ion is +3 (Co³⁺, neutral ligands), so three Cl⁻ are needed."
+       ],
+       [
+        "Which rule is followed while writing the formula of a coordination entity?",
+        [
+         "Anionic ligands are always written before neutral ligands",
+         "The ligands are written first and the central atom last",
+         "The central atom is written first, then ligands in alphabetical order, all within square brackets",
+         "The central atom is written in alphabetical order with the ligands"
+        ],
+        2,
+        "The central atom comes first; ligand placement does not depend on charge."
+       ],
+       [
+        "The IUPAC name of [Cr(NH₃)₃(H₂O)₃]Cl₃ is",
+        [
+         "triaquatriamminechromium(III) chloride",
+         "triamminetriaquachromium(II) chloride",
+         "triamminetriaquachromate(III) chloride",
+         "triamminetriaquachromium(III) chloride"
+        ],
+        3,
+        "Ligands are named alphabetically (ammine before aqua); the cation keeps the metal name; Cr is +3."
+       ],
+       [
+        "The IUPAC name of K₃[Fe(CN)₆] is",
+        [
+         "potassium hexacyanidoferrate(III)",
+         "potassium hexacyanoiron(III)",
+         "tripotassium hexacyanidoferrate(III)",
+         "potassium hexacyanidoferrate(II)"
+        ],
+        0,
+        "In an anionic complex the metal name ends in -ate (ferrate for Fe); x + 6(−1) = −3 gives Fe(III)."
+       ],
+       [
+        "Which set gives the correct names of the ligands H₂O, NH₃ and CO?",
+        [
+         "aquo, amine, carbonyl",
+         "aqua, ammine, carbonyl",
+         "hydrato, ammonia, carbon monoxide",
+         "aqua, ammino, carbonato"
+        ],
+        1,
+        "Neutral ligands keep their names except aqua, ammine, carbonyl and nitrosyl."
+       ],
+       [
+        "[NiCl₂(PPh₃)₂] is named",
+        [
+         "dichloridodi(triphenylphosphine)nickel(II)",
+         "bis(triphenylphosphine)dichloridonickel(II)",
+         "dichloridobis(triphenylphosphine)nickel(II)",
+         "dichloridobis(triphenylphosphine)nickelate(II)"
+        ],
+        2,
+        "When the ligand name already has a numerical prefix, bis, tris, tetrakis are used with it in parentheses; alphabetical order places chlorido first."
+       ],
+       [
+        "The IUPAC name of K₃[Cr(C₂O₄)₃] is",
+        [
+         "potassium trioxalatochromium(III)",
+         "potassium tris(oxalato)chromium(III)",
+         "potassium trioxalatochromate(VI)",
+         "potassium trioxalatochromate(III)"
+        ],
+        3,
+        "Complex anion gives chromate; 3 K⁺ means the entity is 3−, so Cr is +3 (NCERT Example 5.3)."
+       ],
+       [
+        "Which of the following is a structural isomerism (not stereoisomerism) in coordination compounds?",
+        [
+         "Linkage isomerism",
+         "Geometrical isomerism",
+         "Optical isomerism",
+         "cis-trans isomerism"
+        ],
+        0,
+        "Stereoisomers differ only in spatial arrangement; structural isomers (linkage, coordination, ionisation, solvate) have different bonds."
+       ],
+       [
+        "Square planar [Pt(NH₃)₂Cl₂] shows two geometrical isomers. They are called",
+        [
+         "fac and mer",
+         "cis and trans",
+         "d and l",
+         "ionisation and linkage"
+        ],
+        1,
+        "Identical ligands adjacent give the cis isomer; opposite gives trans."
+       ],
+       [
+        "The facial (fac) and meridional (mer) isomers are possible for octahedral entities of the type",
+        [
+         "[Ma₆]",
+         "[Ma₅b]",
+         "[Ma₃b₃], such as [Co(NH₃)₃(NO₂)₃]",
+         "[Ma₄b₂] only"
+        ],
+        2,
+        "In fac, the three identical ligands occupy one octahedral face; in mer, they lie around the meridian."
+       ],
+       [
+        "Optical isomers (enantiomers) of a complex such as [Co(en)₃]³⁺ differ in that they",
+        [
+         "have different molecular formulae",
+         "differ only in colour and not in the direction of rotation",
+         "are superimposable mirror images",
+         "are non-superimposable mirror images that rotate polarised light in opposite directions"
+        ],
+        3,
+        "d rotates plane polarised light to the right, l to the left."
+       ],
+       [
+        "Red and yellow forms of [Co(NH₃)₅(NO₂)]Cl₂ are",
+        [
+         "linkage isomers",
+         "ionisation isomers",
+         "coordination isomers",
+         "solvate isomers"
+        ],
+        0,
+        "Ambidentate NO₂⁻ binds through O (red) in one and through N (yellow) in the other."
+       ],
+       [
+        "A coordination isomer of [Co(NH₃)₆][Cr(CN)₆] is",
+        [
+         "[Co(NH₃)₅(CN)][Cr(NH₃)(CN)₅]",
+         "[Cr(NH₃)₆][Co(CN)₆]",
+         "[Co(CN)₆]₂[Cr(NH₃)₆]₃",
+         "[Co(NH₃)₆]₂[Cr(CN)₆]₃"
+        ],
+        1,
+        "Ligands are interchanged between the cationic and anionic entities of different metals."
+       ],
+       [
+        "[Co(NH₃)₅Br]SO₄ and [Co(NH₃)₅(SO₄)]Br are",
+        [
+         "linkage isomers",
+         "geometrical isomers",
+         "ionisation isomers",
+         "optical isomers"
+        ],
+        2,
+        "The counter ion and a ligand are exchanged, so different ions are produced in solution."
+       ],
+       [
+        "[Cr(H₂O)₆]Cl₃ (violet) and [Cr(H₂O)₅Cl]Cl₂·H₂O (grey-green) are",
+        [
+         "ionisation isomers only",
+         "linkage isomers",
+         "coordination isomers",
+         "solvate (hydrate) isomers"
+        ],
+        3,
+        "They differ in whether water is bonded to the metal or is free in the crystal lattice."
+       ],
+       [
+        "Which of the following could Werner’s theory NOT explain?",
+        [
+         "Why only certain elements form coordination compounds and why the bonds are directional",
+         "That secondary valences are non-ionisable",
+         "That primary valences are satisfied by negative ions",
+         "That CoCl₃·6NH₃ gives 3 mol AgCl"
+        ],
+        0,
+        "Werner’s theory could not explain directional bonds, selectivity of elements, or magnetic and optical properties."
+       ],
+       [
+        "In the diamagnetic [Co(NH₃)₆]³⁺, the hybridisation and the type of complex are",
+        [
+         "sp³d², outer orbital (high spin)",
+         "d²sp³, inner orbital (low spin)",
+         "dsp², inner orbital",
+         "sp³, outer orbital"
+        ],
+        1,
+        "Co³⁺ is 3d⁶; electrons pair up, freeing two 3d orbitals for d²sp³, so there are no unpaired electrons."
+       ],
+       [
+        "According to valence bond theory, [NiCl₄]²⁻ is",
+        [
+         "square planar (dsp²) and diamagnetic",
+         "tetrahedral and diamagnetic",
+         "tetrahedral (sp³) and paramagnetic",
+         "octahedral and paramagnetic"
+        ],
+        2,
+        "Ni²⁺ is 3d⁸; with Cl⁻ no pairing occurs, sp³ is used and two electrons remain unpaired."
+       ],
+       [
+        "[Ni(CN)₄]²⁻ is square planar and diamagnetic. The hybridisation of Ni²⁺ in it is",
+        [
+         "sp³",
+         "d²sp³",
+         "sp³d²",
+         "dsp²"
+        ],
+        3,
+        "Strong field CN⁻ pairs the 3d⁸ electrons, leaving one 3d orbital vacant for dsp²."
+       ],
+       [
+        "Which pair correctly gives the number of unpaired electrons in [Fe(CN)₆]³⁻ and [FeF₆]³⁻?",
+        [
+         "1 and 5",
+         "5 and 1",
+         "0 and 5",
+         "1 and 3"
+        ],
+        0,
+        "[Fe(CN)₆]³⁻ is inner orbital (d²sp³) with one unpaired electron; [FeF₆]³⁻ is outer orbital (sp³d²) with five."
+       ],
+       [
+        "Which of the following is a limitation of valence bond theory?",
+        [
+         "It cannot explain why [Co(NH₃)₆]³⁺ is diamagnetic",
+         "It does not explain the colour exhibited by coordination compounds",
+         "It cannot account for the number of ligands bonded",
+         "It cannot define coordination number"
+        ],
+        1,
+        "VBT also lacks a quantitative magnetic interpretation and does not distinguish weak and strong ligands."
+       ],
+       [
+        "In an octahedral crystal field, the d orbitals split into",
+        [
+         "a lower t₂g set (three orbitals) and a higher e_g set (two orbitals)",
+         "a lower e_g set (three orbitals) and a higher t₂g set (two orbitals)",
+         "a lower t₂g set (two orbitals) and a higher e_g set (three orbitals)",
+         "five orbitals of equal energy"
+        ],
+        0,
+        "d(x²−y²) and d(z²) point at the ligands and rise (+3/5 Δo); dxy, dyz and dxz fall (−2/5 Δo)."
+       ],
+       [
+        "Which sequence correctly shows increasing ligand field strength in the spectrochemical series?",
+        [
+         "CO < CN⁻ < en < NH₃ < H₂O < F⁻ < Cl⁻ < Br⁻ < I⁻",
+         "I⁻ < Br⁻ < Cl⁻ < H₂O < F⁻ < NH₃ < CN⁻ < en < CO",
+         "I⁻ < Br⁻ < Cl⁻ < F⁻ < H₂O < NH₃ < en < CN⁻ < CO",
+         "Br⁻ < I⁻ < Cl⁻ < F⁻ < H₂O < NH₃ < en < CN⁻ < CO"
+        ],
+        2,
+        "Halides are weak field; CN⁻ and CO are the strongest in the series."
+       ],
+       [
+        "A ligand forms a high spin octahedral complex when",
+        [
+         "Δo > P, so the electrons pair in t₂g first",
+         "Δo < P, so the electrons occupy e_g orbitals before pairing",
+         "Δo = 0 in all cases",
+         "the ligand is a strong field ligand"
+        ],
+        1,
+        "Weak field ligands give small Δo; pairing energy P is larger, so electrons spread over t₂g and e_g."
+       ],
+       [
+        "For the same metal, ligand and metal-ligand distance, the tetrahedral splitting Δt is related to Δo as",
+        [
+         "Δt = (9/4)Δo",
+         "Δt = Δo",
+         "Δt = (4/9)Δo",
+         "Δt = (2/5)Δo"
+        ],
+        2,
+        "Tetrahedral splitting is smaller and inverted, so low spin tetrahedral complexes are rarely observed."
+       ],
+       [
+        "According to crystal field theory, colour of a coordination compound arises due to",
+        [
+         "charge transfer from metal to nucleus",
+         "ionisation of the ligand",
+         "pairing of the ligand electrons",
+         "d-d transition of electrons"
+        ],
+        3,
+        "An electron is excited from t₂g to e_g by absorbing visible light; the colour seen is complementary to the one absorbed."
+       ],
+       [
+        "Anhydrous CuSO₄ is white, but CuSO₄·5H₂O is blue because",
+        [
+         "water ligands cause d-orbital splitting, so d-d transitions can absorb visible light",
+         "water oxidises Cu²⁺ to Cu³⁺",
+         "the crystal absorbs ultraviolet only",
+         "Cu²⁺ has no d electrons"
+        ],
+        0,
+        "Without ligands there is no crystal field splitting and the substance is colourless."
+       ],
+       [
+        "A complex that absorbs green light appears",
+        [
+         "green",
+         "red (the complementary colour)",
+         "violet",
+         "black"
+        ],
+        1,
+        "The observed colour is complementary to the colour absorbed."
+       ],
+       [
+        "Which is a weakness of crystal field theory?",
+        [
+         "It cannot explain the colour of complexes",
+         "It cannot explain magnetic properties",
+         "It treats ligands as point charges and ignores covalent character of the metal-ligand bond",
+         "It cannot explain the splitting of d orbitals"
+        ],
+        2,
+        "Anionic ligands are expected to cause large splitting but lie at the low end of the spectrochemical series."
+       ],
+       [
+        "The shapes of [Ni(CO)₄], [Fe(CO)₅] and [Cr(CO)₆] are respectively",
+        [
+         "square planar, octahedral, tetrahedral",
+         "tetrahedral, octahedral, trigonal bipyramidal",
+         "trigonal bipyramidal, tetrahedral, octahedral",
+         "tetrahedral, trigonal bipyramidal, octahedral"
+        ],
+        3,
+        "Homoleptic carbonyls have simple well-defined structures."
+       ],
+       [
+        "The M-C bond in a metal carbonyl has both σ and π character. The π bond is formed by",
+        [
+         "donation from a filled metal d orbital into the empty π* orbital of CO",
+         "donation of the lone pair of C into an empty π orbital of the metal",
+         "overlap of two filled d orbitals",
+         "donation from the π* orbital of CO into the metal s orbital"
+        ],
+        0,
+        "The σ bond is ligand to metal; the π bond is metal to ligand, and together they give synergic bonding."
+       ],
+       [
+        "In black and white photography, hypo solution fixes the film by dissolving undecomposed AgBr to form",
+        [
+         "[Ag(NH₃)₂]⁺",
+         "[Ag(S₂O₃)₂]³⁻",
+         "[Ag(CN)₂]⁻",
+         "Ag₂S₂O₃"
+        ],
+        1,
+        "Thiosulphate forms a soluble complex with silver."
+       ],
+       [
+        "Which metal is the central atom in chlorophyll, haemoglobin and vitamin B₁₂ respectively?",
+        [
+         "Fe, Mg, Co",
+         "Co, Fe, Mg",
+         "Mg, Fe, Co",
+         "Mg, Co, Fe"
+        ],
+        2,
+        "Chlorophyll is a Mg complex, haemoglobin a Fe complex and vitamin B₁₂ a Co complex."
+       ],
+       [
+        "The hardness of water is estimated by titration with",
+        [
+         "dimethylglyoxime",
+         "AgNO₃",
+         "hypo solution",
+         "Na₂EDTA"
+        ],
+        3,
+        "Ca²⁺ and Mg²⁺ form stable complexes with EDTA."
+       ],
+       [
+        "Which complex is used as a catalyst for hydrogenation of alkenes?",
+        [
+         "[(Ph₃P)₃RhCl], Wilkinson catalyst",
+         "cis-platin",
+         "[Ni(CO)₄]",
+         "[Ag(CN)₂]⁻"
+        ],
+        0,
+        "Wilkinson catalyst is a rhodium complex; cis-platin is an anticancer drug."
+       ]
+      ],
+      [
+       [
+        "A 0.02 mol sample of purple CoCl₃·5NH₃ is dissolved in water and excess AgNO₃ is added. What mass of AgCl precipitates? (Ag = 108, Cl = 35.5)",
+        [
+         "5.74 g",
+         "8.61 g",
+         "2.87 g",
+         "11.48 g"
+        ],
+        0,
+        "Formula is [CoCl(NH₃)₅]Cl₂, so 2 × 0.02 = 0.04 mol AgCl; 0.04 × 143.5 = 5.74 g.",
+        "Count only ionisable Cl⁻."
+       ],
+       [
+        "A student says: “PtCl₂·2NH₃ gives no AgCl with AgNO₃, so it contains no chlorine.” What is wrong with this?",
+        [
+         "The compound must contain Cl₂ molecules",
+         "Both Cl⁻ are bound directly to Pt inside the coordination sphere ([PtCl₂(NH₃)₂]) and are not ionisable",
+         "AgCl is soluble in excess AgNO₃",
+         "Pt has a secondary valence of 2 so the Cl⁻ are free"
+        ],
+        1,
+        "Cl⁻ satisfying secondary valence (four in all with 2 NH₃) is non-ionisable; Werner’s secondary valence is 4 for Pt(II)."
+       ],
+       [
+        "Two compounds of formula CoCl₃·4NH₃, one green and one violet, each give 1 mol AgCl per mole and behave as 1:1 electrolytes. These results show that",
+        [
+         "both are [Co(NH₃)₄]Cl₃",
+         "both are [CoCl(NH₃)₄]Cl₂",
+         "both are [CoCl₂(NH₃)₄]Cl, with two Cl⁻ and four NH₃ bound to Co, and they are isomers",
+         "the two compounds are identical"
+        ],
+        2,
+        "Six secondary valences are satisfied; only one Cl⁻ ionises, but the properties differ because of a different spatial arrangement."
+       ],
+       [
+        "Assertion (A): An aqueous solution of Mohr’s salt gives the tests for Fe²⁺, but K₄[Fe(CN)₆] solution does not give the test for Fe²⁺.\nReason (R): Mohr’s salt is a double salt that dissociates completely into simple ions, whereas the complex ion [Fe(CN)₆]⁴⁻ does not dissociate.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        0,
+        "Double salts break into all their ions; a complex ion remains as one unit."
+       ],
+       [
+        "In the compound [Co(NH₃)₅Br]SO₄, which of the following is NOT part of the coordination entity?",
+        [
+         "Br⁻",
+         "NH₃",
+         "Co³⁺",
+         "SO₄²⁻"
+        ],
+        3,
+        "The coordination entity is [Co(NH₃)₅Br]²⁺; sulphate is the counter ion outside the bracket."
+       ],
+       [
+        "A student writes: “In [Co(NH₃)₆]Cl₃, Co³⁺ is a Lewis base because it holds six ligands.” The error is that",
+        [
+         "Co³⁺ accepts electron pairs from the ligands, so it is a Lewis acid",
+         "Co³⁺ is neutral, not an ion",
+         "Co³⁺ is a Lewis acid only in the absence of ligands",
+         "Cl⁻ is the Lewis acid"
+        ],
+        0,
+        "The central atom or ion is an electron pair acceptor, that is, a Lewis acid, while ligands are donors."
+       ],
+       [
+        "Which of the following ligands cannot act as a chelating ligand?",
+        [
+         "en",
+         "SCN⁻",
+         "C₂O₄²⁻",
+         "EDTA⁴⁻"
+        ],
+        1,
+        "SCN⁻ is ambidentate but uses only one donor atom (S or N) at a time, so it is unidentate in each complex."
+       ],
+       [
+        "A student says: “In [Fe(CN)₆]⁴⁻ the coordination number is 12 because each CN⁻ has a triple bond.” The error is that",
+        [
+         "the coordination number is 3, since CN⁻ is didentate",
+         "the coordination number equals the oxidation number, 2",
+         "only σ bonds between ligand and metal are counted, so the coordination number is 6",
+         "the coordination number is 18 since CN⁻ has three bonds and six ligands"
+        ],
+        2,
+        "Coordination number is the number of ligand donor atoms bonded by σ bonds; π bonds are not counted."
+       ],
+       [
+        "How many ions per formula unit are produced when K₄[Fe(CN)₆] and [Co(NH₃)₅Cl]Cl₂ dissolve in water (taking the complex ion as one ion)?",
+        [
+         "10 and 8",
+         "5 and 2",
+         "4 and 3",
+         "5 and 3"
+        ],
+        3,
+        "K₄[Fe(CN)₆] gives 4 K⁺ + [Fe(CN)₆]⁴⁻ = 5; [Co(NH₃)₅Cl]Cl₂ gives [Co(NH₃)₅Cl]²⁺ + 2 Cl⁻ = 3."
+       ],
+       [
+        "Which of the following species is wrongly matched with its shape?",
+        [
+         "[Ni(CN)₄]²⁻ - tetrahedral",
+         "[NiCl₄]²⁻ - tetrahedral",
+         "[PtCl₄]²⁻ - square planar",
+         "[Cr(CO)₆] - octahedral"
+        ],
+        0,
+        "[Ni(CN)₄]²⁻ is diamagnetic and square planar (dsp²); [NiCl₄]²⁻ is the tetrahedral one."
+       ],
+       [
+        "In which of the following is the central metal in the +3 oxidation state?",
+        [
+         "[Ni(CO)₄]",
+         "[Fe(C₂O₄)₃]³⁻",
+         "[PtCl₄]²⁻",
+         "[Cu(CN)₄]³⁻"
+        ],
+        1,
+        "Fe: x + 3(−2) = −3 gives +3; the others are Ni(0), Pt(II) and Cu(I)."
+       ],
+       [
+        "The coordination number and oxidation number of cobalt in [Co(en)₂(C₂O₄)]⁺ are",
+        [
+         "4 and +3",
+         "6 and +1",
+         "6 and +3",
+         "3 and +3"
+        ],
+        2,
+        "en and oxalate are didentate (2 × 2 + 2 = 6 donor atoms); x + 0 + (−2) = +1 gives x = +3.",
+        "Charge of en is 0, oxalate is −2."
+       ],
+       [
+        "Assertion (A): [Co(en)₃]³⁺ is a homoleptic complex.\nReason (R): Ethane-1,2-diamine is a didentate ligand that binds through two donor atoms.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        1,
+        "Homoleptic means only one kind of donor group (here N only); denticity is a separate property and does not explain it."
+       ],
+       [
+        "A student names [Co(NH₃)₄(H₂O)Cl]Cl₂ as tetraamminechloridoaquacobalt(III) chloride. What is wrong?",
+        [
+         "In a name the ligands are cited in alphabetical order irrespective of charge, so aqua must come before chlorido",
+         "Anionic ligands are always named first, so the name is correct",
+         "The chloride counter ions should not be named",
+         "The oxidation state of cobalt should be written as (II)"
+        ],
+        0,
+        "Alphabetical order (ammine, aqua, chlorido) gives tetraammineaquachloridocobalt(III) chloride."
+       ],
+       [
+        "The correct formula of iron(III) hexacyanidoferrate(II) is",
+        [
+         "Fe₃[Fe(CN)₆]₄",
+         "Fe₄[Fe(CN)₆]₃",
+         "Fe[Fe(CN)₆]",
+         "Fe₂[Fe(CN)₆]₃"
+        ],
+        1,
+        "Anion [Fe(CN)₆]⁴⁻ and cation Fe³⁺: 4 × (+3) = 3 × (+4)."
+       ],
+       [
+        "The formula for pentaamminecarbonatocobalt(III) chloride is",
+        [
+         "[Co(NH₃)₅(CO₃)]Cl₂",
+         "[Co(CO₃)(NH₃)₅]Cl",
+         "[Co(NH₃)₅(CO₃)]Cl",
+         "[Co(NH₃)₅CO]Cl₃"
+        ],
+        2,
+        "CO₃²⁻ is dianionic: x + 0 − 2 = +1 gives Co³⁺ with a 1+ complex ion, so one Cl⁻."
+       ],
+       [
+        "The IUPAC name of [Pt(NH₃)₂Cl(NO₂)] is",
+        [
+         "diamminechloridonitro-O-platinum(IV)",
+         "chloridodiamminenitrito-N-platinum(II)",
+         "diamminechloridonitrito-N-platinate(II)",
+         "diamminechloridonitrito-N-platinum(II)"
+        ],
+        3,
+        "Neutral complex is named like a cation; alphabetical order ammine, chlorido, nitrito; Pt(II) since ligands total −2 and charge is 0 (NCERT Example 5.3)."
+       ],
+       [
+        "A student names K₃[Fe(CN)₆] as “potassium hexacyanoiron(III)”. Identify the correct name.",
+        [
+         "potassium hexacyanidoferrate(III), because the complex is an anion and Fe takes its Latin name with -ate",
+         "potassium hexacyanidoiron(III), because the metal name never changes",
+         "potassium hexacyanidoferrate(II), because K is +1",
+         "hexacyanidoferrate(III) potassium"
+        ],
+        0,
+        "In a complex anion the metal name ends in -ate (ferrate); oxidation state is +3."
+       ],
+       [
+        "The IUPAC name of [CoCl₂(en)₂]Cl is",
+        [
+         "dichloridodi(ethane-1,2-diamine)cobalt(III) chloride",
+         "dichloridobis(ethane-1,2-diamine)cobalt(III) chloride",
+         "bis(ethane-1,2-diamine)dichloridocobalt(II) chloride",
+         "dichloridobis(ethane-1,2-diamine)cobaltate(III) chloride"
+        ],
+        1,
+        "Ligand name with its own prefix takes bis; alphabetical order chlorido, ethane-1,2-diamine; Co = +3 (NCERT Example 5.3)."
+       ],
+       [
+        "Which pair of isomers consists of stereoisomers?",
+        [
+         "[Co(NH₃)₅(NO₂)]Cl₂ and [Co(NH₃)₅(ONO)]Cl₂",
+         "[Co(NH₃)₅Br]SO₄ and [Co(NH₃)₅(SO₄)]Br",
+         "cis- and trans-[Pt(NH₃)₂Cl₂]",
+         "[Co(NH₃)₆][Cr(CN)₆] and [Cr(NH₃)₆][Co(CN)₆]"
+        ],
+        2,
+        "Stereoisomers have the same bonds but different spatial arrangement; the other pairs have different bonds (structural)."
+       ],
+       [
+        "How many geometrical isomers are possible for the square planar complex [Pt(NH₃)(Br)(Cl)(py)]?",
+        [
+         "2",
+         "4",
+         "6",
+         "3"
+        ],
+        3,
+        "A square planar MABXL complex has three isomers: two cis and one trans arrangement (NCERT Exercise 5.14)."
+       ],
+       [
+        "The total number of stereoisomers (geometrical plus optical) possible for [CoCl₂(en)₂]⁺ is",
+        [
+         "3",
+         "2",
+         "4",
+         "5"
+        ],
+        0,
+        "trans is achiral (1); cis is chiral and exists as d and l (2); total 3."
+       ],
+       [
+        "Assertion (A): Tetrahedral complexes of the type [MA₂B₂] do not show geometrical isomerism.\nReason (R): In a tetrahedral complex the relative positions of the unidentate ligands with respect to each other are the same.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        0,
+        "All positions in a tetrahedron are adjacent to each other, so there is no cis or trans (NCERT Example 5.4)."
+       ],
+       [
+        "Which of the following is optically active?",
+        [
+         "trans-[PtCl₂(en)₂]²⁺",
+         "cis-[PtCl₂(en)₂]²⁺",
+         "[Co(NH₃)₆]³⁺",
+         "[Ni(CO)₄]"
+        ],
+        1,
+        "Only the cis isomer of [PtCl₂(en)₂]²⁺ lacks a plane of symmetry; trans is achiral."
+       ],
+       [
+        "Assertion (A): trans-[CoCl₂(en)₂]⁺ shows optical isomerism.\nReason (R): The trans isomer has a plane of symmetry.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        3,
+        "The trans isomer has a plane of symmetry, so it is achiral and does not show optical activity; only the cis isomer does."
+       ],
+       [
+        "A student says: “The red form of [Co(NH₃)₅(NO₂)]Cl₂ has nitrite bound through nitrogen.” The correct statement is that",
+        [
+         "the yellow form has nitrite bound through oxygen and the red form through nitrogen",
+         "both forms have nitrite bound through nitrogen",
+         "the red form has nitrite bound through oxygen (-ONO) and the yellow form through nitrogen (-NO₂)",
+         "the two forms differ in the number of Cl⁻ outside the bracket"
+        ],
+        2,
+        "They are linkage isomers: M-ONO (red) and M-NO₂ (yellow)."
+       ],
+       [
+        "A coordination isomer of [Cu(NH₃)₄][PtCl₄] is",
+        [
+         "[Pt(NH₃)₄][CuCl₄]",
+         "[Cu(NH₃)₄Cl][PtCl₃]",
+         "[Cu(NH₃)₄][PtCl₄]·H₂O",
+         "[Pt(NH₃)₄][CuCl₄]Cl₂"
+        ],
+        0,
+        "NH₃ and Cl⁻ ligands are interchanged between the two metal centres, keeping the overall composition the same."
+       ],
+       [
+        "An aqueous solution of a salt of formula CoBr(SO₄)·5NH₃ gives a white precipitate with BaCl₂ but none with AgNO₃. Its formula is",
+        [
+         "[Co(NH₃)₅(SO₄)]Br",
+         "[Co(NH₃)₅Br]SO₄",
+         "[Co(NH₃)₅]BrSO₄",
+         "[Co(NH₃)₅Br(SO₄)]"
+        ],
+        1,
+        "Free SO₄²⁻ precipitates BaSO₄ and Br⁻ is bound inside the sphere, so no AgBr forms. This is how ionisation isomers are distinguished."
+       ],
+       [
+        "Excess AgNO₃ is added to separate solutions of [Cr(H₂O)₆]Cl₃ and [Cr(H₂O)₅Cl]Cl₂·H₂O containing equal moles. The ratio of moles of AgCl precipitated is",
+        [
+         "3 : 1",
+         "2 : 3",
+         "3 : 2",
+         "1 : 1"
+        ],
+        2,
+        "The first has three ionisable Cl⁻; the grey-green solvate isomer has two."
+       ],
+       [
+        "A student claims Werner’s theory fully explains why [Co(NH₃)₆]³⁺ is yellow and diamagnetic. Which questions did Werner’s theory leave unanswered?",
+        [
+         "Why Cl⁻ ions are precipitated by Ag⁺",
+         "Why the secondary valence is six for cobalt(III)",
+         "Why CoCl₃·4NH₃ gives 1 mol AgCl",
+         "Why bonds are directional and why complexes have characteristic magnetic and optical properties"
+        ],
+        3,
+        "Werner explained ionisable and non-ionisable linkages, but magnetic and optical properties came later with VBT and CFT."
+       ],
+       [
+        "How many unpaired electrons does [CoF₆]³⁻ have, and what is the hybridisation of Co?",
+        [
+         "4, sp³d²",
+         "0, d²sp³",
+         "4, d²sp³",
+         "2, sp³d²"
+        ],
+        0,
+        "F⁻ is a weak ligand: Co³⁺ (3d⁶) does not pair up, so 4 unpaired electrons with outer 4d orbitals used (sp³d²)."
+       ],
+       [
+        "A student reasons: “[Ni(CN)₄]²⁻ is paramagnetic because Ni²⁺ is d⁸, so it is tetrahedral (sp³).” The error is that",
+        [
+         "Ni²⁺ is d⁶ not d⁸",
+         "the complex is actually diamagnetic with strong field CN⁻ pairing the electrons, giving square planar dsp²",
+         "Ni²⁺ cannot form complexes with CN⁻",
+         "sp³ gives a square planar shape"
+        ],
+        1,
+        "Cyanide pairs the 3d⁸ electrons, leaving one d orbital for dsp²; no unpaired electrons."
+       ],
+       [
+        "[Co(NH₃)₆]³⁺ is an inner orbital complex whereas [Ni(NH₃)₆]²⁺ is an outer orbital complex. The reason is that",
+        [
+         "NH₃ is a weak field ligand for Ni²⁺ but a strong one for Co³⁺ because of charge only",
+         "Ni²⁺ has no 3d electrons",
+         "Ni²⁺ (3d⁸) cannot free two 3d orbitals even on pairing, so it uses 4d orbitals (sp³d²)",
+         "Co³⁺ uses 4s and 4p orbitals only"
+        ],
+        2,
+        "Co³⁺ (3d⁶) frees two 3d orbitals by pairing; for 3d⁸ pairing leaves just one vacant 3d orbital."
+       ],
+       [
+        "Assertion (A): [Fe(CN)₆]³⁻ is weakly paramagnetic whereas [FeF₆]³⁻ is strongly paramagnetic.\nReason (R): [Fe(CN)₆]³⁻ is an inner orbital d²sp³ complex with pairing of 3d electrons, while [FeF₆]³⁻ is an outer orbital sp³d² complex without pairing.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        0,
+        "Fe³⁺ (3d⁵) has 1 unpaired electron with CN⁻ and 5 with F⁻."
+       ],
+       [
+        "The spin only magnetic moment of [MnBr₄]²⁻ is 5.9 BM. Its geometry is",
+        [
+         "square planar, with one unpaired electron",
+         "square planar, with five unpaired electrons",
+         "tetrahedral, with one unpaired electron",
+         "tetrahedral, with five unpaired electrons"
+        ],
+        3,
+        "√[5(5+2)] = 5.92 BM means five unpaired electrons, so sp³ tetrahedral rather than dsp² (NCERT Example 5.7)."
+       ],
+       [
+        "Among [Fe(CN)₆]³⁻, [FeF₆]³⁻, [Mn(CN)₆]³⁻ and [Co(C₂O₄)₃]³⁻, which has the highest spin only magnetic moment?",
+        [
+         "[FeF₆]³⁻",
+         "[Fe(CN)₆]³⁻",
+         "[Mn(CN)₆]³⁻",
+         "[Co(C₂O₄)₃]³⁻"
+        ],
+        0,
+        "Unpaired electrons are 5, 1, 2 and 0 respectively; μ for 5 is √35 = 5.92 BM."
+       ],
+       [
+        "A tetracoordinate complex of Ni²⁺ has a spin only magnetic moment of 2.83 BM. It is",
+        [
+         "tetrahedral (sp³) with two unpaired electrons",
+         "square planar (dsp²) with two unpaired electrons",
+         "square planar (dsp²) and diamagnetic",
+         "tetrahedral (sp³) and diamagnetic"
+        ],
+        0,
+        "√[2(2+2)] = 2.83 BM means two unpaired electrons; square planar Ni²⁺ would have none."
+       ],
+       [
+        "Which observation can valence bond theory NOT explain?",
+        [
+         "[Co(NH₃)₆]³⁺ is diamagnetic",
+         "[Cu(H₂O)₄]²⁺ is blue",
+         "[NiCl₄]²⁻ has two unpaired electrons",
+         "[Ni(CN)₄]²⁻ is diamagnetic"
+        ],
+        1,
+        "VBT does not explain colour; it does explain structures and the number of unpaired electrons."
+       ],
+       [
+        "What is the net energy of the d electrons (ignoring pairing energy), in units of Δo, in the low spin octahedral complex [Fe(CN)₆]⁴⁻ (Fe²⁺, d⁶)?",
+        [
+         "−0.4 Δo",
+         "−1.6 Δo",
+         "−2.4 Δo",
+         "+2.4 Δo"
+        ],
+        2,
+        "Configuration t₂g⁶e_g⁰: 6 × (−0.4 Δo) = −2.4 Δo.",
+        "Each t₂g electron lowers energy by 2/5 Δo."
+       ],
+       [
+        "Arrange the ligands H₂O, NH₃ and CN⁻ in increasing order of crystal field splitting, given that [Co(NH₃)₅(H₂O)]³⁺, [Co(NH₃)₆]³⁺ and [Co(CN)₆]³⁻ absorb at 500 nm, 475 nm and 310 nm respectively.",
+        [
+         "H₂O < NH₃ < CN⁻",
+         "CN⁻ < NH₃ < H₂O",
+         "NH₃ < H₂O < CN⁻",
+         "H₂O < CN⁻ < NH₃"
+        ],
+        0,
+        "Shorter wavelength absorbed means larger Δo, so the order follows the spectrochemical series."
+       ],
+       [
+        "Mn²⁺ in [Mn(H₂O)₆]²⁺ has five unpaired electrons, but in [Mn(CN)₆]⁴⁻ it has only one. The correct explanation is that",
+        [
+         "H₂O is a strong field ligand giving t₂g⁵ while CN⁻ is weak",
+         "H₂O is a weak field ligand (Δo < P, t₂g³e_g²) while CN⁻ is strong (Δo > P, t₂g⁵)",
+         "both give the same configuration but different Δo",
+         "the oxidation state of Mn is different in the two complexes"
+        ],
+        1,
+        "High spin t₂g³e_g² has 5 unpaired electrons; low spin t₂g⁵ has 1."
+       ],
+       [
+        "An octahedral complex has Δo = 20000 cm⁻¹. If an electron is excited from t₂g to e_g by absorbing light of energy equal to Δo, the wavelength absorbed is",
+        [
+         "200 nm",
+         "50 nm",
+         "2000 nm",
+         "500 nm"
+        ],
+        3,
+        "λ = 1/(20000 cm⁻¹) = 5 × 10⁻⁵ cm = 500 nm (blue-green).",
+        "1 cm = 10⁷ nm."
+       ],
+       [
+        "For an octahedral complex Δo = 22500 cm⁻¹. For a tetrahedral complex of the same metal and ligand at the same distance, Δt is",
+        [
+         "10000 cm⁻¹",
+         "50625 cm⁻¹",
+         "9000 cm⁻¹",
+         "22500 cm⁻¹"
+        ],
+        0,
+        "Δt = (4/9) × 22500 = 10000 cm⁻¹."
+       ],
+       [
+        "A student says: “Heating [Ti(H₂O)₆]Cl₃ removes water, so the compound turns more intensely violet.” The correct outcome is that",
+        [
+         "it becomes colourless, since without ligands there is no crystal field splitting and no d-d transition",
+         "it becomes colourless, since Ti³⁺ is oxidised to Ti⁴⁺",
+         "it turns green because chloride replaces water",
+         "it stays violet because colour depends only on the metal"
+        ],
+        0,
+        "Colour arises from d-d transitions between split levels; the ligand is essential."
+       ],
+       [
+        "Aqueous green [Ni(H₂O)₆]²⁺ changes through pale blue and blue/purple to violet as ethane-1,2-diamine is added up to 3 mol per mole of Ni²⁺. This colour change is mainly because",
+        [
+         "Ni²⁺ is oxidised by en",
+         "the d-d transition no longer occurs",
+         "en is a stronger field ligand than H₂O, so Δo changes and a different wavelength is absorbed",
+         "Ni²⁺ loses its d electrons"
+        ],
+        2,
+        "Replacing H₂O with the stronger field en increases Δo and shifts the absorbed light, changing the colour seen."
+       ],
+       [
+        "[Cu(H₂O)₄]²⁺ absorbs light at 600 nm (red region). Its colour is",
+        [
+         "red",
+         "pale yellow",
+         "colourless",
+         "blue, the complement of the absorbed red"
+        ],
+        3,
+        "The colour seen is complementary to the absorbed one (Table 5.3 in NCERT)."
+       ],
+       [
+        "A student says: “Crystal field theory explains why Cl⁻ is a strong field ligand, since it is anionic.” The error is that",
+        [
+         "anionic ligands are found at the low end of the spectrochemical series, which CFT cannot explain because it ignores covalent bonding",
+         "Cl⁻ is neutral",
+         "CFT treats ligands as dipoles only",
+         "Cl⁻ is the strongest ligand in the series"
+        ],
+        0,
+        "Treating ligands as point charges predicts anions to split the most, but experiment shows otherwise."
+       ],
+       [
+        "A student says: “[Ni(CO)₄] is diamagnetic and square planar (dsp²) because nickel is in zero oxidation state.” The error is that",
+        [
+         "it is paramagnetic and tetrahedral",
+         "it is tetrahedral (sp³); Ni(0) has no unpaired electrons",
+         "it is octahedral",
+         "it is diamagnetic and trigonal bipyramidal"
+        ],
+        1,
+        "Tetracarbonylnickel(0) is tetrahedral and diamagnetic ."
+       ],
+       [
+        "Assertion (A): The metal-carbon bond in metal carbonyls is strengthened by synergic bonding.\nReason (R): The CO to metal σ donation and the metal to CO π back donation reinforce each other.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        0,
+        "Donation of a lone pair into the metal and back donation into the π* orbital of CO strengthen each other."
+       ],
+       [
+        "In the extraction of gold by cyanide process, gold forms [Au(CN)₂]⁻ in solution in the presence of O₂ and water. Gold metal is then recovered by adding",
+        [
+         "zinc",
+         "more NaCN",
+         "hypo solution",
+         "dilute HCl"
+        ],
+        0,
+        "Zinc displaces gold from the soluble cyanide complex."
+       ],
+       [
+        "Match the biological complex with the metal: chlorophyll, haemoglobin, vitamin B₁₂, and a catalyst used for alkene hydrogenation.",
+        [
+         "Fe, Mg, Co, Pt",
+         "Mg, Fe, Co, Rh",
+         "Mg, Co, Fe, Rh",
+         "Mg, Fe, Rh, Co"
+        ],
+        1,
+        "Chlorophyll (Mg), haemoglobin (Fe), vitamin B₁₂ (Co), Wilkinson catalyst (Rh)."
+       ],
+       [
+        "Impure nickel is converted into a volatile complex that decomposes on heating to give pure nickel. Which complex is formed, and how does EDTA relate to medicine?",
+        [
+         "[Ni(NH₃)₆]²⁺; EDTA treats lead poisoning",
+         "[Ni(CO)₄]; EDTA is an anticancer drug like cis-platin",
+         "[Ni(CO)₄]; EDTA is used in the treatment of lead poisoning",
+         "[Ni(CN)₄]²⁻; EDTA removes excess copper"
+        ],
+        2,
+        "Carbonyl route purifies Ni; chelate therapy uses EDTA for lead poisoning, cis-platin for tumours."
+       ],
+       [
+        "In photography, undecomposed AgBr on the film is removed by hypo solution (Na₂S₂O₃). The complex ion formed is [Ag(S₂O₃)₂]ⁿ⁻. The value of n and the oxidation state of Ag are",
+        [
+         "2 and +1",
+         "3 and +2",
+         "1 and +3",
+         "3 and +1"
+        ],
+        3,
+        "Ag⁺ + 2(S₂O₃²⁻): +1 − 4 = −3; silver remains +1."
+       ]
+      ]
+     ]
+    },
+    {
+     "n": 6,
+     "t": "Haloalkanes and Haloarenes",
+     "levels": [
+      [
+       [
+        "Dichloromethane, chloroform and carbon tetrachloride are classified, respectively, as",
+        [
+         "mono-, di- and trihalogen compounds",
+         "di-, tetra- and trihalogen compounds",
+         "di-, tri- and tetrahalogen compounds",
+         "tri-, di- and tetrahalogen compounds"
+        ],
+        2,
+        "CH₂Cl₂ has two, CHCl₃ three and CCl₄ four halogen atoms."
+       ],
+       [
+        "(CH₃)₂CHCl is classified as a",
+        [
+         "secondary alkyl halide",
+         "primary alkyl halide",
+         "tertiary alkyl halide",
+         "allylic halide"
+        ],
+        0,
+        "Chlorine is on a carbon that is bonded to two other carbon atoms, so the halide is secondary (2°)."
+       ],
+       [
+        "In CH₂=CH–CH₂Br the halogen is attached to an sp³ carbon next to a C=C bond. Such a halide is called",
+        [
+         "a vinylic halide",
+         "a benzylic halide",
+         "an aryl halide",
+         "an allylic halide"
+        ],
+        3,
+        "A halogen on the sp³ carbon adjacent to a carbon–carbon double bond makes an allylic halide."
+       ],
+       [
+        "Which of the following is a benzylic halide?",
+        [
+         "C₆H₅Cl",
+         "C₆H₅CH₂Cl",
+         "C₆H₅CH₂CH₂Cl",
+         "CH₂=CHCl"
+        ],
+        1,
+        "In benzylic halides the halogen is on an sp³ carbon directly attached to the aromatic ring."
+       ],
+       [
+        "In vinyl chloride, CH₂=CHCl, the carbon bonded to chlorine is",
+        [
+         "sp³ hybridised and next to a C=C bond",
+         "sp² hybridised and part of a C=C bond",
+         "sp hybridised",
+         "sp³ hybridised and part of a benzene ring"
+        ],
+        1,
+        "Vinylic halides have the halogen on a doubly bonded sp² carbon."
+       ],
+       [
+        "Chlorobenzene is an aryl halide because the chlorine atom is bonded to",
+        [
+         "an sp³ carbon of an alkyl side chain",
+         "an sp carbon",
+         "a carbon next to a ring",
+         "an sp² carbon of the aromatic ring"
+        ],
+        3,
+        "In aryl halides the halogen is directly bonded to the sp² carbon of an aromatic ring."
+       ],
+       [
+        "The IUPAC name of (CH₃)₃CBr (tert-butyl bromide) is",
+        [
+         "2-bromo-2-methylpropane",
+         "1-bromo-2-methylpropane",
+         "2-bromobutane",
+         "1-bromo-1,1-dimethylethane"
+        ],
+        0,
+        "The parent chain is propane with Br and CH₃ both on C-2 (Table 6.1)."
+       ],
+       [
+        "CH₃CHCl₂ and ClCH₂CH₂Cl are respectively examples of",
+        [
+         "a vic-dihalide and a gem-dihalide",
+         "two gem-dihalides",
+         "a gem-dihalide and a vic-dihalide",
+         "two vic-dihalides"
+        ],
+        2,
+        "Gem-dihalides have both halogens on the same carbon, vic-dihalides on adjacent carbons."
+       ],
+       [
+        "The IUPAC name of benzyl chloride, C₆H₅CH₂Cl, is",
+        [
+         "chlorotoluene",
+         "1-chloro-2-methylbenzene",
+         "chlorobenzene",
+         "chlorophenylmethane"
+        ],
+        3,
+        "Benzyl chloride is named as a halo-substituted methane carrying a phenyl group (Table 6.1)."
+       ],
+       [
+        "o-Dichlorobenzene is named in the IUPAC system as",
+        [
+         "1,3-dichlorobenzene",
+         "1,2-dichlorobenzene",
+         "1,4-dichlorobenzene",
+         "2,3-dichlorobenzene"
+        ],
+        1,
+        "The prefixes o-, m-, p- are replaced by the locants 1,2; 1,3 and 1,4."
+       ],
+       [
+        "In an alkyl halide the carbon–halogen bond is polar because",
+        [
+         "carbon is more electronegative than halogen",
+         "the halogen has a positive charge",
+         "halogens are more electronegative than carbon, so carbon is δ⁺ and halogen δ⁻",
+         "the bond is ionic"
+        ],
+        2,
+        "The electronegativity difference polarises the C–X bond with a partial positive charge on carbon."
+       ],
+       [
+        "From C–F to C–I the carbon–halogen bond length ___ and the bond enthalpy ___.",
+        [
+         "increases; decreases",
+         "decreases; increases",
+         "increases; increases",
+         "decreases; decreases"
+        ],
+        0,
+        "Halogen size increases down the group, giving longer and weaker bonds (CH₃–F 139 pm, 452 kJ mol⁻¹; CH₃–I 214 pm, 234 kJ mol⁻¹)."
+       ],
+       [
+        "Thionyl chloride is the preferred reagent for converting an alcohol to an alkyl chloride because",
+        [
+         "it gives only a tertiary alkyl chloride",
+         "it forms a solid by-product that is easy to filter",
+         "the by-products SO₂ and HCl are gases that escape, leaving a pure product",
+         "it works only without heating"
+        ],
+        2,
+        "R–OH + SOCl₂ → R–Cl + SO₂ + HCl; both side products leave as gases."
+       ],
+       [
+        "Primary and secondary alcohols react with concentrated HCl only in the presence of",
+        [
+         "anhydrous ZnCl₂",
+         "anhydrous AlCl₃",
+         "dilute H₂SO₄",
+         "red phosphorus"
+        ],
+        0,
+        "ZnCl₂ is the catalyst; the order of reactivity of alcohols with haloacids is 3° > 2° > 1°."
+       ],
+       [
+        "Good yields of alkyl iodides from alcohols are obtained by heating the alcohol with KI in",
+        [
+         "concentrated H₂SO₄",
+         "concentrated HNO₃",
+         "aqueous NaOH",
+         "95% orthophosphoric acid"
+        ],
+        3,
+        "H₃PO₄ does not oxidise HI, whereas H₂SO₄ oxidises it to I₂ (NCERT Intext 6.2)."
+       ],
+       [
+        "Phosphorus tribromide used for converting alcohols to bromides is usually generated in situ from",
+        [
+         "white phosphorus and HBr",
+         "red phosphorus and bromine",
+         "PCl₅ and NaBr",
+         "P₂O₅ and Br₂"
+        ],
+        1,
+        "PBr₃ and PI₃ are made in the reaction mixture from red phosphorus with Br₂ or I₂ respectively."
+       ],
+       [
+        "Free radical chlorination of an alkane is a poor method for making a pure alkyl chloride because",
+        [
+         "it gives only polyhalogen compounds",
+         "it gives a complex mixture of isomeric mono- and polyhalogen compounds",
+         "it needs very high pressure",
+         "the product is always an alkene"
+        ],
+        1,
+        "The mixture is hard to separate, so the yield of any single compound is low."
+       ],
+       [
+        "Propene reacts with HBr (no peroxide) to give mainly",
+        [
+         "1-bromopropane",
+         "1,2-dibromopropane",
+         "allyl bromide",
+         "2-bromopropane"
+        ],
+        3,
+        "Addition follows Markovnikov’s rule; the halogen goes to the carbon carrying fewer hydrogens."
+       ],
+       [
+        "Bromine in CCl₄ is added to an alkene. The reddish-brown colour disappears because",
+        [
+         "a colourless vic-dibromide is formed",
+         "a gem-dibromide is formed",
+         "HBr gas is released",
+         "CCl₄ reacts with the alkene"
+        ],
+        0,
+        "Addition of Br₂ across C=C gives a vic-dibromide; this is a test for a double bond."
+       ],
+       [
+        "The Finkelstein reaction converts an alkyl chloride or bromide to an alkyl iodide using",
+        [
+         "KI in water",
+         "AgF in water",
+         "NaI in dry acetone",
+         "I₂ with red phosphorus"
+        ],
+        2,
+        "NaCl or NaBr is insoluble in dry acetone and precipitates, driving the reaction forward (Le Chatelier’s principle)."
+       ],
+       [
+        "Alkyl fluorides are best prepared from alkyl chlorides or bromides by",
+        [
+         "NaI in dry acetone (Finkelstein reaction)",
+         "direct reaction with F₂",
+         "Sandmeyer reaction",
+         "heating with a metallic fluoride such as AgF or Hg₂F₂ (Swarts reaction)"
+        ],
+        3,
+        "Swarts reaction uses AgF, Hg₂F₂, CoF₂ or SbF₃."
+       ],
+       [
+        "Chlorobenzene is prepared from benzene by",
+        [
+         "Cl₂ in sunlight",
+         "Cl₂ in the presence of FeCl₃ or Fe",
+         "HCl with ZnCl₂",
+         "NaCl with H₂SO₄"
+        ],
+        1,
+        "Aryl chlorides and bromides form by electrophilic substitution with a Lewis acid catalyst."
+       ],
+       [
+        "Iodination of benzene is carried out in the presence of an oxidising agent such as HNO₃ because",
+        [
+         "iodine is not electrophilic enough",
+         "HNO₃ acts as a Lewis acid",
+         "the reaction is reversible and the oxidant removes the HI formed",
+         "it prevents formation of the para isomer"
+        ],
+        2,
+        "HNO₃ oxidises HI back to I₂, so the equilibrium shifts towards iodobenzene."
+       ],
+       [
+        "In Sandmeyer’s reaction, benzenediazonium chloride is converted to chlorobenzene by treating it with",
+        [
+         "Cu₂Cl₂ (cuprous chloride)",
+         "KI",
+         "NaOH",
+         "Zn dust"
+        ],
+        0,
+        "The diazonium group is replaced by –Cl or –Br using CuCl or CuBr; iodine needs only KI."
+       ],
+       [
+        "Phenol cannot be converted to chlorobenzene by the reagents used for alcohols (HCl/ZnCl₂, SOCl₂) because",
+        [
+         "phenol is a gas",
+         "the O–H bond in phenol is very weak",
+         "the C–O bond in phenol has partial double bond character and is difficult to break",
+         "chlorobenzene is unstable"
+        ],
+        2,
+        "Resonance gives the C–O bond partial double bond character, making it stronger than a single bond."
+       ],
+       [
+        "For the same alkyl group, the boiling points of alkyl halides follow the order",
+        [
+         "R–I > R–Br > R–Cl > R–F",
+         "R–F > R–Cl > R–Br > R–I",
+         "R–Cl > R–Br > R–I > R–F",
+         "R–Br > R–I > R–F > R–Cl"
+        ],
+        0,
+        "Larger size and mass of the halogen increases van der Waals forces."
+       ],
+       [
+        "Among the isomeric bromobutanes, the lowest boiling point belongs to",
+        [
+         "1-bromobutane",
+         "2-bromobutane",
+         "all have equal boiling points",
+         "2-bromo-2-methylpropane"
+        ],
+        3,
+        "Boiling points of isomeric haloalkanes fall with increased branching."
+       ],
+       [
+        "Which statement about haloalkanes is correct?",
+        [
+         "They are highly soluble in water because they form hydrogen bonds with it",
+         "They are only slightly soluble in water but dissolve in organic solvents",
+         "All are lighter than water",
+         "They have lower boiling points than alkanes of similar mass"
+        ],
+        1,
+        "They cannot replace the strong hydrogen bonds of water; with organic solvents the new attractions are as strong as those broken."
+       ],
+       [
+        "Haloalkanes react with KCN to give mainly alkyl cyanides (R–CN), whereas with AgCN they give mainly",
+        [
+         "amines",
+         "isocyanides (R–NC)",
+         "alcohols",
+         "alkenes"
+        ],
+        1,
+        "KCN is ionic and attacks through carbon; AgCN is covalent so nitrogen donates its pair (NCERT Example 6.5)."
+       ],
+       [
+        "The nitrite ion, NO₂⁻, is an ambident nucleophile. Reaction of R–X with AgNO₂ gives mainly",
+        [
+         "alkyl nitrite (R–O–N=O)",
+         "amine",
+         "ether",
+         "nitroalkane (R–NO₂)"
+        ],
+        3,
+        "AgNO₂ reacts through nitrogen to give nitroalkanes; KNO₂ attacks through oxygen giving alkyl nitrites."
+       ],
+       [
+        "Which reagent converts R–X into an ether R–O–R’?",
+        [
+         "Sodium alkoxide, R’ONa",
+         "Aqueous KOH",
+         "KCN",
+         "LiAlH₄"
+        ],
+        0,
+        "The alkoxide ion R’O⁻ is the nucleophile in this substitution (Table 6.4)."
+       ],
+       [
+        "Which statement describes an SN2 reaction?",
+        [
+         "It has a carbocation intermediate",
+         "Its rate depends only on the concentration of the alkyl halide",
+         "It is a one-step process in which bond formation and bond breaking occur simultaneously",
+         "It is favoured by tertiary halides"
+        ],
+        2,
+        "SN2 is bimolecular with a single transition state and no intermediate; rate = k[R–X][Nu⁻]."
+       ],
+       [
+        "The order of reactivity of simple alkyl halides in SN2 reactions is",
+        [
+         "tertiary > secondary > primary > CH₃X",
+         "secondary > primary > CH₃X > tertiary",
+         "all react at the same rate",
+         "CH₃X > primary > secondary > tertiary"
+        ],
+        3,
+        "Bulky groups hinder approach of the nucleophile, so methyl halides react fastest."
+       ],
+       [
+        "Hydrolysis of tert-butyl bromide with aqueous hydroxide follows first order kinetics because",
+        [
+         "OH⁻ attacks in the slow step",
+         "the slow step is ionisation of the C–Br bond to a carbocation",
+         "the reaction occurs in one step",
+         "the product is a racemic mixture"
+        ],
+        1,
+        "The rate depends only on [t-BuBr], since the rate-determining step is the formation of the carbocation."
+       ],
+       [
+        "SN1 reactions are favoured by",
+        [
+         "methyl halides in polar protic solvents",
+         "tertiary halides with strong bulky nucleophiles in non-polar solvents",
+         "tertiary halides in polar protic solvents",
+         "primary halides in non-polar solvents"
+        ],
+        2,
+        "Stable carbocations form easily and are solvated by polar protic solvents such as water or alcohol."
+       ],
+       [
+        "Which of the following has a chiral (asymmetric) carbon atom?",
+        [
+         "Butan-2-ol",
+         "Propan-2-ol",
+         "Propan-1-ol",
+         "2-Chloropropane"
+        ],
+        0,
+        "Only butan-2-ol has a carbon bearing four different groups (H, OH, CH₃, C₂H₅)."
+       ],
+       [
+        "A racemic mixture is optically inactive because",
+        [
+         "it contains only achiral molecules",
+         "it has no asymmetric carbon",
+         "it contains equal amounts of two enantiomers whose rotations cancel",
+         "light does not pass through it"
+        ],
+        2,
+        "Equal and opposite rotations from the (+) and (–) forms cancel."
+       ],
+       [
+        "Enantiomers differ from each other in",
+        [
+         "the direction in which they rotate plane polarised light",
+         "melting point",
+         "boiling point",
+         "refractive index"
+        ],
+        0,
+        "Enantiomers have identical physical properties except for the sign of optical rotation."
+       ],
+       [
+        "A compound that rotates the plane of plane polarised light clockwise is called",
+        [
+         "laevorotatory, shown as (–)",
+         "racemic, shown as (±)",
+         "achiral",
+         "dextrorotatory, shown as (+)"
+        ],
+        3,
+        "Clockwise rotation is d- or (+); anticlockwise is l- or (–)."
+       ],
+       [
+        "An optically active alkyl halide reacting by the SN2 mechanism gives a product with",
+        [
+         "retention of configuration",
+         "inversion of configuration",
+         "complete racemisation",
+         "no change in the sign of rotation"
+        ],
+        1,
+        "The nucleophile attacks from the side opposite the leaving group, like an umbrella turning inside out."
+       ],
+       [
+        "Hydrolysis of an optically active alkyl halide by the SN1 mechanism gives mainly",
+        [
+         "a single enantiomer with inverted configuration",
+         "a racemic mixture",
+         "a single enantiomer with retained configuration",
+         "an alkene"
+        ],
+        1,
+        "The planar sp² carbocation can be attacked from either face."
+       ],
+       [
+        "A reaction in which no bond to the stereocentre is broken is said to proceed with",
+        [
+         "inversion of configuration",
+         "racemisation",
+         "elimination",
+         "retention of configuration"
+        ],
+        3,
+        "The spatial arrangement of groups around the stereocentre is preserved (the sign of rotation may still change)."
+       ],
+       [
+        "Heating 2-bromopentane with alcoholic KOH gives mainly",
+        [
+         "pent-2-ene",
+         "pent-1-ene",
+         "pentan-2-ol",
+         "pentane"
+        ],
+        0,
+        "β-Elimination follows Saytzeff’s rule: the more substituted alkene is the major product."
+       ],
+       [
+        "Haloalkane heated with aqueous KOH versus alcoholic KOH gives respectively",
+        [
+         "alkene and alcohol",
+         "alcohol and ether",
+         "alcohol (substitution) and alkene (elimination)",
+         "alkene and alkane"
+        ],
+        2,
+        "Aqueous KOH favours nucleophilic substitution; alcoholic KOH favours dehydrohalogenation."
+       ],
+       [
+        "Grignard reagents are prepared by reacting an alkyl halide with magnesium in",
+        [
+         "water",
+         "ethanol",
+         "dilute HCl",
+         "dry ether"
+        ],
+        3,
+        "RMgX reacts with any proton source, so moisture must be excluded."
+       ],
+       [
+        "Bromoethane on heating with sodium metal in dry ether gives (Wurtz reaction)",
+        [
+         "ethane",
+         "butane",
+         "propane",
+         "ethene"
+        ],
+        1,
+        "2 C₂H₅Br + 2 Na → C₄H₁₀ + 2 NaBr; the product has double the number of carbons."
+       ],
+       [
+        "Haloarenes are much less reactive than haloalkanes towards nucleophilic substitution mainly because",
+        [
+         "the halogen is more electronegative in haloarenes",
+         "the carbon is sp³ hybridised",
+         "the C–X bond has partial double bond character and the carbon is sp² hybridised",
+         "haloarenes are non-polar"
+        ],
+        2,
+        "Resonance and sp² carbon make the C–Cl bond shorter and stronger (169 pm versus 177 pm)."
+       ],
+       [
+        "Nucleophilic substitution in chlorobenzene (replacement by –OH) becomes easier when",
+        [
+         "a nitro group is present at the ortho or para position",
+         "a nitro group is present at the meta position only",
+         "an alkyl group is present at the para position",
+         "the temperature is lowered"
+        ],
+        0,
+        "–NO₂ at o/p stabilises the negatively charged intermediate by resonance; meta –NO₂ cannot."
+       ],
+       [
+        "The halogen atom in chlorobenzene is",
+        [
+         "activating and ortho, para-directing",
+         "deactivating and meta-directing",
+         "slightly deactivating and ortho, para-directing",
+         "activating and meta-directing"
+        ],
+        2,
+        "–I effect deactivates the ring while resonance directs the incoming group to o- and p-positions."
+       ],
+       [
+        "A mixture of chlorobenzene and chloromethane heated with sodium in dry ether gives toluene. This is the",
+        [
+         "Wurtz–Fittig reaction",
+         "Fittig reaction",
+         "Wurtz reaction",
+         "Finkelstein reaction"
+        ],
+        0,
+        "An alkyl halide and an aryl halide couple with sodium to give an alkylarene."
+       ],
+       [
+        "Bromobenzene heated with sodium in dry ether gives",
+        [
+         "benzene",
+         "toluene",
+         "phenol",
+         "biphenyl"
+        ],
+        3,
+        "Fittig reaction: two aryl groups are joined together."
+       ],
+       [
+        "Dichloromethane (methylene chloride) is commonly used as",
+        [
+         "an anaesthetic in surgery",
+         "a paint remover and aerosol propellant",
+         "an insecticide",
+         "a refrigerant of the freon type only"
+        ],
+        1,
+        "It is also a process solvent in drug manufacture, but it harms the central nervous system."
+       ],
+       [
+        "Chloroform is stored in closed dark coloured bottles, filled to the top, to prevent its oxidation to",
+        [
+         "carbon tetrachloride",
+         "phosgene (COCl₂)",
+         "chlorine",
+         "formaldehyde"
+        ],
+        1,
+        "Air and light slowly oxidise CHCl₃ to the extremely poisonous carbonyl chloride."
+       ],
+       [
+        "The antiseptic action of iodoform is due to",
+        [
+         "iodoform itself",
+         "its objectionable smell",
+         "carbon monoxide",
+         "the liberation of free iodine"
+        ],
+        3,
+        "Iodoform was replaced by other iodine formulations as it smells unpleasant."
+       ],
+       [
+        "Release of carbon tetrachloride into the atmosphere is a concern because it",
+        [
+         "depletes the ozone layer",
+         "causes acid rain",
+         "forms smog with sulphur dioxide",
+         "makes the air alkaline"
+        ],
+        0,
+        "It rises into the stratosphere, and ozone depletion increases exposure to UV rays."
+       ],
+       [
+        "Freon-12 (CCl₂F₂) is manufactured from tetrachloromethane by",
+        [
+         "Finkelstein reaction",
+         "Sandmeyer reaction",
+         "Swarts reaction",
+         "Wurtz reaction"
+        ],
+        2,
+        "CCl₄ is fluorinated with a metallic fluoride (such as SbF₃) in the Swarts reaction."
+       ],
+       [
+        "Freons are widely used because they are",
+        [
+         "highly reactive and corrosive",
+         "toxic and flammable",
+         "solid at room temperature",
+         "stable, unreactive, non-toxic and easily liquefiable"
+        ],
+        3,
+        "They serve as aerosol propellants and refrigerants, but they reach the stratosphere and upset the ozone balance."
+       ],
+       [
+        "DDT is not easily removed from the environment mainly because",
+        [
+         "it dissolves completely in water",
+         "it is chemically stable and gets stored in fatty tissues of animals",
+         "it is rapidly metabolised by animals",
+         "it evaporates immediately"
+        ],
+        1,
+        "DDT builds up in fat over time; it was the first chlorinated organic insecticide."
+       ]
+      ],
+      [
+       [
+        "How many of the following are dihalogen compounds: CH₂Cl₂, CHCl₃, ClCH₂CH₂Cl, CH₃CHBr₂, CCl₄?",
+        [
+         "2",
+         "4",
+         "3",
+         "5"
+        ],
+        2,
+        "CH₂Cl₂, ClCH₂CH₂Cl and CH₃CHBr₂ have two halogens; CHCl₃ is tri- and CCl₄ is tetrahalo."
+       ],
+       [
+        "Which of the following is a secondary benzylic halide?",
+        [
+         "C₆H₅CH(Cl)CH₃",
+         "C₆H₅CH₂Cl",
+         "C₆H₅CH₂CH₂Cl",
+         "o-CH₃C₆H₄Cl"
+        ],
+        0,
+        "The halogen is on a carbon bonded to the ring and to two carbons in total (ring carbon and CH₃). C₆H₅CH₂CH₂Cl is a primary alkyl halide; o-CH₃C₆H₄Cl is an aryl halide."
+       ],
+       [
+        "A student writes: “CH₂=CH–CH₂Cl and CH₂=CHCl are both vinylic halides because each has C=C and Cl.” The error is that",
+        [
+         "CH₂=CHCl is allylic, while CH₂=CHCH₂Cl is vinylic",
+         "both are aryl halides",
+         "CH₂=CHCH₂Cl is allylic, since Cl is on an sp³ carbon next to the double bond",
+         "both are benzylic halides"
+        ],
+        2,
+        "Only in CH₂=CHCl is the halogen bonded to the sp² carbon of C=C."
+       ],
+       [
+        "The IUPAC name of CH₃CH=C(Cl)CH₂CH(CH₃)₂ is",
+        [
+         "3-chloro-5-methylhex-2-ene",
+         "4-chloro-2-methylhex-4-ene",
+         "2-chloro-4-methylpent-2-ene",
+         "3-chloro-5-methylhex-3-ene"
+        ],
+        0,
+        "Longest chain has six carbons; numbering gives the double bond the lower locant (2), so Cl is on C-3 and CH₃ on C-5 (NCERT Exercise 6.1)."
+       ],
+       [
+        "Of the eight structural isomers of C₅H₁₁Br, how many are primary bromides?",
+        [
+         "3",
+         "1",
+         "2",
+         "4"
+        ],
+        3,
+        "1-Bromopentane, 1-bromo-3-methylbutane, 1-bromo-2-methylbutane and 1-bromo-2,2-dimethylpropane are primary (NCERT Example 6.1)."
+       ],
+       [
+        "Assertion (A): CH₃Cl has a slightly higher dipole moment than CH₃F (1.860 D versus 1.847 D).\nReason (R): Chlorine is more electronegative than fluorine.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        2,
+        "A is true, but fluorine is more electronegative; dipole moment also depends on bond length, and the C–Cl bond is longer."
+       ],
+       [
+        "Going from CH₃F to CH₃I, which pair of changes is correct?",
+        [
+         "Bond length falls and bond enthalpy rises",
+         "Bond length rises from 139 to 214 pm and bond enthalpy falls from 452 to 234 kJ mol⁻¹",
+         "Bond length rises and bond enthalpy also rises",
+         "Both stay nearly the same because carbon is common"
+        ],
+        1,
+        "The larger halogen forms a longer, weaker bond, which is why iodides are the best leaving-group substrates."
+       ],
+       [
+        "Propan-1-ol is heated with SOCl₂ to give A. A is then heated with NaI in dry acetone to give B. B is",
+        [
+         "2-iodopropane",
+         "1-iodopropane",
+         "propan-1-ol",
+         "1-chloropropane"
+        ],
+        1,
+        "SOCl₂ gives CH₃CH₂CH₂Cl; Finkelstein exchange replaces Cl by I."
+       ],
+       [
+        "The most convenient way to prepare tert-butyl chloride from 2-methylpropan-2-ol is",
+        [
+         "heating with dilute HCl and ZnCl₂ for several hours",
+         "heating with NaCl and dilute H₂SO₄",
+         "treating with NaI in dry acetone",
+         "shaking the alcohol with concentrated HCl at room temperature"
+        ],
+        3,
+        "Tertiary alcohols react most readily with haloacids (3° > 2° > 1°), so no ZnCl₂ or heating is needed."
+       ],
+       [
+        "A student prepares iodoethane by heating ethanol with KI and concentrated H₂SO₄. The mistake is that",
+        [
+         "H₂SO₄ oxidises HI to I₂, so 95% H₃PO₄ should be used",
+         "KI cannot supply iodide ions",
+         "ethanol is a tertiary alcohol and needs ZnCl₂",
+         "H₂SO₄ converts ethanol to ethyl chloride"
+        ],
+        0,
+        "Concentrated H₂SO₄ is an oxidising acid; H₃PO₄ is not, so HI survives to react with the alcohol."
+       ],
+       [
+        "Which isomer of C₅H₁₂ gives three isomeric monochlorides on photochemical chlorination?",
+        [
+         "2,2-Dimethylpropane",
+         "2-Methylbutane",
+         "Pentane (n-pentane)",
+         "2-Methylpropane"
+        ],
+        2,
+        "n-Pentane has three types of hydrogen (C-1, C-2, C-3); 2,2-dimethylpropane gives one and 2-methylbutane gives four (NCERT Intext 6.4)."
+       ],
+       [
+        "Propene reacts with HBr to give A. A is converted to a Grignard reagent B in dry ether, and B is then treated with water to give C. C is",
+        [
+         "propene",
+         "propan-2-ol",
+         "2,3-dimethylbutane",
+         "propane"
+        ],
+        3,
+        "A = 2-bromopropane; B = (CH₃)₂CHMgBr; hydrolysis gives propane."
+       ],
+       [
+        "A student claims that propene decolourises Br₂ in CCl₄ to give 1-bromopropane. The error is that",
+        [
+         "no reaction occurs at all",
+         "addition of Br₂ gives 1,2-dibromopropane, a vic-dibromide",
+         "a gem-dibromide is formed",
+         "substitution gives allyl bromide"
+        ],
+        1,
+        "Two Br atoms add across the C=C bond; the colour is discharged."
+       ],
+       [
+        "Assertion (A): The Finkelstein reaction is carried out in dry acetone.\nReason (R): NaCl or NaBr formed is insoluble in dry acetone and separates, shifting the equilibrium forward.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        0,
+        "Precipitation of NaX removes a product, so the equilibrium moves towards R–I (Le Chatelier)."
+       ],
+       [
+        "Ethyl fluoride is best prepared from ethyl bromide using",
+        [
+         "NaF in dry acetone",
+         "F₂ gas in the dark",
+         "Hg₂F₂ or AgF with heating",
+         "HF with ZnCl₂"
+        ],
+        2,
+        "Heating the alkyl bromide with a metallic fluoride such as AgF or Hg₂F₂ is the Swarts reaction."
+       ],
+       [
+        "Aniline in cold aqueous HCl is treated with NaNO₂ to give A, which on treatment with KI gives B. B is",
+        [
+         "iodobenzene",
+         "chlorobenzene",
+         "phenol",
+         "nitrobenzene"
+        ],
+        0,
+        "A is benzenediazonium chloride; replacement by iodine needs no cuprous halide, only KI."
+       ],
+       [
+        "A student suggests preparing bromobenzene from phenol by heating with PBr₃. Why does this fail?",
+        [
+         "PBr₃ is not available",
+         "Phenol is a tertiary alcohol",
+         "The C–O bond of phenol has partial double bond character and does not break easily",
+         "The product would be a gas"
+        ],
+        2,
+        "Aryl halides are made by electrophilic substitution of arenes or via diazonium salts, not from phenols."
+       ],
+       [
+        "Chlorination of toluene with Cl₂ and FeCl₃ in the dark gives o- and p-chlorotoluene. They are conveniently separated because",
+        [
+         "their melting points differ widely",
+         "only the o-isomer is volatile",
+         "only the p-isomer is soluble in water",
+         "the isomers have very different molecular masses"
+        ],
+        0,
+        "NCERT notes that the ortho and para isomers can be separated owing to a large difference in melting points."
+       ],
+       [
+        "The correct order of increasing boiling points of 1-chloropropane, isopropyl chloride and 1-chlorobutane is",
+        [
+         "1-chlorobutane < 1-chloropropane < isopropyl chloride",
+         "1-chloropropane < isopropyl chloride < 1-chlorobutane",
+         "isopropyl chloride < 1-chlorobutane < 1-chloropropane",
+         "isopropyl chloride < 1-chloropropane < 1-chlorobutane"
+        ],
+        3,
+        "Branching lowers the boiling point; a higher molecular mass raises it (NCERT Intext 6.6)."
+       ],
+       [
+        "The correct order of increasing boiling points of CH₃Cl, CH₃Br, CH₂Br₂ and CHBr₃ is",
+        [
+         "CHBr₃ < CH₂Br₂ < CH₃Br < CH₃Cl",
+         "CH₃Cl < CH₃Br < CH₂Br₂ < CHBr₃",
+         "CH₃Br < CH₃Cl < CH₂Br₂ < CHBr₃",
+         "CH₃Cl < CH₂Br₂ < CH₃Br < CHBr₃"
+        ],
+        1,
+        "Boiling point rises with the size and number of halogen atoms (NCERT Intext 6.6)."
+       ],
+       [
+        "Assertion (A): Boiling points of isomeric bromobutanes increase with increased branching.\nReason (R): Branching reduces the surface area of the molecule and so weakens van der Waals forces.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        3,
+        "A is false: branched isomers boil lower, and R correctly explains why."
+       ],
+       [
+        "p-Dichlorobenzene has a much higher melting point than o- and m-dichlorobenzene, while their boiling points are nearly equal. The best reason for the melting point difference is that",
+        [
+         "its dipole moment is largest",
+         "the symmetrical para isomer packs better in the crystal lattice",
+         "it has the highest molar mass",
+         "it forms hydrogen bonds"
+        ],
+        1,
+        "Symmetry allows better fit in the crystal lattice, raising the melting point."
+       ],
+       [
+        "Bromoethane is treated separately with KCN and AgCN. The main products are respectively",
+        [
+         "CH₃CH₂NC and CH₃CH₂CN",
+         "CH₃CH₂CN in both",
+         "CH₃CH₂NC in both",
+         "CH₃CH₂CN and CH₃CH₂NC"
+        ],
+        3,
+        "KCN is ionic and attacks through C (stronger C–C bond); AgCN is covalent so N is free to donate its pair (NCERT Example 6.5)."
+       ],
+       [
+        "A student says: “Ethyl bromide with AgNO₂ gives ethyl nitrite as main product, because NO₂⁻ attacks through oxygen.” The correct statement is that",
+        [
+         "AgNO₂ gives nitroethane; ethyl nitrite arises from KNO₂",
+         "no reaction occurs with AgNO₂",
+         "AgNO₂ gives ethanol",
+         "KNO₂ gives nitroethane and AgNO₂ gives ethyl nitrite"
+        ],
+        0,
+        "AgNO₂ reacts through nitrogen to give R–NO₂; ionic KNO₂ reacts through oxygen to give R–ONO."
+       ],
+       [
+        "Which pair of reagents will convert bromoethane into diethyl ether and into ethane respectively?",
+        [
+         "aq. KOH; C₂H₅ONa",
+         "LiAlH₄; C₂H₅ONa",
+         "C₂H₅ONa; LiAlH₄",
+         "KCN; aq. KOH"
+        ],
+        2,
+        "Alkoxide ion as nucleophile gives the ether; hydride from LiAlH₄ replaces Br with H to give the alkane (Table 6.4)."
+       ],
+       [
+        "Case: Compound X, C₂H₅Br, gives product P with aqueous KOH, product Q with KCN and product R with AgNO₂ (main product in each case). Identify P, Q and R.",
+        [
+         "C₂H₅OH, C₂H₅NC, C₂H₅ONO",
+         "CH₂=CH₂, C₂H₅CN, C₂H₅ONO",
+         "C₂H₅OH, C₂H₅NC, C₂H₅NO₂",
+         "C₂H₅OH, C₂H₅CN, C₂H₅NO₂"
+        ],
+        3,
+        "Aqueous KOH substitutes to give ethanol; KCN gives the cyanide through C; AgNO₂ gives the nitro compound through N."
+       ],
+       [
+        "For the reaction R–Br + OH⁻ (SN2), rate = k[R–Br][OH⁻]. If [R–Br] is tripled and [OH⁻] is halved, the rate changes by a factor of",
+        [
+         "3",
+         "1.5",
+         "6",
+         "0.5"
+        ],
+        1,
+        "New rate = 3 × ½ = 1.5 times the original.",
+        "Second order: multiply the changes in each concentration."
+       ],
+       [
+        "Assertion (A): In SN2 reactions the reactivity of alkyl halides follows primary > secondary > tertiary.\nReason (R): Tertiary carbocations are more stable than secondary carbocations.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        1,
+        "A is true because of steric hindrance to the incoming nucleophile; R is true but relates to SN1, not the reason for the SN2 order."
+       ],
+       [
+        "Which compound reacts faster with a nucleophile by the SN2 mechanism: CH₃CH₂CH₂CH₂Br or (CH₃)₂CHCH₂Br, and C₂H₅I or C₂H₅Cl?",
+        [
+         "(CH₃)₂CHCH₂Br and C₂H₅I",
+         "CH₃CH₂CH₂CH₂Br and C₂H₅Cl",
+         "CH₃CH₂CH₂CH₂Br and C₂H₅I",
+         "(CH₃)₂CHCH₂Br and C₂H₅Cl"
+        ],
+        2,
+        "Branching near the reaction centre slows SN2 (NCERT Example 6.7), and iodide is a better leaving group than chloride (R–I > R–Br > R–Cl)."
+       ],
+       [
+        "For hydrolysis of tert-butyl bromide, rate = k[(CH₃)₃CBr]. If [(CH₃)₃CBr] is halved and [OH⁻] is tripled, the rate changes by a factor of",
+        [
+         "0.5",
+         "1.5",
+         "3",
+         "0.25"
+        ],
+        0,
+        "SN1 rate is independent of [OH⁻], so the rate simply halves."
+       ],
+       [
+        "Which bromide undergoes SN1 hydrolysis faster: C₆H₅CH(C₆H₅)Br or C₆H₅CH(CH₃)Br?",
+        [
+         "C₆H₅CH(CH₃)Br, because CH₃ is smaller",
+         "Both react at the same rate",
+         "C₆H₅CH(C₆H₅)Br, because its carbocation is stabilised by two phenyl groups through resonance",
+         "C₆H₅CH(CH₃)Br, because phenyl is bulkier than CH₃"
+        ],
+        2,
+        "Greater carbocation stability means faster SN1 (NCERT Example 6.7)."
+       ],
+       [
+        "Assertion (A): Benzyl chloride undergoes SN1 reaction much faster than ethyl chloride.\nReason (R): The benzylic carbocation is stabilised by resonance with the benzene ring.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        0,
+        "Resonance stabilisation of the carbocation speeds up the rate-determining ionisation."
+       ],
+       [
+        "Case: The hydrolysis of a bromide R–Br with aqueous alkali has rate = k[R–Br], and optically active R–Br gives an optically inactive alcohol. Which conclusion is correct?",
+        [
+         "SN1 mechanism through a planar carbocation intermediate",
+         "SN2 mechanism with inversion",
+         "SN2 mechanism with retention",
+         "Elimination through a cyclic transition state"
+        ],
+        0,
+        "First order kinetics and racemisation both point to SN1."
+       ],
+       [
+        "Among 2-chlorobutane, 2-bromopropane, bromochloroiodomethane (BrClCHI) and 3-chloropentane, how many are chiral?",
+        [
+         "1",
+         "3",
+         "4",
+         "2"
+        ],
+        3,
+        "Only 2-chlorobutane and BrClCHI have a carbon with four different groups."
+       ],
+       [
+        "A pure (+) enantiomer rotates plane polarised light by +48° under given conditions. A mixture of 70% (+) and 30% (–) enantiomers will rotate it by about",
+        [
+         "+33.6°",
+         "+19.2°",
+         "+14.4°",
+         "0°"
+        ],
+        1,
+        "Net excess of (+) is 70 – 30 = 40%, so rotation = 0.40 × 48 = 19.2°.",
+        "Only the excess of one enantiomer over the other contributes."
+       ],
+       [
+        "Which statement about enantiomers is correct?",
+        [
+         "The (+) isomer always has the R configuration",
+         "They have identical melting points and boiling points, but rotate plane polarised light in opposite directions by equal amounts",
+         "They have different boiling points",
+         "They are always meso compounds"
+        ],
+        1,
+        "The sign of optical rotation is not necessarily related to the absolute configuration."
+       ],
+       [
+        "Assertion (A): An optically active halide reacting by the SN2 mechanism gives a product with inverted configuration.\nReason (R): SN2 reactions proceed through a planar carbocation.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        2,
+        "A is true as the nucleophile attacks from the back side, but SN2 has no carbocation; planar carbocations belong to SN1."
+       ],
+       [
+        "A student heats (–)-2-methylbutan-1-ol with concentrated HCl and obtains (+)-1-chloro-2-methylbutane. She concludes that inversion occurred because the sign of rotation changed. The error is that",
+        [
+         "inversion happens only in SN1",
+         "the reaction is racemisation",
+         "the sign of rotation always reverses on retention",
+         "no bond to the stereocentre was broken, so configuration is retained; the sign of rotation need not match"
+        ],
+        3,
+        "The C–O bond broken is not at the stereocentre; two compounds with the same configuration may have different signs of rotation."
+       ],
+       [
+        "(–)-2-Bromooctane reacts with NaOH to give (+)-octan-2-ol by SN2 mechanism. The same bromide hydrolysed by an SN1 route would give",
+        [
+         "an optically inactive (racemic) octan-2-ol",
+         "only (+)-octan-2-ol",
+         "only (–)-octan-2-ol",
+         "oct-1-ene exclusively"
+        ],
+        0,
+        "SN2 gives inversion; SN1 passes through a planar carbocation attacked from both sides, giving a racemic mixture."
+       ],
+       [
+        "2-Bromobutane is heated with alcoholic KOH. The major product is",
+        [
+         "but-1-ene",
+         "butan-2-ol",
+         "but-2-ene",
+         "butane"
+        ],
+        2,
+        "Saytzeff’s rule: the alkene with more alkyl groups on the double bond is preferred."
+       ],
+       [
+        "A student writes: “2-Bromopentane with alcoholic KOH gives mainly pent-1-ene by Saytzeff’s rule.” What is wrong?",
+        [
+         "The reaction gives pentan-2-ol only",
+         "The reaction gives pentane",
+         "Saytzeff’s rule favours the least substituted alkene",
+         "Saytzeff’s rule gives the more substituted alkene, pent-2-ene, as the major product"
+        ],
+        3,
+        "Pent-2-ene has two alkyl groups on the double bond versus one in pent-1-ene."
+       ],
+       [
+        "1-Bromopropane is heated with alcoholic KOH to give A, and A is treated with HBr to give B. B is",
+        [
+         "1-bromopropane",
+         "2-bromopropane",
+         "propan-1-ol",
+         "1,2-dibromopropane"
+        ],
+        1,
+        "A is propene; HBr adds by Markovnikov’s rule to give 2-bromopropane."
+       ],
+       [
+        "Which of the following best explains why a bulkier base or nucleophile favours elimination over substitution?",
+        [
+         "It is a weaker base",
+         "It cannot reach hydrogen atoms",
+         "It finds it easier to abstract a peripheral β-hydrogen than to approach the crowded carbon",
+         "It prefers to break the C–C bond"
+        ],
+        2,
+        "A bulky nucleophile prefers to act as a base and remove a proton (steric reasons)."
+       ],
+       [
+        "Case: Compound A, C₄H₉Br, is optically active. On heating with alcoholic KOH it gives B as the major product. A and B are",
+        [
+         "2-bromobutane and but-2-ene",
+         "1-bromobutane and but-1-ene",
+         "2-bromo-2-methylpropane and 2-methylpropene",
+         "1-bromo-2-methylpropane and but-2-ene"
+        ],
+        0,
+        "Only 2-bromobutane among the C₄H₉Br isomers is chiral; elimination follows Saytzeff’s rule."
+       ],
+       [
+        "CH₃CH₂Br is converted to a Grignard reagent A in dry ether and A is treated with ethanol to give B. B is",
+        [
+         "butane",
+         "ethene",
+         "ethane",
+         "diethyl ether"
+        ],
+        2,
+        "CH₃CH₂MgBr takes a proton from the alcohol (or water) to give the hydrocarbon."
+       ],
+       [
+        "Isopropyl chloride is heated with sodium in dry ether. The product is",
+        [
+         "2,3-dimethylbutane",
+         "hexane",
+         "propane",
+         "2-methylpentane"
+        ],
+        0,
+        "Wurtz reaction joins two isopropyl groups: (CH₃)₂CH–CH(CH₃)₂."
+       ],
+       [
+        "From 10.9 g of bromoethane (molar mass 109 g mol⁻¹) and excess sodium in dry ether, the maximum mass of butane (58 g mol⁻¹) obtained is",
+        [
+         "5.8 g",
+         "1.45 g",
+         "5.45 g",
+         "2.9 g"
+        ],
+        3,
+        "0.1 mol of C₂H₅Br gives 0.05 mol of C₄H₁₀ (2 RX → R–R), so 0.05 × 58 = 2.9 g.",
+        "Two moles of halide give one mole of alkane."
+       ],
+       [
+        "Why must the preparation of a Grignard reagent be carried out in dry ether?",
+        [
+         "Ether acts as a dehydrating agent for Mg",
+         "RMgX reacts with water to give a hydrocarbon",
+         "Water oxidises magnesium to Mg²⁺ before reaction",
+         "Ether supplies the halogen"
+        ],
+        1,
+        "Even traces of water, alcohol or amines protonate the highly reactive C–Mg bond."
+       ],
+       [
+        "1.85 g of C₄H₉Cl (92.5 g mol⁻¹) is fully hydrolysed with aqueous KOH, and the chloride ion is precipitated with excess AgNO₃. The mass of AgCl (143.5 g mol⁻¹) formed is",
+        [
+         "1.43 g",
+         "2.87 g",
+         "5.74 g",
+         "2.65 g"
+        ],
+        1,
+        "1.85 / 92.5 = 0.02 mol of Cl⁻, so 0.02 × 143.5 = 2.87 g of AgCl."
+       ],
+       [
+        "Assertion (A): Chlorobenzene is much less reactive than chloroethane towards nucleophilic substitution.\nReason (R): The C–Cl bond in chlorobenzene has partial double bond character due to resonance.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        0,
+        "Resonance shortens and strengthens the C–Cl bond; sp² hybridisation adds to this effect."
+       ],
+       [
+        "A student explains that chlorobenzene could undergo SN1 because the phenyl cation is stabilised by resonance. The error is that",
+        [
+         "the phenyl cation is a free radical",
+         "SN1 occurs only for tertiary halides",
+         "the phenyl cation is planar and chiral",
+         "the phenyl cation is not stabilised by resonance, so SN1 is ruled out"
+        ],
+        3,
+        "The empty orbital lies in the plane of the ring and cannot overlap with the π system."
+       ],
+       [
+        "The correct order of reactivity of chlorobenzene (I), 4-nitrochlorobenzene (II) and 2,4-dinitrochlorobenzene (III) towards hydroxide is",
+        [
+         "III > II > I",
+         "I > II > III",
+         "II > III > I",
+         "I > III > II"
+        ],
+        0,
+        "–NO₂ groups at ortho and para positions stabilise the intermediate carbanion, so more such groups increase reactivity."
+       ],
+       [
+        "Chlorobenzene (112.5 g mol⁻¹) is converted to phenol (94 g mol⁻¹) with aqueous NaOH at 623 K and 300 atm in 80% yield. The mass of phenol from 22.5 g of chlorobenzene is",
+        [
+         "18.8 g",
+         "18.0 g",
+         "15.04 g",
+         "11.3 g"
+        ],
+        2,
+        "22.5/112.5 = 0.2 mol; 0.2 × 0.80 × 94 = 15.04 g."
+       ],
+       [
+        "Why does a –NO₂ group at the meta position not increase the reactivity of chlorobenzene towards nucleophilic substitution?",
+        [
+         "The –NO₂ group is electron-donating at meta",
+         "The meta isomer has no chlorine atom",
+         "The intermediate is a carbocation",
+         "None of the resonating structures of the intermediate places the negative charge on the carbon bearing –NO₂"
+        ],
+        3,
+        "Only at o- and p-positions can –NO₂ stabilise the negative charge of the carbanion intermediate."
+       ],
+       [
+        "Although chlorine withdraws electrons by the –I effect, chlorobenzene undergoes nitration mainly at o- and p-positions because",
+        [
+         "the –I effect directs the group to meta",
+         "resonance (+R) directs the incoming group to o/p while the stronger –I effect only decides overall reactivity",
+         "chlorine activates the ring strongly",
+         "the ring is attacked by nucleophiles"
+        ],
+        1,
+        "Reactivity is controlled by the stronger inductive effect and orientation by resonance (NCERT Example 6.9)."
+       ],
+       [
+        "Chlorobenzene reacts with CH₃COCl in the presence of anhydrous AlCl₃. The products are mainly",
+        [
+         "meta-chloroacetophenone",
+         "chlorobenzene with acetyl at the ring chlorine",
+         "ortho- and para-chloroacetophenone, with para predominating",
+         "phenol and ethanoic acid"
+        ],
+        2,
+        "Friedel–Crafts acylation occurs at positions ortho and para to the halogen; the reaction is slower than in benzene."
+       ],
+       [
+        "A mixture of bromobenzene and bromomethane is heated with sodium in dry ether. The products that can form include",
+        [
+         "toluene, biphenyl and ethane",
+         "only toluene",
+         "phenol and methanol",
+         "benzene and methane"
+        ],
+        0,
+        "Wurtz–Fittig gives toluene; side reactions give biphenyl (Fittig) and ethane (Wurtz)."
+       ],
+       [
+        "Ethylbenzene can be prepared from chlorobenzene and chloroethane using",
+        [
+         "aqueous NaOH at 623 K",
+         "alcoholic KOH",
+         "sodium in dry ether (Wurtz–Fittig reaction)",
+         "Zn dust"
+        ],
+        2,
+        "An alkyl halide and an aryl halide couple with sodium in dry ether to give an alkylarene."
+       ],
+       [
+        "Which statement about dichloromethane is correct?",
+        [
+         "It is used as a paint remover and as a solvent; exposure harms the central nervous system",
+         "It is used as a general anaesthetic",
+         "It is used as an antiseptic because it liberates iodine",
+         "It is non-toxic and safe to inhale"
+        ],
+        0,
+        "Higher levels in air cause dizziness, nausea and numbness; skin contact causes burning."
+       ],
+       [
+        "Assertion (A): Chloroform is stored in dark coloured bottles filled completely.\nReason (R): In air and light it is slowly oxidised to the poisonous gas phosgene.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        0,
+        "Excluding air and light prevents the formation of carbonyl chloride, COCl₂."
+       ],
+       [
+        "Chloroform is used mainly today for the manufacture of",
+        [
+         "DDT",
+         "iodoform",
+         "dichloromethane",
+         "freon refrigerant R-22"
+        ],
+        3,
+        "Its major use now is in production of R-22; it has been replaced as an anaesthetic by ether."
+       ],
+       [
+        "A student states: “Iodoform is an antiseptic because iodoform molecules themselves kill bacteria.” The error is that",
+        [
+         "it is not an antiseptic at all, only a solvent",
+         "the antiseptic action is due to the iodine liberated from it",
+         "chlorine is liberated",
+         "it acts through phosgene"
+        ],
+        1,
+        "Its objectionable smell led to its replacement by other iodine formulations."
+       ],
+       [
+        "Which pair of statements about tetrachloromethane is correct?",
+        [
+         "It is a safe cleaning fluid and is non-toxic",
+         "It is used to make freons and has been linked to liver cancer and ozone depletion",
+         "It is used as an anaesthetic and is harmless to the ozone layer",
+         "It is a refrigerant that is rapidly degraded in the troposphere"
+        ],
+        1,
+        "CCl₄ is a feedstock for CFCs, its use as cleaning fluid was stopped, and it depletes the ozone layer."
+       ],
+       [
+        "Case: A refrigerant gas is stable, non-toxic, non-corrosive and easily liquefied. It is made from CCl₄ by Swarts reaction, but it escapes into the stratosphere. Identify the compound and the harm.",
+        [
+         "Chloroform; it forms phosgene in the stratosphere",
+         "DDT; it accumulates in fat",
+         "Iodoform; it liberates iodine",
+         "Freon-12 (CCl₂F₂); it starts radical chain reactions that deplete ozone"
+        ],
+        3,
+        "Freons diffuse unchanged into the stratosphere and upset the natural ozone balance."
+       ],
+       [
+        "DDT was banned in many countries mainly because it",
+        [
+         "persists in the environment and builds up in fatty tissues, and insects develop resistance",
+         "is a strong acid",
+         "is highly volatile and burns the skin immediately",
+         "is quickly metabolised to harmless products"
+        ],
+        0,
+        "It is not metabolised rapidly; steady intake leads to accumulation, and it is highly toxic to fish."
+       ]
+      ]
+     ]
+    },
+    {
+     "n": 7,
+     "t": "Alcohols, Phenols and Ethers",
+     "levels": [
+      [
+       [
+        "Propan-2-ol, CH₃CH(OH)CH₃, is classified as a",
+        [
+         "primary alcohol",
+         "secondary alcohol",
+         "tertiary alcohol",
+         "allylic alcohol"
+        ],
+        1,
+        "The –OH carbon is bonded to two other carbon atoms, so the alcohol is secondary."
+       ],
+       [
+        "Glycerol, HOCH₂CH(OH)CH₂OH, is a",
+        [
+         "trihydric alcohol",
+         "monohydric alcohol",
+         "dihydric alcohol",
+         "trihydric phenol"
+        ],
+        0,
+        "It has three –OH groups on sp³ carbons, so it is a trihydric alcohol."
+       ],
+       [
+        "In which compound is the –OH group attached to an sp³ carbon next to a C=C bond, making it an allylic alcohol?",
+        [
+         "CH₂=CH–OH",
+         "C₆H₅CH₂OH",
+         "CH₂=CH–CH₂OH",
+         "C₆H₅OH"
+        ],
+        2,
+        "In CH₂=CH–CH₂OH the carbinol carbon is sp³ and adjacent to the double bond. CH₂=CH–OH is vinylic and C₆H₅CH₂OH is benzylic."
+       ],
+       [
+        "Benzyl alcohol, C₆H₅CH₂OH, is called a benzylic alcohol because its –OH group is",
+        [
+         "attached directly to a carbon of the benzene ring",
+         "attached to an sp² carbon of a C=C bond",
+         "one of two –OH groups on the ring",
+         "attached to an sp³ carbon atom next to the benzene ring"
+        ],
+        3,
+        "A benzylic alcohol has the –OH on an sp³ carbon directly attached to an aromatic ring."
+       ],
+       [
+        "Vinyl alcohol, CH₂=CH–OH, contains the –OH group bonded to",
+        [
+         "an sp² hybridised vinylic carbon",
+         "an sp³ hybridised carbon",
+         "an sp hybridised carbon",
+         "an allylic carbon"
+        ],
+        0,
+        "Alcohols with C(sp²)–OH, vinylic or aryl carbon, are one class; those with C(sp³)–OH form the other."
+       ],
+       [
+        "Catechol, resorcinol and hydroquinone are all",
+        [
+         "dihydric phenols",
+         "monohydric phenols",
+         "trihydric phenols",
+         "dihydric alcohols"
+        ],
+        0,
+        "They are the 1,2-, 1,3- and 1,4-benzenediols, each with two –OH groups on the benzene ring."
+       ],
+       [
+        "Which of the following is a symmetrical (simple) ether?",
+        [
+         "C₂H₅OCH₃",
+         "C₂H₅OC₆H₅",
+         "C₂H₅OC₂H₅",
+         "CH₃OC₆H₅"
+        ],
+        2,
+        "Both groups on oxygen are the same (ethyl) in diethyl ether; the others are mixed ethers."
+       ],
+       [
+        "The IUPAC name of (CH₃)₃C–OH is",
+        [
+         "butan-2-ol",
+         "2-methylpropan-1-ol",
+         "butan-1-ol",
+         "2-methylpropan-2-ol"
+        ],
+        3,
+        "The longest chain is propane; –OH and CH₃ are both on C-2 (tert-butyl alcohol)."
+       ],
+       [
+        "Benzene-1,2-diol is the IUPAC name of",
+        [
+         "resorcinol",
+         "catechol",
+         "hydroquinone",
+         "o-cresol"
+        ],
+        1,
+        "Catechol is benzene-1,2-diol; resorcinol is 1,3- and hydroquinone is 1,4-."
+       ],
+       [
+        "The IUPAC name of anisole, C₆H₅OCH₃, is",
+        [
+         "methoxybenzene",
+         "phenoxymethane",
+         "methylphenol",
+         "benzyl alcohol"
+        ],
+        0,
+        "Ethers are named as alkoxy derivatives of the larger group, here benzene."
+       ],
+       [
+        "The common name of CH₃CH(OH)CH₃ is",
+        [
+         "n-propyl alcohol",
+         "sec-butyl alcohol",
+         "isopropyl alcohol",
+         "isobutyl alcohol"
+        ],
+        2,
+        "The alkyl group is isopropyl, so the common name is isopropyl alcohol (IUPAC: propan-2-ol)."
+       ],
+       [
+        "The C–O–H bond angle in alcohols is slightly less than the tetrahedral angle (109°28′) because of",
+        [
+         "repulsion between the two alkyl groups",
+         "repulsion between the unshared electron pairs of oxygen",
+         "partial double bond character of the C–O bond",
+         "hydrogen bonding between molecules"
+        ],
+        1,
+        "The two lone pairs on oxygen repel the bond pairs and squeeze the angle."
+       ],
+       [
+        "The C–O bond in phenol (136 pm) is shorter than in methanol mainly because",
+        [
+         "phenol has more hydrogen bonding",
+         "the carbon is sp³ hybridised in phenol",
+         "the oxygen in phenol is sp² hybridised only",
+         "the carbon is sp² hybridised and the oxygen lone pair conjugates with the ring"
+        ],
+        3,
+        "Both the sp² state of carbon and the partial double bond character from conjugation shorten the bond."
+       ],
+       [
+        "Acid-catalysed hydration of propene (dilute H₂SO₄) gives mainly",
+        [
+         "propan-1-ol",
+         "propan-2-ol",
+         "propanal",
+         "propanone"
+        ],
+        1,
+        "Water adds according to Markovnikov’s rule through the more stable secondary carbocation."
+       ],
+       [
+        "Hydroboration–oxidation (B₂H₆, then H₂O₂/NaOH) of propene gives mainly",
+        [
+         "propan-1-ol",
+         "propan-2-ol",
+         "propanal",
+         "propane-1,2-diol"
+        ],
+        0,
+        "Boron attaches to the carbon bearing more hydrogens, so the net addition of water is anti-Markovnikov."
+       ],
+       [
+        "Reduction of propanone with NaBH₄ gives",
+        [
+         "propan-1-ol",
+         "propanal",
+         "propan-2-ol",
+         "propane"
+        ],
+        2,
+        "Ketones are reduced to secondary alcohols, aldehydes to primary alcohols."
+       ],
+       [
+        "Which reagent reduces a carboxylic acid RCOOH directly to a primary alcohol in excellent yield?",
+        [
+         "LiAlH₄ followed by H₂O",
+         "H₂O/H⁺",
+         "PCC",
+         "Zn dust"
+        ],
+        0,
+        "LiAlH₄ is a strong reducing agent that converts RCOOH to RCH₂OH."
+       ],
+       [
+        "Methylmagnesium bromide reacts with methanal; hydrolysis of the adduct gives",
+        [
+         "methanol",
+         "propan-2-ol",
+         "ethanal",
+         "ethanol"
+        ],
+        3,
+        "CH₃MgBr adds to HCHO to give CH₃CH₂OMgBr, which hydrolyses to ethanol, a primary alcohol."
+       ],
+       [
+        "Most of the world’s phenol is made by oxidising cumene with air and treating the hydroperoxide with dilute acid. The by-product is",
+        [
+         "ethanal",
+         "propanone (acetone)",
+         "benzene",
+         "propan-2-ol"
+        ],
+        1,
+        "Cumene hydroperoxide splits into phenol and acetone."
+       ],
+       [
+        "Chlorobenzene is converted to phenol by",
+        [
+         "fusion with NaOH at 623 K and 320 atm, then acidification",
+         "warming with water at 298 K",
+         "refluxing with aqueous NaOH at 373 K only",
+         "treating with dilute HCl"
+        ],
+        0,
+        "The unreactive C–Cl bond of an aryl halide needs drastic conditions; sodium phenoxide is acidified to phenol."
+       ],
+       [
+        "Warming benzenediazonium chloride with water gives",
+        [
+         "chlorobenzene and N₂",
+         "aniline and HNO₂",
+         "benzene and N₂",
+         "phenol, N₂ and HCl"
+        ],
+        3,
+        "The diazonium group is replaced by –OH on hydrolysis."
+       ],
+       [
+        "Ethanol boils at a much higher temperature than methoxymethane of nearly equal molecular mass because",
+        [
+         "ethanol molecules form intermolecular hydrogen bonds",
+         "ethanol has a higher dipole moment than any ether",
+         "methoxymethane is non-polar",
+         "ethanol has stronger covalent bonds"
+        ],
+        0,
+        "Hydrogen bonding through –OH is present in alcohols but not in ethers."
+       ],
+       [
+        "The solubility of alcohols in water decreases as the alkyl chain gets longer because",
+        [
+         "the –OH group becomes non-polar",
+         "the hydrophobic alkyl part grows larger",
+         "hydrogen bonding with water stops completely",
+         "the molecular mass decreases"
+        ],
+        1,
+        "The –OH group still hydrogen bonds with water, but a bigger hydrocarbon part reduces solubility."
+       ],
+       [
+        "Which of the following is the most acidic?",
+        [
+         "CH₃CH₂OH",
+         "(CH₃)₂CHOH",
+         "CH₃OH",
+         "(CH₃)₃COH"
+        ],
+        2,
+        "Electron-releasing alkyl groups reduce the O–H polarity, so acid strength: CH₃OH > primary > secondary > tertiary."
+       ],
+       [
+        "Ethanol and phenol are each shaken with aqueous NaOH. What happens?",
+        [
+         "phenol dissolves forming sodium phenoxide; ethanol does not react",
+         "both form sodium salts",
+         "ethanol dissolves; phenol does not",
+         "neither reacts"
+        ],
+        0,
+        "Phenol is a stronger acid than water, but ethanol is weaker than water."
+       ],
+       [
+        "Phenol is more acidic than ethanol mainly because",
+        [
+         "phenol has fewer hydrogen atoms",
+         "phenoxide has its charge localised on oxygen",
+         "the benzene ring donates electrons to oxygen",
+         "the phenoxide ion is stabilised by delocalisation of its negative charge"
+        ],
+        3,
+        "In phenoxide the charge spreads over the ring, whereas it stays on oxygen in ethoxide."
+       ],
+       [
+        "Compared with phenol, p-nitrophenol and p-cresol are respectively",
+        [
+         "more acidic and less acidic",
+         "less acidic and more acidic",
+         "both more acidic",
+         "both less acidic"
+        ],
+        0,
+        "The –NO₂ group withdraws electrons and stabilises the phenoxide; the alkyl group releases electrons."
+       ],
+       [
+        "Acetylation of salicylic acid with acetic anhydride gives",
+        [
+         "salicylaldehyde",
+         "phenol",
+         "aspirin",
+         "methyl salicylate"
+        ],
+        2,
+        "Introducing the CH₃CO group on the phenolic –OH gives 2-acetoxybenzoic acid (aspirin)."
+       ],
+       [
+        "A tertiary alcohol shows turbidity immediately with Lucas reagent. Lucas reagent is",
+        [
+         "dilute HCl and Zn dust",
+         "conc. HCl and anhydrous ZnCl₂",
+         "conc. H₂SO₄ and KMnO₄",
+         "PCl₅ in pyridine"
+        ],
+        1,
+        "Tertiary alcohols form the insoluble alkyl chloride fastest; primary ones give no turbidity at room temperature."
+       ],
+       [
+        "Heating ethanol with conc. H₂SO₄ at 443 K gives mainly",
+        [
+         "ethene",
+         "ethoxyethane",
+         "ethanal",
+         "ethyl hydrogensulphate only"
+        ],
+        0,
+        "At 443 K dehydration to the alkene is the main course; at 413 K the ether forms."
+       ],
+       [
+        "Pyridinium chlorochromate (PCC) oxidises a primary alcohol to",
+        [
+         "a carboxylic acid",
+         "a ketone",
+         "an aldehyde",
+         "an alkene"
+        ],
+        2,
+        "PCC stops at the aldehyde stage, unlike acidified KMnO₄ which gives the acid."
+       ],
+       [
+        "Which of the following is not oxidised by chromic anhydride under mild conditions?",
+        [
+         "propan-2-ol",
+         "propan-1-ol",
+         "butan-2-ol",
+         "2-methylpropan-2-ol"
+        ],
+        3,
+        "Tertiary alcohols have no hydrogen on the carbinol carbon, so they resist oxidation."
+       ],
+       [
+        "Phenol reacts with bromine water to give",
+        [
+         "o-bromophenol only",
+         "a white precipitate of 2,4,6-tribromophenol",
+         "p-bromophenol only",
+         "bromobenzene"
+        ],
+        1,
+        "The strongly activating –OH group makes all ortho and para positions react in water."
+       ],
+       [
+        "Dilute HNO₃ at 298 K nitrates phenol to o- and p-nitrophenols. They are separated by steam distillation because",
+        [
+         "o-nitrophenol is steam volatile due to intramolecular hydrogen bonding",
+         "p-nitrophenol is steam volatile",
+         "both are equally volatile",
+         "o-nitrophenol is ionic"
+        ],
+        0,
+        "Intramolecular H-bonding keeps o-nitrophenol as single molecules; p-isomer is associated by intermolecular H-bonds."
+       ],
+       [
+        "Kolbe’s reaction of sodium phenoxide with CO₂ followed by acidification gives mainly",
+        [
+         "salicylaldehyde",
+         "benzoic acid",
+         "salicylic acid (2-hydroxybenzoic acid)",
+         "4-hydroxybenzoic acid"
+        ],
+        2,
+        "The weak electrophile CO₂ attacks the very reactive phenoxide ion, mainly at the ortho position."
+       ],
+       [
+        "Phenol treated with CHCl₃ and NaOH (Reimer–Tiemann reaction) gives mainly",
+        [
+         "salicylic acid",
+         "benzaldehyde",
+         "p-hydroxybenzaldehyde",
+         "salicylaldehyde"
+        ],
+        3,
+        "A –CHO group enters the ortho position after hydrolysis of the benzal chloride intermediate."
+       ],
+       [
+        "Heating phenol with zinc dust gives",
+        [
+         "cyclohexane",
+         "benzene",
+         "toluene",
+         "benzoquinone"
+        ],
+        1,
+        "Zinc removes the oxygen as ZnO, leaving benzene."
+       ],
+       [
+        "Oxidation of phenol with chromic acid gives",
+        [
+         "benzoquinone",
+         "benzoic acid",
+         "catechol",
+         "benzene"
+        ],
+        0,
+        "Phenol is oxidised to the conjugated diketone p-benzoquinone."
+       ],
+       [
+        "Methanol is made industrially from",
+        [
+         "fermentation of molasses with zymase",
+         "hydration of ethene",
+         "CO and H₂ at high pressure and temperature over a ZnO–Cr₂O₃ catalyst",
+         "reduction of ethanal with NaBH₄"
+        ],
+        2,
+        "Catalytic hydrogenation of carbon monoxide is the modern method."
+       ],
+       [
+        "In fermentation of sugars to ethanol, glucose and fructose are converted by the enzyme",
+        [
+         "zymase, present in yeast",
+         "invertase, present in yeast",
+         "zymase, formed from starch",
+         "lipase, present in grapes"
+        ],
+        0,
+        "Invertase converts sucrose to glucose and fructose; zymase then ferments them to ethanol and CO₂."
+       ],
+       [
+        "Ethanol heated with excess conc. H₂SO₄ at 413 K gives mainly",
+        [
+         "ethene",
+         "ethoxyethane",
+         "ethyl acetate",
+         "ethanal"
+        ],
+        1,
+        "At 413 K one alcohol molecule attacks a protonated one (SN2) to form the ether."
+       ],
+       [
+        "In Williamson synthesis an ether R–O–R′ is made by reacting",
+        [
+         "an alkyl halide R–X with sodium alkoxide R′ONa",
+         "an alcohol with an alkane",
+         "an aldehyde with a Grignard reagent",
+         "two alkenes with H₂SO₄"
+        ],
+        0,
+        "It is an SN2 attack of alkoxide ion on the alkyl halide; primary alkyl halides work best."
+       ],
+       [
+        "The boiling points of ethers are comparable to those of alkanes of similar molecular mass, and much lower than alcohols, because",
+        [
+         "ethers have no polar bonds",
+         "ethers have no lone pairs",
+         "ethers have higher molecular masses",
+         "ethers cannot form hydrogen bonds with each other"
+        ],
+        3,
+        "Ethers have weakly polar C–O bonds but no O–H, so no intermolecular H-bonding."
+       ],
+       [
+        "Ethoxyethane dissolves in water to nearly the same extent as butan-1-ol while pentane is almost insoluble because",
+        [
+         "ethers ionise in water",
+         "the ether oxygen forms hydrogen bonds with water molecules",
+         "pentane is more polar",
+         "ether molecules are smaller than pentane"
+        ],
+        1,
+        "Oxygen of the ether accepts hydrogen bonds from water, as in alcohols."
+       ],
+       [
+        "Heating anisole with conc. HI gives",
+        [
+         "iodobenzene and methanol",
+         "benzene and methanol",
+         "phenol and iodomethane",
+         "iodobenzene and iodomethane"
+        ],
+        2,
+        "Iodide attacks the methyl carbon; the aryl C–O bond is stronger and phenol does not form an aryl halide."
+       ],
+       [
+        "Anisole reacts with bromine in ethanoic acid even without FeBr₃. The major product is",
+        [
+         "m-bromoanisole",
+         "2,4,6-tribromoanisole only",
+         "bromobenzene",
+         "p-bromoanisole"
+        ],
+        3,
+        "The –OCH₃ group activates the ring and directs ortho/para; the para isomer is about 90%."
+       ]
+      ],
+      [
+       [
+        "CH₃CH=CH–CH(OH)CH₃ is best classified as a",
+        [
+         "primary allylic alcohol",
+         "secondary allylic alcohol",
+         "secondary vinylic alcohol",
+         "tertiary allylic alcohol"
+        ],
+        1,
+        "The carbinol carbon bears two carbon groups (secondary) and is next to the C=C (allylic)."
+       ],
+       [
+        "A student says: “C₆H₅CH₂OH has a benzene ring and an –OH group, so it is a phenol.” The error is that",
+        [
+         "the –OH is on an sp³ carbon, so it is a benzylic alcohol, not a phenol",
+         "it is a phenol but a dihydric one",
+         "it is an ether",
+         "phenols must contain a carboxyl group"
+        ],
+        0,
+        "A phenol has –OH bonded directly to a ring carbon (sp²)."
+       ],
+       [
+        "Which pair contains only unsymmetrical (mixed) ethers?",
+        [
+         "CH₃OCH₃ and C₂H₅OC₂H₅",
+         "C₆H₅OC₆H₅ and CH₃OCH₃",
+         "C₂H₅OCH₃ and C₂H₅OC₆H₅",
+         "C₂H₅OC₂H₅ and C₆H₅OC₆H₅"
+        ],
+        2,
+        "Each member must have two different groups on oxygen."
+       ],
+       [
+        "A student names CH₃OCH(CH₃)₂ as “1-methoxy-1-methylethane”. The correct IUPAC name is",
+        [
+         "isopropoxymethane",
+         "1-methoxypropane",
+         "methoxy-2-propane",
+         "2-methoxypropane"
+        ],
+        3,
+        "The larger alkyl group (propane) is the parent chain and the –OCH₃ sits on C-2."
+       ],
+       [
+        "The IUPAC name of CH₃CH(OH)CH(CH₃)CH₂CH₃ is",
+        [
+         "3-methylpentan-2-ol",
+         "2-methylpentan-3-ol",
+         "3-ethylbutan-2-ol",
+         "4-methylpentan-2-ol"
+        ],
+        0,
+        "The parent chain is pentane, numbered from the end nearest –OH; –OH on C-2, CH₃ on C-3."
+       ],
+       [
+        "Assertion (A): The C–O bond in phenol (136 pm) is shorter than the C–O bond in methanol.\nReason (R): The carbon bonded to oxygen in phenol is sp² hybridised and the oxygen lone pair is conjugated with the ring, giving partial double bond character.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        0,
+        "Both effects shorten the bond, so R explains A."
+       ],
+       [
+        "Which statement about bond angles is correct?",
+        [
+         "both are slightly less than 109°28′",
+         "H–O–C in methanol is slightly less than, and C–O–C in methoxymethane slightly more than, 109°28′",
+         "both are slightly more than 109°28′",
+         "H–O–C is more and C–O–C is less than 109°28′"
+        ],
+        1,
+        "Lone pair repulsion compresses the alcohol angle; repulsion between bulky R groups opens the ether angle."
+       ],
+       [
+        "Propene is treated with B₂H₆, then H₂O₂/NaOH to give A. A is oxidised with PCC to give B. B is",
+        [
+         "propanone",
+         "propanoic acid",
+         "propanal",
+         "propan-2-ol"
+        ],
+        2,
+        "Hydroboration–oxidation gives propan-1-ol (A); PCC stops at the aldehyde."
+       ],
+       [
+        "Hydrolysis of the adduct of which pair gives 2-methylbutan-2-ol?",
+        [
+         "CH₃MgBr and propanone",
+         "C₂H₅MgBr and ethanal",
+         "CH₃MgBr and propanal",
+         "C₂H₅MgBr and propanone"
+        ],
+        3,
+        "A tertiary alcohol needs a ketone; C₂H₅MgBr + (CH₃)₂CO gives (CH₃)₂C(OH)C₂H₅. CH₃MgBr + propanone gives 2-methylpropan-2-ol."
+       ],
+       [
+        "A student writes: “Hydration of propene with dilute H₂SO₄ gives propan-1-ol because the –OH goes to the end carbon.” The error is that",
+        [
+         "protonation gives the more stable secondary carbocation, so propan-2-ol forms",
+         "the product is propanone",
+         "the product is propane-1,2-diol",
+         "hydration of alkenes is not possible with acid"
+        ],
+        0,
+        "Markovnikov’s rule: H adds to the carbon with more H atoms, water attacks the more substituted carbocation."
+       ],
+       [
+        "Assertion (A): Hydroboration–oxidation of propene gives propan-2-ol.\nReason (R): In hydroboration boron attaches to the sp² carbon carrying the greater number of hydrogen atoms.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        3,
+        "A is false: the product is propan-1-ol, because the net addition of water is anti-Markovnikov. R is true."
+       ],
+       [
+        "Benzene is sulphonated with oleum to give A; A is heated with molten NaOH and then acidified to give B; B is heated with zinc dust to give C. C is",
+        [
+         "cyclohexane",
+         "benzoic acid",
+         "benzene",
+         "toluene"
+        ],
+        2,
+        "A = benzenesulphonic acid, B = phenol, and zinc removes the –OH to give benzene."
+       ],
+       [
+        "A student prepares phenol by refluxing chlorobenzene with aqueous NaOH at 373 K. The error is that",
+        [
+         "chlorobenzene needs fusion with NaOH at about 623 K and 320 atm, followed by acidification",
+         "only dilute HCl is needed",
+         "the reaction needs LiAlH₄",
+         "chlorobenzene gives benzoic acid under these conditions"
+        ],
+        0,
+        "The aryl C–Cl bond has partial double bond character and is very unreactive."
+       ],
+       [
+        "Aniline is treated with NaNO₂ + HCl at 273–278 K to give A. Warming A with water gives B along with N₂. B is",
+        [
+         "chlorobenzene",
+         "benzene",
+         "nitrobenzene",
+         "phenol"
+        ],
+        3,
+        "A is benzenediazonium chloride, which is hydrolysed to phenol."
+       ],
+       [
+        "The correct order of increasing boiling point is",
+        [
+         "ethoxyethane < n-butane < pentanal < pentan-1-ol",
+         "n-butane < ethoxyethane < pentanal < pentan-1-ol",
+         "n-butane < pentanal < ethoxyethane < pentan-1-ol",
+         "pentan-1-ol < pentanal < ethoxyethane < n-butane"
+        ],
+        1,
+        "Only the alcohol hydrogen bonds; polar pentanal ranks above weakly polar ether and non-polar butane. (NCERT Example 7.3)"
+       ],
+       [
+        "A student claims that 2-methylpropan-2-ol boils higher than butan-1-ol because it is more compact. The correct statement is that",
+        [
+         "branching lowers the surface area and van der Waals forces, so it boils lower",
+         "compact molecules form more hydrogen bonds, so it boils higher",
+         "both have the same boiling point as they are isomers",
+         "tertiary alcohols cannot hydrogen bond at all"
+        ],
+        0,
+        "Among isomeric alcohols boiling point decreases with increased branching."
+       ],
+       [
+        "Assertion (A): Boiling points of isomeric alcohols increase with branching of the chain.\nReason (R): Van der Waals forces decrease as the surface area of the molecule decreases.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        3,
+        "A is false because branching reduces surface area and lowers the boiling point; R is a true statement."
+       ],
+       [
+        "The correct order of increasing acid strength is",
+        [
+         "ethanol < phenol < p-cresol < p-nitrophenol",
+         "p-nitrophenol < phenol < p-cresol < ethanol",
+         "ethanol < p-cresol < phenol < p-nitrophenol",
+         "p-cresol < ethanol < phenol < p-nitrophenol"
+        ],
+        2,
+        "Alcohols are weakest; the electron-releasing CH₃ weakens phenol; –NO₂ at para strengthens it."
+       ],
+       [
+        "Assertion (A): Sodium ethoxide is a stronger base than sodium hydroxide.\nReason (R): Ethanol is a weaker acid than water.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        0,
+        "A weaker acid has a stronger conjugate base, so ethoxide ion is a stronger base than hydroxide."
+       ],
+       [
+        "A student says: “Phenol is less acidic than ethanol because the benzene ring releases electrons to oxygen.” The error is that",
+        [
+         "phenol has no O–H bond",
+         "the sp² carbon is electron withdrawing and the phenoxide ion is stabilised by resonance",
+         "ethanol ionises more because its anion is delocalised",
+         "the benzene ring cannot conjugate with oxygen"
+        ],
+        1,
+        "Phenol is about a million times more acidic than ethanol (pKa 10.0 and 15.9)."
+       ],
+       [
+        "The pKa values of phenol and ethanol are 10.0 and 15.9. Ka of phenol is about how many times Ka of ethanol?",
+        [
+         "5.9",
+         "1.6",
+         "8 × 10¹⁰",
+         "8 × 10⁵"
+        ],
+        3,
+        "Ratio = 10^(15.9 − 10.0) = 10^5.9 ≈ 8 × 10⁵.",
+        "Ka = 10^(−pKa)"
+       ],
+       [
+        "In the acetylation of salicylic acid with acetic anhydride and a trace of conc. H₂SO₄, the acetyl group replaces the hydrogen of",
+        [
+         "the phenolic –OH, giving an ester",
+         "the carboxylic –OH, giving an anhydride",
+         "a ring C–H, giving a ketone",
+         "both –OH groups at once, giving a diester"
+        ],
+        0,
+        "The phenolic –OH is esterified to give aspirin, retaining –COOH."
+       ],
+       [
+        "An alcohol C₄H₁₀O gives turbidity immediately with Lucas reagent and is not oxidised by CrO₃. It is",
+        [
+         "butan-1-ol",
+         "butan-2-ol",
+         "2-methylpropan-1-ol",
+         "2-methylpropan-2-ol"
+        ],
+        3,
+        "Immediate turbidity and resistance to oxidation indicate a tertiary alcohol."
+       ],
+       [
+        "Assertion (A): The slowest step in the acid-catalysed dehydration of ethanol to ethene is the formation of the ethyl carbocation.\nReason (R): The protonation of ethanol in the first step is the rate-determining step.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        2,
+        "A is true (step 2 is slowest), but R is false: protonation is fast and reversible."
+       ],
+       [
+        "Butan-2-ol is oxidised with CrO₃ to give A. A is treated with CH₃MgBr and then hydrolysed to give B. B is",
+        [
+         "3-methylbutan-2-ol",
+         "2-methylbutan-2-ol",
+         "pentan-2-ol",
+         "2-methylbutan-1-ol"
+        ],
+        1,
+        "A = butanone; Grignard addition to a ketone gives the tertiary alcohol (CH₃)₂C(OH)C₂H₅."
+       ],
+       [
+        "Vapours of propan-2-ol, 2-methylpropan-2-ol and propan-1-ol are passed over heated copper at 573 K. The products are respectively",
+        [
+         "propanone, 2-methylpropene, propanal",
+         "propanal, 2-methylpropene, propanone",
+         "propanone, 2-methylpropanone, propanoic acid",
+         "propene, propanone, propanal"
+        ],
+        0,
+        "Secondary alcohol gives ketone, tertiary alcohol dehydrates to the alkene, and primary gives aldehyde."
+       ],
+       [
+        "A student says that a tertiary alcohol on treatment with CrO₃ gives a ketone with the same number of carbons. The error is that",
+        [
+         "tertiary alcohols give carboxylic acids",
+         "tertiary alcohols give aldehydes",
+         "tertiary alcohols have no H on the carbinol carbon and resist oxidation under mild conditions",
+         "chromic anhydride only reacts with phenols"
+        ],
+        2,
+        "Only drastic conditions (hot KMnO₄) break C–C bonds to give a mixture of acids with fewer carbons."
+       ],
+       [
+        "Which of these alcohols is dehydrated under the mildest conditions by an acid?",
+        [
+         "ethanol, as it is smallest",
+         "2-methylpropan-2-ol, via the most stable carbocation",
+         "propan-2-ol, as it is secondary",
+         "butan-1-ol, as it is a straight chain"
+        ],
+        1,
+        "Ease of dehydration: tertiary > secondary > primary, as tertiary carbocations are most stable."
+       ],
+       [
+        "Phenol is first heated with NaOH and treated with CO₂, then acidified to give X. X on heating with acetic anhydride and a trace of H₂SO₄ gives Y. Y is",
+        [
+         "salicylaldehyde",
+         "methyl salicylate",
+         "phenyl ethanoate",
+         "aspirin"
+        ],
+        3,
+        "X is salicylic acid; acetylation of its phenolic –OH gives aspirin."
+       ],
+       [
+        "A student says: “p-Nitrophenol is steam volatile because of intramolecular hydrogen bonding.” The error is that",
+        [
+         "it is o-nitrophenol that has intramolecular hydrogen bonds and is steam volatile",
+         "both nitrophenols are steam volatile",
+         "neither isomer forms hydrogen bonds",
+         "p-nitrophenol is the more volatile isomer"
+        ],
+        0,
+        "p-Nitrophenol has intermolecular hydrogen bonds, so it is less volatile."
+       ],
+       [
+        "Phenol is treated separately with Br₂ in CS₂ at low temperature and with bromine water. The products are respectively",
+        [
+         "2,4,6-tribromophenol and a mixture of bromophenols",
+         "a mixture of o- and p-bromophenol, and 2,4,6-tribromophenol",
+         "m-bromophenol and bromobenzene",
+         "only p-bromophenol in both"
+        ],
+        1,
+        "Low polarity solvent restricts ionisation giving monobromination; in water the very activated ring is tribrominated."
+       ],
+       [
+        "Reimer–Tiemann reaction and Kolbe’s reaction of phenol give respectively",
+        [
+         "2-hydroxybenzoic acid and 2-hydroxybenzaldehyde",
+         "4-hydroxybenzaldehyde and phenyl ethanoate",
+         "2-hydroxybenzaldehyde and 2-hydroxybenzoic acid",
+         "benzaldehyde and benzoic acid"
+        ],
+        2,
+        "CHCl₃/NaOH introduces –CHO at the ortho position; CO₂ on phenoxide introduces –COOH."
+       ],
+       [
+        "A compound C₆H₆O dissolves in aqueous NaOH, gives a white precipitate with bromine water and, on heating with zinc dust, gives benzene. It is",
+        [
+         "benzyl alcohol",
+         "anisole",
+         "cyclohexanol",
+         "phenol"
+        ],
+        3,
+        "Acidity towards NaOH, tribromination and reduction to benzene all point to phenol."
+       ],
+       [
+        "A methanol-poisoned patient is given intravenous diluted ethanol because",
+        [
+         "ethanol neutralises methanoic acid chemically",
+         "ethanol occupies the enzyme, so methanol is not oxidised to methanal and methanoic acid while kidneys excrete it",
+         "ethanol converts methanol into ethene",
+         "ethanol is a stronger oxidising agent"
+        ],
+        1,
+        "The enzyme is swamped by ethanol, giving time for excretion of methanol."
+       ],
+       [
+        "A student says: “Sucrose in molasses is fermented directly to ethanol by invertase.” The correct statement is that",
+        [
+         "invertase gives glucose and fructose, which zymase then ferments to ethanol and CO₂",
+         "zymase gives glucose and fructose, invertase ferments them",
+         "oxygen is needed to ferment glucose to ethanol",
+         "invertase converts ethanol to ethanoic acid"
+        ],
+        0,
+        "Fermentation occurs anaerobically; air would oxidise ethanol to ethanoic acid."
+       ],
+       [
+        "Which pair is the better choice to prepare ethyl tert-butyl ether by Williamson synthesis?",
+        [
+         "sodium ethoxide and 2-bromo-2-methylpropane",
+         "ethanol and tert-butyl alcohol with conc. H₂SO₄ at 413 K",
+         "sodium ethoxide and tert-butyl alcohol",
+         "sodium tert-butoxide and bromoethane"
+        ],
+        3,
+        "A tertiary halide with a strong base gives 2-methylpropene by elimination; a primary halide undergoes SN2. (NCERT Example 7.6)"
+       ],
+       [
+        "A student heats a mixture of ethanol and methanol with conc. H₂SO₄ at 413 K to prepare ethyl methyl ether. The error is that",
+        [
+         "the product will be a mixture of dimethyl, ethyl methyl and diethyl ethers",
+         "only diethyl ether forms",
+         "the reaction gives only ethene",
+         "this method works only for tertiary alcohols"
+        ],
+        0,
+        "Bimolecular dehydration of two different alcohols gives all three possible ethers."
+       ],
+       [
+        "Assertion (A): Diisopropyl ether can be prepared in good yield by heating propan-2-ol with conc. H₂SO₄ at 413 K.\nReason (R): In the acid dehydration of secondary and tertiary alcohols, elimination competes with substitution and alkenes form.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        3,
+        "A is false: the method suits only primary alcohols; R is the reason it fails for secondary alcohols."
+       ],
+       [
+        "Which set is appropriate for preparing 1-methoxy-4-nitrobenzene?",
+        [
+         "methanol and 1-bromo-4-nitrobenzene under neutral conditions",
+         "methanol and 4-nitrophenol with H₂SO₄ at 413 K",
+         "sodium 4-nitrophenoxide and bromomethane",
+         "sodium methoxide and 4-nitrophenol"
+        ],
+        2,
+        "Primary alkyl halide undergoes SN2 with phenoxide; aryl halides do not undergo SN2 under these conditions."
+       ],
+       [
+        "Ethoxyethane (M = 74) is compared with butan-1-ol (M = 74) and pentane. Which statement is correct?",
+        [
+         "Its boiling point is close to butan-1-ol and its solubility is close to pentane",
+         "Its boiling point is close to pentane, while its water solubility is close to butan-1-ol",
+         "It boils lower than pentane by about 100 K",
+         "It is completely insoluble because it lacks an –OH group"
+        ],
+        1,
+        "No H-bonding between ether molecules, but its oxygen H-bonds to water."
+       ],
+       [
+        "A student writes: “Anisole + conc. HI (heat) → iodobenzene + methanol.” The correct products are",
+        [
+         "phenol and iodomethane, since the aryl O–C bond is stronger and sp² carbon resists SN",
+         "iodobenzene and methanol, as written",
+         "benzene and CH₃OH",
+         "phenol and methanol"
+        ],
+        0,
+        "Iodide attacks the methyl carbon (SN2). Phenol does not react further to give an aryl iodide."
+       ],
+       [
+        "The major products of (CH₃)₃C–O–C₂H₅ with HI are",
+        [
+         "(CH₃)₃COH and C₂H₅I",
+         "(CH₃)₂C=CH₂ and C₂H₅I",
+         "(CH₃)₃CI and C₂H₅OH",
+         "(CH₃)₃CI and C₂H₅I"
+        ],
+        2,
+        "A tertiary group forms a stable carbocation, so the reaction follows SN1 giving the tertiary iodide."
+       ],
+       [
+        "Methyl propyl ether, CH₃OCH₂CH₂CH₃, is heated with excess conc. HI at high temperature. The final products are",
+        [
+         "CH₃I and CH₃CH₂CH₂I",
+         "CH₃OH and CH₃CH₂CH₂I",
+         "CH₃I and CH₃CH₂CH₂OH",
+         "CH₃OH and CH₃CH₂CH₂OH"
+        ],
+        0,
+        "Cleavage gives CH₃I (lower alkyl) plus propanol, which reacts with excess HI to give propyl iodide."
+       ],
+       [
+        "Phenol is treated with NaOH to give A; A reacts with CH₃I to give B; B reacts with Br₂ in ethanoic acid to give C. The major product C is",
+        [
+         "m-bromoanisole",
+         "p-bromoanisole",
+         "2,4,6-tribromophenol",
+         "bromobenzene"
+        ],
+        1,
+        "A = sodium phenoxide, B = anisole, and the –OCH₃ group directs para as the major product."
+       ],
+       [
+        "Anisole reacts with CH₃COCl in the presence of anhydrous AlCl₃. The major products are",
+        [
+         "3-methoxyacetophenone only",
+         "phenol and methyl ethanoate",
+         "benzoic acid and CH₃Cl",
+         "2-methoxyacetophenone and 4-methoxyacetophenone"
+        ],
+        3,
+        "The –OCH₃ group activates the ring and directs the acyl group to ortho and para positions."
+       ]
+      ]
+     ]
+    },
+    {
+     "n": 8,
+     "t": "Aldehydes, Ketones and Carboxylic Acids",
+     "levels": [
+      [
+       [
+        "What is the IUPAC name of CH₃CH(OCH₃)CHO, commonly called α-methoxypropionaldehyde?",
+        [
+         "2-Methoxypropanal",
+         "3-Methoxypropanal",
+         "1-Methoxypropanal",
+         "2-Methoxypropan-1-ol"
+        ],
+        0,
+        "Number the chain from the CHO carbon; the OCH₃ group sits on C-2 and the suffix is -al."
+       ],
+       [
+        "What is the IUPAC name of diisopropyl ketone, (CH₃)₂CHCOCH(CH₃)₂?",
+        [
+         "3,3-Dimethylpentan-2-one",
+         "2,4-Dimethylpentan-3-one",
+         "2,4-Dimethylpentanal",
+         "Heptan-4-one"
+        ],
+        1,
+        "The longest chain has five carbons with C=O at C-3 and a methyl on C-2 and C-4."
+       ],
+       [
+        "The ketone C₆H₅COCH₃ is commonly named by adding the acyl group name before ‘phenone’. Its common name is",
+        [
+         "benzophenone",
+         "propiophenone",
+         "acetophenone",
+         "dimethyl phenyl ketone"
+        ],
+        2,
+        "Acetyl group + phenone gives acetophenone; benzophenone is C₆H₅COC₆H₅."
+       ],
+       [
+        "What is the IUPAC name of acrolein, CH₂=CHCHO?",
+        [
+         "Prop-1-enal",
+         "Propenoic acid",
+         "Prop-2-en-1-ol",
+         "Prop-2-enal"
+        ],
+        3,
+        "Number from the aldehyde carbon; the double bond starts at C-2, so prop-2-enal."
+       ],
+       [
+        "In the common names of aldehydes and ketones, the Greek letter α marks which carbon?",
+        [
+         "The carbon directly attached to the carbonyl group",
+         "The carbonyl carbon itself",
+         "The carbon farthest from the carbonyl group",
+         "The carbon two atoms away from the carbonyl group"
+        ],
+        0,
+        "Greek letters α, β, γ, δ start with the carbon next to the carbonyl group."
+       ],
+       [
+        "A cyclohexane ring carries an –CHO group on C-1 and a CH₃ group on C-3. Its IUPAC name is",
+        [
+         "3-Methylcyclohexanone",
+         "3-Methylcyclohexanecarbaldehyde",
+         "5-Methylcyclohexanecarbaldehyde",
+         "1-Methylcyclohexan-3-al"
+        ],
+        1,
+        "The suffix carbaldehyde is added and ring numbering starts from the carbon bearing CHO."
+       ],
+       [
+        "The carbonyl carbon in aldehydes and ketones is ______ hybridised and the bond angles around it are about ______.",
+        [
+         "sp³, 109.5°",
+         "sp, 180°",
+         "sp², 120°",
+         "sp², 109.5°"
+        ],
+        2,
+        "The carbonyl carbon forms three σ bonds in one plane; the fourth electron forms the π bond with oxygen."
+       ],
+       [
+        "Which statement about the carbonyl group C=O is correct?",
+        [
+         "The carbon is nucleophilic and the oxygen is electrophilic",
+         "Both carbon and oxygen are electrophilic",
+         "The bond is non-polar",
+         "The carbon is an electrophilic centre and the oxygen is a nucleophilic centre"
+        ],
+        3,
+        "Oxygen is more electronegative, so the C=O bond is polarised with δ+ on carbon and δ− on oxygen."
+       ],
+       [
+        "Carbonyl compounds are more polar than ethers mainly because",
+        [
+         "a dipolar resonance structure with C⁺ and O⁻ contributes to the carbonyl group",
+         "carbonyl compounds contain O–H bonds",
+         "ethers have no oxygen atom",
+         "carbonyl carbon is sp³ hybridised"
+        ],
+        0,
+        "Resonance between the neutral and the dipolar (C⁺–O⁻) forms makes the carbonyl group highly polar."
+       ],
+       [
+        "Passing the vapours of propan-2-ol over heated copper gives",
+        [
+         "propanal",
+         "propanone",
+         "propene",
+         "propanoic acid"
+        ],
+        1,
+        "Dehydrogenation of a secondary alcohol over Cu or Ag gives a ketone."
+       ],
+       [
+        "Which alkyne gives an aldehyde on hydration with H₂SO₄ and HgSO₄?",
+        [
+         "Propyne",
+         "But-1-yne",
+         "Ethyne",
+         "But-2-yne"
+        ],
+        2,
+        "Only ethyne gives ethanal; all other alkynes give ketones."
+       ],
+       [
+        "Ozonolysis of but-2-ene followed by treatment with Zn dust and water gives",
+        [
+         "two molecules of ethanoic acid",
+         "one molecule of propanone",
+         "butanal",
+         "two molecules of ethanal"
+        ],
+        3,
+        "CH₃CH=CHCH₃ is cleaved at the double bond into two CH₃CHO molecules."
+       ],
+       [
+        "Hydrogenation of an acyl chloride over palladium on barium sulphate to give an aldehyde is called",
+        [
+         "Rosenmund reduction",
+         "Stephen reaction",
+         "Etard reaction",
+         "Clemmensen reduction"
+        ],
+        0,
+        "RCOCl + H₂ (Pd–BaSO₄) → RCHO + HCl is the Rosenmund reduction."
+       ],
+       [
+        "Ethanenitrile is treated with SnCl₂ and HCl and the product is then hydrolysed. The final product is",
+        [
+         "ethanoic acid",
+         "ethanal",
+         "ethanol",
+         "ethanamide"
+        ],
+        1,
+        "Stephen reaction: the nitrile is reduced to an imine, which hydrolyses to the aldehyde."
+       ],
+       [
+        "Which reagent reduces esters (and nitriles) selectively to aldehydes?",
+        [
+         "NaBH₄",
+         "LiAlH₄ in excess",
+         "DIBAL-H",
+         "Zn–Hg/conc. HCl"
+        ],
+        2,
+        "Diisobutylaluminium hydride stops at the aldehyde stage after hydrolysis."
+       ],
+       [
+        "Toluene is oxidised to benzaldehyde with chromyl chloride (CrO₂Cl₂) followed by hydrolysis. This is called the",
+        [
+         "Gattermann–Koch reaction",
+         "Rosenmund reduction",
+         "Friedel–Crafts acylation",
+         "Etard reaction"
+        ],
+        3,
+        "Chromyl chloride converts the CH₃ group to a chromium complex that hydrolyses to CHO."
+       ],
+       [
+        "Side-chain chlorination of toluene gives benzal chloride, which on hydrolysis gives benzaldehyde. The formula of benzal chloride is",
+        [
+         "C₆H₅CHCl₂",
+         "C₆H₅CH₂Cl",
+         "C₆H₅CCl₃",
+         "C₆H₄Cl₂"
+        ],
+        0,
+        "Two hydrogens of CH₃ are replaced by Cl; hydrolysis of the gem-dichloride gives CHO."
+       ],
+       [
+        "Treating benzene with CO and HCl in the presence of anhydrous AlCl₃ (or CuCl) gives",
+        [
+         "benzoic acid",
+         "benzaldehyde",
+         "acetophenone",
+         "benzyl alcohol"
+        ],
+        1,
+        "This is the Gattermann–Koch reaction, a formylation of the ring."
+       ],
+       [
+        "When toluene reacts with CrO₃ in acetic anhydride, the first isolable product (hydrolysed afterwards to benzaldehyde) is",
+        [
+         "benzoic acid",
+         "benzal chloride",
+         "benzylidene diacetate",
+         "benzyl acetate"
+        ],
+        2,
+        "The aldehyde stage is protected as the diacetate, which prevents oxidation to the acid."
+       ],
+       [
+        "(CH₃CH₂)₂Cd reacts with 2 CH₃COCl. The ketone formed is",
+        [
+         "propanone",
+         "pentan-3-one",
+         "butanal",
+         "butan-2-one"
+        ],
+        3,
+        "R₂Cd + 2R′COCl → 2R–CO–R′, here C₂H₅–CO–CH₃."
+       ],
+       [
+        "Benzonitrile is treated with CH₃MgBr and the product is hydrolysed with aqueous acid. The ketone obtained is",
+        [
+         "acetophenone",
+         "benzophenone",
+         "benzaldehyde",
+         "propiophenone"
+        ],
+        0,
+        "Grignard reagent adds to C≡N and the imine hydrolyses to C₆H₅COCH₃."
+       ],
+       [
+        "Benzene reacts with CH₃CH₂COCl in the presence of anhydrous AlCl₃. The product is",
+        [
+         "1-phenylpropan-2-one",
+         "1-phenylpropan-1-one",
+         "propylbenzene",
+         "benzoic acid"
+        ],
+        1,
+        "Friedel–Crafts acylation attaches the acyl group directly to the ring."
+       ],
+       [
+        "Which is the correct increasing order of boiling points?",
+        [
+         "CH₃CH₂OH < CH₃CHO < CH₃OCH₃ < CH₃CH₂CH₃",
+         "CH₃OCH₃ < CH₃CH₂CH₃ < CH₃CH₂OH < CH₃CHO",
+         "CH₃CH₂CH₃ < CH₃OCH₃ < CH₃CHO < CH₃CH₂OH",
+         "CH₃CH₂CH₃ < CH₃CHO < CH₃OCH₃ < CH₃CH₂OH"
+        ],
+        2,
+        "Hydrogen bonding in the alcohol is strongest, then dipole–dipole forces in ethanal, then weak polarity of the ether (NCERT Intext 8.3)."
+       ],
+       [
+        "Aldehydes and ketones boil at lower temperatures than alcohols of similar molecular mass because",
+        [
+         "they have no dipole moment",
+         "they have higher molecular mass",
+         "their molecules form dimers",
+         "they cannot form intermolecular hydrogen bonds with each other"
+        ],
+        3,
+        "They have no O–H hydrogen, so only dipole–dipole attraction operates between molecules."
+       ],
+       [
+        "Which of these is miscible with water in all proportions?",
+        [
+         "Propanone",
+         "Octanal",
+         "Decan-2-one",
+         "Heptan-2-one"
+        ],
+        0,
+        "Lower members (methanal, ethanal, propanone) hydrogen-bond with water; solubility falls as the chain lengthens."
+       ],
+       [
+        "In nucleophilic addition to a carbonyl compound, the nucleophile attacks the carbonyl carbon, which changes from ______ to ______ and gives an alkoxide intermediate.",
+        [
+         "sp³ to sp²",
+         "sp² to sp³",
+         "sp to sp²",
+         "sp² to sp"
+        ],
+        1,
+        "The planar sp² carbon becomes tetrahedral sp³; the alkoxide then picks up H⁺."
+       ],
+       [
+        "Aldehydes are more reactive than ketones in nucleophilic addition because of",
+        [
+         "more steric hindrance in aldehydes",
+         "two electron-donating alkyl groups in aldehydes",
+         "less steric hindrance and greater electrophilicity of the carbonyl carbon",
+         "higher boiling points of aldehydes"
+        ],
+        2,
+        "Ketones have two bulky, electron-releasing alkyl groups that hinder attack and reduce electrophilicity."
+       ],
+       [
+        "Which compound is most reactive towards nucleophilic addition?",
+        [
+         "Ethanal",
+         "Propanone",
+         "Butanone",
+         "Methanal"
+        ],
+        3,
+        "HCHO has two hydrogens on the carbonyl carbon, so it has the least hindrance and the most electrophilic carbon."
+       ],
+       [
+        "Ethanal reacts with HCN in the presence of a trace of base. The product is",
+        [
+         "2-hydroxypropanenitrile",
+         "propanenitrile",
+         "2-aminopropanoic acid",
+         "ethanamide"
+        ],
+        0,
+        "A cyanohydrin CH₃CH(OH)CN forms; CN⁻ is the actual nucleophile."
+       ],
+       [
+        "The sodium hydrogensulphite addition compounds of aldehydes are useful because they",
+        [
+         "are insoluble and distil easily",
+         "are water soluble and regenerate the aldehyde on treatment with dilute acid or alkali",
+         "give a silver mirror directly",
+         "are stable towards acids"
+        ],
+        1,
+        "They allow separation and purification of aldehydes from non-reacting organic compounds."
+       ],
+       [
+        "Ethanal reacts with excess methanol in the presence of dry HCl to give",
+        [
+         "methoxyethane",
+         "ethyl methanoate",
+         "1,1-dimethoxyethane",
+         "2-methoxyethanol"
+        ],
+        2,
+        "The hemiacetal formed first reacts with a second molecule of alcohol to give the acetal CH₃CH(OCH₃)₂."
+       ],
+       [
+        "A ketone reacts with ethylene glycol in the presence of dry HCl. The product is called an",
+        [
+         "oxime",
+         "ethylene glycol acetal of an aldehyde",
+         "cyanohydrin",
+         "ethylene glycol ketal"
+        ],
+        3,
+        "Ketones form cyclic ketals with ethylene glycol; aqueous acid hydrolyses them back."
+       ],
+       [
+        "Which reagent with an aldehyde or ketone gives an orange or red crystalline derivative used for characterisation?",
+        [
+         "2,4-Dinitrophenylhydrazine",
+         "Hydroxylamine",
+         "Semicarbazide",
+         "Ammonia"
+        ],
+        0,
+        "2,4-DNP derivatives are yellow, orange or red solids."
+       ],
+       [
+        "Propanone reacts with hydroxylamine (NH₂OH) to give",
+        [
+         "propanone semicarbazone",
+         "propanone oxime",
+         "propanone hydrazone",
+         "propan-2-ol"
+        ],
+        1,
+        "Z = OH in >C=N–Z gives an oxime."
+       ],
+       [
+        "Sodium borohydride reduces propanone to",
+        [
+         "propane",
+         "propan-1-ol",
+         "propan-2-ol",
+         "propanoic acid"
+        ],
+        2,
+        "Ketones are reduced to secondary alcohols by NaBH₄ or LiAlH₄."
+       ],
+       [
+        "Which pair of reagents converts C=O into CH₂?",
+        [
+         "NaBH₄ or LiAlH₄",
+         "Tollens’ reagent or Fehling’s reagent",
+         "PCl₅ or SOCl₂",
+         "Zn–Hg with conc. HCl, or NH₂NH₂ followed by KOH in ethylene glycol"
+        ],
+        3,
+        "These are the Clemmensen and Wolff–Kishner reductions."
+       ],
+       [
+        "Tollens’ reagent is",
+        [
+         "ammoniacal silver nitrate",
+         "alkaline copper sulphate with Rochelle salt",
+         "acidified potassium dichromate",
+         "Zn–Hg/conc. HCl"
+        ],
+        0,
+        "Warming an aldehyde with it deposits a silver mirror."
+       ],
+       [
+        "A positive Fehling’s test is shown by a",
+        [
+         "silver mirror with ketones",
+         "red-brown precipitate with aliphatic aldehydes",
+         "blue colour with benzaldehyde",
+         "yellow precipitate with ethanal"
+        ],
+        1,
+        "Fehling’s reagent oxidises aliphatic aldehydes; aromatic aldehydes do not respond."
+       ],
+       [
+        "Propanone treated with sodium hypoiodite (I₂/NaOH) gives",
+        [
+         "sodium propanoate and CHI₃",
+         "propanoic acid only",
+         "yellow precipitate of CHI₃ and sodium ethanoate",
+         "no reaction"
+        ],
+        2,
+        "Methyl ketones lose the CH₃ group as haloform and give a salt of the acid with one carbon less."
+       ],
+       [
+        "On vigorous oxidation, ketones",
+        [
+         "give an acid with the same number of carbon atoms",
+         "are never oxidised",
+         "give aldehydes",
+         "undergo C–C bond cleavage to give a mixture of acids with fewer carbon atoms"
+        ],
+        3,
+        "Ketones are oxidised only under strong conditions and with C–C cleavage."
+       ],
+       [
+        "Aldol condensation is shown by aldehydes and ketones that have",
+        [
+         "at least one α-hydrogen",
+         "no α-hydrogen",
+         "a benzene ring",
+         "an –OH group"
+        ],
+        0,
+        "Dilute alkali removes an acidic α-H to form the enolate that attacks another carbonyl group."
+       ],
+       [
+        "Two molecules of ethanal react in dilute NaOH. The aldol formed is",
+        [
+         "2-hydroxybutanal",
+         "3-hydroxybutanal",
+         "butane-1,3-diol",
+         "but-2-enal"
+        ],
+        1,
+        "CH₃CHO + CH₃CHO → CH₃CH(OH)CH₂CHO; heating dehydrates it to but-2-enal."
+       ],
+       [
+        "The α-hydrogens of aldehydes and ketones are acidic because",
+        [
+         "the carbonyl oxygen donates electrons",
+         "α-carbon is sp-hybridised",
+         "the carbonyl group withdraws electrons and the conjugate base is resonance stabilised",
+         "they form hydrogen bonds"
+        ],
+        2,
+        "The enolate anion is stabilised by delocalisation onto oxygen."
+       ],
+       [
+        "A mixture of ethanal and propanal (both having α-hydrogens) is treated with dilute alkali. Number of aldol products formed is",
+        [
+         "one",
+         "two",
+         "three",
+         "four"
+        ],
+        3,
+        "Two self-aldol and two cross-aldol products form."
+       ],
+       [
+        "Methanal heated with concentrated NaOH gives",
+        [
+         "methanol and sodium methanoate",
+         "only methanol",
+         "only sodium methanoate",
+         "ethanol"
+        ],
+        0,
+        "Cannizzaro reaction: one molecule is reduced to the alcohol and another oxidised to the carboxylate."
+       ],
+       [
+        "Nitration of benzaldehyde with conc. HNO₃/H₂SO₄ gives mainly",
+        [
+         "2-nitrobenzaldehyde",
+         "3-nitrobenzaldehyde",
+         "4-nitrobenzaldehyde",
+         "nitrobenzene"
+        ],
+        1,
+        "The carbonyl group is deactivating and meta-directing."
+       ],
+       [
+        "A 40% aqueous solution of methanal, used to preserve biological specimens, is called",
+        [
+         "vinegar",
+         "bakelite",
+         "formalin",
+         "acetone"
+        ],
+        2,
+        "Methanal is also used to make bakelite and urea–formaldehyde resins."
+       ],
+       [
+        "Which pairing of compound and use is correct?",
+        [
+         "Ethanal – manufacture of nylon-6,6",
+         "Acetone – food preservative",
+         "Methanal – vinegar",
+         "Benzaldehyde – perfumery and dyes"
+        ],
+        3,
+        "Ethanal gives acetic acid and ethyl acetate; acetone and ethyl methyl ketone are solvents."
+       ],
+       [
+        "Formic acid gets its name from the Latin word for",
+        [
+         "ant",
+         "vinegar",
+         "butter",
+         "goat"
+        ],
+        0,
+        "Formica means ant; acetum is vinegar and butyrum is butter."
+       ],
+       [
+        "The IUPAC name of HOOC(CH₂)₄COOH (adipic acid) is",
+        [
+         "pentanedioic acid",
+         "hexanedioic acid",
+         "butanedioic acid",
+         "hexane-1-carboxylic acid"
+        ],
+        1,
+        "Six carbons including both carboxyl carbons give hexanedioic acid."
+       ],
+       [
+        "The IUPAC name of C₆H₅CH₂COOH is",
+        [
+         "phenylmethanoic acid",
+         "3-phenylpropanoic acid",
+         "2-phenylethanoic acid",
+         "benzenecarboxylic acid"
+        ],
+        2,
+        "The carboxyl carbon is C-1 and the phenyl group is on C-2."
+       ],
+       [
+        "The carboxylic carbon is less electrophilic than the carbonyl carbon of a ketone because",
+        [
+         "it is sp³ hybridised",
+         "it has no oxygen atom",
+         "it is bonded to hydrogen",
+         "resonance with the lone pair of the OH oxygen delocalises the positive charge"
+        ],
+        3,
+        "The –OH oxygen donates electron density towards the carbonyl carbon."
+       ],
+       [
+        "Toluene is heated with alkaline KMnO₄ and then acidified. The product is",
+        [
+         "benzoic acid",
+         "benzaldehyde",
+         "benzyl alcohol",
+         "phenylethanoic acid"
+        ],
+        0,
+        "The whole side chain, whatever its length, is oxidised to –COOH."
+       ],
+       [
+        "Grignard reagent RMgX reacts with dry ice and the product is acidified. The product is",
+        [
+         "ROH",
+         "RCOOH, one carbon more than R–X",
+         "RCHO",
+         "R–R"
+        ],
+        1,
+        "RMgX adds to CO₂ to give RCOOMgX, which gives RCOOH on acidification."
+       ],
+       [
+        "Acid hydrolysis of an ester RCOOR′ gives directly",
+        [
+         "RCOO⁻ and R′OH only",
+         "RCHO and R′OH",
+         "RCOOH and R′OH",
+         "RCOCl and R′OH"
+        ],
+        2,
+        "Basic hydrolysis gives the carboxylate, which needs acidification to give the acid."
+       ],
+       [
+        "Hydrolysis of ethanenitrile (CH₃CN) with dilute acid and heat finally gives",
+        [
+         "ethanal",
+         "ethylamine",
+         "ethanol",
+         "ethanoic acid"
+        ],
+        3,
+        "Nitrile → amide → carboxylic acid; mild conditions stop at the amide."
+       ],
+       [
+        "Carboxylic acids have higher boiling points than alcohols of similar molecular mass because",
+        [
+         "they form stronger and more extensive hydrogen bonds, even as dimers",
+         "they have no hydrogen bonding",
+         "they are non-polar",
+         "they have lower molecular masses"
+        ],
+        0,
+        "Association via two hydrogen bonds persists even in the vapour phase."
+       ],
+       [
+        "Which carboxylic acid is miscible with water in all proportions?",
+        [
+         "Hexanoic acid",
+         "Ethanoic acid",
+         "Benzoic acid",
+         "Octadecanoic acid"
+        ],
+        1,
+        "Acids with up to four carbons are miscible; benzoic acid is nearly insoluble in cold water."
+       ],
+       [
+        "A carboxylic acid, unlike a phenol, reacts with sodium hydrogencarbonate to give",
+        [
+         "hydrogen",
+         "ammonia",
+         "carbon dioxide",
+         "carbon monoxide"
+        ],
+        2,
+        "The effervescence of CO₂ is a test for the carboxyl group."
+       ],
+       [
+        "Which acid is the strongest?",
+        [
+         "C₆H₅COOH (pKa 4.19)",
+         "CH₃COOH (pKa 4.76)",
+         "C₂H₅OH (pKa about 16)",
+         "CF₃COOH (pKa 0.23)"
+        ],
+        3,
+        "The smaller the pKa, the stronger the acid."
+       ],
+       [
+        "Which of these is the correct order of increasing acidity?",
+        [
+         "CH₃CH₂COOH < CH₃COOH < HCOOH < ClCH₂COOH",
+         "ClCH₂COOH < HCOOH < CH₃COOH < CH₃CH₂COOH",
+         "HCOOH < CH₃COOH < CH₃CH₂COOH < ClCH₂COOH",
+         "CH₃COOH < CH₃CH₂COOH < ClCH₂COOH < HCOOH"
+        ],
+        0,
+        "Electron-donating alkyl groups reduce acidity; the electron-withdrawing Cl increases it."
+       ],
+       [
+        "Which acid is stronger than benzoic acid (pKa 4.19)?",
+        [
+         "4-Methoxybenzoic acid (pKa 4.46)",
+         "4-Nitrobenzoic acid (pKa 3.41)",
+         "Ethanoic acid (pKa 4.76)",
+         "Propanoic acid"
+        ],
+        1,
+        "An electron-withdrawing –NO₂ group stabilises the benzoate ion."
+       ],
+       [
+        "Heating ethanoic acid with P₂O₅ gives",
+        [
+         "ethyl ethanoate",
+         "ethanoyl chloride",
+         "ethanoic anhydride",
+         "ethanamide"
+        ],
+        2,
+        "Two acid molecules lose one water molecule: (CH₃CO)₂O."
+       ],
+       [
+        "Ethanoic acid and ethanol with a little conc. H₂SO₄ give",
+        [
+         "diethyl ether",
+         "ethanoic anhydride",
+         "ethanal",
+         "ethyl ethanoate"
+        ],
+        3,
+        "This acid-catalysed esterification is a nucleophilic acyl substitution."
+       ],
+       [
+        "SOCl₂ is preferred for converting RCOOH to RCOCl because",
+        [
+         "the by-products SO₂ and HCl are gases that escape easily",
+         "it gives a higher boiling product",
+         "it also reduces the acid",
+         "PCl₅ cannot react with acids"
+        ],
+        0,
+        "The pure acid chloride is easy to isolate."
+       ],
+       [
+        "Ethanoic acid is treated with ammonia and the salt formed is heated strongly. The product is",
+        [
+         "ethylamine",
+         "ethanamide",
+         "ethanenitrile",
+         "ethanol"
+        ],
+        1,
+        "CH₃COOH + NH₃ → CH₃COONH₄, which loses water on heating to give CH₃CONH₂."
+       ],
+       [
+        "Which reagent reduces a carboxylic acid to a primary alcohol?",
+        [
+         "NaBH₄",
+         "Zn–Hg/conc. HCl",
+         "LiAlH₄ (or diborane)",
+         "Tollens’ reagent"
+        ],
+        2,
+        "NaBH₄ does not reduce the –COOH group."
+       ],
+       [
+        "Heating sodium ethanoate with soda lime (NaOH and CaO) gives",
+        [
+         "ethane",
+         "ethanol",
+         "ethene",
+         "methane"
+        ],
+        3,
+        "Decarboxylation removes CO₂: CH₃COONa → CH₄."
+       ],
+       [
+        "Electrolysis of aqueous sodium ethanoate gives mainly",
+        [
+         "ethane",
+         "methane",
+         "butane",
+         "ethanol"
+        ],
+        0,
+        "Kolbe electrolysis joins two methyl radicals from CH₃COO⁻."
+       ],
+       [
+        "Propanoic acid reacts with Cl₂ in the presence of a little red phosphorus. The product is",
+        [
+         "3-chloropropanoic acid",
+         "2-chloropropanoic acid",
+         "propanoyl chloride",
+         "chlorobenzene"
+        ],
+        1,
+        "Hell–Volhard–Zelinsky reaction halogenates the α-position."
+       ],
+       [
+        "Nitration of benzoic acid gives mainly",
+        [
+         "2-nitrobenzoic acid",
+         "4-nitrobenzoic acid",
+         "3-nitrobenzoic acid",
+         "nitrobenzene"
+        ],
+        2,
+        "The –COOH group is deactivating and meta-directing."
+       ],
+       [
+        "Which pairing is correct?",
+        [
+         "Methanoic acid – vinegar",
+         "Sodium benzoate – soaps",
+         "Higher fatty acids – food preservative",
+         "Hexanedioic acid – nylon-6,6"
+        ],
+        3,
+        "Ethanoic acid is vinegar, sodium benzoate is a food preservative, and higher fatty acids make soaps and detergents."
+       ]
+      ],
+      [
+       [
+        "What is the IUPAC name of mesityl oxide, (CH₃)₂C=CHCOCH₃?",
+        [
+         "4-Methylpent-3-en-2-one",
+         "2-Methylpent-2-en-4-one",
+         "4-Methylpent-2-en-2-one",
+         "2-Methylpent-3-en-4-one"
+        ],
+        0,
+        "Number from the end nearer to C=O; the C=O is at C-2, the double bond at C-3 and the methyl at C-4."
+       ],
+       [
+        "A student names CH₃COCH₂CH₂CH₃ as pentan-4-one. What is wrong?",
+        [
+         "Nothing, the name is correct",
+         "Numbering must start from the end nearer to C=O, so the name is pentan-2-one",
+         "It should be named as an aldehyde, pentanal",
+         "The suffix should be -ol, giving pentan-2-ol"
+        ],
+        1,
+        "For ketones, the chain is numbered to give the carbonyl carbon the lowest locant."
+       ],
+       [
+        "Assertion (A): Aldehydes and ketones have substantial dipole moments.\nReason (R): The carbonyl carbon is sp² hybridised and the carbonyl group is planar.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        1,
+        "The dipole arises from the polarity of C=O (and its dipolar resonance form); sp² planarity does not explain it."
+       ],
+       [
+        "An alkene C₅H₁₀ on ozonolysis followed by Zn/H₂O gives ethanal and propanone. The alkene is",
+        [
+         "pent-2-ene",
+         "3-methylbut-1-ene",
+         "2-methylbut-2-ene",
+         "2-methylbut-1-ene"
+        ],
+        2,
+        "CH₃CH=C(CH₃)₂ splits into CH₃CHO and (CH₃)₂C=O."
+       ],
+       [
+        "Hydration of but-1-yne with HgSO₄ and dilute H₂SO₄ gives",
+        [
+         "butanal",
+         "butan-2-ol",
+         "butanoic acid",
+         "butan-2-one"
+        ],
+        3,
+        "Only ethyne gives an aldehyde; terminal alkynes such as but-1-yne give a methyl ketone."
+       ],
+       [
+        "Allyl alcohol (CH₂=CHCH₂OH) is converted into propenal (CH₂=CHCHO) using",
+        [
+         "pyridinium chlorochromate (PCC)",
+         "alkaline KMnO₄",
+         "acidified K₂Cr₂O₇",
+         "H₂ over Pd"
+        ],
+        0,
+        "PCC stops at the aldehyde stage and leaves the C=C intact (NCERT Example 8.1)."
+       ],
+       [
+        "Which reagent set converts toluene into benzaldehyde without over-oxidation to benzoic acid?",
+        [
+         "acidified KMnO₄, heat",
+         "CrO₂Cl₂, then H₃O⁺",
+         "alkaline KMnO₄, then H₃O⁺",
+         "K₂Cr₂O₇/H₂SO₄, heat"
+        ],
+        1,
+        "Etard reaction forms a chromium complex that cannot be oxidised further before hydrolysis."
+       ],
+       [
+        "Compound X (C₂H₃N) is treated with SnCl₂/HCl and then hydrolysed to give Y, which forms a silver mirror with Tollens’ reagent. Y is",
+        [
+         "CH₃COOH",
+         "CH₃CH₂OH",
+         "CH₃CHO",
+         "CH₃CONH₂"
+        ],
+        2,
+        "X is CH₃CN; Stephen reaction gives ethanal, an aldehyde."
+       ],
+       [
+        "A student says that benzoyl chloride with H₂ over Pd on BaSO₄ gives benzyl alcohol. What is the error?",
+        [
+         "Pd on BaSO₄ oxidises the chloride to benzoic acid",
+         "The reaction gives toluene directly",
+         "Acyl chlorides cannot be hydrogenated",
+         "The poisoned catalyst stops the reduction at benzaldehyde (Rosenmund reduction)"
+        ],
+        3,
+        "BaSO₄ deactivates Pd so reduction halts at the aldehyde."
+       ],
+       [
+        "Which transformation can be carried out with DIBAL-H followed by hydrolysis?",
+        [
+         "Ethyl benzoate to benzaldehyde",
+         "Benzaldehyde to benzoic acid",
+         "Benzoic acid to benzene",
+         "Benzaldehyde to toluene"
+        ],
+        0,
+        "DIBAL-H reduces esters and nitriles selectively to aldehydes."
+       ],
+       [
+        "Benzene is treated with CH₃COCl/anhydrous AlCl₃ to give A, which is then warmed with I₂/NaOH. The products are",
+        [
+         "benzaldehyde and CHI₃",
+         "sodium benzoate and CHI₃",
+         "sodium ethanoate and iodobenzene",
+         "benzoic acid and CH₃I"
+        ],
+        1,
+        "A is acetophenone, a methyl ketone; haloform reaction gives C₆H₅COONa and CHI₃."
+       ],
+       [
+        "Ethanenitrile is treated with C₂H₅MgBr, hydrolysed, and the product is reduced with NaBH₄. The final product is",
+        [
+         "butan-1-ol",
+         "butanal",
+         "butan-2-ol",
+         "2-methylpropan-2-ol"
+        ],
+        2,
+        "CH₃CN + C₂H₅MgBr then H₃O⁺ gives butan-2-one, reduced to the secondary alcohol."
+       ],
+       [
+        "(C₆H₅CH₂)₂Cd reacts with 2 CH₃COCl. The ketone formed is",
+        [
+         "1-phenylethanone",
+         "1,3-diphenylpropan-2-one",
+         "propanone",
+         "1-phenylpropan-2-one"
+        ],
+        3,
+        "Benzyl and acetyl groups join: C₆H₅CH₂–CO–CH₃."
+       ],
+       [
+        "A student says propanal boils higher than propan-1-ol because propanal is more polar. What is wrong?",
+        [
+         "Propan-1-ol forms intermolecular hydrogen bonds and so boils higher",
+         "Propanal has hydrogen bonding but propan-1-ol does not",
+         "Propanal has higher molecular mass",
+         "Boiling points depend only on molecular mass"
+        ],
+        0,
+        "Hydrogen bonding in the alcohol outweighs the dipole–dipole forces in the aldehyde."
+       ],
+       [
+        "Assertion (A): Propanone is miscible with water in all proportions.\nReason (R): Propanone molecules form hydrogen bonds with each other.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        2,
+        "Propanone is miscible because it hydrogen-bonds with water; it cannot hydrogen-bond with itself since it has no O–H."
+       ],
+       [
+        "Assertion (A): The carbonyl carbon is sp² hybridised and the nucleophile attacks it in the plane of the three σ bonds.\nReason (R): The π electron cloud of C=O lies above and below the molecular plane.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        3,
+        "The nucleophile attacks perpendicular to the plane, so the assertion is false; the reason is true."
+       ],
+       [
+        "Arrange in increasing order of reactivity towards nucleophilic addition: benzaldehyde, p-tolualdehyde, p-nitrobenzaldehyde, acetophenone.",
+        [
+         "Acetophenone < benzaldehyde < p-tolualdehyde < p-nitrobenzaldehyde",
+         "Acetophenone < p-tolualdehyde < benzaldehyde < p-nitrobenzaldehyde",
+         "p-Nitrobenzaldehyde < benzaldehyde < p-tolualdehyde < acetophenone",
+         "p-Tolualdehyde < acetophenone < benzaldehyde < p-nitrobenzaldehyde"
+        ],
+        1,
+        "Ketone is the least reactive; –CH₃ lowers and –NO₂ raises the electrophilicity of the carbonyl carbon (NCERT Intext 8.4)."
+       ],
+       [
+        "A student says benzaldehyde is more reactive than propanal because of resonance with the ring. What is wrong?",
+        [
+         "Resonance increases the positive charge on the carbonyl carbon",
+         "Propanal is a ketone",
+         "Resonance reduces the electrophilicity of the carbonyl carbon, so benzaldehyde is less reactive",
+         "Rings make aldehydes sterically less crowded"
+        ],
+        2,
+        "Delocalisation of ring electrons to the carbonyl lowers its polarity (NCERT Example 8.3)."
+       ],
+       [
+        "Arrange in increasing order of reactivity towards HCN: acetaldehyde, acetone, di-tert-butyl ketone, methyl tert-butyl ketone.",
+        [
+         "Acetaldehyde < acetone < methyl tert-butyl ketone < di-tert-butyl ketone",
+         "Acetone < di-tert-butyl ketone < methyl tert-butyl ketone < acetaldehyde",
+         "Methyl tert-butyl ketone < di-tert-butyl ketone < acetone < acetaldehyde",
+         "Di-tert-butyl ketone < methyl tert-butyl ketone < acetone < acetaldehyde"
+        ],
+        3,
+        "Steric hindrance increases with bulky groups and is least in the aldehyde (NCERT Exercise 8.12 (i))."
+       ],
+       [
+        "Propanone is treated with HCN (trace of base) and the product is hydrolysed with aqueous acid with heating. The final product is",
+        [
+         "2-hydroxy-2-methylpropanoic acid",
+         "2-hydroxypropanoic acid",
+         "2-methylpropanoic acid",
+         "2-amino-2-methylpropanoic acid"
+        ],
+        0,
+        "The cyanohydrin (CH₃)₂C(OH)CN hydrolyses to (CH₃)₂C(OH)COOH."
+       ],
+       [
+        "Assertion (A): HCN addition to a carbonyl compound is catalysed by a base.\nReason (R): The base generates the cyanide ion, a stronger nucleophile than HCN.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        0,
+        "Pure HCN reacts very slowly; CN⁻ attacks the carbonyl carbon readily."
+       ],
+       [
+        "A mixture of propanal and acetophenone is shaken with saturated NaHSO₃ solution. What happens?",
+        [
+         "Both form soluble adducts",
+         "The propanal adduct dissolves in water and can be separated; acetophenone stays unreacted in the organic layer",
+         "Acetophenone forms the water-soluble adduct and propanal does not",
+         "Neither reacts because carbonyl groups do not react with NaHSO₃"
+        ],
+        1,
+        "The equilibrium lies to the right for aldehydes and to the left for most ketones due to steric reasons."
+       ],
+       [
+        "What is the role of dry HCl in acetal formation from an aldehyde and an alcohol?",
+        [
+         "It oxidises the alcohol",
+         "It acts as a nucleophile on the carbonyl carbon",
+         "It protonates the carbonyl oxygen and increases the electrophilicity of the carbonyl carbon",
+         "It removes the α-hydrogen"
+        ],
+        2,
+        "Protonation makes the carbon more attractive to the alcohol nucleophile."
+       ],
+       [
+        "A compound C₃H₆O reacts with hydroxylamine and also reduces Tollens’ reagent. The compound is",
+        [
+         "propanone",
+         "prop-2-en-1-ol",
+         "methyl ethyl ether",
+         "propanal"
+        ],
+        3,
+        "It is a carbonyl compound that gives an oxime and a silver mirror, so it is an aldehyde, CH₃CH₂CHO."
+       ],
+       [
+        "A student says acetone with phenylhydrazine gives an oxime. The correct product is",
+        [
+         "acetone phenylhydrazone",
+         "acetone semicarbazone",
+         "acetone imine",
+         "acetone cyanohydrin"
+        ],
+        0,
+        "An oxime comes from NH₂OH; C₆H₅NHNH₂ gives a phenylhydrazone."
+       ],
+       [
+        "4-Oxopentanoic acid (CH₃COCH₂CH₂COOH) is treated with NaBH₄. The product is",
+        [
+         "pentane-1,4-diol",
+         "4-hydroxypentanoic acid",
+         "pentanoic acid",
+         "pentanal"
+        ],
+        1,
+        "NaBH₄ reduces the ketone but does not reduce the carboxyl group."
+       ],
+       [
+        "Acetophenone is heated with hydrazine and then with KOH in ethylene glycol. The product is",
+        [
+         "1-phenylethanol",
+         "benzoic acid",
+         "ethylbenzene",
+         "styrene"
+        ],
+        2,
+        "Wolff–Kishner reduction converts C=O into CH₂."
+       ],
+       [
+        "A carbonyl compound contains a group that is destroyed by strong acid. The better method to convert C=O to CH₂ is",
+        [
+         "Clemmensen reduction (conc. HCl)",
+         "NaBH₄ reduction",
+         "Rosenmund reduction",
+         "Wolff–Kishner reduction (strongly basic)"
+        ],
+        3,
+        "Clemmensen uses Zn–Hg and conc. HCl, while Wolff–Kishner uses KOH."
+       ],
+       [
+        "Which simple test distinguishes pentan-2-one from pentan-3-one?",
+        [
+         "Iodoform test (I₂/NaOH)",
+         "Tollens’ test",
+         "Fehling’s test",
+         "2,4-DNP test"
+        ],
+        0,
+        "Only the methyl ketone, pentan-2-one, gives yellow CHI₃."
+       ],
+       [
+        "Benzaldehyde and acetophenone can be distinguished by",
+        [
+         "2,4-DNP test, positive for benzaldehyde only",
+         "Tollens’ test, positive for benzaldehyde only",
+         "iodoform test, positive for benzaldehyde only",
+         "Fehling’s test, positive for acetophenone only"
+        ],
+        1,
+        "Aldehydes oxidise to carboxylate with Tollens’ reagent; acetophenone does not."
+       ],
+       [
+        "Ethanal and benzaldehyde: which reagent gives a red-brown precipitate with only one of them?",
+        [
+         "Fehling’s reagent, positive for benzaldehyde",
+         "2,4-DNP, positive for ethanal only",
+         "Fehling’s reagent, positive for ethanal",
+         "Tollens’ reagent, positive for ethanal only"
+        ],
+        2,
+        "Aromatic aldehydes do not respond to Fehling’s test; both respond to Tollens’ test."
+       ],
+       [
+        "A student says that oxidation of a ketone with hot, strong oxidant gives an acid with the same number of carbon atoms. What is wrong?",
+        [
+         "Ketones are not oxidised at all",
+         "Aldehydes are formed",
+         "Ketones give alcohols",
+         "C–C bond cleavage occurs, giving acids with fewer carbon atoms"
+        ],
+        3,
+        "Strong oxidation of ketones breaks C–C bonds next to C=O."
+       ],
+       [
+        "(CH₃)₂C=CHCOCH₃ is treated with NaOI. The organic product (apart from CHI₃) is",
+        [
+         "(CH₃)₂C=CHCOONa",
+         "(CH₃)₂CHCH₂COONa",
+         "(CH₃)₂C=CHCOCH₂I",
+         "(CH₃)₂C(OH)CH₂COONa"
+        ],
+        0,
+        "The C=C is not affected by NaOI; the CH₃CO group becomes COONa."
+       ],
+       [
+        "Compound A (C₈H₈O) gives an orange-red precipitate with 2,4-DNP and a yellow precipitate with I₂/NaOH, does not reduce Tollens’ reagent, and on drastic oxidation gives C₇H₆O₂. A is",
+        [
+         "phenylacetaldehyde",
+         "acetophenone",
+         "benzaldehyde",
+         "4-methylbenzaldehyde"
+        ],
+        1,
+        "A is a methyl ketone with an aromatic ring and the acid is benzoic acid (NCERT Example 8.4)."
+       ],
+       [
+        "A compound C₅H₁₀O forms an orange precipitate with 2,4-DNP, does not reduce Tollens’ reagent, and gives iodoform. Clemmensen reduction gives n-pentane. The compound is",
+        [
+         "pentan-3-one",
+         "3-methylbutan-2-one",
+         "pentan-2-one",
+         "pentanal"
+        ],
+        2,
+        "It is a methyl ketone with a straight chain."
+       ],
+       [
+        "Which compound does NOT undergo aldol condensation?",
+        [
+         "Propanal",
+         "Butanone",
+         "Cyclohexanone",
+         "2,2-Dimethylpropanal"
+        ],
+        3,
+        "It has no α-hydrogen."
+       ],
+       [
+        "Propanal undergoes aldol condensation in dilute NaOH on heating. The product is",
+        [
+         "2-methylpent-2-enal",
+         "3-methylpent-2-enal",
+         "hex-2-enal",
+         "2-methylpentanal"
+        ],
+        0,
+        "Aldol is 3-hydroxy-2-methylpentanal; loss of water gives CH₃CH₂CH=C(CH₃)CHO."
+       ],
+       [
+        "Propanone undergoes aldol reaction and then loses water. The final product is",
+        [
+         "4-hydroxy-4-methylpentan-2-one",
+         "4-methylpent-3-en-2-one",
+         "2-methylpent-2-en-4-one",
+         "hexan-2-one"
+        ],
+        1,
+        "The ketol (CH₃)₂C(OH)CH₂COCH₃ dehydrates to mesityl oxide."
+       ],
+       [
+        "Benzaldehyde and ethanal are mixed with dilute NaOH and warmed. The main condensation product is",
+        [
+         "3-hydroxybutanal",
+         "2-phenylpropanal",
+         "3-phenylprop-2-enal",
+         "benzyl alcohol"
+        ],
+        2,
+        "Ethanal gives the enolate (benzaldehyde has no α-H), which attacks benzaldehyde and then dehydrates."
+       ],
+       [
+        "Assertion (A): The α-hydrogens of aldehydes and ketones are acidic.\nReason (R): The enolate formed on removing an α-hydrogen is resonance stabilised and the carbonyl group withdraws electrons.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        0,
+        "Both effects stabilise the conjugate base."
+       ],
+       [
+        "Assertion (A): Ethanal undergoes Cannizzaro reaction on heating with concentrated NaOH.\nReason (R): Aldehydes with no α-hydrogen undergo the Cannizzaro reaction.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        3,
+        "Ethanal has α-hydrogens, so it undergoes aldol-type reactions instead."
+       ],
+       [
+        "A student says two moles of benzaldehyde in conc. NaOH give two moles of benzyl alcohol. What is wrong?",
+        [
+         "Benzaldehyde gives benzoic acid only",
+         "The reaction gives toluene",
+         "The reaction gives benzene",
+         "One mole gives benzyl alcohol and the other gives sodium benzoate"
+        ],
+        3,
+        "Cannizzaro is a disproportionation: one molecule reduced and one oxidised."
+       ],
+       [
+        "Acetophenone is nitrated with conc. HNO₃/H₂SO₄. The major product is",
+        [
+         "3-nitroacetophenone",
+         "4-nitroacetophenone",
+         "2-nitroacetophenone",
+         "nitrobenzene"
+        ],
+        0,
+        "The acetyl group is deactivating and meta-directing."
+       ],
+       [
+        "Which pairing of compound and use is INCORRECT?",
+        [
+         "Methanal – bakelite and urea–formaldehyde glues",
+         "Acetaldehyde – the main component of formalin",
+         "Ethanal – manufacture of acetic acid",
+         "Benzaldehyde – perfumery and dyes"
+        ],
+        1,
+        "Formalin is a 40% aqueous solution of methanal."
+       ],
+       [
+        "What is the IUPAC name of (CH₃)₂C=CHCOOH?",
+        [
+         "2-Methylbut-2-enoic acid",
+         "3-Methylbut-3-enoic acid",
+         "3-Methylbut-2-enoic acid",
+         "4-Methylbut-2-enoic acid"
+        ],
+        2,
+        "C-1 is COOH, the double bond is C2=C3 and the methyl is on C-3 (NCERT Intext 8.6)."
+       ],
+       [
+        "What is the IUPAC name of HOOC–CH₂–CH(COOH)–CH₂–COOH (tricarballylic acid)?",
+        [
+         "Propane-1,2,3-triol",
+         "Butane-1,2,3-tricarboxylic acid",
+         "Propane-1,3-dicarboxylic acid",
+         "Propane-1,2,3-tricarboxylic acid"
+        ],
+        3,
+        "The chain without the carboxyl groups is propane with three COOH groups on C-1, C-2 and C-3."
+       ],
+       [
+        "A student names HOOC(CH₂)₃COOH as butanedioic acid. What is wrong?",
+        [
+         "It has five carbons in the chain including both carboxyl carbons, so it is pentanedioic acid",
+         "Nothing, it is butanedioic acid",
+         "It is hexanedioic acid",
+         "It is propane-1,3-dicarboxylic acid only"
+        ],
+        0,
+        "Butanedioic acid is succinic acid, HOOC(CH₂)₂COOH."
+       ],
+       [
+        "Assertion (A): The carbon of the carboxyl group is less electrophilic than the carbonyl carbon of a ketone.\nReason (R): The carboxyl carbon is sp³ hybridised.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        2,
+        "The carboxyl carbon is sp² (bonds about 120° in one plane); its lower electrophilicity is due to resonance with the –OH lone pair."
+       ],
+       [
+        "Which route converts ethyl bromide into propanoic acid?",
+        [
+         "C₂H₅Br with aqueous KOH, then KMnO₄",
+         "C₂H₅Br with Mg/ether, then CO₂, then H₃O⁺",
+         "C₂H₅Br with Mg/ether, then H₂O",
+         "C₂H₅Br with NaOH followed by acidification"
+        ],
+        1,
+        "Grignard carboxylation adds one carbon; KCN followed by hydrolysis also works."
+       ],
+       [
+        "Benzyl alcohol is converted into phenylethanoic acid by:",
+        [
+         "KMnO₄ in acid",
+         "PCC, then HCN",
+         "SOCl₂, then KCN, then H₃O⁺/heat",
+         "Mg then CO₂"
+        ],
+        2,
+        "C₆H₅CH₂OH → C₆H₅CH₂Cl → C₆H₅CH₂CN → C₆H₅CH₂COOH adds one carbon."
+       ],
+       [
+        "tert-Butylbenzene is heated with alkaline KMnO₄ followed by acidification. A student says benzoic acid forms. What is wrong?",
+        [
+         "Only the ring is oxidised",
+         "Benzoic acid is converted to benzene",
+         "Tertiary groups give CO₂ and no ring",
+         "A tertiary alkyl group has no benzylic hydrogen and is not oxidised"
+        ],
+        3,
+        "Primary and secondary alkyl side chains are oxidised to –COOH; tertiary ones are not."
+       ],
+       [
+        "Benzonitrile is partially hydrolysed with H₂O/H⁺ under controlled, mild conditions. The product is",
+        [
+         "benzamide",
+         "benzoic acid",
+         "benzaldehyde",
+         "benzylamine"
+        ],
+        0,
+        "Mild conditions stop hydrolysis at the amide stage; vigorous conditions give the acid."
+       ],
+       [
+        "Ester A (C₈H₁₆O₂) is hydrolysed by dilute H₂SO₄ to acid B and alcohol C. C is oxidised to B, and C on dehydration gives but-1-ene. A is",
+        [
+         "isobutyl butanoate",
+         "butyl butanoate",
+         "butyl 2-methylpropanoate",
+         "ethyl hexanoate"
+        ],
+        1,
+        "C is butan-1-ol and B is butanoic acid, so A is CH₃CH₂CH₂COOCH₂CH₂CH₂CH₃ (adapted from NCERT Exercise 8.11)."
+       ],
+       [
+        "Cyclohexene is converted into hexanedioic acid by",
+        [
+         "H₂/Pd",
+         "NaBH₄",
+         "vigorous oxidation with KMnO₄/H⁺ or alkaline KMnO₄ followed by acidification",
+         "O₃ followed by Zn/H₂O"
+        ],
+        2,
+        "Cleavage of the C=C oxidises each end to –COOH (NCERT Example 8.5)."
+       ],
+       [
+        "Ethanoic acid shows a molar mass of about 120 g mol⁻¹ in benzene. This is because",
+        [
+         "it ionises in benzene",
+         "it forms trimers by covalent bonds",
+         "benzene oxidises it",
+         "its molecules form hydrogen-bonded dimers in aprotic solvents"
+        ],
+        3,
+        "Calculated mass is 60 g mol⁻¹, so the molecules exist as dimers."
+       ],
+       [
+        "Increasing order of boiling points of propane, propanal, propan-1-ol and propanoic acid is",
+        [
+         "propane < propanal < propan-1-ol < propanoic acid",
+         "propane < propan-1-ol < propanal < propanoic acid",
+         "propanal < propane < propanoic acid < propan-1-ol",
+         "propanoic acid < propan-1-ol < propanal < propane"
+        ],
+        0,
+        "Strength of intermolecular forces increases in this order."
+       ],
+       [
+        "Which simple test distinguishes benzoic acid from phenol?",
+        [
+         "Add Tollens’ reagent",
+         "Add NaHCO₃: benzoic acid gives effervescence of CO₂ while phenol does not",
+         "Add Fehling’s solution",
+         "Add 2,4-DNP"
+        ],
+        1,
+        "Carboxylic acids react with weaker bases like hydrogencarbonates."
+       ],
+       [
+        "Why is ethanoic acid a stronger acid than phenol?",
+        [
+         "Phenoxide has no resonance",
+         "The carboxylate ion has more resonating structures than phenoxide",
+         "The carboxylate ion has two equivalent resonance structures with the negative charge on the electronegative oxygen atoms",
+         "Phenol has no O–H bond"
+        ],
+        2,
+        "Phenoxide has non-equivalent structures with charge on carbon, so it is less stabilised."
+       ],
+       [
+        "Increasing order of acidity of CH₃COOH, ClCH₂COOH, Cl₂CHCOOH and Cl₃CCOOH is",
+        [
+         "Cl₃CCOOH < Cl₂CHCOOH < ClCH₂COOH < CH₃COOH",
+         "ClCH₂COOH < CH₃COOH < Cl₃CCOOH < Cl₂CHCOOH",
+         "CH₃COOH < Cl₃CCOOH < Cl₂CHCOOH < ClCH₂COOH",
+         "CH₃COOH < ClCH₂COOH < Cl₂CHCOOH < Cl₃CCOOH"
+        ],
+        3,
+        "More electron-withdrawing Cl atoms stabilise the anion more."
+       ],
+       [
+        "Which acid is stronger, CH₂FCH₂CH₂COOH or CH₃CHFCH₂COOH?",
+        [
+         "CH₃CHFCH₂COOH, because F is closer to –COOH",
+         "CH₂FCH₂CH₂COOH, because F is farther from –COOH",
+         "Both have the same strength",
+         "CH₂FCH₂CH₂COOH, because F donates electrons"
+        ],
+        0,
+        "The inductive effect weakens with distance (NCERT Intext 8.8)."
+       ],
+       [
+        "The pKa of benzoic acid is 4.19 and that of 4-nitrobenzoic acid is 3.41. How many times stronger (Ka ratio) is 4-nitrobenzoic acid?",
+        [
+         "About 0.8 times",
+         "About 6 times",
+         "About 60 times",
+         "About 600 times"
+        ],
+        1,
+        "Ratio = 10^(4.19 − 3.41) = 10^0.78 ≈ 6.",
+        "Ka = 10^(−pKa)"
+       ],
+       [
+        "Which acid is weaker than benzoic acid?",
+        [
+         "4-Nitrobenzoic acid",
+         "3,4-Dinitrobenzoic acid",
+         "4-Methoxybenzoic acid",
+         "Trifluoroethanoic acid"
+        ],
+        2,
+        "The electron-donating –OCH₃ destabilises the benzoate ion (pKa 4.46)."
+       ],
+       [
+        "Assertion (A): Benzoic acid is a stronger acid than ethanoic acid.\nReason (R): The sp² hybridised carbon attached to the carboxyl carbon is more electronegative than the sp³ carbon in CH₃.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        0,
+        "Benzoic acid pKa is 4.19 while ethanoic acid is 4.76."
+       ],
+       [
+        "A student claims that heating ethanoic acid with P₂O₅ gives ethanoyl chloride. What is wrong?",
+        [
+         "Nothing is wrong",
+         "It gives ethyl ethanoate",
+         "It gives ethanamide",
+         "P₂O₅ removes water to give ethanoic anhydride, not the chloride"
+        ],
+        3,
+        "Acid chlorides need PCl₅, PCl₃ or SOCl₂."
+       ],
+       [
+        "Ethanoic acid is converted to ethanal by",
+        [
+         "SOCl₂, then H₂ with Pd on BaSO₄",
+         "LiAlH₄",
+         "NaBH₄",
+         "SOCl₂, then NaBH₄"
+        ],
+        0,
+        "The acid chloride gives the aldehyde by Rosenmund reduction."
+       ],
+       [
+        "In acid-catalysed esterification of a carboxylic acid with an alcohol, the leaving group from the tetrahedral intermediate is",
+        [
+         "alkoxide ion",
+         "water",
+         "hydroxide ion",
+         "carbon dioxide"
+        ],
+        1,
+        "Proton transfer makes –OH₂⁺, which leaves as H₂O."
+       ],
+       [
+        "Benzoic acid is treated with SOCl₂ and the product with ammonia. The final product is",
+        [
+         "aniline",
+         "benzonitrile",
+         "benzamide",
+         "benzaldehyde"
+        ],
+        2,
+        "C₆H₅COCl + NH₃ → C₆H₅CONH₂."
+       ],
+       [
+        "Which reagent reduces –COOH of 4-nitrobenzoic acid to –CH₂OH without affecting –NO₂?",
+        [
+         "LiAlH₄",
+         "NaBH₄",
+         "Zn–Hg/conc. HCl",
+         "Diborane"
+        ],
+        3,
+        "Diborane does not easily reduce nitro, halo or ester groups."
+       ],
+       [
+        "Sodium propanoate is heated with soda lime. The hydrocarbon formed is",
+        [
+         "ethane",
+         "propane",
+         "butane",
+         "methane"
+        ],
+        0,
+        "RCOONa → R–H; here R is ethyl."
+       ],
+       [
+        "Electrolysis of aqueous sodium butanoate gives mainly",
+        [
+         "butane",
+         "hexane",
+         "propane",
+         "octane"
+        ],
+        1,
+        "Kolbe electrolysis joins two propyl radicals."
+       ],
+       [
+        "Assertion (A): Lithium aluminium hydride reduces carboxylic acids to primary alcohols.\nReason (R): Diborane is a better reagent than LiAlH₄ when ester, nitro or halo groups are also present.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        1,
+        "Both are true, but the reason about diborane does not explain why LiAlH₄ reduces –COOH."
+       ],
+       [
+        "Which acid does NOT undergo the Hell–Volhard–Zelinsky reaction?",
+        [
+         "Propanoic acid",
+         "Butanoic acid",
+         "2,2-Dimethylpropanoic acid",
+         "3-Methylbutanoic acid"
+        ],
+        2,
+        "It has no α-hydrogen."
+       ],
+       [
+        "Butanoic acid is treated with Br₂ and red P. The major product is",
+        [
+         "4-bromobutanoic acid",
+         "butanoyl bromide",
+         "3-bromobutanoic acid",
+         "2-bromobutanoic acid"
+        ],
+        3,
+        "α-Halogenation occurs."
+       ],
+       [
+        "Assertion (A): Benzoic acid undergoes Friedel–Crafts alkylation readily.\nReason (R): The –COOH group is a deactivating, meta-directing group.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        3,
+        "Benzoic acid does not undergo Friedel–Crafts reaction because the ring is deactivated and AlCl₃ bonds to the carboxyl group."
+       ],
+       [
+        "Benzoic acid is treated with Br₂ and FeBr₃. The major product is",
+        [
+         "3-bromobenzoic acid",
+         "2-bromobenzoic acid",
+         "4-bromobenzoic acid",
+         "bromobenzene"
+        ],
+        0,
+        "–COOH is a meta director."
+       ],
+       [
+        "Which statement about uses of carboxylic acids is INCORRECT?",
+        [
+         "Hexanedioic acid is used to make nylon-6,6",
+         "Higher fatty acids are used as vinegar in food",
+         "Sodium benzoate is a food preservative",
+         "Esters of benzoic acid are used in perfumery"
+        ],
+        1,
+        "Vinegar is ethanoic acid; higher fatty acids make soaps and detergents."
+       ]
+      ]
+     ]
+    },
+    {
+     "n": 9,
+     "t": "Amines",
+     "levels": [
+      [
+       [
+        "What are the hybridisation of nitrogen and the shape of an amine molecule?",
+        [
+         "sp² hybridised nitrogen, trigonal planar shape",
+         "sp³ hybridised nitrogen, pyramidal shape",
+         "sp³ hybridised nitrogen, regular tetrahedral shape with four bond pairs",
+         "sp hybridised nitrogen, linear shape"
+        ],
+        1,
+        "Nitrogen uses three sp³ orbitals for bonds and the fourth holds the lone pair, so the geometry is pyramidal."
+       ],
+       [
+        "In trimethylamine the C–N–C bond angle is about 108°, less than 109.5°. Why?",
+        [
+         "The lone pair on nitrogen repels the bond pairs more strongly",
+         "The methyl groups attract each other",
+         "Nitrogen is sp² hybridised in trimethylamine",
+         "The N–C bonds are double bonds"
+        ],
+        0,
+        "The unshared pair on N occupies one sp³ orbital and squeezes the bond angles below 109.5°."
+       ],
+       [
+        "Which of the following is a secondary amine?",
+        [
+         "(CH₃)₃CNH₂",
+         "(CH₃CH₂)₃N",
+         "C₆H₅NH₂",
+         "C₆H₅NHCH₃"
+        ],
+        3,
+        "N-Methylaniline has two groups (phenyl and methyl) on nitrogen, so it is secondary."
+       ],
+       [
+        "Which of the following is a mixed tertiary amine?",
+        [
+         "(CH₃)₃N",
+         "(CH₃CH₂)₃N",
+         "(CH₃CH₂)₂NCH₃",
+         "(CH₃CH₂)₂NH"
+        ],
+        2,
+        "The three groups on N are not all the same (two ethyl and one methyl), so it is a mixed amine; (CH₃CH₂)₂NH is secondary."
+       ],
+       [
+        "What is the IUPAC name of (CH₃CH₂)₃N?",
+        [
+         "Triethylamine",
+         "N,N-Diethylethanamine",
+         "Diethylethanamine",
+         "N-Triethylamine"
+        ],
+        1,
+        "Triethylamine is the common name; in IUPAC the ethanamine chain carries two N-ethyl substituents (N,N-diethyl)."
+       ],
+       [
+        "What is the IUPAC name of H₂N–CH₂–CH₂–NH₂?",
+        [
+         "Ethane-1,2-diamine",
+         "Ethan-1,2-diamine",
+         "Ethane-1,2-amine",
+         "Diethanamine"
+        ],
+        0,
+        "With two amino groups the letter ‘e’ of the hydrocarbon name is retained and the suffix is diamine."
+       ],
+       [
+        "What is the IUPAC name of o-toluidine?",
+        [
+         "N-Methylaniline",
+         "4-Methylaniline",
+         "2-Methylbenzoic acid",
+         "2-Methylaniline"
+        ],
+        3,
+        "Aniline is the parent and the methyl group sits ortho (position 2) to NH₂."
+       ],
+       [
+        "Reduction of nitrobenzene to aniline with a metal and acid is preferably done with iron scrap and HCl because only a small amount of HCl is needed. Why?",
+        [
+         "Iron is not oxidised in the reaction",
+         "Iron forms a complex with aniline",
+         "FeCl₂ formed hydrolyses and releases HCl again",
+         "Iron acts as a catalyst and is not used up"
+        ],
+        2,
+        "FeCl₂ is hydrolysed to give back hydrochloric acid, so only a little acid is needed to start the reaction."
+       ],
+       [
+        "In the ammonolysis of an alkyl halide, how can the primary amine be obtained as the major product?",
+        [
+         "By using a large excess of the alkyl halide",
+         "By using a large excess of ammonia",
+         "By using aqueous NaOH in place of ammonia",
+         "By carrying the reaction out at 273 K in an open vessel"
+        ],
+        1,
+        "With excess NH₃ the halide meets ammonia rather than the amine already formed, so further alkylation is reduced."
+       ],
+       [
+        "Which alkyl halide reacts fastest with ammonia in ammonolysis?",
+        [
+         "CH₃CH₂I",
+         "CH₃CH₂Cl",
+         "CH₃CH₂Br",
+         "All react at the same rate"
+        ],
+        0,
+        "The order of reactivity of halides is RI > RBr > RCl because the C–I bond is the weakest."
+       ],
+       [
+        "What is obtained on reducing CH₃CH₂CN with LiAlH₄?",
+        [
+         "CH₃CH₂NH₂",
+         "(CH₃CH₂)₂NH",
+         "CH₃CH₂CH₂OH",
+         "CH₃CH₂CH₂NH₂"
+        ],
+        3,
+        "The nitrile carbon becomes CH₂NH₂, giving propan-1-amine, which has one carbon more than ethanamine (ascent of amine series)."
+       ],
+       [
+        "What is the product when CH₃CONH₂ is reduced with LiAlH₄?",
+        [
+         "CH₃NH₂",
+         "CH₃COOH",
+         "CH₃CH₂NH₂",
+         "CH₃CH₂OH"
+        ],
+        2,
+        "LiAlH₄ converts C=O of the amide into CH₂, so the amine has the same number of carbons as the amide."
+       ],
+       [
+        "Which amine cannot be prepared by Gabriel phthalimide synthesis?",
+        [
+         "Methanamine",
+         "Aniline",
+         "Butan-1-amine",
+         "Phenylmethanamine (benzylamine)"
+        ],
+        1,
+        "Aryl halides do not undergo nucleophilic substitution with the phthalimide anion, so aromatic primary amines cannot be made this way."
+       ],
+       [
+        "What is formed when propanamide is treated with Br₂ and aqueous NaOH (Hoffmann bromamide reaction)?",
+        [
+         "Ethanamine",
+         "Propan-1-amine",
+         "Methanamine",
+         "N-Methylethanamine"
+        ],
+        0,
+        "The amine formed has one carbon less than the amide, so propanamide gives ethanamine."
+       ],
+       [
+        "Which of the following isomeric amines has the highest boiling point?",
+        [
+         "(CH₃CH₂)₂NH",
+         "CH₃CH₂N(CH₃)₂",
+         "They all have the same boiling point",
+         "CH₃CH₂CH₂CH₂NH₂"
+        ],
+        3,
+        "Primary amines have two N–H bonds for intermolecular hydrogen bonding, so b.p. order is primary > secondary > tertiary."
+       ],
+       [
+        "Why are lower aliphatic amines soluble in water?",
+        [
+         "They ionise completely in water",
+         "They are strong acids",
+         "They form hydrogen bonds with water molecules",
+         "They are non-polar and mix with water"
+        ],
+        2,
+        "The N atom with its lone pair and the N–H bonds hydrogen-bond with water; solubility falls as the alkyl part becomes larger."
+       ],
+       [
+        "Pure aniline becomes coloured (brown) on storage. This is due to",
+        [
+         "reduction by moisture",
+         "atmospheric oxidation",
+         "polymerisation by light to a white solid",
+         "hydrolysis to phenol"
+        ],
+        1,
+        "Aniline and other arylamines are colourless when pure but get coloured by atmospheric oxidation."
+       ],
+       [
+        "A mixture of aniline and nitrobenzene is shaken with dilute HCl and ether. Where does aniline end up?",
+        [
+         "In the aqueous layer as anilinium chloride",
+         "In the ether layer as aniline",
+         "In the ether layer as anilinium chloride",
+         "It is destroyed by HCl"
+        ],
+        0,
+        "Amine salts are soluble in water but insoluble in ether, which is how amines are separated from non-basic organic compounds."
+       ],
+       [
+        "What is the order of basicity of methyl-substituted amines in the gaseous phase?",
+        [
+         "(CH₃)₂NH > CH₃NH₂ > (CH₃)₃N > NH₃",
+         "NH₃ > CH₃NH₂ > (CH₃)₂NH > (CH₃)₃N",
+         "CH₃NH₂ > (CH₃)₂NH > (CH₃)₃N > NH₃",
+         "(CH₃)₃N > (CH₃)₂NH > CH₃NH₂ > NH₃"
+        ],
+        3,
+        "In the gas phase only the +I effect operates, so basicity rises with the number of alkyl groups."
+       ],
+       [
+        "Which is the strongest base in aqueous solution?",
+        [
+         "(CH₃)₃N",
+         "CH₃NH₂",
+         "(CH₃)₂NH",
+         "NH₃"
+        ],
+        2,
+        "In water the order is (CH₃)₂NH > CH₃NH₂ > (CH₃)₃N > NH₃ because of the interplay of +I effect, solvation and steric hindrance."
+       ],
+       [
+        "Why is aniline a weaker base than ammonia?",
+        [
+         "The phenyl group has a +I effect",
+         "Its lone pair is delocalised into the benzene ring",
+         "Aniline is a larger molecule and is solvated more",
+         "Aniline has no lone pair on nitrogen"
+        ],
+        1,
+        "Conjugation with the ring makes the lone pair less available; aniline has five resonating structures against two for the anilinium ion."
+       ],
+       [
+        "Which is the correct increasing order of basic strength?",
+        [
+         "p-Nitroaniline < aniline < p-toluidine",
+         "Aniline < p-nitroaniline < p-toluidine",
+         "p-Toluidine < aniline < p-nitroaniline",
+         "p-Nitroaniline < p-toluidine < aniline"
+        ],
+        0,
+        "Electron-releasing –CH₃ increases basicity and electron-withdrawing –NO₂ decreases it."
+       ],
+       [
+        "Aniline is treated with excess CH₃I in the presence of Na₂CO₃. The final product is",
+        [
+         "N,N-dimethylaniline",
+         "N-methylaniline",
+         "2,4,6-trimethylaniline",
+         "phenyltrimethylammonium iodide, [C₆H₅N(CH₃)₃]⁺I⁻"
+        ],
+        3,
+        "Repeated alkylation of the amine ends with the quaternary ammonium salt."
+       ],
+       [
+        "Why is acylation of an amine with an acid chloride carried out in the presence of a base like pyridine?",
+        [
+         "The base protonates the amine to make it a better nucleophile",
+         "The base converts the acid chloride into an anhydride",
+         "The base removes HCl formed and shifts the equilibrium to the products",
+         "The base reduces the amide formed"
+        ],
+        2,
+        "Pyridine, a base stronger than the amine, takes up HCl so the reaction goes to completion."
+       ],
+       [
+        "What is the product of the reaction between CH₃NH₂ and benzoyl chloride (C₆H₅COCl)?",
+        [
+         "Benzamide",
+         "N-Methylbenzamide",
+         "Methyl benzoate",
+         "N,N-Dimethylbenzamide"
+        ],
+        1,
+        "Benzoylation replaces one N–H hydrogen by the benzoyl group, giving CH₃NHCOC₆H₅ (N-methylbenzamide)."
+       ],
+       [
+        "Which of the following gives a foul-smelling product on warming with CHCl₃ and alcoholic KOH?",
+        [
+         "CH₃CH₂NH₂",
+         "(CH₃)₂NH",
+         "(CH₃)₃N",
+         "C₆H₅NHCH₃"
+        ],
+        0,
+        "Only primary amines give isocyanides (carbylamine reaction); secondary and tertiary amines do not."
+       ],
+       [
+        "What are the products when ethanamine reacts with NaNO₂ and HCl?",
+        [
+         "Ethyldiazonium chloride, stable",
+         "Nitroethane and water",
+         "Ethanamide and N₂",
+         "Ethanol and N₂"
+        ],
+        3,
+        "The aliphatic diazonium salt is unstable and gives N₂ and the alcohol (here ethanol)."
+       ],
+       [
+        "Aniline reacts with NaNO₂ and HCl at 273–278 K to give",
+        [
+         "phenol and N₂",
+         "nitrobenzene",
+         "benzenediazonium chloride",
+         "chlorobenzene"
+        ],
+        2,
+        "Aromatic primary amines form arenediazonium salts at low temperature; the salt is later converted to other products."
+       ],
+       [
+        "Benzenesulphonyl chloride reacts with a primary amine to give a product that dissolves in alkali. Why?",
+        [
+         "The sulphonamide has no hydrogen atoms",
+         "The N–H hydrogen of the sulphonamide is acidic",
+         "The sulphonamide is a salt of a strong acid",
+         "The sulphonamide contains a free –NH₂ group"
+        ],
+        1,
+        "The strongly electron-withdrawing sulphonyl group makes the N–H hydrogen acidic, so the product is soluble in alkali."
+       ],
+       [
+        "In the Hinsberg test, which class of amine does not react with benzenesulphonyl chloride?",
+        [
+         "Tertiary amines",
+         "Primary amines",
+         "Secondary amines",
+         "Aromatic amines"
+        ],
+        0,
+        "Tertiary amines have no N–H hydrogen and do not form a sulphonamide."
+       ],
+       [
+        "Aniline is treated with bromine water at room temperature. What is observed?",
+        [
+         "A yellow solution of 4-bromoaniline",
+         "A white precipitate of 3-bromoaniline",
+         "No reaction",
+         "A white precipitate of 2,4,6-tribromoaniline"
+        ],
+        3,
+        "The –NH₂ group is strongly activating and ortho and para directing, so all three positions are brominated."
+       ],
+       [
+        "Direct nitration of aniline gives a substantial amount of m-nitroaniline because",
+        [
+         "–NH₂ is a meta directing group",
+         "nitric acid oxidises the para position selectively",
+         "in the acid medium aniline is protonated to anilinium ion, which is meta directing",
+         "aniline forms a complex with the nitrating mixture that blocks ortho positions"
+        ],
+        2,
+        "In the strongly acidic mixture –NH₃⁺ forms; it is deactivating and meta directing."
+       ],
+       [
+        "Aniline heated with conc. H₂SO₄ at 453–473 K gives mainly",
+        [
+         "o-aminobenzenesulphonic acid",
+         "p-aminobenzenesulphonic acid (sulphanilic acid)",
+         "m-aminobenzenesulphonic acid",
+         "anilinium chloride"
+        ],
+        1,
+        "Anilinium hydrogensulphate first forms and on heating gives the para sulphonic acid as the major product."
+       ],
+       [
+        "Why does aniline not undergo Friedel–Crafts alkylation or acylation?",
+        [
+         "It forms a salt with AlCl₃, putting a positive charge on nitrogen",
+         "It has no π electrons",
+         "The benzene ring is deactivated by the lone pair",
+         "AlCl₃ reduces aniline to cyclohexylamine"
+        ],
+        0,
+        "Nitrogen then acts as a strong deactivating group, so the ring does not react."
+       ],
+       [
+        "What is the name of the compound C₆H₅N₂⁺Cl⁻?",
+        [
+         "Phenyl azide chloride",
+         "Aniline hydrochloride",
+         "Chlorobenzenediazene",
+         "Benzenediazonium chloride"
+        ],
+        3,
+        "The N₂⁺ group is called diazonium; the compound is named as arenediazonium followed by the anion."
+       ],
+       [
+        "The arenediazonium ion is stable for a short time in cold solution, unlike alkyldiazonium ions. This is explained by",
+        [
+         "hydrogen bonding with water",
+         "hyperconjugation of the alkyl group",
+         "resonance",
+         "sp³ hybridisation of the carbon"
+        ],
+        2,
+        "The positive charge of the arenediazonium ion is dispersed into the ring by resonance."
+       ],
+       [
+        "Which statement about benzenediazonium chloride is correct?",
+        [
+         "It is insoluble in water and stable at room temperature",
+         "It is a colourless crystalline solid, soluble in water, and reacts with water on warming",
+         "It is a stable liquid that can be stored",
+         "It is a red solid that decomposes only above 400 K"
+        ],
+        1,
+        "The chloride is soluble in water and stable in the cold; the fluoroborate is the water-insoluble, room-temperature-stable salt."
+       ],
+       [
+        "Benzenediazonium chloride is treated with CuCl in HCl. The main product is",
+        [
+         "chlorobenzene",
+         "phenol",
+         "benzene",
+         "aniline"
+        ],
+        0,
+        "Cu(I) halide replaces the diazonium group by Cl (Sandmeyer reaction), with N₂ evolved."
+       ],
+       [
+        "Which reagent converts benzenediazonium chloride into iodobenzene?",
+        [
+         "CuI in HCl",
+         "NaI with H₃PO₂",
+         "I₂ in CCl₄",
+         "KI"
+        ],
+        3,
+        "Iodide displaces N₂ directly on treatment with potassium iodide; no copper is needed."
+       ],
+       [
+        "Benzenediazonium chloride is treated with HBF₄ and the precipitate is heated. The product is",
+        [
+         "chlorobenzene",
+         "benzene",
+         "fluorobenzene",
+         "phenol"
+        ],
+        2,
+        "Benzenediazonium fluoroborate precipitates and on heating decomposes to fluorobenzene, BF₃ and N₂."
+       ],
+       [
+        "Benzenediazonium chloride reacts with hypophosphorous acid (H₃PO₂) and water. The product is",
+        [
+         "phenol",
+         "benzene",
+         "aniline",
+         "chlorobenzene"
+        ],
+        1,
+        "Mild reducing agents such as H₃PO₂ or ethanol replace the diazonium group by hydrogen."
+       ],
+       [
+        "Warming a benzenediazonium chloride solution to about 283 K gives",
+        [
+         "phenol",
+         "aniline",
+         "benzene",
+         "chlorobenzene"
+        ],
+        0,
+        "The salt is hydrolysed by water, replacing the diazonium group by –OH."
+       ],
+       [
+        "Benzenediazonium chloride couples with phenol to give",
+        [
+         "o-hydroxyazobenzene as the main product",
+         "azobenzene only",
+         "p-aminoazobenzene",
+         "p-hydroxyazobenzene"
+        ],
+        3,
+        "The diazonium ion attacks the para position of phenol; the product contains the –N=N– azo link and is coloured."
+       ],
+       [
+        "Which of these compounds is best prepared from a diazonium salt rather than by direct substitution of benzene?",
+        [
+         "Nitrobenzene",
+         "Bromobenzene",
+         "Iodobenzene",
+         "Ethylbenzene"
+        ],
+        2,
+        "Aryl fluorides and iodides cannot be prepared by direct halogenation, and cyano groups cannot be introduced by substituting chlorobenzene."
+       ]
+      ],
+      [
+       [
+        "Assertion (A): The C–N–C bond angle in trimethylamine (108°) is smaller than the tetrahedral angle.\nReason (R): The lone pair on nitrogen repels the bond pairs more than the bond pairs repel one another.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        0,
+        "The lone pair occupies one sp³ orbital and compresses the bond angles, so R explains A."
+       ],
+       [
+        "How many isomeric secondary amines have the molecular formula C₄H₁₁N?",
+        [
+         "3",
+         "1",
+         "2",
+         "4"
+        ],
+        0,
+        "They are N-methylpropan-1-amine, N-methylpropan-2-amine and N-ethylethanamine; there are also four primary and one tertiary isomer."
+       ],
+       [
+        "A student writes the IUPAC name of H₂N(CH₂)₆NH₂ as 1,6-diaminohexane. What is wrong, and what is the correct name?",
+        [
+         "Nothing is wrong; it is the accepted IUPAC name",
+         "The chain is numbered wrongly; correct name is hexane-2,5-diamine",
+         "The ‘e’ of hexane must be dropped; correct name is hexan-1,6-diamine",
+         "Amino groups are named with the suffix diamine; correct name is hexane-1,6-diamine"
+        ],
+        3,
+        "In IUPAC naming the amine is the principal group and appears as a suffix, with the ‘e’ retained before diamine."
+       ],
+       [
+        "Propan-1-amine and N-methylethanamine have the same formula C₃H₉N. What kind of isomers are they?",
+        [
+         "Position isomers",
+         "Chain isomers",
+         "Functional isomers (primary and secondary amine)",
+         "Optical isomers"
+        ],
+        2,
+        "One has an –NH₂ group and the other a >NH group, so they belong to different amine classes."
+       ],
+       [
+        "Benzene is converted to N,N-dimethylaniline. Which sequence of reagents is correct?",
+        [
+         "conc. H₂SO₄; NaOH; CH₃Cl",
+         "conc. HNO₃/conc. H₂SO₄; Fe/HCl; excess CH₃Cl (2 mol)",
+         "Br₂/FeBr₃; NH₃ (ethanol, 373 K); CH₃Cl",
+         "CH₃Cl/AlCl₃; HNO₃; Sn/HCl"
+        ],
+        1,
+        "Nitration, reduction of the nitro group to NH₂, then double alkylation of the amine (NCERT Intext Question 9.3)."
+       ],
+       [
+        "Nitrobenzene (12.3 g) is completely reduced to aniline with Fe/HCl in 80% yield. What mass of aniline is obtained? (C₆H₅NO₂ = 123, C₆H₅NH₂ = 93)",
+        [
+         "7.44 g",
+         "9.30 g",
+         "7.80 g",
+         "12.3 g"
+        ],
+        0,
+        "0.1 mol nitrobenzene gives 0.1 mol aniline = 9.3 g at 100%; 80% of that is 7.44 g.",
+        "Moles first, then yield."
+       ],
+       [
+        "Benzyl chloride is treated with excess ethanolic ammonia, and the amine formed is then treated with two moles of CH₃Cl. The final organic product is",
+        [
+         "C₆H₅CH₂NHCH₃",
+         "C₆H₅CH₂N(CH₃)₃⁺Cl⁻",
+         "C₆H₅NHCH₂CH₃",
+         "C₆H₅CH₂N(CH₃)₂"
+        ],
+        3,
+        "Ammonolysis gives C₆H₅CH₂NH₂; two methylations convert it to the tertiary amine (NCERT Example 9.1)."
+       ],
+       [
+        "Assertion (A): Ammonolysis of an alkyl halide with a large excess of NH₃ gives the primary amine as the major product.\nReason (R): With a large excess of NH₃, a halide molecule is far more likely to meet NH₃ than the amine already formed.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        0,
+        "Excess ammonia outnumbers the product amine, so over-alkylation is suppressed; R explains A."
+       ],
+       [
+        "Which route converts C₂H₅Cl into propan-1-amine?",
+        [
+         "NH₃ (ethanolic, sealed tube)",
+         "KCN (alcoholic), then LiAlH₄",
+         "KCN, then partial hydrolysis, then Br₂/NaOH",
+         "NaOH (aqueous), then NH₃"
+        ],
+        1,
+        "KCN gives CH₃CH₂CN, and reduction gives CH₃CH₂CH₂NH₂, one carbon more (NCERT Example 9.2)."
+       ],
+       [
+        "A student says that reduction of CH₃CONH₂ with LiAlH₄ gives CH₃NH₂ by loss of one carbon. What is the error?",
+        [
+         "LiAlH₄ reduction keeps all carbons and gives CH₃CH₂NH₂; loss of a carbon belongs to the Hoffmann reaction",
+         "The product is CH₃CH₂OH",
+         "The product is CH₃COOH because LiAlH₄ oxidises amides",
+         "The product is (CH₃)₂NH"
+        ],
+        0,
+        "Reduction of an amide converts C=O to CH₂; Br₂/NaOH is what removes the carbonyl carbon."
+       ],
+       [
+        "Assertion (A): Gabriel phthalimide synthesis can be used to prepare aniline.\nReason (R): Aryl halides do not undergo nucleophilic substitution with the phthalimide anion.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        3,
+        "A is false because aromatic primary amines cannot be made by this method; R is true and is the reason."
+       ],
+       [
+        "CH₃CH₂I is treated with NaCN to give A, partial hydrolysis of A gives B, and B on heating with NaOH and Br₂ gives C. What is C?",
+        [
+         "CH₃CH₂CH₂NH₂",
+         "CH₃CONH₂",
+         "CH₃CH₂NH₂",
+         "CH₃CH₂COOH"
+        ],
+        2,
+        "A = CH₃CH₂CN, B = CH₃CH₂CONH₂, and Hoffmann degradation removes one carbon to give ethanamine (NCERT Exercise 9.9)."
+       ],
+       [
+        "Butanamide (8.7 g, C₄H₉NO = 87) is converted to propan-1-amine (C₃H₉N = 59) by Hoffmann bromamide degradation in 75% yield. What mass of amine is obtained?",
+        [
+         "5.90 g",
+         "4.43 g",
+         "5.48 g",
+         "7.30 g"
+        ],
+        1,
+        "0.1 mol amide gives 0.1 mol amine = 5.9 g at 100%; 75% gives 4.43 g.",
+        "The amine has one carbon less; use the amine’s molar mass."
+       ],
+       [
+        "Which is the correct increasing order of boiling points of butan-1-ol, N,N-dimethylethanamine, butan-1-amine, 2-methylbutane and N-ethylethanamine?",
+        [
+         "2-Methylbutane < N,N-dimethylethanamine < N-ethylethanamine < butan-1-amine < butan-1-ol",
+         "N,N-Dimethylethanamine < 2-methylbutane < N-ethylethanamine < butan-1-amine < butan-1-ol",
+         "2-Methylbutane < butan-1-amine < N-ethylethanamine < N,N-dimethylethanamine < butan-1-ol",
+         "Butan-1-ol < butan-1-amine < N-ethylethanamine < N,N-dimethylethanamine < 2-methylbutane"
+        ],
+        0,
+        "Alcohol H-bonds are strongest; among amines primary > secondary > tertiary; the alkane has no H-bonding (NCERT Table 9.2)."
+       ],
+       [
+        "Assertion (A): Tertiary amines boil at lower temperatures than isomeric primary amines.\nReason (R): Tertiary amines have a higher molar mass than their primary isomers.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        2,
+        "A is true because tertiary amines lack N–H and cannot hydrogen bond; R is false as isomers have the same molar mass."
+       ],
+       [
+        "Which is the correct increasing order of basic strength in aqueous solution?",
+        [
+         "C₆H₅NH₂ < C₆H₅CH₂NH₂ < CH₃NH₂ < (CH₃)₃N < (CH₃)₂NH",
+         "C₆H₅CH₂NH₂ < C₆H₅NH₂ < (CH₃)₃N < CH₃NH₂ < (CH₃)₂NH",
+         "C₆H₅NH₂ < C₆H₅CH₂NH₂ < (CH₃)₃N < CH₃NH₂ < (CH₃)₂NH",
+         "C₆H₅NH₂ < (CH₃)₃N < C₆H₅CH₂NH₂ < CH₃NH₂ < (CH₃)₂NH"
+        ],
+        2,
+        "The aryl amine is weakest, benzylamine is intermediate (pKb about 4.7), and in water (CH₃)₂NH > CH₃NH₂ > (CH₃)₃N (NCERT Intext Question 9.4)."
+       ],
+       [
+        "Arrange C₂H₅NH₂, C₆H₅NHCH₃, (C₂H₅)₂NH and C₆H₅NH₂ in decreasing order of pKb.",
+        [
+         "(C₂H₅)₂NH > C₂H₅NH₂ > C₆H₅NHCH₃ > C₆H₅NH₂",
+         "C₆H₅NH₂ > C₆H₅NHCH₃ > C₂H₅NH₂ > (C₂H₅)₂NH",
+         "C₆H₅NHCH₃ > C₆H₅NH₂ > (C₂H₅)₂NH > C₂H₅NH₂",
+         "C₂H₅NH₂ > (C₂H₅)₂NH > C₆H₅NH₂ > C₆H₅NHCH₃"
+        ],
+        1,
+        "Higher pKb means weaker base: aniline (9.38) is weakest, then N-methylaniline (9.30), then ethanamine, with diethylamine the strongest (NCERT Exercise 9.4)."
+       ],
+       [
+        "A student says (CH₃)₃N is the strongest base among the methylamines in water because it has three +I groups. What is wrong?",
+        [
+         "In water, solvation of the ammonium ion and steric effects also matter, and (CH₃)₂NH is stronger",
+         "Nothing is wrong; (CH₃)₃N is the strongest in water",
+         "+I groups decrease basicity in water",
+         "Only methylamine is a base in water"
+        ],
+        0,
+        "The trimethylammonium ion has only one N–H for hydrogen bonding with water, so it is less stabilised than (CH₃)₂NH₂⁺."
+       ],
+       [
+        "How many moles of CH₃I are needed to convert one mole of aniline completely into its quaternary ammonium salt?",
+        [
+         "1",
+         "2",
+         "4",
+         "3"
+        ],
+        3,
+        "The two N–H hydrogens and then the lone pair are used up: C₆H₅N(CH₃)₃⁺ contains three methyl groups."
+       ],
+       [
+        "A student states that amines react with carboxylic acids at room temperature to give amides. What is the correct statement?",
+        [
+         "They form esters",
+         "They form acid chlorides",
+         "They form ammonium carboxylate salts at room temperature",
+         "They form nitriles"
+        ],
+        2,
+        "Amine plus carboxylic acid gives a salt; amides are formed from acid chlorides, anhydrides or esters."
+       ],
+       [
+        "Which pair of amines will both react with benzoyl chloride?",
+        [
+         "(CH₃)₃N and CH₃NH₂",
+         "CH₃NH₂ and (CH₃)₂NH",
+         "(CH₃)₃N and (CH₃)₂NH",
+         "(CH₃)₃N and C₆H₅N(CH₃)₂"
+        ],
+        1,
+        "Acylation needs an N–H hydrogen to replace, so only primary and secondary amines react."
+       ],
+       [
+        "A compound C₂H₇N gives a foul smell on warming with CHCl₃ and alcoholic KOH. What is it, and what happens on treating it with NaNO₂/HCl?",
+        [
+         "CH₃CH₂NH₂; N₂ and ethanol are formed",
+         "(CH₃)₂NH; N₂ and methanol are formed",
+         "CH₃CH₂NH₂; a stable diazonium salt is formed",
+         "(CH₃)₂NH; a stable diazonium salt is formed"
+        ],
+        0,
+        "The carbylamine test shows a primary amine; the primary aliphatic amine C₂H₅NH₂ gives N₂ and the alcohol."
+       ],
+       [
+        "Assertion (A): Dimethylamine gives the carbylamine (isocyanide) test.\nReason (R): The carbylamine test is given only by primary amines.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        3,
+        "A is false because dimethylamine is secondary; R is true."
+       ],
+       [
+        "Ethanamine (4.5 g, C₂H₅NH₂ = 45) is completely treated with NaNO₂ and HCl. What volume of N₂ is evolved at STP? (1 mol gas = 22.4 L)",
+        [
+         "4.48 L",
+         "1.12 L",
+         "2.24 L",
+         "22.4 L"
+        ],
+        2,
+        "One mole of primary aliphatic amine gives one mole of N₂; 0.1 mol gives 2.24 L.",
+        "Moles = 4.5/45."
+       ],
+       [
+        "Three isomers of C₃H₉N are each shaken with benzenesulphonyl chloride and aqueous KOH. X gives a clear solution, Y gives an insoluble solid, and Z does not react. Which is Z?",
+        [
+         "CH₃NHCH₂CH₃",
+         "(CH₃)₃N",
+         "CH₃CH₂CH₂NH₂",
+         "(CH₃)₂CHNH₂"
+        ],
+        1,
+        "X is primary (soluble sulphonamide), Y is secondary (insoluble), and Z has no N–H so it does not react: trimethylamine."
+       ],
+       [
+        "Aniline is converted to p-bromoaniline. Which sequence is correct?",
+        [
+         "(CH₃CO)₂O; Br₂; hydrolysis",
+         "Br₂ water only",
+         "NaNO₂/HCl; CuBr",
+         "HNO₃/H₂SO₄; Br₂"
+        ],
+        0,
+        "Acetylation reduces the activating power so only mono-bromination occurs at para, and hydrolysis restores the amine (NCERT Exercise 9.8)."
+       ],
+       [
+        "Assertion (A): Aniline gives a white precipitate of 2,4,6-tribromoaniline with bromine water.\nReason (R): Aniline is a weaker base than ammonia.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        1,
+        "Both are true, but the bromination reflects the activating –NH₂ group, not basic strength, so R is not the explanation."
+       ],
+       [
+        "A student states that aniline on direct nitration gives only o- and p-nitroaniline because –NH₂ is o,p-directing. What is wrong?",
+        [
+         "Nitration gives only the meta product",
+         "–NH₂ is a deactivating group",
+         "In strong acid aniline forms the meta-directing anilinium ion, so some m-nitroaniline and oxidation tar also form",
+         "The reaction gives nitrobenzene and ammonia"
+        ],
+        2,
+        "Protonation in the mixed acid gives –NH₃⁺, a meta director; acetylation of –NH₂ is used to avoid this."
+       ],
+       [
+        "Aniline (9.3 g) is completely acetylated with acetic anhydride. What mass of acetanilide (C₈H₉NO = 135) is formed?",
+        [
+         "9.3 g",
+         "13.5 g",
+         "27.0 g",
+         "10.2 g"
+        ],
+        1,
+        "0.1 mol aniline gives 0.1 mol acetanilide = 13.5 g."
+       ],
+       [
+        "Assertion (A): Aniline does not undergo Friedel–Crafts alkylation.\nReason (R): Aniline has no lone pair of electrons on the nitrogen atom.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        2,
+        "A is true because nitrogen forms a salt with AlCl₃; R is false since aniline does have a lone pair."
+       ],
+       [
+        "A student says that benzenediazonium chloride prepared from aniline, NaNO₂ and HCl at 300 K is stable and can be stored. What is wrong?",
+        [
+         "Nothing is wrong",
+         "Diazotisation needs conc. H₂SO₄ and 453 K",
+         "Diazonium salts form only from aliphatic amines",
+         "Diazotisation must be done at 273–278 K; at higher temperature the salt reacts with water to give phenol"
+        ],
+        3,
+        "The salt is stable only briefly in the cold and is used immediately."
+       ],
+       [
+        "What mass of HCl is consumed in converting 9.3 g of aniline to benzenediazonium chloride by NaNO₂ and HCl? (HCl = 36.5; aniline = 93)",
+        [
+         "3.65 g",
+         "14.6 g",
+         "7.3 g",
+         "36.5 g"
+        ],
+        2,
+        "The equation uses 2 mol HCl per mol aniline; 0.1 mol × 2 × 36.5 = 7.3 g."
+       ],
+       [
+        "A student claims that benzenediazonium chloride is insoluble in water and can be stored in a bottle. What is correct?",
+        [
+         "The statement is correct",
+         "It is soluble in water, unstable on warming or drying, and is used immediately; the fluoroborate is the insoluble stable salt",
+         "It is a gas at room temperature",
+         "It is soluble in water and explosive even in solution at 273 K"
+        ],
+        1,
+        "The chloride decomposes easily in the dry state and reacts with water when warmed."
+       ],
+       [
+        "Why is benzenediazonium fluoroborate used to make fluorobenzene?",
+        [
+         "It precipitates from solution, is stable at room temperature, and on heating gives ArF",
+         "It is soluble in water and reacts with fluoride",
+         "It gives phenol on heating",
+         "It needs Cu powder to decompose"
+        ],
+        0,
+        "The water-insoluble salt can be filtered and then thermally decomposed."
+       ],
+       [
+        "Aniline is converted to 1,3,5-tribromobenzene. Which sequence is correct?",
+        [
+         "NaNO₂/HCl; CuBr; Br₂",
+         "Br₂/FeBr₃ three times",
+         "(CH₃CO)₂O; Br₂; hydrolysis",
+         "Br₂/H₂O; NaNO₂/HCl at 273–278 K; H₃PO₂/H₂O"
+        ],
+        3,
+        "Bromine water gives 2,4,6-tribromoaniline, diazotisation and H₃PO₂ then remove the amino group (NCERT Intext Question 9.9)."
+       ],
+       [
+        "Compound A is C₆H₅NO₂. A with Fe/HCl gives B, B with NaNO₂/HCl at 273 K gives C, and C warmed with H₂O/H⁺ gives D. What is D?",
+        [
+         "C₆H₅NH₂",
+         "C₆H₆",
+         "C₆H₅OH",
+         "C₆H₅Cl"
+        ],
+        2,
+        "B is aniline, C is benzenediazonium chloride, and hydrolysis gives phenol (compare NCERT Exercise 9.9)."
+       ],
+       [
+        "3-Methylaniline is converted to 3-nitrotoluene. Which sequence is correct?",
+        [
+         "HNO₃/H₂SO₄",
+         "NaNO₂/HCl at 273–278 K; HBF₄; NaNO₂/Cu, heat",
+         "(CH₃CO)₂O; HNO₃; hydrolysis",
+         "Br₂ water; NaNO₂"
+        ],
+        1,
+        "The diazonium group is replaced by –NO₂ via the fluoroborate and aqueous NaNO₂/Cu (NCERT Intext Question 9.9)."
+       ],
+       [
+        "Aniline and benzylamine are tested with NaNO₂/HCl at 273–278 K, then the cold solutions are added to phenol. What is observed?",
+        [
+         "Aniline gives a coloured azo dye; benzylamine evolves N₂ without a dye",
+         "Benzylamine gives a coloured azo dye; aniline evolves N₂",
+         "Both give coloured azo dyes",
+         "Neither reacts"
+        ],
+        0,
+        "Aniline forms a stable diazonium salt that couples with phenol; benzylamine is aliphatic and decomposes with N₂ evolution."
+       ],
+       [
+        "Benzenediazonium chloride reacts with aniline to give p-aminoazobenzene. Which statement is correct?",
+        [
+         "It is a nucleophilic substitution at the amino group",
+         "N₂ is liberated in the reaction",
+         "The product has no –N=N– link",
+         "It is an electrophilic substitution in which the diazonium ion attacks the para position"
+        ],
+        3,
+        "The diazonium ion is the electrophile and the –N=N– group is retained in the coloured product."
+       ],
+       [
+        "A student plans to make benzonitrile by heating chlorobenzene with KCN. What is wrong and what is the correct route?",
+        [
+         "Nothing is wrong",
+         "KCN must be replaced by HCN with AlCl₃",
+         "Aryl chlorides resist nucleophilic substitution; use aniline, NaNO₂/HCl at 273–278 K, then CuCN",
+         "The correct route is aniline with CHCl₃/KOH"
+        ],
+        2,
+        "The cyano group is introduced through the diazonium salt (Sandmeyer reaction)."
+       ],
+       [
+        "4-Nitrotoluene is converted to 2-bromobenzoic acid. Which sequence is correct?",
+        [
+         "HNO₃; Br₂/Fe; KMnO₄",
+         "Br₂/Fe; Sn/HCl; NaNO₂/HCl (273 K); H₃PO₂; KMnO₄",
+         "Sn/HCl; NaNO₂; CuBr; KMnO₄",
+         "KMnO₄; Br₂/Fe; Sn/HCl"
+        ],
+        1,
+        "Br enters ortho to CH₃; the NO₂ group is reduced to NH₂, removed via the diazonium salt with H₃PO₂, then CH₃ is oxidised (NCERT Example 9.5)."
+       ],
+       [
+        "Azo compounds like p-hydroxyazobenzene are coloured because",
+        [
+         "they have an extended conjugated system joining two aromatic rings through –N=N–",
+         "they contain a nitro group",
+         "they contain a free diazonium group",
+         "they are ionic salts"
+        ],
+        0,
+        "The extended conjugation absorbs visible light, which makes them useful dyes."
+       ]
+      ]
+     ]
+    },
+    {
+     "n": 10,
+     "t": "Biomolecules",
+     "levels": [
+      [
+       [
+        "Chemically, carbohydrates are best defined as",
+        [
+         "hydrates of carbon with the formula Cₓ(H₂O)ᵧ only",
+         "polyhydroxy carboxylic acids",
+         "optically active polyhydroxy aldehydes or ketones, or compounds that give such units on hydrolysis",
+         "compounds that are always sweet and soluble in water"
+        ],
+        2,
+        "This is the NCERT definition; the formula Cₓ(H₂O)ᵧ is not a reliable test."
+       ],
+       [
+        "Which compound fits the general formula Cₓ(H₂O)ᵧ but is NOT a carbohydrate?",
+        [
+         "Acetic acid, CH₃COOH",
+         "Glucose, C₆H₁₂O₆",
+         "Sucrose, C₁₂H₂₂O₁₁",
+         "Rhamnose, C₆H₁₂O₅"
+        ],
+        0,
+        "CH₃COOH is C₂(H₂O)₂ but has no polyhydroxy carbonyl unit; rhamnose is a carbohydrate yet does not fit the formula."
+       ],
+       [
+        "Carbohydrates that yield two to ten monosaccharide units on hydrolysis are called",
+        [
+         "monosaccharides",
+         "polysaccharides",
+         "lipids",
+         "oligosaccharides"
+        ],
+        3,
+        "Disaccharides such as sucrose and maltose are the most common oligosaccharides."
+       ],
+       [
+        "Which statement about polysaccharides is correct?",
+        [
+         "They are the sweetest carbohydrates",
+         "They are not sweet and are therefore called non-sugars",
+         "They cannot be hydrolysed",
+         "They yield only two monosaccharide units"
+        ],
+        1,
+        "Starch, cellulose and glycogen are not sweet, so they are non-sugars."
+       ],
+       [
+        "A monosaccharide having six carbon atoms and a keto group is called a",
+        [
+         "aldohexose",
+         "ketohexose",
+         "ketopentose",
+         "aldopentose"
+        ],
+        1,
+        "Aldose means an –CHO group; ketose means a >C=O group; hexose means six carbons."
+       ],
+       [
+        "Commercially, glucose is obtained by hydrolysis of starch by boiling it with",
+        [
+         "conc. H₂SO₄ at 443 K",
+         "aqueous NaOH at 373 K",
+         "dilute HCl at 273 K",
+         "dilute H₂SO₄ at 393 K under 2–3 atm pressure"
+        ],
+        3,
+        "(C₆H₁₀O₅)ₙ + nH₂O → nC₆H₁₂O₆ under these conditions."
+       ],
+       [
+        "On prolonged heating with HI, glucose forms n-hexane. This shows that",
+        [
+         "all six carbon atoms are in a straight chain",
+         "glucose contains an aldehyde group",
+         "glucose contains five –OH groups",
+         "glucose has a primary alcoholic group"
+        ],
+        0,
+        "Complete reduction to n-hexane means no branching."
+       ],
+       [
+        "Glucose is oxidised by bromine water to gluconic acid. This indicates that the carbonyl group in glucose is",
+        [
+         "a ketonic group",
+         "an ester group",
+         "an aldehydic group",
+         "an ether linkage"
+        ],
+        2,
+        "A mild oxidant converts –CHO to –COOH without breaking the chain."
+       ],
+       [
+        "Oxidation of glucose with nitric acid gives saccharic acid, a dicarboxylic acid. This shows the presence of",
+        [
+         "a secondary alcoholic group only",
+         "a ketonic group",
+         "a primary alcoholic (–CH₂OH) group",
+         "a free amino group"
+        ],
+        2,
+        "Both –CHO and –CH₂OH are oxidised to –COOH."
+       ],
+       [
+        "In D-(+)-glucose, the letter D refers to",
+        [
+         "the configuration relative to D-(+)-glyceraldehyde, while (+) shows dextrorotation",
+         "dextrorotation, while (+) shows the configuration",
+         "the number of –OH groups",
+         "the d-form of the molecule, same as (+)"
+        ],
+        0,
+        "D/L have no relation to the sign of optical rotation."
+       ],
+       [
+        "Glucose pentaacetate is formed when glucose reacts with acetic anhydride. This confirms that glucose has",
+        [
+         "five carbonyl groups",
+         "one –OH group and five –CH₃ groups",
+         "five –OH groups on the same carbon",
+         "five –OH groups, each on a different carbon atom"
+        ],
+        3,
+        "Five –OH groups are acetylated and a stable compound cannot have two –OH on one carbon."
+       ],
+       [
+        "The two cyclic forms α- and β-glucose differ only in the configuration at",
+        [
+         "C-5",
+         "C-1, the anomeric carbon",
+         "C-6",
+         "C-4"
+        ],
+        1,
+        "They are called anomers; the C-1 –OH is formed from the aldehyde carbon."
+       ],
+       [
+        "The six-membered ring of cyclic glucose, containing five carbon atoms and one oxygen atom, is called",
+        [
+         "a furanose ring",
+         "a pyranose ring",
+         "a pyrrole ring",
+         "a benzene ring"
+        ],
+        1,
+        "It is named after pyran; the C-5 –OH adds to the –CHO group to give a cyclic hemiacetal."
+       ],
+       [
+        "The cyclic form of fructose has",
+        [
+         "a six-membered pyranose ring formed by –OH at C-6",
+         "a four-membered ring",
+         "no ring, it exists only as an open chain",
+         "a five-membered furanose ring formed by –OH at C-5 adding to the keto group"
+        ],
+        3,
+        "Fructose is a ketohexose (keto group at C-2) and is D-(−)-fructose."
+       ],
+       [
+        "A linkage between two monosaccharide units through an oxygen atom, formed by loss of a water molecule, is called",
+        [
+         "a glycosidic linkage",
+         "a peptide linkage",
+         "a phosphodiester linkage",
+         "a hydrogen bond"
+        ],
+        0,
+        "It joins monosaccharides in disaccharides and polysaccharides."
+       ],
+       [
+        "Sucrose is a non-reducing sugar because",
+        [
+         "it contains no sugar units",
+         "it is a polysaccharide",
+         "the reducing groups of glucose and fructose are both involved in the glycosidic bond",
+         "its glycosidic bond is between C-1 and C-4 of two glucose units"
+        ],
+        2,
+        "The C-1 of α-D-glucose is linked to C-2 of β-D-fructose, so no free aldehyde or keto group remains."
+       ],
+       [
+        "Maltose is composed of",
+        [
+         "α-D-glucose and β-D-fructose linked C-1 to C-2",
+         "β-D-galactose and β-D-glucose linked C-1 to C-4",
+         "two α-D-glucose units linked from C-1 of one to C-4 of the other",
+         "two β-D-glucose units linked C-1 to C-6"
+        ],
+        2,
+        "Maltose is a reducing sugar because the second glucose unit has a free C-1 hemiacetal."
+       ],
+       [
+        "Hydrolysis of lactose (milk sugar) gives",
+        [
+         "β-D-galactose and β-D-glucose",
+         "two molecules of glucose",
+         "glucose and fructose",
+         "two molecules of galactose"
+        ],
+        0,
+        "(NCERT Intext Question 10.2) Lactose is a reducing sugar."
+       ],
+       [
+        "Amylopectin differs from amylose in that amylopectin is",
+        [
+         "water soluble and unbranched",
+         "made of β-glucose units",
+         "a dipeptide of glucose",
+         "water insoluble and branched, with branching at C-1–C-6 linkages"
+        ],
+        3,
+        "Amylose (15–20 % of starch) is unbranched with C-1–C-4 links; amylopectin makes up 80–85 %."
+       ],
+       [
+        "Cellulose is a straight-chain polysaccharide made only of",
+        [
+         "α-D-glucose units joined by C-1–C-6 linkages",
+         "β-D-glucose units joined by C-1–C-4 glycosidic linkages",
+         "β-D-fructose units",
+         "α-D-galactose units"
+        ],
+        1,
+        "It is the main constituent of plant cell walls."
+       ],
+       [
+        "Glycogen, the storage carbohydrate of animals, is also called animal starch because its structure",
+        [
+         "is a straight chain like cellulose",
+         "is similar to amylopectin but even more highly branched",
+         "is made of amino acids",
+         "is the same as amylose"
+        ],
+        1,
+        "It is present in liver, muscles and brain."
+       ],
+       [
+        "The two aldopentoses present in nucleic acids are",
+        [
+         "D-glucose and D-fructose",
+         "D-galactose and D-ribose",
+         "sucrose and maltose",
+         "D-ribose and 2-deoxy-D-ribose"
+        ],
+        3,
+        "Carbohydrates are also needed as storage molecules (starch, glycogen) and structural material (cellulose)."
+       ],
+       [
+        "The word protein comes from the Greek proteios, meaning primary or of prime importance. All proteins are polymers of",
+        [
+         "α-amino acids",
+         "β-amino acids",
+         "monosaccharides",
+         "nucleotides"
+        ],
+        0,
+        "Only α-amino acids are obtained on hydrolysis of proteins."
+       ],
+       [
+        "Glycine got its name because",
+        [
+         "it was first obtained from cheese",
+         "it was first obtained from glycogen",
+         "it has a sweet taste (Greek glykos)",
+         "it is a sugar"
+        ],
+        2,
+        "Tyrosine was first obtained from cheese (Greek tyros)."
+       ],
+       [
+        "An amino acid with one amino group and two carboxyl groups (such as aspartic acid) is",
+        [
+         "basic",
+         "neutral",
+         "acidic",
+         "essential only"
+        ],
+        2,
+        "More carboxyl than amino groups makes it acidic; more amino than carboxyl makes it basic."
+       ],
+       [
+        "Which of the following is an essential amino acid?",
+        [
+         "Valine",
+         "Glycine",
+         "Alanine",
+         "Serine"
+        ],
+        0,
+        "Essential amino acids cannot be synthesised in the body and must come from the diet."
+       ],
+       [
+        "In aqueous solution, an amino acid exists as a dipolar ion called a zwitter ion. This explains why amino acids",
+        [
+         "are volatile liquids",
+         "are insoluble in water",
+         "are more acidic than carboxylic acids only",
+         "are water-soluble, high-melting and behave like salts"
+        ],
+        3,
+        "The –COOH loses a proton and the –NH₂ accepts it, giving –COO⁻ and –NH₃⁺ in the same molecule."
+       ],
+       [
+        "Which α-amino acid is optically inactive?",
+        [
+         "Alanine",
+         "Glycine",
+         "Valine",
+         "Serine"
+        ],
+        1,
+        "Glycine (R = H) has no asymmetric α-carbon. Most natural amino acids are L-configured."
+       ],
+       [
+        "A tripeptide contains",
+        [
+         "three amino acid units joined by three peptide linkages",
+         "three amino acid units joined by two peptide linkages",
+         "two amino acid units joined by two peptide linkages",
+         "three peptide linkages and four amino acid units"
+        ],
+        1,
+        "A peptide bond is the amide –CO–NH– formed between –COOH and –NH₂ with loss of water."
+       ],
+       [
+        "Keratin and insulin are examples of, respectively,",
+        [
+         "a globular protein and a fibrous protein",
+         "both fibrous proteins",
+         "both globular proteins",
+         "a fibrous protein and a globular protein"
+        ],
+        3,
+        "Fibrous proteins are generally water-insoluble; globular proteins are usually soluble."
+       ],
+       [
+        "The α-helix and β-pleated sheet (secondary structure) are stabilised mainly by",
+        [
+         "hydrogen bonds between the C=O and N–H groups of the peptide backbone",
+         "peptide bonds only",
+         "ionic bonds between metal ions",
+         "covalent C–C bonds"
+        ],
+        0,
+        "The α-helix is a right-handed screw with N–H hydrogen bonded to the C=O of an adjacent turn."
+       ],
+       [
+        "The sequence of amino acids in a polypeptide chain is called its",
+        [
+         "secondary structure",
+         "tertiary structure",
+         "primary structure",
+         "quaternary structure"
+        ],
+        2,
+        "Quaternary structure is the spatial arrangement of two or more sub-units."
+       ],
+       [
+        "During denaturation of a protein",
+        [
+         "the primary structure is destroyed",
+         "peptide bonds are hydrolysed to amino acids",
+         "the secondary and tertiary structures are destroyed but the primary structure remains intact",
+         "the protein becomes more active biologically"
+        ],
+        2,
+        "Coagulation of egg white on boiling is a common example."
+       ],
+       [
+        "Enzymes are",
+        [
+         "biocatalysts, almost all of them globular proteins",
+         "carbohydrates that act as catalysts",
+         "non-specific catalysts",
+         "steroids"
+        ],
+        0,
+        "They are specific for a reaction and substrate; names usually end in -ase, e.g. maltase."
+       ],
+       [
+        "Enzymes speed up reactions because, like other catalysts, they",
+        [
+         "increase the activation energy",
+         "change the equilibrium constant",
+         "are consumed in large amounts",
+         "lower the activation energy"
+        ],
+        3,
+        "For sucrose hydrolysis, Eₐ is 6.22 kJ mol⁻¹ with acid but only 2.15 kJ mol⁻¹ with the enzyme sucrase."
+       ],
+       [
+        "Vitamins are organic compounds that",
+        [
+         "are required in large amounts as an energy source",
+         "are required in small amounts in the diet to perform specific biological functions",
+         "are all synthesised in the human body",
+         "are all proteins"
+        ],
+        1,
+        "The term ‘vitamine’ came from vital + amine; the ‘e’ was later dropped."
+       ],
+       [
+        "Which group lists only fat-soluble vitamins?",
+        [
+         "B and C",
+         "A, D, E and K",
+         "A, B and C",
+         "C, D and K"
+        ],
+        1,
+        "Fat-soluble vitamins are stored in liver and adipose tissue; B group and C are water-soluble."
+       ],
+       [
+        "Scurvy (bleeding gums) is caused by deficiency of",
+        [
+         "vitamin D",
+         "vitamin K",
+         "vitamin B₁",
+         "vitamin C"
+        ],
+        3,
+        "Vitamin D deficiency causes rickets, K causes slow blood clotting, and B₁ causes beri beri."
+       ],
+       [
+        "Nucleic acids are also called polynucleotides because they are",
+        [
+         "long-chain polymers of nucleotides",
+         "polymers of amino acids",
+         "polymers of glucose",
+         "polymers of fatty acids"
+        ],
+        0,
+        "The two main types are DNA and RNA."
+       ],
+       [
+        "The sugar and the fourth base in RNA are, respectively,",
+        [
+         "β-D-2-deoxyribose and uracil",
+         "β-D-ribose and thymine",
+         "β-D-ribose and uracil",
+         "β-D-2-deoxyribose and thymine"
+        ],
+        2,
+        "DNA has 2-deoxyribose and thymine; the other three bases (A, G, C) are common to both."
+       ],
+       [
+        "A unit formed by a base attached to the 1′ position of the sugar, with no phosphate, is called",
+        [
+         "a nucleotide",
+         "a dinucleotide",
+         "a nucleoside",
+         "a nucleic acid"
+        ],
+        2,
+        "A nucleoside plus phosphoric acid at the 5′ position of sugar gives a nucleotide."
+       ],
+       [
+        "In the double helix of DNA, hydrogen bonds are formed between",
+        [
+         "adenine and thymine, and between cytosine and guanine",
+         "adenine and guanine, and between cytosine and thymine",
+         "adenine and cytosine only",
+         "adenine and uracil"
+        ],
+        0,
+        "This makes the two strands complementary."
+       ],
+       [
+        "Which statement about the biological function of nucleic acids is correct?",
+        [
+         "proteins are synthesised directly by DNA without RNA",
+         "RNA is the chemical basis of heredity in all cells and DNA makes proteins",
+         "nucleic acids provide energy by being oxidised",
+         "DNA stores genetic information and replicates, while proteins are synthesised by RNA using the message in DNA"
+        ],
+        3,
+        "DNA is capable of self-duplication during cell division."
+       ],
+       [
+        "Insulin, estrogens and epinephrine are respectively",
+        [
+         "a steroid, a polypeptide and an amino acid derivative",
+         "a polypeptide, a steroid and an amino acid derivative",
+         "an amino acid derivative, a steroid and a polypeptide",
+         "all steroids"
+        ],
+        1,
+        "Hormones are intercellular messengers produced by endocrine glands."
+       ],
+       [
+        "Hypothyroidism and an enlarged thyroid gland, caused by low iodine in the diet, are controlled by",
+        [
+         "adding sodium chloride to water",
+         "adding sodium iodide to common salt (iodised salt)",
+         "taking extra vitamin C",
+         "taking glucagon"
+        ],
+        1,
+        "Thyroxine is an iodinated derivative of the amino acid tyrosine."
+       ]
+      ],
+      [
+       [
+        "Which statement about carbohydrates is correct?",
+        [
+         "Every compound that fits Cₓ(H₂O)ᵧ is a carbohydrate",
+         "All carbohydrates are sweet and are therefore called sugars",
+         "Carbohydrates have no functional groups",
+         "Rhamnose, C₆H₁₂O₅, is a carbohydrate although it does not fit the formula Cₓ(H₂O)ᵧ"
+        ],
+        3,
+        "Carbohydrates are polyhydroxy aldehydes or ketones; acetic acid fits the formula but is not one."
+       ],
+       [
+        "Which classification is correct?",
+        [
+         "Fructose: monosaccharide and reducing; sucrose: disaccharide and non-reducing; starch: polysaccharide and non-sugar",
+         "Fructose: disaccharide; sucrose: monosaccharide; starch: oligosaccharide",
+         "Sucrose: reducing disaccharide; starch: sugar; glucose: polysaccharide",
+         "Glucose: oligosaccharide; maltose: non-reducing; cellulose: sugar"
+        ],
+        0,
+        "Classification is by hydrolysis products; sucrose is non-reducing, while all monosaccharides are reducing."
+       ],
+       [
+        "Fructose is a ketose. Which statement about its reducing behaviour is correct?",
+        [
+         "It does not reduce them, because only aldoses are reducing sugars",
+         "It reduces them because it contains an –CHO group at C-1",
+         "It reduces Tollens’ reagent and Fehling’s solution, because all monosaccharides, whether aldose or ketose, are reducing sugars",
+         "It reduces them only after it is hydrolysed to an aldehyde"
+        ],
+        2,
+        "NCERT states that all monosaccharides, aldose or ketose, are reducing sugars."
+       ],
+       [
+        "An unknown compound X, C₆H₁₂O₆, gives n-hexane with HI, is oxidised by bromine water to a six-carbon acid and by HNO₃ to a dicarboxylic acid, but does not give Schiff’s test and its pentaacetate does not react with NH₂OH. X is",
+        [
+         "fructose, because it has a ketone group at C-2",
+         "glucose, which has no ring and the –CHO group is protected by acetylation",
+         "glucose, which exists mainly as a cyclic hemiacetal with no free –CHO",
+         "sucrose, which has no free –CHO group"
+        ],
+        2,
+        "Br₂ water giving a C₆ acid shows an aldohexose; the ring (hemiacetal) explains the missing aldehyde tests."
+       ],
+       [
+        "Each acetylation of an –OH group in glucose replaces H by COCH₃ (net +42 g mol⁻¹). Taking the molar mass of glucose as 180 g mol⁻¹, the molar mass of glucose pentaacetate is",
+        [
+         "390 g mol⁻¹",
+         "360 g mol⁻¹",
+         "450 g mol⁻¹",
+         "342 g mol⁻¹"
+        ],
+        0,
+        "180 + 5 × 42 = 390.",
+        "Five –OH groups are acetylated."
+       ],
+       [
+        "Assertion (A): Glucose gives the hydrogensulphite (NaHSO₃) addition product like a typical aldehyde.\nReason (R): Glucose exists mainly in cyclic hemiacetal forms in which a free –CHO group is absent.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        3,
+        "Glucose does not form the NaHSO₃ product because the free –CHO is absent in the cyclic structure, so A is false and R is true."
+       ],
+       [
+        "Which statement about the D and L notation is correct?",
+        [
+         "D means dextrorotatory and L means laevorotatory",
+         "D-glucose is D because its –CHO group is on the right",
+         "D and L are the same as d and l",
+         "D and L denote configuration relative to glyceraldehyde and are unrelated to the sign of rotation; (+)-glucose is D because the –OH on its lowest asymmetric carbon is on the right"
+        ],
+        3,
+        "(+)-Glyceraldehyde has the –OH on the right and is D."
+       ],
+       [
+        "Sucrose boiled with dilute HCl in alcoholic solution gives",
+        [
+         "only glucose",
+         "glucose and fructose in equal amounts",
+         "glucose and galactose",
+         "two molecules of glucose"
+        ],
+        1,
+        "C₁₂H₂₂O₁₁ + H₂O → C₆H₁₂O₆ + C₆H₁₂O₆ (glucose + fructose)."
+       ],
+       [
+        "Which match of reaction and structural conclusion for glucose is correct?",
+        [
+         "HI → n-hexane: –CHO present; Br₂ water → gluconic acid: unbranched chain; HNO₃ → saccharic acid: five –OH groups",
+         "HI → n-hexane: unbranched chain; Br₂ water → gluconic acid: –CHO present; HNO₃ → saccharic acid: primary –OH present",
+         "HI → n-hexane: primary –OH present; Br₂ water → gluconic acid: ketone present; HNO₃ → saccharic acid: unbranched chain",
+         "Acetic anhydride → pentaacetate: –CHO present; NH₂OH → oxime: five –OH groups; HI → n-hexane: ketone present"
+        ],
+        1,
+        "Each reagent tests one feature: chain, aldehyde, primary alcohol."
+       ],
+       [
+        "A student writes: ‘Fructose is an aldohexose whose C-5 –OH adds to the carbonyl group to give a six-membered pyranose ring.’ The error is that",
+        [
+         "fructose is an aldopentose with a five-membered ring",
+         "fructose has no cyclic form",
+         "fructose has a six-membered ring but is dextrorotatory",
+         "fructose is a ketohexose and its ring is a five-membered furanose ring"
+        ],
+        3,
+        "In fructose C-5 –OH adds to the keto group at C-2, forming a furanose ring."
+       ],
+       [
+        "When 171 g of sucrose (molar mass 342 g mol⁻¹) is completely hydrolysed, the mass of glucose obtained is (molar mass of glucose 180 g mol⁻¹)",
+        [
+         "90 g",
+         "180 g",
+         "171 g",
+         "45 g"
+        ],
+        0,
+        "171 g = 0.5 mol sucrose, giving 0.5 mol glucose = 90 g (and 90 g of fructose).",
+        "Sucrose gives equimolar glucose and fructose."
+       ],
+       [
+        "Specific rotations of D-glucose and D-fructose are +52.5° and −92.4°. The specific rotation of an equimolar mixture of the two (invert sugar) is about",
+        [
+         "+19.95°",
+         "−39.9°",
+         "−19.95°",
+         "+72.45°"
+        ],
+        2,
+        "(52.5 − 92.4)/2 = −19.95°, so the sign changes from (+) for sucrose to (−).",
+        "Take the average for equimolar mixture."
+       ],
+       [
+        "Assertion (A): Sucrose is a non-reducing sugar.\nReason (R): The reducing groups of glucose and fructose are both involved in the glycosidic bond in sucrose.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        0,
+        "The C-1 of glucose and C-2 of fructose are joined, leaving no free aldehyde or keto group."
+       ],
+       [
+        "A student says: ‘Maltose is non-reducing because its two α-D-glucose units are joined through C-1 and C-4.’ The error is that",
+        [
+         "maltose has a C-1 to C-2 linkage like sucrose",
+         "maltose is formed from glucose and galactose",
+         "the second glucose unit retains a free hemiacetal C-1 that can give –CHO, so maltose is reducing",
+         "maltose has no glycosidic linkage"
+        ],
+        2,
+        "Only the C-1 of the first glucose is tied up in the glycosidic bond."
+       ],
+       [
+        "Which pairing of disaccharide, hydrolysis products and behaviour is correct?",
+        [
+         "Lactose: β-D-galactose and D-glucose; reducing",
+         "Sucrose: two glucose molecules; non-reducing",
+         "Maltose: glucose and galactose; reducing",
+         "Lactose: glucose and fructose; non-reducing"
+        ],
+        0,
+        "Sucrose gives glucose + fructose; maltose gives only glucose."
+       ],
+       [
+        "A 200 g sample of starch contains 18 % amylose by mass. The mass of amylopectin in it is",
+        [
+         "36 g",
+         "160 g",
+         "182 g",
+         "164 g"
+        ],
+        3,
+        "Amylose = 0.18 × 200 = 36 g, so amylopectin = 200 − 36 = 164 g (82 %, within the 80–85 % range)."
+       ],
+       [
+        "Which statement about polysaccharide structure is correct?",
+        [
+         "Amylopectin is unbranched; cellulose has C-1–C-6 branches; glycogen is unbranched",
+         "Amylopectin has C-1–C-4 chains with C-1–C-6 branches; cellulose is unbranched β-glucose; glycogen is like amylopectin but more branched",
+         "Cellulose is made of α-glucose and is branched; amylose is branched",
+         "Glycogen is less branched than amylopectin and is found in plants"
+        ],
+        1,
+        "Amylose is the unbranched, water-soluble component of starch."
+       ],
+       [
+        "Which statement about the sugar components of nucleic acids is correct?",
+        [
+         "Glucose and fructose are the sugar units of nucleic acids",
+         "D-Ribose and 2-deoxy-D-ribose, both aldopentoses, are components of nucleic acids",
+         "Cellulose is the storage carbohydrate of animals",
+         "Starch makes up the cell wall of bacteria and plants"
+        ],
+        1,
+        "Starch (plants) and glycogen (animals) are storage forms; cellulose is structural."
+       ],
+       [
+        "Insulin has only 51 amino acid residues, yet it is called a protein rather than a polypeptide because",
+        [
+         "it has fewer than ten amino acids",
+         "it contains no peptide bonds",
+         "it is a carbohydrate derivative",
+         "it has a well-defined conformation like a protein, although a polypeptide with more than 100 residues is normally called a protein"
+        ],
+        3,
+        "NCERT notes the distinction between polypeptides and proteins is not very sharp."
+       ],
+       [
+        "Which pairing of amino acid, three-letter and one-letter symbol is correct?",
+        [
+         "Tryptophan, Trp, W",
+         "Phenylalanine, Phe, P",
+         "Glutamic acid, Glu, Q",
+         "Lysine, Lys, L"
+        ],
+        0,
+        "P is proline, Q is glutamine and L is leucine; lysine is K."
+       ],
+       [
+        "Assertion (A): Glycine is optically inactive.\nReason (R): Glycine exists as a zwitter ion in aqueous solution.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        1,
+        "Glycine’s α-carbon is not asymmetric (R = H), so it is inactive; the zwitter ion is true but does not explain this."
+       ],
+       [
+        "Which statement about amino acids is correct?",
+        [
+         "Glutamic acid is basic, lysine is acidic and valine is non-essential",
+         "Lysine is acidic and glycine is essential",
+         "Glutamic acid is acidic, lysine is basic and valine is an essential amino acid",
+         "Glutamic acid is neutral and valine is non-essential"
+        ],
+        2,
+        "Glutamic acid has two –COOH and one –NH₂; lysine has two –NH₂ and one –COOH."
+       ],
+       [
+        "Glycine in water exists as ⁺H₃N–CH₂–COO⁻. With dilute HCl and with NaOH it gives, respectively,",
+        [
+         "H₂N–CH₂–COO⁻ and ⁺H₃N–CH₂–COOH",
+         "⁺H₃N–CH₂–COOH only; it does not react with NaOH",
+         "⁺H₃N–CH₂–COOH and H₂N–CH₂–COO⁻",
+         "H₂N–CH₂–COOH and ⁺H₃N–CH₂–COO⁻"
+        ],
+        2,
+        "The –COO⁻ accepts H⁺ from acid and the –NH₃⁺ gives up H⁺ to base, so the amino acid is amphoteric."
+       ],
+       [
+        "Taking the molar masses of glycine, alanine and serine as 75, 89 and 105 g mol⁻¹, the molar mass of the tripeptide formed from one molecule of each is",
+        [
+         "233 g mol⁻¹",
+         "269 g mol⁻¹",
+         "251 g mol⁻¹",
+         "215 g mol⁻¹"
+        ],
+        0,
+        "75 + 89 + 105 = 269; two water molecules are lost: 269 − 36 = 233.",
+        "A tripeptide has two peptide bonds."
+       ],
+       [
+        "The number of water molecules needed for complete hydrolysis of a hexapeptide to free amino acids is",
+        [
+         "6",
+         "4",
+         "1",
+         "5"
+        ],
+        3,
+        "A hexapeptide has five peptide bonds; each needs one water for hydrolysis."
+       ],
+       [
+        "A student writes: ‘The secondary structure of a protein is the sequence of its amino acids, and the α-helix is held together by disulphide bonds.’ The error is that",
+        [
+         "the sequence is the quaternary structure, and the α-helix is held by peptide bonds",
+         "the sequence is the primary structure, and the α-helix is held by hydrogen bonds between N–H and C=O groups of the backbone",
+         "the α-helix is a left-handed screw held by ionic bonds",
+         "the sequence is the tertiary structure, and the helix is held by van der Waals forces only"
+        ],
+        1,
+        "Disulphide linkages help stabilise secondary and tertiary structures but are not what defines the α-helix."
+       ],
+       [
+        "Assertion (A): Boiling an egg destroys the biological activity of the egg-white protein.\nReason (R): Denaturation breaks the peptide bonds and destroys the primary structure of the protein.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        2,
+        "Denaturation disturbs hydrogen bonds and destroys secondary and tertiary structures only; the primary structure stays, so R is false."
+       ],
+       [
+        "Milk curdles because bacteria form lactic acid, and egg white coagulates on boiling. Both processes",
+        [
+         "break peptide bonds into free amino acids",
+         "are denaturation: secondary and tertiary structures are lost but the amino acid sequence is unchanged",
+         "increase the biological activity of the protein",
+         "convert the protein into carbohydrate"
+        ],
+        1,
+        "A change in pH or temperature disturbs hydrogen bonds so globules unfold."
+       ],
+       [
+        "Maltase hydrolyses maltose to glucose but does not act on sucrose. This shows that enzymes",
+        [
+         "act on all disaccharides alike",
+         "are consumed in the reaction",
+         "are non-protein catalysts",
+         "are highly specific for a particular substrate and reaction"
+        ],
+        3,
+        "Enzymes are generally named after the substrate or reaction, with the ending -ase."
+       ],
+       [
+        "For hydrolysis of sucrose, the activation energy is 6.22 kJ mol⁻¹ with acid and 2.15 kJ mol⁻¹ with the enzyme sucrase. The enzyme lowers it by",
+        [
+         "4.07 kJ mol⁻¹",
+         "8.37 kJ mol⁻¹",
+         "3.07 kJ mol⁻¹",
+         "0.35 kJ mol⁻¹"
+        ],
+        0,
+        "6.22 − 2.15 = 4.07 kJ mol⁻¹."
+       ],
+       [
+        "Which statement about vitamins is correct?",
+        [
+         "They are needed in large amounts and are all made in the body",
+         "Taking vitamin pills in excess is always harmless",
+         "They are needed in small amounts, most cannot be made in the body, and gut bacteria can make some",
+         "They are all amines, as the name suggests"
+        ],
+        2,
+        "Most vitamins did not turn out to contain amino groups, so the ‘e’ was dropped from vitamine."
+       ],
+       [
+        "Assertion (A): Vitamin C must be supplied regularly in the diet.\nReason (R): Water-soluble vitamins are readily excreted in urine and cannot be stored in the body.",
+        [
+         "Both A and R are true, and R is the correct explanation of A",
+         "Both A and R are true, but R is not the correct explanation of A",
+         "A is true but R is false",
+         "A is false but R is true"
+        ],
+        0,
+        "Being water-soluble, vitamin C is excreted and not stored (NCERT Intext Question 10.6)."
+       ],
+       [
+        "A student writes: ‘Vitamins B12 and C are water-soluble, so both are excreted in urine and neither can be stored.’ The error is that",
+        [
+         "vitamin C is fat-soluble",
+         "vitamin B12 is fat-soluble and needs no diet",
+         "vitamin B12 is the exception among water-soluble vitamins and can be stored in the body",
+         "all water-soluble vitamins are stored in the liver"
+        ],
+        2,
+        "NCERT lists B12 as the exception to non-storage of water-soluble vitamins."
+       ],
+       [
+        "A person has bleeding gums, and another has a longer blood clotting time. The vitamins lacking are respectively",
+        [
+         "vitamin C and vitamin K",
+         "vitamin K and vitamin C",
+         "vitamin A and vitamin D",
+         "vitamin B₁ and vitamin E"
+        ],
+        0,
+        "Scurvy is due to lack of vitamin C; slow clotting is due to lack of vitamin K."
+       ],
+       [
+        "Which statement about chromosomes and nucleic acids is correct?",
+        [
+         "Chromosomes are made of carbohydrates and lipids only",
+         "Nucleic acids are polymers of amino acids",
+         "Only DNA is a nucleic acid",
+         "Chromosomes in the nucleus are made of proteins and nucleic acids, and nucleic acids are polynucleotides"
+        ],
+        3,
+        "The two types are DNA and RNA."
+       ],
+       [
+        "A student says that complete hydrolysis of DNA containing thymine gives ribose, phosphoric acid, adenine, guanine, cytosine and uracil. The correct set of products is",
+        [
+         "ribose, phosphoric acid, adenine, guanine, cytosine and thymine",
+         "2-deoxyribose, phosphoric acid, adenine, guanine, cytosine and thymine",
+         "2-deoxyribose, phosphoric acid, adenine, guanine, cytosine and uracil",
+         "2-deoxyribose, adenine, guanine, cytosine and thymine only"
+        ],
+        1,
+        "DNA has 2-deoxyribose and thymine; RNA has ribose and uracil (NCERT Intext Question 10.7)."
+       ],
+       [
+        "In a double-stranded DNA sample, 22 % of the bases are adenine. The percentage of guanine is",
+        [
+         "22 %",
+         "28 %",
+         "56 %",
+         "78 %"
+        ],
+        1,
+        "A pairs with T, so T = 22 %; then G + C = 56 % and G = C = 28 %.",
+        "Use A–T and G–C pairing."
+       ],
+       [
+        "A double-stranded DNA segment is 20 base pairs long. The total number of phosphodiester linkages in both strands is",
+        [
+         "40",
+         "19",
+         "39",
+         "38"
+        ],
+        3,
+        "A strand of 20 nucleotides has 19 phosphodiester linkages, so two strands have 38."
+       ],
+       [
+        "Which statement about nucleotides and nucleosides is correct?",
+        [
+         "A nucleotide has the base at C-1′ of the sugar and phosphate at C-5′, and nucleotides are joined by 5′–3′ phosphodiester linkages",
+         "A nucleoside contains the sugar, the base and phosphate",
+         "Nucleotides are joined by peptide linkages",
+         "The base attaches at C-5′ and phosphate at C-1′"
+        ],
+        0,
+        "A nucleoside is just sugar + base."
+       ],
+       [
+        "Which statement about the roles of DNA and RNA is correct?",
+        [
+         "RNA makes DNA copies during cell division",
+         "DNA carries amino acids to the ribosome",
+         "DNA is the reserve of genetic information, and the message for a protein is in DNA while RNA molecules synthesise the protein",
+         "Proteins are synthesised by DNA alone, without RNA"
+        ],
+        2,
+        "DNA is responsible for maintaining the identity of species over millions of years."
+       ],
+       [
+        "In an inland region with low iodine in the diet, a person shows lethargy, obesity and an enlarged thyroid. The hormone that is low and the preventive measure are",
+        [
+         "insulin, a polypeptide; use sugar-free food",
+         "testosterone, a steroid; use vitamin D",
+         "thyroxine, an iodinated derivative of tyrosine; use iodised salt (NaI)",
+         "epinephrine, a steroid; use iodised oil only"
+        ],
+        2,
+        "Low thyroxine causes hypothyroidism."
+       ],
+       [
+        "Which statement about hormones is correct?",
+        [
+         "Insulin lowers and glucagon raises blood glucose; insulin is a polypeptide, and estradiol and testosterone are steroids",
+         "Insulin and glucagon both raise blood glucose; estradiol is a polypeptide",
+         "Epinephrine is a steroid and thyroxine is a carbohydrate",
+         "Glucagon is a steroid released by the adrenal cortex"
+        ],
+        0,
+        "The two hormones together regulate blood glucose."
+       ]
+      ]
+     ]
+    }
+   ]
   },
   {
    "id": "maths",
